@@ -1,0 +1,50 @@
+title: Article
+
+pages: false
+
+icon: file-text-o
+
+fields:
+  title:
+    label: Title
+    type:  title
+
+  contributor:
+    label: Contributed By
+    width: 1/2
+    type: multiselect
+    required: true
+    search: true
+    options: query
+    query:
+      page: contributors
+      fetch: children
+
+  coverimage:
+    label: Cover Image
+    type: image
+    width: 1/2
+
+  uploaded:
+    icon: calendar
+    label: Uploaded
+    type: date
+    format: LL
+    placeholder: Select a date…
+    default: today
+    required: true
+    width: 1/2
+
+  printed:
+    icon: newspaper-o
+    label: Printed
+    width: 1/2
+    type: select
+    options: query
+    query:
+      page: magazine
+      fetch: children
+
+  text:
+    label: Text
+    type: textarea

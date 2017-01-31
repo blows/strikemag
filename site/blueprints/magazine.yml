@@ -1,0 +1,21 @@
+title: Magazine
+
+files: false
+
+pages: true
+  template: issue
+
+options:
+  template: false
+  status: false
+
+icon: newspaper-o
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  text:
+    label: Text
+    type:  textarea

@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* -----  1.4 Images & Figures  --------------------------------------------- */
+/* line 17, ../scss/screen.scss */
+img {
+  border-style: none;
+  width: 100%;
+  height: auto;
+}
+
+/* line 23, ../scss/screen.scss */
+figcaption {
+  font-size: .75rem;
+  line-height: 1.5rem;
+}
+
+/* -----  2.1 Kirbytext  ---------------------------------------------------- */
+/* line 30, ../scss/screen.scss */
+.intro {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
+/* line 37, ../scss/screen.scss */
+h1 + .intro {
+  margin-top: -2.25rem;
+}
+
+/* line 41, ../scss/screen.scss */
+.text {
+  width: 82.82548%;
+  float: left;
+  margin-right: 3.04709%;
+}
+
+@media screen and (min-width: 750px) {
+  /* line 46, ../scss/screen.scss */
+  .text {
+    width: 48.47645%;
+    float: left;
+    margin-right: 3.04709%;
+  }
+}
+/* line 51, ../scss/screen.scss */
+.text h2, .text h3 {
+  margin-top: 3rem;
+}
+
+/* line 55, ../scss/screen.scss */
+.text ul, .text ol {
+  margin-left: 1.5em;
+}
+
+/* line 59, ../scss/screen.scss */
+.text hr {
+  /* We use a more muted style for horizontal rules within
+     the main content. */
+  color: #a8a5be;
+}
+
+/* line 65, ../scss/screen.scss */
+.text ul {
+  list-style: none;
+}
+
+/* line 69, ../scss/screen.scss */
+.text ul > li::before {
+  content: "–";
+  display: inline-block;
+  position: relative;
+  width: 1.25em;
+  margin-right: -1.25em;
+  left: -1.25em;
+  padding-left: .25em;
+}
+
+/* line 79, ../scss/screen.scss */
+.text ol > li {
+  list-style: decimal;
+}
+
+/* line 83, ../scss/screen.scss */
+.text pre, .text code {
+  background-color: #eafded;
+  font-family: Courier, monospace;
+  font-size: .75rem;
+}
+
+/* line 89, ../scss/screen.scss */
+.text code {
+  margin: -.25em 0;
+  padding: .25em .15em;
+  position: relative;
+  bottom: .05em;
+}
+
+/* line 96, ../scss/screen.scss */
+.text pre > code {
+  display: block;
+  margin: 0;
+  padding: .8em;
+  position: static;
+  bottom: auto;
+  overflow-x: auto;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* line 106, ../scss/screen.scss */
+  .text pre > code {
+    /* Enables smoother scrolling for code sections on
+       mobile (i.e. touch) devices. */
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+/* line 114, ../scss/screen.scss */
+.text kbd {
+  padding: 3px 7px;
+  margin: -3px 2px;
+  font-size: 75%;
+  line-height: 1;
+  background: #e9e9e9;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #c9c7d4;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  position: relative;
+  bottom: 2px;
+}
+
+/* line 127, ../scss/screen.scss */
+.text blockquote {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  border-left: 2px solid #a8a5be;
+  padding: .75rem;
+  background: #fffffd;
+}
+
+/* line 134, ../scss/screen.scss */
+.text blockquote :last-child {
+  margin-bottom: 0;
+}
+
+/* -----  3.4 Main Content  ------------------------------------------------- */
+/* line 140, ../scss/screen.scss */
+.main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.main:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* ----- 4.2 Blog Article  -------------------------------------------------- */
+/* line 148, ../scss/screen.scss */
+.article {
+  width: 82.82548%;
+  float: left;
+  margin-right: 3.04709%;
+}
+@media (max-width: 500px) {
+  /* line 148, ../scss/screen.scss */
+  .article {
+    width: 82.82548%;
+    float: left;
+    margin-right: 3.04709%;
+  }
+}
+/* line 155, ../scss/screen.scss */
+.article-title {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+/* line 158, ../scss/screen.scss */
+.article-title a {
+  border-bottom: 0;
+}
+/* line 163, ../scss/screen.scss */
+.article-date {
+  text-align: center;
+}
+/* line 167, ../scss/screen.scss */
+.article-more {
+  font-size: 75%;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: .025em;
+  white-space: nowrap;
+  border-bottom: 2px solid #71efac;
+}
+/* line 176, ../scss/screen.scss */
+.article:last-of-type + hr {
+  /* Hide last <hr> on blog page */
+  display: none;
+}

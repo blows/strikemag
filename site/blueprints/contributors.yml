@@ -1,0 +1,21 @@
+title: Contributors
+
+pages: true
+  template: contributor
+  sort: alpha asc
+  limit: 35
+
+files: false
+
+options:
+  template: false
+  status: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  text:
+    label: Text
+    type:  textarea

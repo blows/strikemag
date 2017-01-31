@@ -1,0 +1,40 @@
+title: Contributor
+
+pages: false
+
+icon: user
+
+preview: parent
+
+fields:
+  title:
+    label: Name
+    type: title
+    required: true
+    width: 1/2
+
+  profilepic:
+    label: Profile Image
+    type: image
+    width: 1/2
+
+  bio:
+    label: Bio
+    type: textarea
+    required: true
+
+  email:
+    label: Email
+    type: email
+    width: 1/3
+
+  website:
+    label: Website
+    type: url
+    width: 1/3
+
+  twitter:
+    label: Twitter
+    icon: twitter
+    type: url
+    width: 1/3

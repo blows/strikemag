@@ -1,0 +1,180 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "susy";
+@import "grids";
+
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: .55, // The size of a gutter in relation to a single column
+);
+
+/* -----  1.4 Images & Figures  --------------------------------------------- */
+
+img {
+  border-style: none;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: .75rem;
+  line-height: 1.5rem;
+}
+
+/* -----  2.1 Kirbytext  ---------------------------------------------------- */
+
+.intro {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
+h1 + .intro {
+  margin-top: -2.25rem;
+}
+
+.text {
+  @include span(10);
+}
+
+@media screen and (min-width: 750px) {
+  .text {
+    @include span(6);
+  }
+}
+
+.text h2, .text h3 {
+  margin-top: 3rem;
+}
+
+.text ul, .text ol {
+  margin-left: 1.5em;
+}
+
+.text hr {
+  /* We use a more muted style for horizontal rules within
+     the main content. */
+  color: #a8a5be;
+}
+
+.text ul {
+  list-style: none;
+}
+
+.text ul > li::before {
+  content: "–";
+  display: inline-block;
+  position: relative;
+  width: 1.25em;
+  margin-right: -1.25em;
+  left: -1.25em;
+  padding-left: .25em;
+}
+
+.text ol > li {
+  list-style: decimal;
+}
+
+.text pre, .text code {
+  background-color: #eafded;
+  font-family: Courier, monospace;
+  font-size: .75rem;
+}
+
+.text code {
+  margin: -.25em 0;
+  padding: .25em .15em;
+  position: relative;
+  bottom: .05em;
+}
+
+.text pre > code {
+  display: block;
+  margin: 0;
+  padding: .8em;
+  position: static;
+  bottom: auto;
+  overflow-x: auto;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .text pre > code {
+    /* Enables smoother scrolling for code sections on
+       mobile (i.e. touch) devices. */
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.text kbd {
+  padding: 3px 7px;
+  margin: -3px 2px;
+  font-size: 75%;
+  line-height: 1;
+  background: #e9e9e9;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #c9c7d4;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  position: relative;
+  bottom: 2px;
+}
+
+.text blockquote {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  border-left: 2px solid #a8a5be;
+  padding: .75rem;
+  background: #fffffd;
+}
+
+.text blockquote :last-child {
+  margin-bottom: 0;
+}
+
+/* -----  3.4 Main Content  ------------------------------------------------- */
+
+.main {
+  @include container;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+/* ----- 4.2 Blog Article  -------------------------------------------------- */
+
+.article {
+  @include span(10);
+
+  @media (max-width: 500px) {
+      @include span(10);
+    }
+
+  &-title {
+    font-weight: 700;
+    margin-bottom: 0;
+    a {
+      border-bottom: 0;
+    }
+  }
+
+  &-date {
+    text-align: center;
+  }
+
+  &-more {
+    font-size: 75%;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: .025em;
+    white-space: nowrap;
+    border-bottom: 2px solid #71efac;
+  }
+
+  &:last-of-type + hr {
+    /* Hide last <hr> on blog page */
+    display: none;
+  }
+}

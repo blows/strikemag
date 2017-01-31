@@ -1,0 +1,12 @@
+{
+  "name": "field-multiselect",
+  "description": "Kirby Multiselect Field",
+  "author": "Nico Hoffmann <nico@getkirby.com>",
+  "version": "2.0.0",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/distantnative/field-multiselect"
+  }
+}

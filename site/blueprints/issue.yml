@@ -1,0 +1,31 @@
+title: Issue
+
+pages: true
+  template: article
+  limit: 35
+  num: date
+
+fields:
+  title:
+    label: Title
+    type:  title
+    placeholder: eg. Issue 10
+
+  coverimage:
+    label: Cover Image
+    type: image
+    width: 1/2
+
+  printed:
+    icon: calendar
+    label: Printed
+    type: date
+    format: LL
+    placeholder: Select a date…
+    default: today
+    required: true
+    width: 1/2
+
+  summary:
+    label: Summary / Editor's Note
+    type: textarea
