@@ -10,14 +10,16 @@
 return function($site, $pages, $page) {
 
   $perpage  = $page->perpage()->int();
-  $articles = $page->children()
-                   ->visible()
-                   ->flip()
-                   ->paginate(($perpage >= 1)? $perpage : 5);
+
+  // Merge all Online-Only articles with uploaded articles within Issues
+  $webonly = $pages->find('online')->children()->visible();
+  $magazine  = $pages->find('magazine')->grandChildren()->visible();
+  $webPlusMag = new Pages(array($webonly, $magazine));
+  $online = $webPlusMag->flip()->paginate(($perpage >= 1)? $perpage : 5);
 
   return [
-    'articles'   => $articles,
-    'pagination' => $articles->pagination()
+    'articles'   => $online,
+    'pagination' => $online->pagination()
   ];
 
 };
