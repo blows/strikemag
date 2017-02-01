@@ -15,7 +15,7 @@ return function($site, $pages, $page) {
   $webonly = $pages->find('online')->children()->visible();
   $magazine  = $pages->find('magazine')->grandChildren()->visible();
   $webPlusMag = new Pages(array($webonly, $magazine));
-  $online = $webPlusMag->flip()->paginate(($perpage >= 1)? $perpage : 5);
+  $online = $webPlusMag->flip()->paginate(($perpage >= 1)? $perpage : 6);
 
   return [
     'articles'   => $online,
