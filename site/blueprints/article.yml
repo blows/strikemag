@@ -11,6 +11,7 @@ fields:
   title:
     label: Title
     type:  title
+    width: 1/2
 
   contributor:
     label: Contributed By
@@ -22,10 +23,22 @@ fields:
     query:
       page: contributors
       fetch: children
+    width: 1/2
 
   coverimage:
     label: Cover Image
     type: image
+    width: 1/2
+
+  artwork:
+    label: Artwork By
+    width: 1/2
+    type: multiselect
+    search: true
+    options: query
+    query:
+      page: contributors
+      fetch: children
     width: 1/2
 
   uploaded:
@@ -48,6 +61,12 @@ fields:
       page: magazine
       fetch: children
 
+  summary:
+    label: Summary
+    type: textarea
+    validate:
+      maxLength: 140
+
   text:
-    label: Text
+    label: Article
     type: textarea

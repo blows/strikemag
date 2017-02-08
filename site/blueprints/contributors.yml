@@ -2,6 +2,7 @@ title: Contributors
 
 pages: true
   template: contributor
+  num: zero
   sort: alpha asc
   limit: 35
 

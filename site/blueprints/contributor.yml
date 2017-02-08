@@ -1,5 +1,9 @@
 title: Contributor
 
+options:
+  template: true
+  status: true
+
 pages: false
 
 icon: user
