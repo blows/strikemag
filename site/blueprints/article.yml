@@ -69,4 +69,4 @@ fields:
 
   text:
     label: Article
-    type: textarea
+    type: markdown
