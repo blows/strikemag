@@ -2,7 +2,7 @@ Title: The City and The Court
 
 ----
 
-Coverimage: samuli-saarinen-the-city-and-the-court-nina-power-01.png
+Coverimage: 17-samuli-saarinen-the-city-and-the-court-nina-power-01.png
 
 ----
 
@@ -12,9 +12,9 @@ Date: 2017-01-11
 
 Text: 
 
-I’m sitting in a corridor outside Court 8. There are several sounds: the beep of the metal detector gate as it catches someone’s keys; the rapid footsteps of bewigged barristers; Tannoy announcements telling ‘all parties in the case of …’ to hurry to court; swing doors tick-tocking back into place; trolleys of papers wheeled from room to room; an unanswered telephone on the witness desk. And the silent objects: banks of grey plastic chairs, in lines of three, screwed to the ground line the wood-panelled walls, a grey and pink marbled-effect tile floor. Inside the court: the omnipresent crown emblem, the judge, the jury, the ushers, the occasional press person, lawyers, police officers, the witness, the security guard and the defendants. And the public? Often absent. 
+(image: 17-samuli-saarinen-the-city-and-the-court-nina-power-01.png)
 
-(image: samuli-saarinen-the-city-and-the-court-nina-power-01.png)
+I’m sitting in a corridor outside Court 8. There are several sounds: the beep of the metal detector gate as it catches someone’s keys; the rapid footsteps of bewigged barristers; Tannoy announcements telling ‘all parties in the case of …’ to hurry to court; swing doors tick-tocking back into place; trolleys of papers wheeled from room to room; an unanswered telephone on the witness desk. And the silent objects: banks of grey plastic chairs, in lines of three, screwed to the ground line the wood-panelled walls, a grey and pink marbled-effect tile floor. Inside the court: the omnipresent crown emblem, the judge, the jury, the ushers, the occasional press person, lawyers, police officers, the witness, the security guard and the defendants. And the public? Often absent. 
 
 The courtroom is both open and closed, the courthouse is both visible and invisible from the standpoint of the city and its subterranean links to the police station and the prison. But how can we understand the city if we do not know where these places are? How many of us could point to all the prisons in the city, all the courtrooms, all the police stations? A city is random, noisy chaos, but it is also order, division and separation, and the closer you get to the repressive state, the more you understand about control. Or the more you think you do.
 
@@ -24,7 +24,7 @@ In the courtroom, there is a public within the public, and another public that f
 
 A city can be mapped and measured in sounds, objects, buildings, ideologies, signals, bodies, roads, green spaces, quantity of birds, insects, bones, cars, or anything else. We understand connections but we do not necessarily see connections, if we cleave too closely to the separation of sound, sight and touch. But there are institutions hidden in plain sight, and far more proximate to some than they are to others. A city to one person might be shopping malls, commuting, restaurants and to another, police harassment, the police station, the court, the prison. It’s still the same city. Certain buildings leap out at us and others hide, depending on our circuits of interest, our previous experiences, our desires for the future. There is a web, but where is the spider? Sitting outside court you start to realize that the spider is the web – there is not a spider and then a web, but rather the web is continuous with the lying in wait, with the ultimate capture. Being on bail, awaiting trial, the delays and pauses and complications of the trial itself, awaiting the verdict, the looming threat of imprisonment, these are the web, but they are also the spider, because they too are designed to do as much damage as they can, to punish you before you are eaten, to identify you, to entrench you deeper and more proximately to the predator who binds and, in the end, devours you. 
 
-(image: samuli-saarinen-the-city-and-the-court-nina-power-02.png)
+(image: 17-samuli-saarinen-the-city-and-the-court-nina-power-02.png)
 
 We are today accustomed to thinking of webs without spiders, prisons that no longer need guards because the threat of surveillance is omnipresent, and, besides, it’s easier to get people to police themselves than it is to hire actual, outdated, real police. Only this didn’t turn out to be true, or is only half-true. The societies of control, as Deleuze and Foucault and others described them, do exist. We only have to think of the city as a network of CCTV cameras and screens and possible, but not necessary, eyes that judge and report on you to understand computers and phones as constant recording devices of one kind or another, registers of metadata, geolocation, emotion, desire. But the old forms of repression didn’t retreat behind screens, even they might rely on them more and more (and inside the courtroom, high-def footage of whatever incident is being tried comes to stand in for the prosecution argument). What we have is a situation in which older forms of punishment combine with contemporary technology to create a full-spectrum web of psychological and physical threat: what differs is how close on the web to the spider you find yourself. 
 

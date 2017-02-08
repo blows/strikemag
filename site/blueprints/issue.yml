@@ -1,15 +1,29 @@
 title: Issue
 
+icon: newspaper-o
+
 pages: true
   template: article
   limit: 35
   num: date
 
+preview: parent
+
+options:
+  url: false
+
 fields:
   title:
-    label: Title
+    label: Issue Number
     type:  title
-    placeholder: eg. Issue 10
+    placeholder: eg. Issue 17
+    width: 1/2
+
+  name:
+    label: Title
+    type:  text
+    placeholder: eg. Cities
+    width: 1/2
 
   coverimage:
     label: Cover Image

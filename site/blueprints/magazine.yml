@@ -4,6 +4,11 @@ files: false
 
 pages: true
   template: issue
+  sortable: false
+  sort: printed desc
+  num:
+    mode: date
+    field: printed
 
 options:
   template: false

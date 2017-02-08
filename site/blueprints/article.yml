@@ -4,6 +4,9 @@ pages: false
 
 icon: file-text-o
 
+options:
+  url: false
+
 fields:
   title:
     label: Title
