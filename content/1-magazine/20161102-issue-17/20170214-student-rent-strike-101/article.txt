@@ -10,11 +10,19 @@ Coverimage:
 
 ----
 
-Uploaded: 2017-02-08
+Artwork: darren-cullen, evening-class
+
+----
+
+Uploaded: 2017-02-13
 
 ----
 
 Printed: issue-17
+
+----
+
+Summary: Everything you always wanted to know about rent strikes but were too busy dealing with your precarious housing situation to ask.
 
 ----
 
@@ -74,11 +82,3 @@ For more reading:
 (link: https://i-d.vice.com/en_gb/article/debt-factories-with-degrees-how-your-university-became-your-landlord text: iD - debt factories with degrees? how your university became your landlord)
 
 (link: https://www.theguardian.com/education/2016/sep/17/uk-university-students-rent-strike-rising-cost-accommodation text: The Guardian - University students across UK prepare for wave of rent strikes)
-
-----
-
-Artwork: darren-cullen, evening-class
-
-----
-
-Summary: Everything you always wanted to know about rent strikes but were too busy dealing with your precarious housing situation to ask.

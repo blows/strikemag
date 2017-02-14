@@ -5,7 +5,9 @@ icon: newspaper-o
 pages: true
   template: article
   limit: 35
-  num: date
+  num:
+    mode: date
+    field: uploaded
 
 preview: parent
 

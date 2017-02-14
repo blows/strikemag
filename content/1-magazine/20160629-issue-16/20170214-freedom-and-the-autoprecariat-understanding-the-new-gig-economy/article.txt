@@ -1,0 +1,84 @@
+Title: 'Freedom' and the Autoprecariat: Understanding the New Gig Economy
+
+----
+
+Contributor: corin-faife
+
+----
+
+Coverimage: samuli-saarninen-uber.png
+
+----
+
+Artwork: samuli-saarinen
+
+----
+
+Uploaded: 2017-02-14
+
+----
+
+Printed: issue-16
+
+----
+
+Summary: How might we understand work in the gig-economy and begin to conceive of resistance within a precarious, repressive and atomised workforce.
+
+----
+
+Text: 
+
+## 1. Free as in 'freelance'
+Be your own boss! Build your freelance business! Turn your skills to income! Earn cash with your car! Ride with us! Join the movement!
+No startup company would be complete without a snappy, aspirational, high-energy slogan behind it, but these examples differ from the usual vague promises (‘be better’/ ‘think different’/ etc) in that they are aimed not at the service consumer, but at the worker who will provide the service in the first place.
+
+> Readily available work and exploitative conditions are two sides of the same coin.
+
+Each of the above was taken verbatim from the sign up pages of various gig economy companies, in order: Lyft (ridesharing), Upwork (freelance market), Taskrabbit (micro-jobs), Uber (taxis), Deliveroo (delivery), and Postmates (also delivery). Each company, in a slightly different way, encourages new workers to sign up with promises of easy money and flexible hours, dangling the possibility of a readily available income, one gig at a time, waiting just a few mouse clicks away. At the same time, labourers finding work through these services can expect to earn low per-hour income without any guaranteed contract, receive no employee benefits, and bear almost all of the costs required to conduct their business: fuel, equipment, insurance, etc.
+
+> “Be your own boss!” actually translates in practice to “Help us skirt employment law!” 
+
+To understand the appeal of the casual, contractless, app-directed work of the new gig economy, it is important to recognise that the above outcomes – readily available work and exploitative conditions – are two sides of the same coin. Gig economy jobs do provide flexible working hours and an easy source of income for those who cannot or do not want to find conventional employment but this is predicated on a model in which the barrier of entry to the labour market is set very low, which in turn ensures that any individual worker is almost immediately replaceable, and as a result, can be treated with the minimum of concern.
+
+This business model was made possible through a masterstroke of both branding and legal positioning in which the pioneers in the field – most prominently Uber – declared that their workers were all self-employed rather than employees of the company; thus the uplifting call to “Be your own boss!” actually translates in practice to “Help us skirt employment law!” Effectively, labelling them as freelancers freed Uber from the obligations of a responsible employer.
+To avoid this intentional doublespeak, I propose that instead of using terms like ‘freelancers’ or 'partners', we can talk about this class of employees more accurately as the autoprecariat. (This builds on the existing term precariat to reflect the precarious nature of the work, with the prefix ‘auto’ designating that the character of the work is both self-employed and managed through automated systems.)
+
+Members of the autoprecariat not only lack a contract guaranteeing them a certain amount of work or wages, they also usually lack an office or coworkers, and equally, any managerial supervision. Their boss is a new customer every X hours or minutes, while their chain of command is an app screen through which directives are issued. (As a sidenote, workers in many different sectors of the gig economy have remarked that the design of the worker-facing app is seldom as refined as the consumer app interface, and that steps are taken to ensure that initiating contact with a human representative of the company is arduous if not impossible.)
+
+## 2. Free as in 'free market'
+Quite apart from the specific nature of the work, another key characteristic of the autoprecariat is that workers find themselves in a labour market in which they almost invariably receive diminishing returns for their work over time. This is because, in much the same way that supermarkets pioneered the approach of saturating a given location with retail outlets until the new stores begin to eat into the profits of existing ones, gig economy startups seek to expand their worker pool almost indefinitely, to the detriment of each individual worker’s income.
+
+> The end goal, as CEO Travis Kalanick has said, is for Uber to be so cheap that it becomes a viable alternative to owning a car. 
+
+Uber’s ace card – and the biggest advantage they have over conventional taxi companies – is not a flashy app or convenient payment system; it is that in every city in which they operate, they have utterly flooded the streets with cars for hire. (In London, the average waiting time for an Uber pickup is now less than 3 minutes, a number that is clearly impossible for smaller taxi firms to compete with.) Under their business model, there is no point at which it becomes counterproductive to have more of their taxis on the streets: since drivers are not paid for idle time there is no penalty for having more of them active and waiting, whereas reducing pickup ETAs has a positive effect on customer usage.
+
+The end goal, as CEO Travis Kalanick has said, is for Uber to be so cheap that it becomes a viable alternative to owning a car. Once this is achieved, the process of replacing not just privately owned cars, but buses, trains, and who knows what else with an Uber will be well underway: it is a strategy aimed at total market dominance. This vision, when coupled with a disregard for regulatory frameworks and extremely aggressive corporate expansion strategies, has made Uber the giant that it is today. But if we pan out from the tactics used by any one specific company to look at the big picture, we see some very troubling currents in the underlying attitudes towards labour markets and worker rights which, if unchallenged, will have negative consequences for the future of work as a whole.
+
+> It sets up the structural framework for what is commonly known as a race to the bottom – exactly what workers' rights, hard-won over hundreds of years, are meant to prevent.
+
+The disruptive idea of gig economy startups, we are often told, comes from perfecting the logistics of matching unused supply with unmet demand; but ultimately the ‘disruption’ of employment law is just as integral to their function. For the moment, the social effects of this latter disruption are hidden by the fact that the industries most affected involve physical work of some kind, but there is no reason that the gig economy formula of renting out autoprecariat workers for on-demand tasks can’t be applied to almost every area of work. Since Uber’s big idea has made it the most successful startup in history, it would be naive to think that other companies will not follow suit – after all, why bother with overheads like payroll and benefits when you can have an entire company of freelancers? 
+
+This is pure neoliberal doctrine: maximise the labour pool, minimise job security, eliminate wage controls, and let the market have its way. Put otherwise, it sets up the structural framework for what is commonly known as a race to the bottom – exactly what workers' rights, hard-won over hundreds of years, are meant to prevent.
+
+## 3. Free as in 'freedom'
+It is self-evident that real freedom for workers is not the freedom to choose between different forms of exploitation, but the freedom to participate in labour that is fairly rewarded, and to be empowered to make decisions about their own working conditions.
+These are fundamental principles, and there is nothing unique to the gig economy which means it should be exempt from conforming to them. So in light of this, strategies of resistance to the negative aspects of the gig economy also follow a familiar path.
+
+A) Support unions, spread campaigns
+One of the key moves towards better pay and working conditions for the autoprecariat will be large-scale organisation of the workers. There have already been stirrings along these lines: in the UK, the GMB union – which as a general trade union has members across many sectors of industry – has begun working on behalf of Uber drivers to initiate legal action challenging their non-employee status. As these jobs become more common, we can expect unions to develop a range of strategies for recruiting and organising the people doing them, as well as developing a clearer set of templates for representing their interests in court. (It's also not too far fetched to imagine that we could see a union specifically for gig economy workers in the not-too-distant future.)
+
+In mainland Europe, some national or municipal governments have started to come down harder on blatant infringements of local legislation by gig economy or sharing economy companies. Berlin recently changed housing law so that Airbnb hosts can no longer list an entire property in the city, in an effort to tackle reduction of housing stock through professional hosting. Germany, France and Spain have all banned some of Uber's services in the country, and the European Commission is due to publish a set of guidelines on regulating similar services this summer.
+
+Typically such attempts at regulation are labelled as obstructive or behind-the-times by gig economy companies; Uber in particular has been dogmatic in repeating the mantra that if the way its services are delivered is against the law, then it's the law that needs to change. Public support will be needed to resist the PR assault that the gig economy giants are already mounting on union organisers and city governments, so supporting their rights means being prepared to take part in the boycotts, pickets, and other campaigns that lie ahead.
+
+B) Learn from their successes; build cooperative platforms
+Certain aspects of the gig economy are here to stay, and for good reason. When done right, being able to contract goods or services through an app offers an extremely convenient user experience to both the customer and the service provider, which shouldn't be discounted even if we object to the exploitative aspects of the process. The challenge then is to find a formula where we can benefit from the former, but get rid of the latter.
+
+> Activists in this area need to be technologically literate enough to navigate the new world of ‘Platform as a Service’, and construct new and fairer platforms to boot. 
+
+And so, to repeat a well-worn line: the central struggle must be for ownership of the means of production. In the new economy though, this does not translate to ownership of the physical assets: Airbnb boasts of the fact that it owns no property, whilst Uber owns no cars. Instead, they own the platform which allows these physical assets to be profitably used; more or less the difference between operating a train company and owning the entire railway network.
+
+The logical conclusion then is that we must start to lay our own tracks. Activists in this area need to be technologically literate enough to navigate the new world of ‘Platform as a Service’, and construct new and fairer platforms to boot. For example, it would not be hard to imagine a cooperative platform which, rather than extracting a hefty cut of all workers’ income, paid out dividends of the profits made based on how many hours’ work each member had contributed. In fact, this process is already underway in some form: in New York, a startup called Juno is seeking to challenge Uber's hegemony with a business model in which the drivers receive not just a per-ride fee, but shares in the company too. Another fledgling organisation, Loconomics, is taking an even more grassroots approach by providing a community-led marketplace for peer-to-peer trading of labour, materials and equipment.
+
+In an article featured in STIR magazine titled How Platform Co-Ops Can Beat Deathstars Like Uber – recommended follow up reading on this topic – Neal Gorenflo, founder of sharing economy news hub Shareable, lays out his vision of both the problem and the solution. One of his suggestions is that in a market dominated by branding and design, co-ops can succeed by leveraging the emotional appeal of happy, empowered workers, responsible business practices and community engagement, creating brands that will draw consumers away from the dominion of the 'Deathstars'.
+The overall message is that although these giant, venture-capital backed corporations may have a head start in the field, there are still clear grounds that we can compete on and win. Once the early peak of honeymoon enthusiasm for the gig economy starts to subside, more of the ideology behind it will start to emerge and be challenged – and this will be the time to intervene in order to shape the future of work for the better.
