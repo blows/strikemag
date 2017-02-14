@@ -1,5 +1,7 @@
 title: Contributors
 
+icon: users
+
 pages: true
   template: contributor
   num: zero

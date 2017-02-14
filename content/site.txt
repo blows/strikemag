@@ -6,8 +6,8 @@ Author: STRIKE!
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: STRIKE! Magazine is a platform for those involved in grassroots resistance, anti-oppression politics, and the philosophies and creative exspressions surrounding these movements.
 
 ----
 
-Copyright: © 2009–(date: Year) (link: http://getkirby.com text: The Kirby Team)
+Copyright: Copyleft: 2013–(date: Year)
