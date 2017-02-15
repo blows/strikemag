@@ -14,6 +14,18 @@
       <?= $page->text()->kirbytext() ?>
     </div>
 
+    <?php foreach($page->children() as $contributor): ?>
+    <article class="contributor">
+
+      <h1><a href="<?php echo $contributor->url() ?>"><?php echo $contributor->title()->html() ?><a/></h1>
+
+      <figure>
+        <img src="<?php echo $contributor->profilepic()->url() ?>">
+      </figure>
+
+    </article>
+    <?php endforeach ?>
+
   </main>
 
 <?php snippet('footer') ?>
