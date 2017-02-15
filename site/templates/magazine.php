@@ -14,14 +14,29 @@
 
       <?= $page->text()->kirbytext() ?>
 
-      <?php
-      // Images for the "project" template are sortable. You
-      // can change the display by clicking the 'edit' button
-      // above the files list in the sidebar.
-      foreach($page->children()->visible()->sortBy('sort', 'desc') as $issue): ?>
-        <figure>
-          <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
-        </figure>
+      <?php foreach($page->children()->visible()->sortBy('sort', 'desc') as $issue): ?>
+        <div class="issue">
+          <div class="issue-summary">
+            <div class="issue-summary__image">
+              <figure>
+                <img src="<?= $issue->coverimage()->toFile()->uri() ?>" alt="STRIKE! <?= $issue->title()->html() ?>" />
+              </figure>
+            </div>
+            <div class="issue-summary__detail">
+              <h1 class="issue-summary__detail-title"><?= $issue->title()->html() ?>: <?= $issue->name()->html() ?></h1>
+              <p class="issue-summary__detail-summary"><?= $issue->summary()->html() ?></p>
+            </div>
+          </div>
+          <div class="issue-contents">
+            <?php foreach($issue->children()->visible()->sortBy('sort', 'desc') as $content): ?>
+              <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
+              <div class="issue-contents__content">
+                <h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1>
+                <h3 class="issue-contents__content-title"><?= $contributor->title() ?></h3>
+              </div>
+            <?php endforeach ?>
+          </div>
+        </div>
       <?php endforeach ?>
 
     </div>
