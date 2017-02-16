@@ -31,8 +31,8 @@
             <?php foreach($issue->children()->visible()->sortBy('sort', 'desc') as $content): ?>
               <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
               <div class="issue-contents__content">
-                <h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1>
-                <h3 class="issue-contents__content-title"><?= $contributor->title() ?></h3>
+                <a href="<?= $content->url() ?>"><h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1></a>
+                <a href="<?= $contributor->url() ?>"><h3 class="issue-contents__content-title"><?= $contributor->title() ?></h3></a>
               </div>
             <?php endforeach ?>
           </div>
