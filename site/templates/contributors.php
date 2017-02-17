@@ -20,7 +20,7 @@
       <h1><a href="<?php echo $contributor->url() ?>"><?php echo $contributor->title()->html() ?><a/></h1>
 
       <figure>
-        <img src="<?php echo $contributor->profilepic()->url() ?>">
+        <img src="<?php echo $contributor->profilepic() ?>" alt="<?php echo $contributor->title()->html() ?>">
       </figure>
 
     </article>
