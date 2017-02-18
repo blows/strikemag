@@ -45,3 +45,9 @@ fields:
   summary:
     label: Summary / Editor's Note
     type: textarea
+
+  color:
+    label: Colour
+    type: color
+    default: 000000
+    width: 1/2

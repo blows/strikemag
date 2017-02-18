@@ -15,3 +15,7 @@ Summary: This is Issue 17 and cities are dirty.
 ----
 
 Name: Cities
+
+----
+
+Color: rgba(255, 43, 216, 1)

@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <main style="background-color: <?= $page->parent()->color() ?>" class="main" role="main">
 
-    <article class="article single wrap">
+    <article class="article">
 
       <header class="article-header">
         <h1><?= $page->title()->html() ?></h1>
