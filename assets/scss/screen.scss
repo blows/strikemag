@@ -59,7 +59,7 @@ h1 + .intro {
 .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
-  color: #a8a5be;
+  color: #1f00ff
 }
 
 .text ul {
@@ -135,6 +135,140 @@ h1 + .intro {
   margin-bottom: 0;
 }
 
+/* -----  2.3 Grid & Layout  ------------------------------------------------ */
+
+.grid {
+  font-size: 0;
+}
+
+.grid.gutter-1 {
+  /* We don’t use the shorthand attribute `margin: …` here
+     to make vertical margin easily overridable by other
+     styles with a lower specifity. */
+  margin-left: -.375rem;
+  margin-right: -.375rem;
+}
+
+.grid.gutter-1 .column {
+  padding-left: .375rem;
+  padding-right: .375rem;
+}
+
+.column {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.wrap {
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  max-width: 36rem;
+}
+
+.wrap.wide {
+  max-width: 48rem;
+}
+
+@media all and (min-width: 31.5em) {
+  .wrap:not(.wide) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media all and (min-width: 38.25em) {
+  .wrap {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .wrap.wide {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* ----- 3.1  Header  ------------------------------------------------------- */
+
+.header {
+  padding-top: 1.5rem;
+}
+
+.branding {
+  text-align: center;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.95rem;
+  margin-bottom: .45rem;
+  background-color: black;
+}
+
+.branding a {
+  border-bottom: 0;
+
+  img {
+    height: 2em;
+    padding: .2em;
+    vertical-align: middle;
+  }
+}
+
+@media all and (min-width: 56em) {
+  .header {
+    padding-top: 0;
+  }
+  .branding {
+    line-height: 3rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .branding,
+  .navigation {
+    vertical-align: baseline;
+    width: 50%;
+  }
+}
+
+/* -----  3.2 Menu  --------------------------------------------------------- */
+
+.menu {
+  text-align: center;
+  font-weight: 500;
+  background-color: white;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item:not(:last-child)::after {
+  content: "⁄";
+  display: inline-block;
+  font-size: .75em;
+  padding: 0 .2em;
+  color: #a8a5be;
+}
+
+.menu-item a {
+  border-bottom: 0;
+}
+
+.menu-item.is-active a {
+  border-bottom: 2px solid #71efac;
+}
+
+@media all and (min-width: 56em) {
+  .menu {
+    text-align: center;
+  }
+}
+
 /* -----  3.4 Main Content  ------------------------------------------------- */
 
 .main {
@@ -146,6 +280,7 @@ h1 + .intro {
 /* ----- 4.2 Blog Article  -------------------------------------------------- */
 
 .article {
+  background-color: white;
   @include span(10);
 
   @media (max-width: 500px) {

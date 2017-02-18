@@ -13,11 +13,11 @@
 </head>
 <body>
 
-  <header class="header wrap wide" role="banner">
+  <header class="header" role="banner">
     <div class="grid">
 
       <div class="branding column">
-        <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
+        <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-white.svg')->url() ?>" alt="STRIKE! Magazine"></a>
       </div>
 
       <?php snippet('menu') ?>
