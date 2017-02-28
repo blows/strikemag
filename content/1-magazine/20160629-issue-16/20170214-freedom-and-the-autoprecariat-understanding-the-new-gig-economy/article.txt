@@ -28,6 +28,8 @@ Summary: How might we understand work in the gig-economy and begin to conceive o
 
 Text: 
 
+(image: samuli-saarninen-uber.png caption: IMG: Samuli Saarinen)
+
 ## 1. Free as in 'freelance'
 Be your own boss! Build your freelance business! Turn your skills to income! Earn cash with your car! Ride with us! Join the movement!
 No startup company would be complete without a snappy, aspirational, high-energy slogan behind it, but these examples differ from the usual vague promises (‘be better’/ ‘think different’/ etc) in that they are aimed not at the service consumer, but at the worker who will provide the service in the first place.

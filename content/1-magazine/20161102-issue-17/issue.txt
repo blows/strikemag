@@ -18,4 +18,8 @@ Name: Cities
 
 ----
 
-Color: rgba(255, 43, 216, 1)
+Color: rgba(255, 0, 0, 1)
+
+----
+
+Color2: #000000

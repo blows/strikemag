@@ -15,3 +15,11 @@ Summary: This is Issue 16 and violence is everywhere.
 ----
 
 Name: Violence
+
+----
+
+Color: rgba(255, 0, 255, 1)
+
+----
+
+Color2: rgba(255, 0, 0, 1)
