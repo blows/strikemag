@@ -1,7 +1,6 @@
-title: About
+title: Submissions
 
-pages:
-  num: zero
+pages: false
 
 files: false
 
@@ -16,14 +15,18 @@ fields:
     label: Title
     type: title
 
-  aboutus:
-    label: About Us
+  submissions:
+    label: Submissions
     type: textarea
 
-  contact:
-    label: Contact
+  writing:
+    label: Writing
     type: textarea
 
-  newsletter:
-    label: Newsletter
+  art:
+    label: Art/Design
+    type: textarea
+
+  videox:
+    label: Video
     type: textarea

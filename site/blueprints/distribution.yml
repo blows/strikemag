@@ -1,0 +1,41 @@
+title: Distribution
+
+pages: false
+
+files: false
+
+options:
+  template: false
+  status: false
+  url: false
+  delete: false
+
+fields:
+  title:
+    label: Title
+    type: title
+
+  distribution:
+    label: Distribution
+    type: textarea
+
+  stockists:
+    label: Stockists
+    type: structure
+    style: table
+    modalsize: medium
+    entry: >
+      {{country}} {{city}} {{stockist}} {{link}}
+    fields:
+      country:
+        label: Country
+        type: text
+      city:
+        label: City
+        type: text
+      stockist:
+        label: Stockist
+        type: text
+      link:
+        label: Link
+        type: url

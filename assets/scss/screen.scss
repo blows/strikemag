@@ -4,13 +4,44 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass";
 @import "susy";
 @import "grids";
 
 $susy: (
-  columns: 12,  // The number of columns in your grid
-  gutters: .55, // The size of a gutter in relation to a single column
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 1/4,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
 );
+
+.center {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  @include align-self(center);
+}
 
 /* -----  1.4 Images & Figures  --------------------------------------------- */
 
@@ -34,26 +65,30 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-h1 + .intro {
-  margin-top: -2.25rem;
-}
+// h1 + .intro {
+//   margin-top: -2.25rem;
+// }
 
 .text {
-  @include span(10);
-}
-
-@media screen and (min-width: 750px) {
-  .text {
-    @include span(6);
-  }
+  @include span(12);
 }
 
 .text h2, .text h3 {
-  margin-top: 3rem;
+  @include span(8);
+  margin-top: 2rem;
 }
 
 .text ul, .text ol {
+  @include span(8);
   margin-left: 1.5em;
+}
+
+.text p {
+  @include span(8);
+}
+
+.text figure {
+  @include span(8);
 }
 
 .text hr {
@@ -63,6 +98,7 @@ h1 + .intro {
 }
 
 .text ul {
+  @include span(8);
   list-style: none;
 }
 
@@ -81,6 +117,7 @@ h1 + .intro {
 }
 
 .text pre, .text code {
+  @include span(8);
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
@@ -125,10 +162,12 @@ h1 + .intro {
 }
 
 .text blockquote {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  border-left: 2px solid #a8a5be;
+  @include span(8);
+  @include pull(2);
   padding: .75rem;
-  background: #fffffd;
+  p {
+    @include span(12);
+  }
 }
 
 .text blockquote :last-child {
@@ -244,15 +283,7 @@ h1 + .intro {
 }
 
 .menu-item {
-  display: inline-block;
-}
-
-.menu-item:not(:last-child)::after {
-  content: "⁄";
-  display: inline-block;
-  font-size: .75em;
-  padding: 0 .2em;
-  color: #a8a5be;
+  display: block;
 }
 
 .menu-item a {
@@ -273,7 +304,7 @@ h1 + .intro {
 
 .main {
   @include container;
-  padding-top: 3rem;
+  // padding-top: 3rem;
   padding-bottom: 1.5rem;
 }
 
@@ -281,22 +312,49 @@ h1 + .intro {
 
 .article {
   background-color: white;
-  @include span(10);
+  @include span(11);
 
   @media (max-width: 500px) {
-      @include span(10);
+      @include span(11);
     }
 
-  &-title {
-    font-weight: 700;
-    margin-bottom: 0;
-    a {
-      border-bottom: 0;
-    }
+  &-info {
+    @include span(8);
+
+    @media (max-width: 500px) {
+        @include span(8);
+      }
+
+    padding-top: 1em;
+    text-align: center;
   }
 
-  &-date {
-    text-align: center;
+  &-header {
+
+    &__title {
+      font-weight: 700;
+      margin-bottom: 1em;
+      a {
+        border-bottom: 0;
+      }
+    }
+
+    &__date {
+      text-align: center;
+    }
+
+    &__issue {
+      @include align-self(flex-start);
+      margin-bottom: 1em;
+    }
+
+    &__contributor {
+      margin-bottom: 1em;
+    }
+
+    &__summary {
+
+    }
   }
 
   &-more {
@@ -307,9 +365,73 @@ h1 + .intro {
     white-space: nowrap;
     border-bottom: 2px solid #71efac;
   }
+}
 
-  &:last-of-type + hr {
-    /* Hide last <hr> on blog page */
-    display: none;
+.article-printed {
+  @include align-self(flex-end);
+  position: absolute;
+  top: 4.5em;
+  right: 0;
+  figure {
+    line-height: 0;
   }
 }
+
+.article-printed__cover {
+    height: auto;
+    width: 8em;
+    padding: 1em;
+  }
+
+.article-printed__info {
+    min-width: 9em;
+    max-width: 9em;
+    padding: .5em;
+
+    p {
+      color: white;
+    }
+  }
+
+/* ----- 0.0 MailChimp  ----------------------------------------------------- */
+
+#mc_embed_signup {
+  background: none;
+  clear: left;
+  font: 14px Helvetica,Arial,sans-serif;
+  width: 100%; }
+
+#mc_embed_signup input.email {
+  border: .5px solid black;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #343434;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 0px 0.4em;
+  display: inline-block;
+  margin: 0;
+  width: 360px;
+  max-width: 100%;
+  vertical-align: top; }
+
+#mc_embed_signup .button {
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  letter-spacing: .03em;
+  color: #fff;
+  background-color: black;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  display: inline-block;
+  margin: 0;
+  transition: all 0.23s ease-in-out 0s; }
+
+#mc_embed_signup .button:hover {
+  background-color: #222;
+  cursor: pointer; }
