@@ -200,75 +200,25 @@ figcaption {
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
 
-.grid {
-  font-size: 0;
-}
-
-.grid.gutter-1 {
-  /* We don’t use the shorthand attribute `margin: …` here
-     to make vertical margin easily overridable by other
-     styles with a lower specifity. */
-  margin-left: -.375rem;
-  margin-right: -.375rem;
-}
-
-.grid.gutter-1 .column {
-  padding-left: .375rem;
-  padding-right: .375rem;
-}
-
-.column {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  font-size: 1rem;
-  vertical-align: top;
-}
-
-.wrap {
-  box-sizing: content-box;
-  margin: 0 auto;
-  padding-left: .75rem;
-  padding-right: .75rem;
-  max-width: 36rem;
-}
-
-.wrap.wide {
-  max-width: 48rem;
-}
-
-@media all and (min-width: 31.5em) {
-  .wrap:not(.wide) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media all and (min-width: 38.25em) {
-  .wrap {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-  .wrap.wide {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+body {
+  background-color: lightgrey;
 }
 
 /* ----- 3.1  Header  ------------------------------------------------------- */
 
 .header {
   padding-top: 1.5rem;
+  font-size: 0;
 }
 
 .branding {
   text-align: center;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.95rem;
   margin-bottom: .45rem;
   background-color: black;
+  position: relative;
+  display: inline-block;
 }
 
 .branding a {
@@ -279,6 +229,10 @@ figcaption {
     padding: .2em;
     vertical-align: middle;
   }
+}
+
+.navigation {
+  font-size: 1.5rem;
 }
 
 @media all and (min-width: 56em) {
@@ -295,6 +249,8 @@ figcaption {
   .navigation {
     vertical-align: baseline;
     width: 50%;
+    position: relative;
+    display: inline-block;
   }
 }
 
@@ -321,6 +277,46 @@ figcaption {
 @media all and (min-width: 56em) {
   .menu {
     text-align: center;
+  }
+}
+
+/* -----  3.3 Footer  ------------------------------------------------------- */
+
+.footer {
+  padding-top: 1.5rem;
+  font-size: 0;
+}
+
+.footer-left {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.95rem;
+  margin-bottom: .45rem;
+  background-color: black;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-right {
+  font-size: 1.5rem;
+}
+
+@media all and (min-width: 56em) {
+  .footer {
+    padding-top: 0;
+  }
+  .footer-left {
+    line-height: 3rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-right {
+    vertical-align: baseline;
+    width: 50%;
+    position: relative;
+    display: inline-block;
   }
 }
 

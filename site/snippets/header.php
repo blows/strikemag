@@ -14,13 +14,11 @@
 <body>
 
   <header class="header" role="banner">
-    <div class="grid">
 
-      <div class="branding column">
+      <div class="branding">
         <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-white.svg')->url() ?>" alt="STRIKE! Magazine"></a>
       </div>
 
       <?php snippet('menu') ?>
 
-    </div>
   </header>

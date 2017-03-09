@@ -1,17 +1,34 @@
   <footer class="footer cf" role="contentinfo">
-    <div class="wrap wide">
-
-      <p class="footer-copyright"><?php
-        // Parse Kirbytext to support dynamic year,
-        // but remove all HTML like paragraph tags:
-        echo html::decode($site->copyright()->kirbytext())
-      ?></p>
-
-      <p class="footer-madewithkirby">
-        <a href="http://getkirby.com/made-with-kirby-and-love">Made with Kirby and <b class="heart">♥</b></a>
-      </p>
-    
+    <div class="branding">
+      <ul>
+      <?php foreach($site->find('home', 'magazine', 'contributors') as $subpage): ?>
+        <li>
+          <a href="<?php echo $subpage->url() ?>">
+          <?php echo html($subpage->title()) ?>
+          </a>
+        </li>
+        <?php endforeach ?>
+        <li class="">
+          <a href="http://www.strikemag.bigcartel.com">Shop</a>
+        </li>
+      </ul>
     </div>
+    <nav class="navigation" role="navigation">
+      <ul>
+      <?php foreach($site->find('home', 'magazine') as $subpage): ?>
+        <li>
+          <a href="<?php echo $subpage->url() ?>">
+          <?php echo html($subpage->title()) ?>
+          </a>
+        </li>
+        <?php endforeach ?>
+        <li class="">
+          <a>FB</a>
+          <a>TW</a>
+          <a>IG</a>
+        </li>
+      </ul>
+    </nav>
   </footer>
 
 </body>

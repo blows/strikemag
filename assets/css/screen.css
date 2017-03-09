@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -290,103 +289,51 @@ figcaption {
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
 /* line 203, ../scss/screen.scss */
-.grid {
+body {
+  background-color: lightgrey;
+}
+
+/* ----- 3.1  Header  ------------------------------------------------------- */
+/* line 209, ../scss/screen.scss */
+.header {
+  padding-top: 1.5rem;
   font-size: 0;
 }
 
-/* line 207, ../scss/screen.scss */
-.grid.gutter-1 {
-  /* We don’t use the shorthand attribute `margin: …` here
-     to make vertical margin easily overridable by other
-     styles with a lower specifity. */
-  margin-left: -.375rem;
-  margin-right: -.375rem;
-}
-
-/* line 215, ../scss/screen.scss */
-.grid.gutter-1 .column {
-  padding-left: .375rem;
-  padding-right: .375rem;
-}
-
-/* line 220, ../scss/screen.scss */
-.column {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  font-size: 1rem;
-  vertical-align: top;
-}
-
-/* line 228, ../scss/screen.scss */
-.wrap {
-  box-sizing: content-box;
-  margin: 0 auto;
-  padding-left: .75rem;
-  padding-right: .75rem;
-  max-width: 36rem;
-}
-
-/* line 236, ../scss/screen.scss */
-.wrap.wide {
-  max-width: 48rem;
-}
-
-@media all and (min-width: 31.5em) {
-  /* line 241, ../scss/screen.scss */
-  .wrap:not(.wide) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-@media all and (min-width: 38.25em) {
-  /* line 248, ../scss/screen.scss */
-  .wrap {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  /* line 252, ../scss/screen.scss */
-  .wrap.wide {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-/* ----- 3.1  Header  ------------------------------------------------------- */
-/* line 260, ../scss/screen.scss */
-.header {
-  padding-top: 1.5rem;
-}
-
-/* line 264, ../scss/screen.scss */
+/* line 214, ../scss/screen.scss */
 .branding {
   text-align: center;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.95rem;
   margin-bottom: .45rem;
   background-color: black;
+  position: relative;
+  display: inline-block;
 }
 
-/* line 274, ../scss/screen.scss */
+/* line 224, ../scss/screen.scss */
 .branding a {
   border-bottom: 0;
 }
-/* line 277, ../scss/screen.scss */
+/* line 227, ../scss/screen.scss */
 .branding a img {
   height: 2em;
   padding: .2em;
   vertical-align: middle;
 }
 
+/* line 234, ../scss/screen.scss */
+.navigation {
+  font-size: 1.5rem;
+}
+
 @media all and (min-width: 56em) {
-  /* line 285, ../scss/screen.scss */
+  /* line 239, ../scss/screen.scss */
   .header {
     padding-top: 0;
   }
 
-  /* line 288, ../scss/screen.scss */
+  /* line 242, ../scss/screen.scss */
   .branding {
     line-height: 3rem;
     margin-bottom: 0;
@@ -394,44 +341,92 @@ figcaption {
     text-align: center;
   }
 
-  /* line 294, ../scss/screen.scss */
+  /* line 248, ../scss/screen.scss */
   .branding,
   .navigation {
     vertical-align: baseline;
     width: 50%;
+    position: relative;
+    display: inline-block;
   }
 }
 /* -----  3.2 Menu  --------------------------------------------------------- */
-/* line 303, ../scss/screen.scss */
+/* line 259, ../scss/screen.scss */
 .menu {
   text-align: center;
   font-weight: 500;
   background-color: white;
 }
 
-/* line 309, ../scss/screen.scss */
+/* line 265, ../scss/screen.scss */
 .menu-item {
   display: block;
 }
 
-/* line 313, ../scss/screen.scss */
+/* line 269, ../scss/screen.scss */
 .menu-item a {
   border-bottom: 0;
 }
 
-/* line 317, ../scss/screen.scss */
+/* line 273, ../scss/screen.scss */
 .menu-item.is-active a {
   border-bottom: 2px solid #71efac;
 }
 
 @media all and (min-width: 56em) {
-  /* line 322, ../scss/screen.scss */
+  /* line 278, ../scss/screen.scss */
   .menu {
     text-align: center;
   }
 }
+/* -----  3.3 Footer  ------------------------------------------------------- */
+/* line 285, ../scss/screen.scss */
+.footer {
+  padding-top: 1.5rem;
+  font-size: 0;
+}
+
+/* line 290, ../scss/screen.scss */
+.footer-left {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.95rem;
+  margin-bottom: .45rem;
+  background-color: black;
+  position: relative;
+  display: inline-block;
+}
+
+/* line 300, ../scss/screen.scss */
+.footer-right {
+  font-size: 1.5rem;
+}
+
+@media all and (min-width: 56em) {
+  /* line 305, ../scss/screen.scss */
+  .footer {
+    padding-top: 0;
+  }
+
+  /* line 308, ../scss/screen.scss */
+  .footer-left {
+    line-height: 3rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  /* line 314, ../scss/screen.scss */
+  .footer-left,
+  .footer-right {
+    vertical-align: baseline;
+    width: 50%;
+    position: relative;
+    display: inline-block;
+  }
+}
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 329, ../scss/screen.scss */
+/* line 325, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -446,7 +441,7 @@ figcaption {
 }
 
 /* ----- 4.2 Blog Article  -------------------------------------------------- */
-/* line 337, ../scss/screen.scss */
+/* line 333, ../scss/screen.scss */
 .article {
   background-color: white;
   -moz-box-sizing: border-box;
@@ -458,7 +453,7 @@ figcaption {
   padding-right: 0.83333%;
 }
 @media (max-width: 500px) {
-  /* line 337, ../scss/screen.scss */
+  /* line 333, ../scss/screen.scss */
   .article {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -469,7 +464,7 @@ figcaption {
     padding-right: 0.83333%;
   }
 }
-/* line 345, ../scss/screen.scss */
+/* line 341, ../scss/screen.scss */
 .article-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -482,7 +477,7 @@ figcaption {
   text-align: center;
 }
 @media (max-width: 500px) {
-  /* line 345, ../scss/screen.scss */
+  /* line 341, ../scss/screen.scss */
   .article-info {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -493,30 +488,30 @@ figcaption {
     padding-right: 0.83333%;
   }
 }
-/* line 358, ../scss/screen.scss */
+/* line 354, ../scss/screen.scss */
 .article-header__title {
   font-weight: 700;
   margin-bottom: 1em;
 }
-/* line 361, ../scss/screen.scss */
+/* line 357, ../scss/screen.scss */
 .article-header__title a {
   border-bottom: 0;
 }
-/* line 366, ../scss/screen.scss */
+/* line 362, ../scss/screen.scss */
 .article-header__date {
   text-align: center;
 }
-/* line 370, ../scss/screen.scss */
+/* line 366, ../scss/screen.scss */
 .article-header__issue {
   -webkit-align-self: flex-start;
   align-self: flex-start;
   margin-bottom: 1em;
 }
-/* line 375, ../scss/screen.scss */
+/* line 371, ../scss/screen.scss */
 .article-header__contributor {
   margin-bottom: 1em;
 }
-/* line 384, ../scss/screen.scss */
+/* line 380, ../scss/screen.scss */
 .article-more {
   font-size: 75%;
   text-transform: uppercase;
@@ -526,7 +521,7 @@ figcaption {
   border-bottom: 2px solid #71efac;
 }
 
-/* line 394, ../scss/screen.scss */
+/* line 390, ../scss/screen.scss */
 .article-printed {
   -webkit-align-self: flex-end;
   align-self: flex-end;
@@ -534,48 +529,48 @@ figcaption {
   top: 4.5em;
   right: 0;
 }
-/* line 399, ../scss/screen.scss */
+/* line 395, ../scss/screen.scss */
 .article-printed figure {
   line-height: 0;
 }
 
-/* line 404, ../scss/screen.scss */
+/* line 400, ../scss/screen.scss */
 .article-printed__cover {
   height: auto;
   width: 8em;
   padding: 1em;
 }
 
-/* line 410, ../scss/screen.scss */
+/* line 406, ../scss/screen.scss */
 .article-printed__info {
   min-width: 9em;
   max-width: 9em;
   padding: .5em;
 }
-/* line 415, ../scss/screen.scss */
+/* line 411, ../scss/screen.scss */
 .article-printed__info p {
   color: white;
 }
 
 /* ----- 0.0 About  --------------------------------------------------------- */
-/* line 422, ../scss/screen.scss */
+/* line 418, ../scss/screen.scss */
 .about-text h1, .about-text h2 {
   text-align: center;
 }
 
-/* line 428, ../scss/screen.scss */
+/* line 424, ../scss/screen.scss */
 .stockists {
   background-color: lightgray;
 }
 
-/* line 433, ../scss/screen.scss */
+/* line 429, ../scss/screen.scss */
 .stockists_stock p {
   display: inline;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
-/* line 441, ../scss/screen.scss */
+/* line 437, ../scss/screen.scss */
 #mc_embed_signup {
   text-align: center;
   background: none;
@@ -584,7 +579,7 @@ figcaption {
   width: 100%;
 }
 
-/* line 448, ../scss/screen.scss */
+/* line 444, ../scss/screen.scss */
 #mc_embed_signup input.email {
   border: .5px solid black;
   -webkit-border-radius: 0;
@@ -602,7 +597,7 @@ figcaption {
   vertical-align: top;
 }
 
-/* line 464, ../scss/screen.scss */
+/* line 460, ../scss/screen.scss */
 #mc_embed_signup .button {
   font-size: 13px;
   border: none;
@@ -619,7 +614,7 @@ figcaption {
   transition: all 0.23s ease-in-out 0s;
 }
 
-/* line 479, ../scss/screen.scss */
+/* line 475, ../scss/screen.scss */
 #mc_embed_signup .button:hover {
   background-color: #222;
   cursor: pointer;
