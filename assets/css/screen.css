@@ -68,7 +68,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 38, ../scss/screen.scss */
+/* -----  1.1 Font Definitions  --------------------------------------------- */
+/* DRUK */
+@font-face {
+  font-family: 'Druk-Wide-Medium';
+  src: url(../fonts/Druk-Wide-Medium.otf) format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Graphik */
+@font-face {
+  font-family: 'Graphik-Medium';
+  src: url(../fonts/Graphik-Medium.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+/* line 58, ../scss/screen.scss */
 .center {
   display: -webkit-flex;
   display: flex;
@@ -83,21 +98,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* -----  1.4 Images & Figures  --------------------------------------------- */
-/* line 48, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 img {
   border-style: none;
   width: 100%;
   height: auto;
 }
 
-/* line 54, ../scss/screen.scss */
+/* line 74, ../scss/screen.scss */
 figcaption {
   font-size: .75rem;
   line-height: 1.5rem;
 }
 
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
-/* line 61, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 .intro {
   text-align: center;
   font-weight: 500;
@@ -105,7 +120,7 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* line 72, ../scss/screen.scss */
+/* line 92, ../scss/screen.scss */
 .text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -114,95 +129,87 @@ figcaption {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+  font-family: 'Graphik-Medium', sans-serif;
 }
 
-/* line 76, ../scss/screen.scss */
+/* line 97, ../scss/screen.scss */
 .text h2, .text h3 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 58.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   margin-top: 2rem;
+  font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
-/* line 81, ../scss/screen.scss */
+/* line 103, ../scss/screen.scss */
 .text ul, .text ol {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 58.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   margin-left: 1.5em;
 }
 
-/* line 86, ../scss/screen.scss */
+/* line 108, ../scss/screen.scss */
 .text p {
+  font-weight: 400;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 58.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
 
-/* line 90, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 .text figure {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 58.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
 
-/* line 94, ../scss/screen.scss */
+/* line 117, ../scss/screen.scss */
 .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
 
-/* line 100, ../scss/screen.scss */
+/* line 123, ../scss/screen.scss */
 .text ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 58.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   list-style: none;
 }
 
-/* line 105, ../scss/screen.scss */
-.text ul > li::before {
-  content: "–";
-  display: inline-block;
-  position: relative;
-  width: 1.25em;
-  margin-right: -1.25em;
-  left: -1.25em;
-  padding-left: .25em;
-}
-
-/* line 115, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 .text ol > li {
   list-style: decimal;
 }
 
-/* line 119, ../scss/screen.scss */
+/* line 142, ../scss/screen.scss */
 .text pre, .text code {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 58.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
@@ -211,7 +218,7 @@ figcaption {
   font-size: .75rem;
 }
 
-/* line 126, ../scss/screen.scss */
+/* line 149, ../scss/screen.scss */
 .text code {
   margin: -.25em 0;
   padding: .25em .15em;
@@ -219,7 +226,7 @@ figcaption {
   bottom: .05em;
 }
 
-/* line 133, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 .text pre > code {
   display: block;
   margin: 0;
@@ -230,7 +237,7 @@ figcaption {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  /* line 143, ../scss/screen.scss */
+  /* line 166, ../scss/screen.scss */
   .text pre > code {
     /* Enables smoother scrolling for code sections on
        mobile (i.e. touch) devices. */
@@ -238,7 +245,7 @@ figcaption {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 151, ../scss/screen.scss */
+/* line 174, ../scss/screen.scss */
 .text kbd {
   padding: 3px 7px;
   margin: -3px 2px;
@@ -252,7 +259,7 @@ figcaption {
   bottom: 2px;
 }
 
-/* line 164, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 .text blockquote {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -261,10 +268,10 @@ figcaption {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-left: -16.66667%;
+  margin-left: -8.33333%;
   padding: .75rem;
 }
-/* line 168, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 .text blockquote p {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -273,20 +280,21 @@ figcaption {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+  font-size: 1.5em;
 }
 
-/* line 173, ../scss/screen.scss */
+/* line 197, ../scss/screen.scss */
 .text blockquote :last-child {
   margin-bottom: 0;
 }
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
-/* line 179, ../scss/screen.scss */
+/* line 203, ../scss/screen.scss */
 .grid {
   font-size: 0;
 }
 
-/* line 183, ../scss/screen.scss */
+/* line 207, ../scss/screen.scss */
 .grid.gutter-1 {
   /* We don’t use the shorthand attribute `margin: …` here
      to make vertical margin easily overridable by other
@@ -295,13 +303,13 @@ figcaption {
   margin-right: -.375rem;
 }
 
-/* line 191, ../scss/screen.scss */
+/* line 215, ../scss/screen.scss */
 .grid.gutter-1 .column {
   padding-left: .375rem;
   padding-right: .375rem;
 }
 
-/* line 196, ../scss/screen.scss */
+/* line 220, ../scss/screen.scss */
 .column {
   position: relative;
   display: inline-block;
@@ -310,7 +318,7 @@ figcaption {
   vertical-align: top;
 }
 
-/* line 204, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 .wrap {
   box-sizing: content-box;
   margin: 0 auto;
@@ -319,38 +327,38 @@ figcaption {
   max-width: 36rem;
 }
 
-/* line 212, ../scss/screen.scss */
+/* line 236, ../scss/screen.scss */
 .wrap.wide {
   max-width: 48rem;
 }
 
 @media all and (min-width: 31.5em) {
-  /* line 217, ../scss/screen.scss */
+  /* line 241, ../scss/screen.scss */
   .wrap:not(.wide) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 @media all and (min-width: 38.25em) {
-  /* line 224, ../scss/screen.scss */
+  /* line 248, ../scss/screen.scss */
   .wrap {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
-  /* line 228, ../scss/screen.scss */
+  /* line 252, ../scss/screen.scss */
   .wrap.wide {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 /* ----- 3.1  Header  ------------------------------------------------------- */
-/* line 236, ../scss/screen.scss */
+/* line 260, ../scss/screen.scss */
 .header {
   padding-top: 1.5rem;
 }
 
-/* line 240, ../scss/screen.scss */
+/* line 264, ../scss/screen.scss */
 .branding {
   text-align: center;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
@@ -361,11 +369,11 @@ figcaption {
   background-color: black;
 }
 
-/* line 250, ../scss/screen.scss */
+/* line 274, ../scss/screen.scss */
 .branding a {
   border-bottom: 0;
 }
-/* line 253, ../scss/screen.scss */
+/* line 277, ../scss/screen.scss */
 .branding a img {
   height: 2em;
   padding: .2em;
@@ -373,12 +381,12 @@ figcaption {
 }
 
 @media all and (min-width: 56em) {
-  /* line 261, ../scss/screen.scss */
+  /* line 285, ../scss/screen.scss */
   .header {
     padding-top: 0;
   }
 
-  /* line 264, ../scss/screen.scss */
+  /* line 288, ../scss/screen.scss */
   .branding {
     line-height: 3rem;
     margin-bottom: 0;
@@ -386,7 +394,7 @@ figcaption {
     text-align: center;
   }
 
-  /* line 270, ../scss/screen.scss */
+  /* line 294, ../scss/screen.scss */
   .branding,
   .navigation {
     vertical-align: baseline;
@@ -394,36 +402,36 @@ figcaption {
   }
 }
 /* -----  3.2 Menu  --------------------------------------------------------- */
-/* line 279, ../scss/screen.scss */
+/* line 303, ../scss/screen.scss */
 .menu {
   text-align: center;
   font-weight: 500;
   background-color: white;
 }
 
-/* line 285, ../scss/screen.scss */
+/* line 309, ../scss/screen.scss */
 .menu-item {
   display: block;
 }
 
-/* line 289, ../scss/screen.scss */
+/* line 313, ../scss/screen.scss */
 .menu-item a {
   border-bottom: 0;
 }
 
-/* line 293, ../scss/screen.scss */
+/* line 317, ../scss/screen.scss */
 .menu-item.is-active a {
   border-bottom: 2px solid #71efac;
 }
 
 @media all and (min-width: 56em) {
-  /* line 298, ../scss/screen.scss */
+  /* line 322, ../scss/screen.scss */
   .menu {
     text-align: center;
   }
 }
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 305, ../scss/screen.scss */
+/* line 329, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -438,7 +446,7 @@ figcaption {
 }
 
 /* ----- 4.2 Blog Article  -------------------------------------------------- */
-/* line 313, ../scss/screen.scss */
+/* line 337, ../scss/screen.scss */
 .article {
   background-color: white;
   -moz-box-sizing: border-box;
@@ -450,7 +458,7 @@ figcaption {
   padding-right: 0.83333%;
 }
 @media (max-width: 500px) {
-  /* line 313, ../scss/screen.scss */
+  /* line 337, ../scss/screen.scss */
   .article {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -461,12 +469,12 @@ figcaption {
     padding-right: 0.83333%;
   }
 }
-/* line 321, ../scss/screen.scss */
+/* line 345, ../scss/screen.scss */
 .article-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 58.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
@@ -474,41 +482,41 @@ figcaption {
   text-align: center;
 }
 @media (max-width: 500px) {
-  /* line 321, ../scss/screen.scss */
+  /* line 345, ../scss/screen.scss */
   .article-info {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 66.66667%;
+    width: 58.33333%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
 }
-/* line 334, ../scss/screen.scss */
+/* line 358, ../scss/screen.scss */
 .article-header__title {
   font-weight: 700;
   margin-bottom: 1em;
 }
-/* line 337, ../scss/screen.scss */
+/* line 361, ../scss/screen.scss */
 .article-header__title a {
   border-bottom: 0;
 }
-/* line 342, ../scss/screen.scss */
+/* line 366, ../scss/screen.scss */
 .article-header__date {
   text-align: center;
 }
-/* line 346, ../scss/screen.scss */
+/* line 370, ../scss/screen.scss */
 .article-header__issue {
   -webkit-align-self: flex-start;
   align-self: flex-start;
   margin-bottom: 1em;
 }
-/* line 351, ../scss/screen.scss */
+/* line 375, ../scss/screen.scss */
 .article-header__contributor {
   margin-bottom: 1em;
 }
-/* line 360, ../scss/screen.scss */
+/* line 384, ../scss/screen.scss */
 .article-more {
   font-size: 75%;
   text-transform: uppercase;
@@ -518,7 +526,7 @@ figcaption {
   border-bottom: 2px solid #71efac;
 }
 
-/* line 370, ../scss/screen.scss */
+/* line 394, ../scss/screen.scss */
 .article-printed {
   -webkit-align-self: flex-end;
   align-self: flex-end;
@@ -526,39 +534,57 @@ figcaption {
   top: 4.5em;
   right: 0;
 }
-/* line 375, ../scss/screen.scss */
+/* line 399, ../scss/screen.scss */
 .article-printed figure {
   line-height: 0;
 }
 
-/* line 380, ../scss/screen.scss */
+/* line 404, ../scss/screen.scss */
 .article-printed__cover {
   height: auto;
   width: 8em;
   padding: 1em;
 }
 
-/* line 386, ../scss/screen.scss */
+/* line 410, ../scss/screen.scss */
 .article-printed__info {
   min-width: 9em;
   max-width: 9em;
   padding: .5em;
 }
-/* line 391, ../scss/screen.scss */
+/* line 415, ../scss/screen.scss */
 .article-printed__info p {
   color: white;
 }
 
+/* ----- 0.0 About  --------------------------------------------------------- */
+/* line 422, ../scss/screen.scss */
+.about-text h1, .about-text h2 {
+  text-align: center;
+}
+
+/* line 428, ../scss/screen.scss */
+.stockists {
+  background-color: lightgray;
+}
+
+/* line 433, ../scss/screen.scss */
+.stockists_stock p {
+  display: inline;
+  font-family: 'Druk-Wide-Medium', sans-serif;
+}
+
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
-/* line 398, ../scss/screen.scss */
+/* line 441, ../scss/screen.scss */
 #mc_embed_signup {
+  text-align: center;
   background: none;
   clear: left;
   font: 14px Helvetica,Arial,sans-serif;
   width: 100%;
 }
 
-/* line 404, ../scss/screen.scss */
+/* line 448, ../scss/screen.scss */
 #mc_embed_signup input.email {
   border: .5px solid black;
   -webkit-border-radius: 0;
@@ -576,7 +602,7 @@ figcaption {
   vertical-align: top;
 }
 
-/* line 420, ../scss/screen.scss */
+/* line 464, ../scss/screen.scss */
 #mc_embed_signup .button {
   font-size: 13px;
   border: none;
@@ -593,7 +619,7 @@ figcaption {
   transition: all 0.23s ease-in-out 0s;
 }
 
-/* line 435, ../scss/screen.scss */
+/* line 479, ../scss/screen.scss */
 #mc_embed_signup .button:hover {
   background-color: #222;
   cursor: pointer;

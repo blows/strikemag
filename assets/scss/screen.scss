@@ -35,6 +35,26 @@ $susy: (
   )
 );
 
+/* -----  1.1 Font Definitions  --------------------------------------------- */
+
+/* DRUK */
+@font-face {
+  font-family: 'Druk-Wide-Medium';
+  src: url(../fonts/Druk-Wide-Medium.otf) format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Graphik */
+@font-face {
+  font-family: 'Graphik-Medium';
+  src: url(../fonts/Graphik-Medium.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 .center {
   @include display-flex;
   @include flex-direction(column);
@@ -71,24 +91,27 @@ figcaption {
 
 .text {
   @include span(12);
+  font-family: 'Graphik-Medium', sans-serif;
 }
 
 .text h2, .text h3 {
-  @include span(8);
+  @include span(7);
   margin-top: 2rem;
+  font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
 .text ul, .text ol {
-  @include span(8);
+  @include span(7);
   margin-left: 1.5em;
 }
 
 .text p {
-  @include span(8);
+  font-weight: 400;
+  @include span(7);
 }
 
 .text figure {
-  @include span(8);
+  @include span(7);
 }
 
 .text hr {
@@ -98,26 +121,26 @@ figcaption {
 }
 
 .text ul {
-  @include span(8);
+  @include span(7);
   list-style: none;
 }
 
-.text ul > li::before {
-  content: "–";
-  display: inline-block;
-  position: relative;
-  width: 1.25em;
-  margin-right: -1.25em;
-  left: -1.25em;
-  padding-left: .25em;
-}
+// .text ul > li::before {
+//   content: "–";
+//   display: inline-block;
+//   position: relative;
+//   width: 1.25em;
+//   margin-right: -1.25em;
+//   left: -1.25em;
+//   padding-left: .25em;
+// }
 
 .text ol > li {
   list-style: decimal;
 }
 
 .text pre, .text code {
-  @include span(8);
+  @include span(7);
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
@@ -163,10 +186,11 @@ figcaption {
 
 .text blockquote {
   @include span(8);
-  @include pull(2);
+  @include pull(1);
   padding: .75rem;
   p {
     @include span(12);
+    font-size: 1.5em;
   }
 }
 
@@ -319,10 +343,10 @@ figcaption {
     }
 
   &-info {
-    @include span(8);
+    @include span(7);
 
     @media (max-width: 500px) {
-        @include span(8);
+        @include span(7);
       }
 
     padding-top: 1em;
@@ -393,9 +417,29 @@ figcaption {
     }
   }
 
+/* ----- 0.0 About  --------------------------------------------------------- */
+.about-text {
+  h1, h2 {
+    text-align: center;
+  }
+}
+
+
+.stockists {
+  background-color: lightgray;
+}
+
+.stockists_stock {
+  p {
+    display: inline;
+    font-family: 'Druk-Wide-Medium', sans-serif;
+  }
+}
+
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
 
 #mc_embed_signup {
+  text-align: center;
   background: none;
   clear: left;
   font: 14px Helvetica,Arial,sans-serif;

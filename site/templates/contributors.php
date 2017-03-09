@@ -15,6 +15,7 @@
     </div>
 
     <?php foreach($page->children() as $contributor): ?>
+    <a id="<?php echo $contributor->uid() ?>">
     <article class="contributor">
 
       <h1><a href="<?php echo $contributor->url() ?>"><?php echo $contributor->title()->html() ?><a/></h1>
@@ -24,6 +25,7 @@
       </figure>
 
     </article>
+    </a>
     <?php endforeach ?>
 
   </main>

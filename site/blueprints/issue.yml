@@ -47,7 +47,13 @@ fields:
     type: textarea
 
   color:
-    label: Colour
+    label: Primary Colour
+    type: color
+    default: 000000
+    width: 1/2
+
+  color2:
+    label: Secondary Colour
     type: color
     default: 000000
     width: 1/2

@@ -2,37 +2,35 @@
 
 <?php snippet('aboutmenu') ?>
 
-  <main class="" role="main">
+  <main class="main center" role="main">
 
-    <div class="">
+    <article class="article center">
 
-      <header>
+      <section class="about-text text center">
         <h1><?= $page->title()->html() ?></h1>
         <p><?= $page->distribution()->kirbytext() ?></p>
-      </header>
+      </section>
 
-    </div>
+      <section class="about-text text center">
 
+        <h2>Stockists</h2>
 
-    <section class="">
+        <ul class="stockists">
+          <?php foreach($page->stockists()->toStructure() as $stockist): ?>
+            <li class="stockists_stock">
 
-      <h2>Stockists</h2>
+              <a href="<?= $stockist->link()->url() ?>">
+                <p class="stockists_country"><?= $stockist->country()->html() ?></p>
+                <p class="stockists_city"><?= $stockist->city()->html() ?></p>
+                <p class="stockists_stockist"><?= $stockist->stockist()->html() ?></p>
+              </a>
 
-      <ul class="stockists">
-        <?php foreach($page->stockists()->toStructure() as $stockist): ?>
-          <li class="stockists_stockist">
+            </li>
+          <?php endforeach ?>
+        </ul>
 
-            <a href="<?= $stockist->link()->url() ?>">
-              <p class="stockists_country"><?= $stockist->country()->html() ?></p>
-              <p class="stockists_city"><?= $stockist->city()->html() ?></p>
-              <p class="stockists_stockist"><?= $stockist->stockist()->html() ?></p>
-            </a>
-
-          </li>
-        <?php endforeach ?>
-      </ul>
-
-    </section>
+      </section>
+    </article>
 
   </main>
 
