@@ -331,8 +331,8 @@ body {
 
 .main {
   @include container;
-  // padding-top: 3rem;
-  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* ----- 4.2 Blog Article  -------------------------------------------------- */
@@ -471,21 +471,92 @@ body {
 }
 
 /* ----- 0.0 About  --------------------------------------------------------- */
+.about {
+
+}
+
 .about-text {
   h1, h2 {
     text-align: center;
   }
 }
 
-
-.stockists {
-  background-color: lightgray;
+.about-section {
+  @include span(6);
+  @include push(3);
+  padding-bottom: 1em;
+  h1, h2 {
+    padding-bottom: 1em;
+  }
 }
 
-.stockists_stock {
-  p {
-    display: inline;
-    font-family: 'Druk-Wide-Medium', sans-serif;
+.about-stockists {
+  @include span(12);
+  padding-left: 0;
+  padding-right: 0;
+  h1, h2 {
+    padding-bottom: 1em;
+  }
+}
+
+.stockists {
+  &_stock {
+    background-color: whitesmoke;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: .5px solid grey;
+    p {
+      color: black;
+    }
+    div {
+      @include display-flex;
+      @include justify-content(space-between);
+      padding-left: 8.3%;
+      padding-right: 8.3%;
+    }
+    p {
+      display: inline;
+      font-family: 'Druk-Wide-Medium', sans-serif;
+    }
+  }
+  &_stock:hover {
+    background-color: black;
+    p {
+      color: white;
+    }
+  }
+  &_country {
+    width: 33.33%;
+
+  }
+  &_city {
+    width: 33.33%;
+    text-align: center;
+  }
+  &_stockist {
+    width: 33.33%;
+    text-align: right;
+  }
+}
+
+ul.stockists {
+  margin-left: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.about-menu {
+  background-color: whitesmoke;
+  ul {
+    text-align: center;
+  }
+  ul li {
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 }
 
@@ -499,7 +570,7 @@ body {
   width: 100%; }
 
 #mc_embed_signup input.email {
-  border: .5px solid black;
+  border: .2em solid black;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -507,7 +578,7 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   height: 32px;
-  padding: 0px 0.4em;
+  padding: 0px 1em;
   display: inline-block;
   margin: 0;
   width: 360px;
@@ -526,8 +597,7 @@ body {
   line-height: 32px;
   padding: 0 18px;
   display: inline-block;
-  margin: 0;
-  transition: all 0.23s ease-in-out 0s; }
+  margin: 0; }
 
 #mc_embed_signup .button:hover {
   background-color: #222;

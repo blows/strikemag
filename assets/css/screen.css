@@ -379,7 +379,8 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .main:after {
@@ -605,24 +606,121 @@ body {
 }
 
 /* ----- 0.0 About  --------------------------------------------------------- */
-/* line 475, ../scss/screen.scss */
+/* line 479, ../scss/screen.scss */
 .about-text h1, .about-text h2 {
   text-align: center;
 }
 
-/* line 481, ../scss/screen.scss */
-.stockists {
-  background-color: lightgray;
+/* line 484, ../scss/screen.scss */
+.about-section {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 25%;
+  padding-bottom: 1em;
+}
+/* line 488, ../scss/screen.scss */
+.about-section h1, .about-section h2 {
+  padding-bottom: 1em;
 }
 
-/* line 486, ../scss/screen.scss */
+/* line 493, ../scss/screen.scss */
+.about-stockists {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 497, ../scss/screen.scss */
+.about-stockists h1, .about-stockists h2 {
+  padding-bottom: 1em;
+}
+
+/* line 503, ../scss/screen.scss */
+.stockists_stock {
+  background-color: whitesmoke;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-bottom: .5px solid grey;
+}
+/* line 508, ../scss/screen.scss */
+.stockists_stock p {
+  color: black;
+}
+/* line 511, ../scss/screen.scss */
+.stockists_stock div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-left: 8.3%;
+  padding-right: 8.3%;
+}
+/* line 517, ../scss/screen.scss */
 .stockists_stock p {
   display: inline;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
+/* line 522, ../scss/screen.scss */
+.stockists_stock:hover {
+  background-color: black;
+}
+/* line 524, ../scss/screen.scss */
+.stockists_stock:hover p {
+  color: white;
+}
+/* line 528, ../scss/screen.scss */
+.stockists_country {
+  width: 33.33%;
+}
+/* line 532, ../scss/screen.scss */
+.stockists_city {
+  width: 33.33%;
+  text-align: center;
+}
+/* line 536, ../scss/screen.scss */
+.stockists_stockist {
+  width: 33.33%;
+  text-align: right;
+}
+
+/* line 542, ../scss/screen.scss */
+ul.stockists {
+  margin-left: 0;
+}
+/* line 544, ../scss/screen.scss */
+ul.stockists a {
+  text-decoration: none;
+}
+
+/* line 549, ../scss/screen.scss */
+.about-menu {
+  background-color: whitesmoke;
+}
+/* line 551, ../scss/screen.scss */
+.about-menu ul {
+  text-align: center;
+}
+/* line 554, ../scss/screen.scss */
+.about-menu ul li {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
-/* line 494, ../scss/screen.scss */
+/* line 565, ../scss/screen.scss */
 #mc_embed_signup {
   text-align: center;
   background: none;
@@ -631,9 +729,9 @@ body {
   width: 100%;
 }
 
-/* line 501, ../scss/screen.scss */
+/* line 572, ../scss/screen.scss */
 #mc_embed_signup input.email {
-  border: .5px solid black;
+  border: .2em solid black;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -641,7 +739,7 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   height: 32px;
-  padding: 0px 0.4em;
+  padding: 0px 1em;
   display: inline-block;
   margin: 0;
   width: 360px;
@@ -649,7 +747,7 @@ body {
   vertical-align: top;
 }
 
-/* line 517, ../scss/screen.scss */
+/* line 588, ../scss/screen.scss */
 #mc_embed_signup .button {
   font-size: 13px;
   border: none;
@@ -663,17 +761,16 @@ body {
   padding: 0 18px;
   display: inline-block;
   margin: 0;
-  transition: all 0.23s ease-in-out 0s;
 }
 
-/* line 532, ../scss/screen.scss */
+/* line 602, ../scss/screen.scss */
 #mc_embed_signup .button:hover {
   background-color: #222;
   cursor: pointer;
 }
 
 /* ----- 0.0 Magazine  ------------------------------------------------------ */
-/* line 546, ../scss/screen.scss */
+/* line 616, ../scss/screen.scss */
 .issue-summary {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -685,11 +782,11 @@ body {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 550, ../scss/screen.scss */
+/* line 620, ../scss/screen.scss */
 .issue-summary__image {
   padding-right: 3em;
 }
-/* line 552, ../scss/screen.scss */
+/* line 622, ../scss/screen.scss */
 .issue-summary__image figure {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -700,12 +797,12 @@ body {
   padding-right: 0.83333%;
   margin-left: 8.33333%;
 }
-/* line 555, ../scss/screen.scss */
+/* line 625, ../scss/screen.scss */
 .issue-summary__image figure img {
   height: auto;
   width: 100%;
 }
-/* line 561, ../scss/screen.scss */
+/* line 631, ../scss/screen.scss */
 .issue-summary__detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -717,20 +814,20 @@ body {
   padding-left: 3em;
   padding-top: 1em;
 }
-/* line 566, ../scss/screen.scss */
+/* line 636, ../scss/screen.scss */
 .issue-summary__detail-title {
   padding-bottom: 1em;
 }
-/* line 569, ../scss/screen.scss */
+/* line 639, ../scss/screen.scss */
 .issue-summary__detail-printed {
   margin-top: 0;
   padding-bottom: 1em;
 }
-/* line 573, ../scss/screen.scss */
+/* line 643, ../scss/screen.scss */
 .issue-summary__detail-summary {
   padding-bottom: 3em;
 }
-/* line 576, ../scss/screen.scss */
+/* line 646, ../scss/screen.scss */
 .issue-summary__detail-buy {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -742,7 +839,7 @@ body {
   text-align: center;
 }
 
-/* line 582, ../scss/screen.scss */
+/* line 652, ../scss/screen.scss */
 .issue-contents {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -753,14 +850,14 @@ body {
   padding-right: 0.83333%;
   padding: 0;
 }
-/* line 585, ../scss/screen.scss */
+/* line 655, ../scss/screen.scss */
 .issue-contents__title {
   text-align: center;
   padding-top: .5em;
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
 }
-/* line 591, ../scss/screen.scss */
+/* line 661, ../scss/screen.scss */
 .issue-contents__content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -773,17 +870,17 @@ body {
   border-right: .5px solid grey;
   border-bottom: .5px solid grey;
 }
-/* line 597, ../scss/screen.scss */
+/* line 667, ../scss/screen.scss */
 .issue-contents__content-online {
   position: absolute;
   padding-top: .5em;
 }
-/* line 601, ../scss/screen.scss */
+/* line 671, ../scss/screen.scss */
 .issue-contents__content-title {
   padding-top: 1.5em;
   padding-bottom: .5em;
 }
-/* line 605, ../scss/screen.scss */
+/* line 675, ../scss/screen.scss */
 .issue-contents__content-contributor {
   padding-bottom: 1.5em;
 }
