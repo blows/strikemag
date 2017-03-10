@@ -63,6 +63,23 @@ $susy: (
   @include align-self(center);
 }
 
+/* -----  1.4 Buttons  --------------------------------------------- */
+
+button {
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  letter-spacing: .03em;
+  color: #fff;
+  background-color: black;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  display: inline-block;
+  margin: 0;
+}
+
 /* -----  1.4 Images & Figures  --------------------------------------------- */
 
 img {
@@ -90,28 +107,23 @@ figcaption {
 // }
 
 .text {
-  @include span(12);
   font-family: 'Graphik-Medium', sans-serif;
 }
 
 .text h2, .text h3 {
-  @include span(7);
-  margin-top: 2rem;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
 .text ul, .text ol {
-  @include span(7);
   margin-left: 1.5em;
 }
 
 .text p {
   font-weight: 400;
-  @include span(7);
 }
 
 .text figure {
-  @include span(7);
+
 }
 
 .text hr {
@@ -121,7 +133,6 @@ figcaption {
 }
 
 .text ul {
-  @include span(7);
   list-style: none;
 }
 
@@ -140,7 +151,6 @@ figcaption {
 }
 
 .text pre, .text code {
-  @include span(7);
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
@@ -185,11 +195,8 @@ figcaption {
 }
 
 .text blockquote {
-  @include span(8);
-  @include pull(1);
   padding: .75rem;
   p {
-    @include span(12);
     font-size: 1.5em;
   }
 }
@@ -413,6 +420,56 @@ body {
     }
   }
 
+.article {
+  .text {
+    @include span(12);
+  }
+
+  .text h2, .text h3 {
+    @include span(7);
+  }
+
+  .text ul, .text ol {
+    @include span(7);
+  }
+
+  .text p {
+    @include span(7);
+  }
+
+  .text figure {
+    @include span(7);
+  }
+
+  .text hr {
+    /* We use a more muted style for horizontal rules within
+       the main content. */
+    color: #1f00ff
+  }
+
+  .text ul {
+    @include span(7);
+  }
+
+  .text ol > li {
+    list-style: decimal;
+  }
+
+  .text pre, .text code {
+    @include span(7);
+  }
+
+  .text blockquote {
+    @include span(8);
+    @include pull(1);
+    padding: .75rem;
+    p {
+      @include span(12);
+      font-size: 1.5em;
+    }
+  }
+}
+
 /* ----- 0.0 About  --------------------------------------------------------- */
 .about-text {
   h1, h2 {
@@ -475,3 +532,77 @@ body {
 #mc_embed_signup .button:hover {
   background-color: #222;
   cursor: pointer; }
+
+/* ----- 0.0 Magazine  ------------------------------------------------------ */
+
+.magazine {
+
+}
+
+.issue {
+
+}
+
+.issue-summary {
+  @include span(12);
+  padding-top: 3em;
+  padding-bottom: 3em;
+  &__image {
+    padding-right: 3em;
+    figure {
+      @include span(5);
+      @include push(1);
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  &__detail {
+    @include span(5);
+    padding-left: 3em;
+    padding-top: 1em;
+  }
+  &__detail-title {
+    padding-bottom: 1em;
+  }
+  &__detail-printed {
+    margin-top: 0;
+    padding-bottom: 1em;
+  }
+  &__detail-summary {
+    padding-bottom: 3em;
+  }
+  &__detail-buy {
+    @include span(5);
+    text-align: center;
+  }
+}
+
+.issue-contents {
+  @include span(12);
+  padding: 0;
+  &__title {
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: .5px solid grey;
+  }
+  &__content {
+    @include span(6);
+    text-align: center;
+    border-right: .5px solid grey;
+    border-bottom: .5px solid grey;
+  }
+  &__content-online {
+    position: absolute;
+    padding-top: .5em;
+  }
+  &__content-title {
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+  }
+  &__content-contributor {
+    padding-bottom: 1.5em;
+  }
+}

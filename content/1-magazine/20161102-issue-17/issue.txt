@@ -10,7 +10,7 @@ Printed: 2016-11-02
 
 ----
 
-Summary: This is Issue 17 and cities are dirty.
+Summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
 
 ----
 
@@ -18,8 +18,16 @@ Name: Cities
 
 ----
 
-Color: rgba(255, 0, 0, 1)
+Color: rgba(255, 25, 25, 1)
 
 ----
 
-Color2: #000000
+Color2: rgba(0, 0, 0, 1)
+
+----
+
+Color1: rgba(255, 200, 200, 1)
+
+----
+
+Color3: rgba(200, 200, 200, 1)

@@ -96,22 +96,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   align-self: center;
 }
 
-/* -----  1.4 Images & Figures  --------------------------------------------- */
+/* -----  1.4 Buttons  --------------------------------------------- */
 /* line 68, ../scss/screen.scss */
+button {
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  letter-spacing: .03em;
+  color: #fff;
+  background-color: black;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* -----  1.4 Images & Figures  --------------------------------------------- */
+/* line 85, ../scss/screen.scss */
 img {
   border-style: none;
   width: 100%;
   height: auto;
 }
 
-/* line 74, ../scss/screen.scss */
+/* line 91, ../scss/screen.scss */
 figcaption {
   font-size: .75rem;
   line-height: 1.5rem;
 }
 
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
-/* line 81, ../scss/screen.scss */
+/* line 98, ../scss/screen.scss */
 .intro {
   text-align: center;
   font-weight: 500;
@@ -119,105 +136,51 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* line 92, ../scss/screen.scss */
+/* line 109, ../scss/screen.scss */
 .text {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
   font-family: 'Graphik-Medium', sans-serif;
 }
 
-/* line 97, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 .text h2, .text h3 {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 58.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-  margin-top: 2rem;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
-/* line 103, ../scss/screen.scss */
+/* line 117, ../scss/screen.scss */
 .text ul, .text ol {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 58.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
   margin-left: 1.5em;
 }
 
-/* line 108, ../scss/screen.scss */
+/* line 121, ../scss/screen.scss */
 .text p {
   font-weight: 400;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 58.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
 }
 
-/* line 113, ../scss/screen.scss */
-.text figure {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 58.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-}
-
-/* line 117, ../scss/screen.scss */
+/* line 129, ../scss/screen.scss */
 .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
 
-/* line 123, ../scss/screen.scss */
+/* line 135, ../scss/screen.scss */
 .text ul {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 58.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
   list-style: none;
 }
 
-/* line 138, ../scss/screen.scss */
+/* line 149, ../scss/screen.scss */
 .text ol > li {
   list-style: decimal;
 }
 
-/* line 142, ../scss/screen.scss */
+/* line 153, ../scss/screen.scss */
 .text pre, .text code {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 58.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
 }
 
-/* line 149, ../scss/screen.scss */
+/* line 159, ../scss/screen.scss */
 .text code {
   margin: -.25em 0;
   padding: .25em .15em;
@@ -225,7 +188,7 @@ figcaption {
   bottom: .05em;
 }
 
-/* line 156, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 .text pre > code {
   display: block;
   margin: 0;
@@ -236,7 +199,7 @@ figcaption {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  /* line 166, ../scss/screen.scss */
+  /* line 176, ../scss/screen.scss */
   .text pre > code {
     /* Enables smoother scrolling for code sections on
        mobile (i.e. touch) devices. */
@@ -244,7 +207,7 @@ figcaption {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 174, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 .text kbd {
   padding: 3px 7px;
   margin: -3px 2px;
@@ -258,49 +221,34 @@ figcaption {
   bottom: 2px;
 }
 
-/* line 187, ../scss/screen.scss */
+/* line 197, ../scss/screen.scss */
 .text blockquote {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 66.66667%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-  margin-left: -8.33333%;
   padding: .75rem;
 }
-/* line 191, ../scss/screen.scss */
+/* line 199, ../scss/screen.scss */
 .text blockquote p {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
   font-size: 1.5em;
 }
 
-/* line 197, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 .text blockquote :last-child {
   margin-bottom: 0;
 }
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
-/* line 203, ../scss/screen.scss */
+/* line 210, ../scss/screen.scss */
 body {
   background-color: lightgrey;
 }
 
 /* ----- 3.1  Header  ------------------------------------------------------- */
-/* line 209, ../scss/screen.scss */
+/* line 216, ../scss/screen.scss */
 .header {
   padding-top: 1.5rem;
   font-size: 0;
 }
 
-/* line 214, ../scss/screen.scss */
+/* line 221, ../scss/screen.scss */
 .branding {
   text-align: center;
   font-size: 1.5rem;
@@ -311,29 +259,29 @@ body {
   display: inline-block;
 }
 
-/* line 224, ../scss/screen.scss */
+/* line 231, ../scss/screen.scss */
 .branding a {
   border-bottom: 0;
 }
-/* line 227, ../scss/screen.scss */
+/* line 234, ../scss/screen.scss */
 .branding a img {
   height: 2em;
   padding: .2em;
   vertical-align: middle;
 }
 
-/* line 234, ../scss/screen.scss */
+/* line 241, ../scss/screen.scss */
 .navigation {
   font-size: 1.5rem;
 }
 
 @media all and (min-width: 56em) {
-  /* line 239, ../scss/screen.scss */
+  /* line 246, ../scss/screen.scss */
   .header {
     padding-top: 0;
   }
 
-  /* line 242, ../scss/screen.scss */
+  /* line 249, ../scss/screen.scss */
   .branding {
     line-height: 3rem;
     margin-bottom: 0;
@@ -341,7 +289,7 @@ body {
     text-align: center;
   }
 
-  /* line 248, ../scss/screen.scss */
+  /* line 255, ../scss/screen.scss */
   .branding,
   .navigation {
     vertical-align: baseline;
@@ -351,42 +299,42 @@ body {
   }
 }
 /* -----  3.2 Menu  --------------------------------------------------------- */
-/* line 259, ../scss/screen.scss */
+/* line 266, ../scss/screen.scss */
 .menu {
   text-align: center;
   font-weight: 500;
   background-color: white;
 }
 
-/* line 265, ../scss/screen.scss */
+/* line 272, ../scss/screen.scss */
 .menu-item {
   display: block;
 }
 
-/* line 269, ../scss/screen.scss */
+/* line 276, ../scss/screen.scss */
 .menu-item a {
   border-bottom: 0;
 }
 
-/* line 273, ../scss/screen.scss */
+/* line 280, ../scss/screen.scss */
 .menu-item.is-active a {
   border-bottom: 2px solid #71efac;
 }
 
 @media all and (min-width: 56em) {
-  /* line 278, ../scss/screen.scss */
+  /* line 285, ../scss/screen.scss */
   .menu {
     text-align: center;
   }
 }
 /* -----  3.3 Footer  ------------------------------------------------------- */
-/* line 285, ../scss/screen.scss */
+/* line 292, ../scss/screen.scss */
 .footer {
   padding-top: 1.5rem;
   font-size: 0;
 }
 
-/* line 290, ../scss/screen.scss */
+/* line 297, ../scss/screen.scss */
 .footer-left {
   text-align: center;
   font-size: 1.5rem;
@@ -397,18 +345,18 @@ body {
   display: inline-block;
 }
 
-/* line 300, ../scss/screen.scss */
+/* line 307, ../scss/screen.scss */
 .footer-right {
   font-size: 1.5rem;
 }
 
 @media all and (min-width: 56em) {
-  /* line 305, ../scss/screen.scss */
+  /* line 312, ../scss/screen.scss */
   .footer {
     padding-top: 0;
   }
 
-  /* line 308, ../scss/screen.scss */
+  /* line 315, ../scss/screen.scss */
   .footer-left {
     line-height: 3rem;
     margin-bottom: 0;
@@ -416,7 +364,7 @@ body {
     text-align: center;
   }
 
-  /* line 314, ../scss/screen.scss */
+  /* line 321, ../scss/screen.scss */
   .footer-left,
   .footer-right {
     vertical-align: baseline;
@@ -426,7 +374,7 @@ body {
   }
 }
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 325, ../scss/screen.scss */
+/* line 332, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -441,7 +389,7 @@ body {
 }
 
 /* ----- 4.2 Blog Article  -------------------------------------------------- */
-/* line 333, ../scss/screen.scss */
+/* line 340, ../scss/screen.scss */
 .article {
   background-color: white;
   -moz-box-sizing: border-box;
@@ -453,7 +401,7 @@ body {
   padding-right: 0.83333%;
 }
 @media (max-width: 500px) {
-  /* line 333, ../scss/screen.scss */
+  /* line 340, ../scss/screen.scss */
   .article {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -464,7 +412,7 @@ body {
     padding-right: 0.83333%;
   }
 }
-/* line 341, ../scss/screen.scss */
+/* line 348, ../scss/screen.scss */
 .article-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -477,7 +425,7 @@ body {
   text-align: center;
 }
 @media (max-width: 500px) {
-  /* line 341, ../scss/screen.scss */
+  /* line 348, ../scss/screen.scss */
   .article-info {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -488,30 +436,30 @@ body {
     padding-right: 0.83333%;
   }
 }
-/* line 354, ../scss/screen.scss */
+/* line 361, ../scss/screen.scss */
 .article-header__title {
   font-weight: 700;
   margin-bottom: 1em;
 }
-/* line 357, ../scss/screen.scss */
+/* line 364, ../scss/screen.scss */
 .article-header__title a {
   border-bottom: 0;
 }
-/* line 362, ../scss/screen.scss */
+/* line 369, ../scss/screen.scss */
 .article-header__date {
   text-align: center;
 }
-/* line 366, ../scss/screen.scss */
+/* line 373, ../scss/screen.scss */
 .article-header__issue {
   -webkit-align-self: flex-start;
   align-self: flex-start;
   margin-bottom: 1em;
 }
-/* line 371, ../scss/screen.scss */
+/* line 378, ../scss/screen.scss */
 .article-header__contributor {
   margin-bottom: 1em;
 }
-/* line 380, ../scss/screen.scss */
+/* line 387, ../scss/screen.scss */
 .article-more {
   font-size: 75%;
   text-transform: uppercase;
@@ -521,7 +469,7 @@ body {
   border-bottom: 2px solid #71efac;
 }
 
-/* line 390, ../scss/screen.scss */
+/* line 397, ../scss/screen.scss */
 .article-printed {
   -webkit-align-self: flex-end;
   align-self: flex-end;
@@ -529,48 +477,152 @@ body {
   top: 4.5em;
   right: 0;
 }
-/* line 395, ../scss/screen.scss */
+/* line 402, ../scss/screen.scss */
 .article-printed figure {
   line-height: 0;
 }
 
-/* line 400, ../scss/screen.scss */
+/* line 407, ../scss/screen.scss */
 .article-printed__cover {
   height: auto;
   width: 8em;
   padding: 1em;
 }
 
-/* line 406, ../scss/screen.scss */
+/* line 413, ../scss/screen.scss */
 .article-printed__info {
   min-width: 9em;
   max-width: 9em;
   padding: .5em;
 }
-/* line 411, ../scss/screen.scss */
+/* line 418, ../scss/screen.scss */
 .article-printed__info p {
   color: white;
 }
 
+/* line 424, ../scss/screen.scss */
+.article .text {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 428, ../scss/screen.scss */
+.article .text h2, .article .text h3 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 432, ../scss/screen.scss */
+.article .text ul, .article .text ol {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 436, ../scss/screen.scss */
+.article .text p {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 440, ../scss/screen.scss */
+.article .text figure {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 444, ../scss/screen.scss */
+.article .text hr {
+  /* We use a more muted style for horizontal rules within
+     the main content. */
+  color: #1f00ff;
+}
+/* line 450, ../scss/screen.scss */
+.article .text ul {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 454, ../scss/screen.scss */
+.article .text ol > li {
+  list-style: decimal;
+}
+/* line 458, ../scss/screen.scss */
+.article .text pre, .article .text code {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 462, ../scss/screen.scss */
+.article .text blockquote {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: -8.33333%;
+  padding: .75rem;
+}
+/* line 466, ../scss/screen.scss */
+.article .text blockquote p {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  font-size: 1.5em;
+}
+
 /* ----- 0.0 About  --------------------------------------------------------- */
-/* line 418, ../scss/screen.scss */
+/* line 475, ../scss/screen.scss */
 .about-text h1, .about-text h2 {
   text-align: center;
 }
 
-/* line 424, ../scss/screen.scss */
+/* line 481, ../scss/screen.scss */
 .stockists {
   background-color: lightgray;
 }
 
-/* line 429, ../scss/screen.scss */
+/* line 486, ../scss/screen.scss */
 .stockists_stock p {
   display: inline;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
-/* line 437, ../scss/screen.scss */
+/* line 494, ../scss/screen.scss */
 #mc_embed_signup {
   text-align: center;
   background: none;
@@ -579,7 +631,7 @@ body {
   width: 100%;
 }
 
-/* line 444, ../scss/screen.scss */
+/* line 501, ../scss/screen.scss */
 #mc_embed_signup input.email {
   border: .5px solid black;
   -webkit-border-radius: 0;
@@ -597,7 +649,7 @@ body {
   vertical-align: top;
 }
 
-/* line 460, ../scss/screen.scss */
+/* line 517, ../scss/screen.scss */
 #mc_embed_signup .button {
   font-size: 13px;
   border: none;
@@ -614,8 +666,124 @@ body {
   transition: all 0.23s ease-in-out 0s;
 }
 
-/* line 475, ../scss/screen.scss */
+/* line 532, ../scss/screen.scss */
 #mc_embed_signup .button:hover {
   background-color: #222;
   cursor: pointer;
+}
+
+/* ----- 0.0 Magazine  ------------------------------------------------------ */
+/* line 546, ../scss/screen.scss */
+.issue-summary {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* line 550, ../scss/screen.scss */
+.issue-summary__image {
+  padding-right: 3em;
+}
+/* line 552, ../scss/screen.scss */
+.issue-summary__image figure {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 41.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 8.33333%;
+}
+/* line 555, ../scss/screen.scss */
+.issue-summary__image figure img {
+  height: auto;
+  width: 100%;
+}
+/* line 561, ../scss/screen.scss */
+.issue-summary__detail {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 41.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-left: 3em;
+  padding-top: 1em;
+}
+/* line 566, ../scss/screen.scss */
+.issue-summary__detail-title {
+  padding-bottom: 1em;
+}
+/* line 569, ../scss/screen.scss */
+.issue-summary__detail-printed {
+  margin-top: 0;
+  padding-bottom: 1em;
+}
+/* line 573, ../scss/screen.scss */
+.issue-summary__detail-summary {
+  padding-bottom: 3em;
+}
+/* line 576, ../scss/screen.scss */
+.issue-summary__detail-buy {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 41.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+}
+
+/* line 582, ../scss/screen.scss */
+.issue-contents {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 0;
+}
+/* line 585, ../scss/screen.scss */
+.issue-contents__title {
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-bottom: .5px solid grey;
+}
+/* line 591, ../scss/screen.scss */
+.issue-contents__content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+  border-right: .5px solid grey;
+  border-bottom: .5px solid grey;
+}
+/* line 597, ../scss/screen.scss */
+.issue-contents__content-online {
+  position: absolute;
+  padding-top: .5em;
+}
+/* line 601, ../scss/screen.scss */
+.issue-contents__content-title {
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+}
+/* line 605, ../scss/screen.scss */
+.issue-contents__content-contributor {
+  padding-bottom: 1.5em;
 }
