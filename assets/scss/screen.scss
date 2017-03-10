@@ -269,38 +269,52 @@ body {
   padding-top: 1.5rem;
   font-size: 0;
   font-family: 'Druk-Wide-Medium', sans-serif;
+  height: 20vh;
 }
 
-.footer-left {
+.footer-left,
+.footer-right {
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.95rem;
   margin-bottom: .45rem;
-  background-color: black;
   position: relative;
   display: inline-block;
+  vertical-align: middle;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  height: 100%;
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-left {
+  background-color: white;
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }
 
 .footer-right {
-  font-size: 1.5rem;
+  background-color: black;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 @media all and (min-width: 56em) {
   .footer {
     padding-top: 0;
   }
-  .footer-left {
+  .footer-left,
+  .footer-right {
     line-height: 3rem;
     margin-bottom: 0;
     white-space: nowrap;
-    text-align: center;
-  }
-  .footer-left,
-  .footer-right {
-    vertical-align: baseline;
     width: 50%;
-    position: relative;
-    display: inline-block;
   }
 }
 
@@ -548,6 +562,13 @@ ul.stockists {
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -654,8 +675,18 @@ ul.stockists {
   &__content {
     @include span(6);
     text-align: center;
+    line-height: 1.3em;
     border-right: .5px solid grey;
     border-bottom: .5px solid grey;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  &__content:hover {
+    .issue-contents__content-online, .issue-contents__content-contributor {
+      color: white;
+    }
   }
   &__content-online {
     font-family: 'Druk-Wide-Medium', sans-serif;
@@ -666,10 +697,10 @@ ul.stockists {
   }
   &__content-title {
     padding-top: 1.5em;
-    padding-bottom: .5em;
   }
   &__content-contributor {
     font-family: 'Druk-Wide-Medium', sans-serif;
+    font-size: .5em;
     padding-bottom: 1.5em;
   }
 }

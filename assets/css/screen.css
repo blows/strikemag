@@ -332,49 +332,66 @@ body {
   padding-top: 1.5rem;
   font-size: 0;
   font-family: 'Druk-Wide-Medium', sans-serif;
+  height: 20vh;
 }
 
-/* line 274, ../scss/screen.scss */
-.footer-left {
+/* line 275, ../scss/screen.scss */
+.footer-left,
+.footer-right {
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.95rem;
   margin-bottom: .45rem;
-  background-color: black;
   position: relative;
   display: inline-block;
+  vertical-align: middle;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  height: 100%;
+}
+/* line 287, ../scss/screen.scss */
+.footer-left a:hover,
+.footer-right a:hover {
+  text-decoration: underline;
 }
 
-/* line 284, ../scss/screen.scss */
+/* line 292, ../scss/screen.scss */
+.footer-left {
+  background-color: white;
+}
+/* line 294, ../scss/screen.scss */
+.footer-left a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 300, ../scss/screen.scss */
 .footer-right {
-  font-size: 1.5rem;
+  background-color: black;
+}
+/* line 302, ../scss/screen.scss */
+.footer-right a {
+  color: white;
+  text-decoration: none;
 }
 
 @media all and (min-width: 56em) {
-  /* line 289, ../scss/screen.scss */
+  /* line 309, ../scss/screen.scss */
   .footer {
     padding-top: 0;
   }
 
-  /* line 292, ../scss/screen.scss */
-  .footer-left {
+  /* line 312, ../scss/screen.scss */
+  .footer-left,
+  .footer-right {
     line-height: 3rem;
     margin-bottom: 0;
     white-space: nowrap;
-    text-align: center;
-  }
-
-  /* line 298, ../scss/screen.scss */
-  .footer-left,
-  .footer-right {
-    vertical-align: baseline;
     width: 50%;
-    position: relative;
-    display: inline-block;
   }
 }
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 309, ../scss/screen.scss */
+/* line 323, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -389,7 +406,7 @@ body {
 }
 
 /* ----- 4.2 Blog Article  -------------------------------------------------- */
-/* line 317, ../scss/screen.scss */
+/* line 331, ../scss/screen.scss */
 .article {
   background-color: white;
   padding-top: 3rem;
@@ -402,7 +419,7 @@ body {
   padding-right: 0.83333%;
 }
 @media (max-width: 500px) {
-  /* line 317, ../scss/screen.scss */
+  /* line 331, ../scss/screen.scss */
   .article {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -413,7 +430,7 @@ body {
     padding-right: 0.83333%;
   }
 }
-/* line 327, ../scss/screen.scss */
+/* line 341, ../scss/screen.scss */
 .article-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -426,7 +443,7 @@ body {
   text-align: center;
 }
 @media (max-width: 500px) {
-  /* line 327, ../scss/screen.scss */
+  /* line 341, ../scss/screen.scss */
   .article-info {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -437,24 +454,24 @@ body {
     padding-right: 0.83333%;
   }
 }
-/* line 338, ../scss/screen.scss */
+/* line 352, ../scss/screen.scss */
 .article-header {
   padding-bottom: 3em;
 }
-/* line 341, ../scss/screen.scss */
+/* line 355, ../scss/screen.scss */
 .article-header__title {
   font-size: 2em;
   margin-bottom: 1em;
 }
-/* line 344, ../scss/screen.scss */
+/* line 358, ../scss/screen.scss */
 .article-header__title a {
   border-bottom: 0;
 }
-/* line 349, ../scss/screen.scss */
+/* line 363, ../scss/screen.scss */
 .article-header__date {
   text-align: center;
 }
-/* line 353, ../scss/screen.scss */
+/* line 367, ../scss/screen.scss */
 .article-header__issue {
   -webkit-align-self: flex-start;
   align-self: flex-start;
@@ -463,13 +480,13 @@ body {
   margin-bottom: 1em;
   padding-bottom: 3em;
 }
-/* line 361, ../scss/screen.scss */
+/* line 375, ../scss/screen.scss */
 .article-header__contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .8em;
   margin-bottom: 1em;
 }
-/* line 372, ../scss/screen.scss */
+/* line 386, ../scss/screen.scss */
 .article-more {
   font-size: 75%;
   text-transform: uppercase;
@@ -479,7 +496,7 @@ body {
   border-bottom: 2px solid #71efac;
 }
 
-/* line 382, ../scss/screen.scss */
+/* line 396, ../scss/screen.scss */
 .article-printed {
   -webkit-align-self: flex-end;
   align-self: flex-end;
@@ -487,30 +504,30 @@ body {
   top: 4.5em;
   right: 0;
 }
-/* line 387, ../scss/screen.scss */
+/* line 401, ../scss/screen.scss */
 .article-printed figure {
   line-height: 0;
 }
 
-/* line 392, ../scss/screen.scss */
+/* line 406, ../scss/screen.scss */
 .article-printed__cover {
   height: auto;
   width: 8em;
   padding: 1em;
 }
 
-/* line 398, ../scss/screen.scss */
+/* line 412, ../scss/screen.scss */
 .article-printed__info {
   min-width: 9em;
   max-width: 9em;
   padding: .5em;
 }
-/* line 403, ../scss/screen.scss */
+/* line 417, ../scss/screen.scss */
 .article-printed__info p {
   color: white;
 }
 
-/* line 409, ../scss/screen.scss */
+/* line 423, ../scss/screen.scss */
 .article .text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -520,7 +537,7 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 413, ../scss/screen.scss */
+/* line 427, ../scss/screen.scss */
 .article .text h2, .article .text h3 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -532,7 +549,7 @@ body {
   font-family: 'Graphik-Medium', sans-serif;
   padding-bottom: 1em;
 }
-/* line 419, ../scss/screen.scss */
+/* line 433, ../scss/screen.scss */
 .article .text ul, .article .text ol {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -542,7 +559,7 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 423, ../scss/screen.scss */
+/* line 437, ../scss/screen.scss */
 .article .text p {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -553,7 +570,7 @@ body {
   padding-right: 0.83333%;
   padding-bottom: 1em;
 }
-/* line 428, ../scss/screen.scss */
+/* line 442, ../scss/screen.scss */
 .article .text figure {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -564,13 +581,13 @@ body {
   padding-right: 0.83333%;
   padding-bottom: 1em;
 }
-/* line 433, ../scss/screen.scss */
+/* line 447, ../scss/screen.scss */
 .article .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
-/* line 439, ../scss/screen.scss */
+/* line 453, ../scss/screen.scss */
 .article .text ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -580,11 +597,11 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 443, ../scss/screen.scss */
+/* line 457, ../scss/screen.scss */
 .article .text ol > li {
   list-style: decimal;
 }
-/* line 447, ../scss/screen.scss */
+/* line 461, ../scss/screen.scss */
 .article .text pre, .article .text code {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -594,7 +611,7 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 451, ../scss/screen.scss */
+/* line 465, ../scss/screen.scss */
 .article .text blockquote {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -608,7 +625,7 @@ body {
   line-height: 1.8em;
   padding-bottom: 0;
 }
-/* line 457, ../scss/screen.scss */
+/* line 471, ../scss/screen.scss */
 .article .text blockquote p {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -621,17 +638,17 @@ body {
 }
 
 /* ----- 0.0 About  --------------------------------------------------------- */
-/* line 465, ../scss/screen.scss */
+/* line 479, ../scss/screen.scss */
 .about {
   padding-top: 3rem;
 }
 
-/* line 470, ../scss/screen.scss */
+/* line 484, ../scss/screen.scss */
 .about-text h1, .about-text h2 {
   text-align: center;
 }
 
-/* line 475, ../scss/screen.scss */
+/* line 489, ../scss/screen.scss */
 .about-section {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -643,12 +660,12 @@ body {
   margin-left: 25%;
   padding-bottom: 1em;
 }
-/* line 479, ../scss/screen.scss */
+/* line 493, ../scss/screen.scss */
 .about-section h1, .about-section h2 {
   padding-bottom: 1em;
 }
 
-/* line 484, ../scss/screen.scss */
+/* line 498, ../scss/screen.scss */
 .about-stockists {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -660,23 +677,23 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 488, ../scss/screen.scss */
+/* line 502, ../scss/screen.scss */
 .about-stockists h1, .about-stockists h2 {
   padding-bottom: 1em;
 }
 
-/* line 494, ../scss/screen.scss */
+/* line 508, ../scss/screen.scss */
 .stockists_stock {
   background-color: whitesmoke;
   padding-top: .5em;
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
 }
-/* line 499, ../scss/screen.scss */
+/* line 513, ../scss/screen.scss */
 .stockists_stock p {
   color: black;
 }
-/* line 502, ../scss/screen.scss */
+/* line 516, ../scss/screen.scss */
 .stockists_stock div {
   display: -webkit-flex;
   display: flex;
@@ -685,52 +702,52 @@ body {
   padding-left: 8.3%;
   padding-right: 8.3%;
 }
-/* line 508, ../scss/screen.scss */
+/* line 522, ../scss/screen.scss */
 .stockists_stock p {
   display: inline;
 }
-/* line 512, ../scss/screen.scss */
+/* line 526, ../scss/screen.scss */
 .stockists_stock:hover {
   background-color: black;
 }
-/* line 514, ../scss/screen.scss */
+/* line 528, ../scss/screen.scss */
 .stockists_stock:hover p {
   color: white;
 }
-/* line 518, ../scss/screen.scss */
+/* line 532, ../scss/screen.scss */
 .stockists_country {
   width: 33.33%;
 }
-/* line 522, ../scss/screen.scss */
+/* line 536, ../scss/screen.scss */
 .stockists_city {
   width: 33.33%;
   text-align: center;
 }
-/* line 526, ../scss/screen.scss */
+/* line 540, ../scss/screen.scss */
 .stockists_stockist {
   width: 33.33%;
   text-align: right;
 }
 
-/* line 532, ../scss/screen.scss */
+/* line 546, ../scss/screen.scss */
 ul.stockists {
   margin-left: 0;
 }
-/* line 534, ../scss/screen.scss */
+/* line 548, ../scss/screen.scss */
 ul.stockists a {
   text-decoration: none;
 }
 
-/* line 539, ../scss/screen.scss */
+/* line 553, ../scss/screen.scss */
 .about-menu {
   background-color: whitesmoke;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
-/* line 542, ../scss/screen.scss */
+/* line 556, ../scss/screen.scss */
 .about-menu ul {
   text-align: center;
 }
-/* line 545, ../scss/screen.scss */
+/* line 559, ../scss/screen.scss */
 .about-menu ul li {
   display: inline-block;
   padding-left: 1em;
@@ -738,9 +755,18 @@ ul.stockists a {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+/* line 565, ../scss/screen.scss */
+.about-menu ul li a {
+  color: black;
+  text-decoration: none;
+}
+/* line 569, ../scss/screen.scss */
+.about-menu ul li a:hover {
+  text-decoration: underline;
+}
 
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
-/* line 556, ../scss/screen.scss */
+/* line 577, ../scss/screen.scss */
 #mc_embed_signup {
   text-align: center;
   background: none;
@@ -749,7 +775,7 @@ ul.stockists a {
   width: 100%;
 }
 
-/* line 563, ../scss/screen.scss */
+/* line 584, ../scss/screen.scss */
 #mc_embed_signup input.email {
   border: .2em solid black;
   -webkit-border-radius: 0;
@@ -767,7 +793,7 @@ ul.stockists a {
   vertical-align: top;
 }
 
-/* line 579, ../scss/screen.scss */
+/* line 600, ../scss/screen.scss */
 #mc_embed_signup .button {
   font-size: 13px;
   border: none;
@@ -783,14 +809,14 @@ ul.stockists a {
   margin: 0;
 }
 
-/* line 593, ../scss/screen.scss */
+/* line 614, ../scss/screen.scss */
 #mc_embed_signup .button:hover {
   background-color: #222;
   cursor: pointer;
 }
 
 /* ----- 0.0 Magazine  ------------------------------------------------------ */
-/* line 607, ../scss/screen.scss */
+/* line 628, ../scss/screen.scss */
 .issue-summary {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -802,11 +828,11 @@ ul.stockists a {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 611, ../scss/screen.scss */
+/* line 632, ../scss/screen.scss */
 .issue-summary__image {
   padding-right: 3em;
 }
-/* line 613, ../scss/screen.scss */
+/* line 634, ../scss/screen.scss */
 .issue-summary__image figure {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -817,12 +843,12 @@ ul.stockists a {
   padding-right: 0.83333%;
   margin-left: 8.33333%;
 }
-/* line 616, ../scss/screen.scss */
+/* line 637, ../scss/screen.scss */
 .issue-summary__image figure img {
   height: auto;
   width: 100%;
 }
-/* line 622, ../scss/screen.scss */
+/* line 643, ../scss/screen.scss */
 .issue-summary__detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -834,21 +860,21 @@ ul.stockists a {
   padding-left: 3em;
   padding-top: 1em;
 }
-/* line 627, ../scss/screen.scss */
+/* line 648, ../scss/screen.scss */
 .issue-summary__detail-title {
   font-family: 'Graphik-Medium', sans-serif;
   padding-bottom: 1em;
 }
-/* line 631, ../scss/screen.scss */
+/* line 652, ../scss/screen.scss */
 .issue-summary__detail-printed {
   margin-top: 0;
   padding-bottom: 1em;
 }
-/* line 635, ../scss/screen.scss */
+/* line 656, ../scss/screen.scss */
 .issue-summary__detail-summary {
   padding-bottom: 3em;
 }
-/* line 638, ../scss/screen.scss */
+/* line 659, ../scss/screen.scss */
 .issue-summary__detail-buy {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -860,7 +886,7 @@ ul.stockists a {
   text-align: center;
 }
 
-/* line 644, ../scss/screen.scss */
+/* line 665, ../scss/screen.scss */
 .issue-contents {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -871,7 +897,7 @@ ul.stockists a {
   padding-right: 0.83333%;
   padding: 0;
 }
-/* line 647, ../scss/screen.scss */
+/* line 668, ../scss/screen.scss */
 .issue-contents__title {
   font-family: 'Druk-Wide-Medium', sans-serif;
   text-align: center;
@@ -879,7 +905,7 @@ ul.stockists a {
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
 }
-/* line 654, ../scss/screen.scss */
+/* line 675, ../scss/screen.scss */
 .issue-contents__content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -889,10 +915,20 @@ ul.stockists a {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   text-align: center;
+  line-height: 1.3em;
   border-right: .5px solid grey;
   border-bottom: .5px solid grey;
 }
-/* line 660, ../scss/screen.scss */
+/* line 681, ../scss/screen.scss */
+.issue-contents__content a {
+  color: black;
+  text-decoration: none;
+}
+/* line 687, ../scss/screen.scss */
+.issue-contents__content:hover .issue-contents__content-online, .issue-contents__content:hover .issue-contents__content-contributor {
+  color: white;
+}
+/* line 691, ../scss/screen.scss */
 .issue-contents__content-online {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
@@ -900,13 +936,13 @@ ul.stockists a {
   position: absolute;
   padding-top: .5em;
 }
-/* line 667, ../scss/screen.scss */
+/* line 698, ../scss/screen.scss */
 .issue-contents__content-title {
   padding-top: 1.5em;
-  padding-bottom: .5em;
 }
-/* line 671, ../scss/screen.scss */
+/* line 701, ../scss/screen.scss */
 .issue-contents__content-contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
+  font-size: .5em;
   padding-bottom: 1.5em;
 }

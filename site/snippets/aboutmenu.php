@@ -3,7 +3,7 @@
     <?php foreach($site->find('about', 'about/submissions', 'about/distribution') as $subpage): ?>
     <li>
       <a href="<?php echo $subpage->url() ?>">
-        <?php echo html($subpage->title()) ?>
+        <?php echo html($subpage->title()->upper()) ?>
       </a>
     </li>
     <?php endforeach ?>
