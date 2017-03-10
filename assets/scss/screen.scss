@@ -5,42 +5,14 @@
 
 @import "compass/reset";
 @import "compass";
-@import "susy";
 @import "grids";
-
-$susy: (
-  flow: ltr,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
-  container: auto,
-  container-position: center,
-  columns: 12,
-  gutters: 1/4,
-  column-width: false,
-  global-box-sizing: content-box,
-  last-flow: to,
-  debug: (
-    image: hide,
-    color: rgba(#66f, .25),
-    output: background,
-    toggle: top right,
-  ),
-  use-custom: (
-    background-image: true,
-    background-options: false,
-    box-sizing: true,
-    clearfix: false,
-    rem: true,
-  )
-);
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
 /* DRUK */
 @font-face {
   font-family: 'Druk-Wide-Medium';
-  src: url(../fonts/Druk-Wide-Medium.otf) format("otf");
+  src: url(../fonts/DrukWide-Medium-Web.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -48,7 +20,7 @@ $susy: (
 /* Graphik */
 @font-face {
   font-family: 'Graphik-Medium';
-  src: url(../fonts/Graphik-Medium.otf) format("otf");
+  src: url(../fonts/Graphik-Medium-Web.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -107,10 +79,10 @@ figcaption {
 // }
 
 .text {
-  font-family: 'Graphik-Medium', sans-serif;
+
 }
 
-.text h2, .text h3 {
+.text h1, .text h2, .text h3 {
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
@@ -209,6 +181,9 @@ figcaption {
 
 body {
   background-color: lightgrey;
+  font-family: 'Graphik-Medium', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
 /* ----- 3.1  Header  ------------------------------------------------------- */
@@ -240,6 +215,7 @@ body {
 
 .navigation {
   font-size: 1.5rem;
+  font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
 @media all and (min-width: 56em) {
@@ -292,6 +268,7 @@ body {
 .footer {
   padding-top: 1.5rem;
   font-size: 0;
+  font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
 .footer-left {
@@ -331,7 +308,7 @@ body {
 
 .main {
   @include container;
-  padding-top: 3rem;
+  // padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -339,6 +316,8 @@ body {
 
 .article {
   background-color: white;
+  padding-top: 3rem;
+
   @include span(11);
 
   @media (max-width: 500px) {
@@ -357,9 +336,10 @@ body {
   }
 
   &-header {
+    padding-bottom: 3em;
 
     &__title {
-      font-weight: 700;
+      font-size: 2em;
       margin-bottom: 1em;
       a {
         border-bottom: 0;
@@ -372,10 +352,15 @@ body {
 
     &__issue {
       @include align-self(flex-start);
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      font-size: .8em;
       margin-bottom: 1em;
+      padding-bottom: 3em;
     }
 
     &__contributor {
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      font-size: .8em;
       margin-bottom: 1em;
     }
 
@@ -427,6 +412,8 @@ body {
 
   .text h2, .text h3 {
     @include span(7);
+    font-family: 'Graphik-Medium', sans-serif;
+    padding-bottom: 1em;
   }
 
   .text ul, .text ol {
@@ -435,10 +422,12 @@ body {
 
   .text p {
     @include span(7);
+    padding-bottom: 1em;
   }
 
   .text figure {
-    @include span(7);
+    @include span(9);
+    padding-bottom: 1em;
   }
 
   .text hr {
@@ -462,7 +451,9 @@ body {
   .text blockquote {
     @include span(8);
     @include pull(1);
-    padding: .75rem;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    padding-bottom: 0;
     p {
       @include span(12);
       font-size: 1.5em;
@@ -472,7 +463,7 @@ body {
 
 /* ----- 0.0 About  --------------------------------------------------------- */
 .about {
-
+  padding-top: 3rem;
 }
 
 .about-text {
@@ -516,7 +507,6 @@ body {
     }
     p {
       display: inline;
-      font-family: 'Druk-Wide-Medium', sans-serif;
     }
   }
   &_stock:hover {
@@ -548,6 +538,7 @@ ul.stockists {
 
 .about-menu {
   background-color: whitesmoke;
+  font-family: 'Druk-Wide-Medium', sans-serif;
   ul {
     text-align: center;
   }
@@ -634,6 +625,7 @@ ul.stockists {
     padding-top: 1em;
   }
   &__detail-title {
+    font-family: 'Graphik-Medium', sans-serif;
     padding-bottom: 1em;
   }
   &__detail-printed {
@@ -653,6 +645,7 @@ ul.stockists {
   @include span(12);
   padding: 0;
   &__title {
+    font-family: 'Druk-Wide-Medium', sans-serif;
     text-align: center;
     padding-top: .5em;
     padding-bottom: .5em;
@@ -665,6 +658,9 @@ ul.stockists {
     border-bottom: .5px solid grey;
   }
   &__content-online {
+    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-size: .5em;
+    color: grey;
     position: absolute;
     padding-top: .5em;
   }
@@ -673,6 +669,7 @@ ul.stockists {
     padding-bottom: .5em;
   }
   &__content-contributor {
+    font-family: 'Druk-Wide-Medium', sans-serif;
     padding-bottom: 1.5em;
   }
 }

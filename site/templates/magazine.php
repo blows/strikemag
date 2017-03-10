@@ -30,11 +30,11 @@
               <div class="issue-contents__content" style="background-color: <?= $issue->color1() ?>;">
                 <?php if($content->isVisible()): ?>
                   <p class="issue-contents__content-online">ONLINE</p>
-                  <a href="<?= $content->url() ?>"><h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1></a>
-                  <a href="<?= $contributor->url() ?>"><h3 class="issue-contents__content-contributor"><?= $contributor->title() ?></h3></a>
+                  <a href="<?= $content->url() ?>"><h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1></a>
+                  <a href="<?= $contributor->url() ?>"><h3 class="issue-contents__content-contributor"><?= $contributor->title()->upper() ?></h3></a>
                 <?php else: ?>
-                  <h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1>
-                  <h3 class="issue-contents__content-contributor"><?= $contributor->title() ?></h3>
+                  <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
+                  <h3 class="issue-contents__content-contributor"><?= $contributor->title()->upper() ?></h3>
                 <?php endif ?>
               </div>
             <?php endforeach ?>
