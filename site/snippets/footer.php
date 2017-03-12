@@ -31,5 +31,8 @@
     </div>
   </footer>
 
+  <?= js('assets/js/jquery.min.js') ?>
+  <?= js('assets/js/script.js') ?>
+
 </body>
 </html>
