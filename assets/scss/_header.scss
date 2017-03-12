@@ -1,0 +1,49 @@
+.header {
+  padding-top: 1.5rem;
+  font-size: 0;
+}
+
+.branding {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.95rem;
+  margin-bottom: .45rem;
+  background-color: black;
+  position: relative;
+  display: inline-block;
+}
+
+.branding a {
+  border-bottom: 0;
+
+  img {
+    height: 2em;
+    padding: .2em;
+    vertical-align: middle;
+  }
+}
+
+.navigation {
+  background-color: white;
+  font-size: 1.5rem;
+  font-family: 'Druk-Wide-Medium', sans-serif;
+}
+
+@media all and (min-width: 56em) {
+  .header {
+    padding-top: 0;
+  }
+  .branding {
+    line-height: 3rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .branding,
+  .navigation {
+    vertical-align: baseline;
+    width: 50%;
+    position: relative;
+    display: inline-block;
+  }
+}

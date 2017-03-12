@@ -1,0 +1,20 @@
+.contributors {
+  @include span(11);
+  @include push(.5);
+}
+
+.contributor {
+  @include span(4);
+  margin-bottom: 1em;
+  &-name {
+    background-color: black;
+  }
+
+  &-profilepic {
+    background-color: yellow;
+  }
+
+  &-bio {
+    background-color: white;
+  }
+}

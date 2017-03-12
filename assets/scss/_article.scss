@@ -1,0 +1,146 @@
+.article {
+  background-color: white;
+  padding-top: 3rem;
+
+  @include span(11);
+
+  @media (max-width: 500px) {
+      @include span(11);
+    }
+
+  &-info {
+    @include span(7);
+
+    @media (max-width: 500px) {
+        @include span(7);
+      }
+
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  &-header {
+    padding-bottom: 3em;
+
+    &__title {
+      font-size: 2em;
+      margin-bottom: 1em;
+      a {
+        border-bottom: 0;
+      }
+    }
+
+    &__date {
+      text-align: center;
+    }
+
+    &__issue {
+      @include align-self(flex-start);
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      font-size: .8em;
+      margin-bottom: 1em;
+      padding-bottom: 3em;
+    }
+
+    &__contributor {
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      font-size: .8em;
+      margin-bottom: 1em;
+    }
+
+    &__summary {
+
+    }
+  }
+
+  &-more {
+    font-size: 75%;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: .025em;
+    white-space: nowrap;
+    border-bottom: 2px solid #71efac;
+  }
+}
+
+.article-printed {
+  @include align-self(flex-end);
+  position: absolute;
+  top: 4.5em;
+  right: 0;
+  figure {
+    line-height: 0;
+  }
+}
+
+.article-printed__cover {
+    height: auto;
+    width: 8em;
+    padding: 1em;
+  }
+
+.article-printed__info {
+    min-width: 9em;
+    max-width: 9em;
+    padding: .5em;
+
+    p {
+      color: white;
+    }
+  }
+
+.article {
+  .text {
+    @include span(12);
+  }
+
+  .text h2, .text h3 {
+    @include span(7);
+    font-family: 'Graphik-Medium', sans-serif;
+    padding-bottom: 1em;
+  }
+
+  .text ul, .text ol {
+    @include span(7);
+  }
+
+  .text p {
+    @include span(7);
+    padding-bottom: 1em;
+  }
+
+  .text figure {
+    @include span(9);
+    padding-bottom: 1em;
+  }
+
+  .text hr {
+    /* We use a more muted style for horizontal rules within
+       the main content. */
+    color: #1f00ff
+  }
+
+  .text ul {
+    @include span(7);
+  }
+
+  .text ol > li {
+    list-style: decimal;
+  }
+
+  .text pre, .text code {
+    @include span(7);
+  }
+
+  .text blockquote {
+    @include span(8);
+    @include pull(1);
+    font-size: 1.4em;
+    line-height: 1.8em;
+    padding-bottom: 0;
+    p {
+      @include span(12);
+      font-size: 1.5em;
+    }
+  }
+}

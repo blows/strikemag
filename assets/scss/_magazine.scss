@@ -1,0 +1,87 @@
+.magazine {
+
+}
+
+.issue {
+
+}
+
+.issue-summary {
+  @include span(12);
+  padding-top: 3em;
+  padding-bottom: 3em;
+  &__image {
+    padding-right: 3em;
+    figure {
+      @include span(5);
+      @include push(1);
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  &__detail {
+    @include span(5);
+    padding-left: 3em;
+    padding-top: 1em;
+  }
+  &__detail-title {
+    font-family: 'Graphik-Medium', sans-serif;
+    padding-bottom: 1em;
+  }
+  &__detail-printed {
+    margin-top: 0;
+    padding-bottom: 1em;
+  }
+  &__detail-summary {
+    padding-bottom: 3em;
+  }
+  &__detail-buy {
+    @include span(5);
+    text-align: center;
+  }
+}
+
+.issue-contents {
+  @include span(12);
+  padding: 0;
+  &__title {
+    font-family: 'Druk-Wide-Medium', sans-serif;
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: .5px solid grey;
+  }
+  &__content {
+    @include span(6);
+    text-align: center;
+    line-height: 1.3em;
+    border-right: .5px solid grey;
+    border-bottom: .5px solid grey;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  &__content:hover {
+    .issue-contents__content-online, .issue-contents__content-contributor {
+      color: white;
+    }
+  }
+  &__content-online {
+    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-size: .5em;
+    color: grey;
+    position: absolute;
+    padding-top: .5em;
+  }
+  &__content-title {
+    padding-top: 1.5em;
+  }
+  &__content-contributor {
+    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-size: .5em;
+    padding-bottom: 1.5em;
+  }
+}

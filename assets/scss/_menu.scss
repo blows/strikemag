@@ -1,0 +1,23 @@
+.menu {
+  text-align: center;
+  font-weight: 500;
+  background-color: white;
+}
+
+.menu-item {
+  display: block;
+}
+
+.menu-item a {
+  border-bottom: 0;
+}
+
+.menu-item.is-active a {
+  border-bottom: 2px solid #71efac;
+}
+
+@media all and (min-width: 56em) {
+  .menu {
+    text-align: center;
+  }
+}
