@@ -2,31 +2,33 @@
 
   <main class="main" role="main">
 
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-      <div class="intro text">
-        <?= $page->intro()->kirbytext() ?>
+    <div class="contributors">
+
+      <header class="">
+        <h1>Join our <?php echo $page->children()->count() ?> published writers and artists, send us a pitch!</h1>
+      </header>
+
+      <div class="">
+        <?= $page->text()->kirbytext() ?>
       </div>
-      <hr />
-    </header>
 
-    <div class="text wrap">
-      <?= $page->text()->kirbytext() ?>
+      <?php foreach($page->children() as $contributor): ?>
+      <a id="<?php echo $contributor->uid() ?>">
+      <article class="contributor">
+
+        <figure class="contributor-profilepic">
+          <img src="<?php echo $contributor->profilepic() ?>" alt="<?php echo $contributor->title()->html() ?>">
+        </figure>
+
+        <h1 class="contributor-name"><a href="<?php echo $contributor->url() ?>"><?php echo $contributor->title()->html() ?><a/></h1>
+
+        <p class="contributor-bio"><?php echo $contributor->bio()->html() ?></p>
+
+      </article>
+      </a>
+      <?php endforeach ?>
+
     </div>
-
-    <?php foreach($page->children() as $contributor): ?>
-    <a id="<?php echo $contributor->uid() ?>">
-    <article class="contributor">
-
-      <h1><a href="<?php echo $contributor->url() ?>"><?php echo $contributor->title()->html() ?><a/></h1>
-
-      <figure>
-        <img src="<?php echo $contributor->profilepic() ?>" alt="<?php echo $contributor->title()->html() ?>">
-      </figure>
-
-    </article>
-    </a>
-    <?php endforeach ?>
 
   </main>
 

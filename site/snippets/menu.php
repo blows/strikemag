@@ -1,7 +1,7 @@
 <nav class="navigation" role="navigation">
     <a href="<?= $site->activePage()->url() ?>">
       <?php if( $page->parents()->count() > 0 ) {
-   echo $site->activePage()->parents()->last()->title();
+   echo $site->activePage()->parents()->last()->title()->upper();
 } else { echo $site->activePage()->title()->upper(); } ?>
     </a>
     <button class="hamburger">&#9776;</button>

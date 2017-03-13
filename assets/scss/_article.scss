@@ -1,5 +1,5 @@
 .article {
-  background-color: white;
+  background-color: whitesmoke;
   padding-top: 3rem;
 
   @include span(11);
@@ -9,22 +9,23 @@
     }
 
   &-info {
-    @include span(7);
+    @include span(8.75);
+    @include push(1.50);
 
     @media (max-width: 500px) {
         @include span(7);
+        @include push(2.5);
       }
 
-    padding-top: 1em;
     text-align: center;
   }
 
   &-header {
-    padding-bottom: 3em;
+    margin-bottom: 2.5em;
 
     &__title {
       font-size: 2em;
-      margin-bottom: 1em;
+      margin-bottom: 1.7em;
       a {
         border-bottom: 0;
       }
@@ -38,18 +39,20 @@
       @include align-self(flex-start);
       font-family: 'Druk-Wide-Medium', sans-serif;
       font-size: .8em;
-      margin-bottom: 1em;
-      padding-bottom: 3em;
+      text-align: left;
+      margin-bottom: 5em;
     }
 
     &__contributor {
       font-family: 'Druk-Wide-Medium', sans-serif;
       font-size: .8em;
-      margin-bottom: 1em;
+      margin-bottom: 7em;
+      text-decoration: underline;
     }
 
     &__summary {
-
+      font-size: 1.7em;
+      line-height: 1.3em;
     }
   }
 
@@ -66,38 +69,43 @@
 .article-printed {
   @include align-self(flex-end);
   position: absolute;
-  top: 4.5em;
+  top: 6.6rem;
   right: 0;
   figure {
     line-height: 0;
   }
-}
 
-.article-printed__cover {
+  &__cover {
     height: auto;
     width: 8em;
     padding: 1em;
   }
 
-.article-printed__info {
+  &__info {
     min-width: 9em;
     max-width: 9em;
     padding: .5em;
 
     p {
       color: white;
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      font-size: .5em;
+      line-height: 2em;
     }
   }
+}
 
 .article {
   .text {
     @include span(12);
+    @include push(2.35);
+    margin-bottom: 3em;
   }
 
   .text h2, .text h3 {
     @include span(7);
     font-family: 'Graphik-Medium', sans-serif;
-    padding-bottom: 1em;
+    margin-bottom: 1em;
   }
 
   .text ul, .text ol {
@@ -106,12 +114,24 @@
 
   .text p {
     @include span(7);
-    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+
+  .text figure:first-of-type {
+    @include span(9);
+    @include pull(1);
+    margin-bottom: 1em;
   }
 
   .text figure {
-    @include span(9);
-    padding-bottom: 1em;
+    @include span(7);
+
+    margin-bottom: 1em;
+    figcaption {
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      font-size: .8em;
+      text-decoration: underline;
+    }
   }
 
   .text hr {
@@ -137,10 +157,34 @@
     @include pull(1);
     font-size: 1.4em;
     line-height: 1.8em;
-    padding-bottom: 0;
+    margin-bottom: 0;
     p {
       @include span(12);
       font-size: 1.5em;
+      margin-top: .4em;
     }
   }
+
+  .article-end {
+    margin-bottom: 3em;
+
+    &__contributor {
+      h2 {
+        font-family: 'Druk-Wide-Medium', sans-serif;
+        font-size: .8em;
+        text-decoration: underline;
+      }
+      h2:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__printed, &__uploaded {
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      margin-bottom: 0 !important;
+      font-size: .8em;
+      line-height: 1.5em;
+    }
+  }
+
 }
