@@ -8,6 +8,12 @@ options:
   url: false
   status: true
 
+files:
+  fields:
+    focus:
+      label: Crop focus
+      type: focus
+
 fields:
   title:
     label: Title
