@@ -7,7 +7,8 @@
       <?= $page->text()->kirbytext() ?>
 
       <?php foreach($page->children()->visible()->sortBy('sort', 'desc') as $issue): ?>
-        <div class="issue">
+        <div class="issue group" id="<?php echo $issue->uid() ?>">
+
           <div class="issue-summary text" style="background-color: <?= $issue->color() ?>;">
             <div class="issue-summary__image">
               <figure>
@@ -23,8 +24,10 @@
               <button type="button">GET THE ISSUE</button>
             </div>
           </div>
+
           <div class="issue-contents" style="background-color: <?= $issue->color1() ?>;">
             <div class="issue-contents__title"><h1>CONTENTS</h1></div>
+
             <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
               <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
               <div class="issue-contents__content" style="background-color: <?= $issue->color1() ?>;">
@@ -38,8 +41,11 @@
                 <?php endif ?>
               </div>
             <?php endforeach ?>
+
           </div>
+
         </div>
+
       <?php endforeach ?>
 
     </div>

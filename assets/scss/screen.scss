@@ -25,7 +25,16 @@
   font-style: normal;
 }
 
-
+/* Clear fix */
+.group:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
 
 .center {
   @include display-flex;
@@ -206,7 +215,11 @@ body {
   padding-bottom: 3rem;
 }
 
-/* ----- 4.2 Blog Article  -------------------------------------------------- */
+/* ----- 0.0 Cards  ------------------------------------------------------ */
+
+@import "card";
+
+/* ----- 4.2 Article  -------------------------------------------------- */
 
 @import "article";
 

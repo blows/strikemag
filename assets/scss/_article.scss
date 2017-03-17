@@ -3,6 +3,7 @@
   padding-top: 3rem;
 
   @include span(11);
+  @include push(.5);
 
   @media (max-width: 500px) {
       @include span(11);
@@ -97,7 +98,7 @@
 
 .article {
   .text {
-    @include span(12);
+    @include span(9.65);
     @include push(2.35);
     margin-bottom: 3em;
   }

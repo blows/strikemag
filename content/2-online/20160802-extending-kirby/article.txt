@@ -10,7 +10,7 @@ Coverimage: extending.png
 
 ----
 
-Text: 
+Text:
 
 Kirby comes as a clean package, aiming to provide you with a useful toolkit to get started with. But it it is also very modular and extensible. Rather than providing a solution to every imaginable problem out of the box, Kirby prefers to let *you* decide which features your project really needs.
 
@@ -22,7 +22,7 @@ However, if you ever get stuck, don’t hesitate to ask your question in [our fo
 
 **Further reading**
 
-- (link: https://getkirby.com/blog text: Official Kirby Blog)
+- (link: https://getkirby.com/online text: Official Kirby online)
 - (link: https://getkirby.com/#kosmos text: Kirby Kosmos) (monthly newsletter)
 - (link: https://getkirby.com/docs text: Kirby Documentation)
 - (link: https://getkirby.com/docs/cookbook text: Kirby Cookbook)

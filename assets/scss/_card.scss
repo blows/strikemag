@@ -1,0 +1,72 @@
+.section-header {
+  @include span(11);
+  @include push(.5);
+  background-color: white;
+  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-size: .8em;
+}
+
+.online-recent {
+  @include span(11);
+  @include push(.5);
+  @include display-flex;
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  background-color: rgb(190, 190, 190);
+  padding-bottom: 1em;
+}
+
+.card-large {
+  width: 23em;
+  height: 100%;
+  background-color: white;
+  margin: 2em 1em 1em 1em;
+  padding-left: 0;
+  padding-right: 0;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  &-image {
+    figure img {
+      display: block;
+    }
+  }
+  &-info {
+    height: 15em;
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    margin: .5em .8em .8em .8em;
+
+    &__group {
+      top: 0.6em;
+      right: 0.8em;
+      bottom: 0.8em;
+      left: 0.8em;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: .5em;
+    }
+    &__contributor {
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      text-align: center;
+      font-size: .8em;
+      text-decoration: underline;
+    }
+    &__issue {
+      font-family: 'Druk-Wide-Medium', sans-serif;
+      font-size: .8em;
+      margin-bottom: 2.5em;
+    }
+    &__summary {
+      line-height: 1.2em;
+      font-size: .8em;
+    }
+  }
+}

@@ -82,7 +82,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 400;
   font-style: normal;
 }
-/* line 30, ../scss/screen.scss */
+/* Clear fix */
+/* line 29, ../scss/screen.scss */
+.group:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+/* line 36, ../scss/screen.scss */
+* html .group {
+  zoom: 1;
+}
+
+/* IE6 */
+/* line 37, ../scss/screen.scss */
+*:first-child + html .group {
+  zoom: 1;
+}
+
+/* IE7 */
+/* line 39, ../scss/screen.scss */
 .center {
   display: -webkit-flex;
   display: flex;
@@ -97,7 +119,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* -----  1.4 Buttons  --------------------------------------------- */
-/* line 40, ../scss/screen.scss */
+/* line 49, ../scss/screen.scss */
 button {
   font-size: 13px;
   border: none;
@@ -114,21 +136,21 @@ button {
 }
 
 /* -----  1.4 Images & Figures  --------------------------------------------- */
-/* line 57, ../scss/screen.scss */
+/* line 66, ../scss/screen.scss */
 img {
   border-style: none;
   width: 100%;
   height: auto;
 }
 
-/* line 63, ../scss/screen.scss */
+/* line 72, ../scss/screen.scss */
 figcaption {
   font-size: .75rem;
   line-height: 1.5rem;
 }
 
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
-/* line 70, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
 .intro {
   text-align: center;
   font-weight: 500;
@@ -136,46 +158,46 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* line 85, ../scss/screen.scss */
+/* line 94, ../scss/screen.scss */
 .text h1, .text h2, .text h3 {
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
-/* line 89, ../scss/screen.scss */
+/* line 98, ../scss/screen.scss */
 .text ul, .text ol {
   margin-left: 1.5em;
 }
 
-/* line 93, ../scss/screen.scss */
+/* line 102, ../scss/screen.scss */
 .text p {
   font-weight: 400;
 }
 
-/* line 101, ../scss/screen.scss */
+/* line 110, ../scss/screen.scss */
 .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
 
-/* line 107, ../scss/screen.scss */
+/* line 116, ../scss/screen.scss */
 .text ul {
   list-style: none;
 }
 
-/* line 121, ../scss/screen.scss */
+/* line 130, ../scss/screen.scss */
 .text ol > li {
   list-style: decimal;
 }
 
-/* line 125, ../scss/screen.scss */
+/* line 134, ../scss/screen.scss */
 .text pre, .text code {
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
 }
 
-/* line 131, ../scss/screen.scss */
+/* line 140, ../scss/screen.scss */
 .text code {
   margin: -.25em 0;
   padding: .25em .15em;
@@ -183,7 +205,7 @@ figcaption {
   bottom: .05em;
 }
 
-/* line 138, ../scss/screen.scss */
+/* line 147, ../scss/screen.scss */
 .text pre > code {
   display: block;
   margin: 0;
@@ -194,7 +216,7 @@ figcaption {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  /* line 148, ../scss/screen.scss */
+  /* line 157, ../scss/screen.scss */
   .text pre > code {
     /* Enables smoother scrolling for code sections on
        mobile (i.e. touch) devices. */
@@ -202,7 +224,7 @@ figcaption {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 156, ../scss/screen.scss */
+/* line 165, ../scss/screen.scss */
 .text kbd {
   padding: 3px 7px;
   margin: -3px 2px;
@@ -216,22 +238,22 @@ figcaption {
   bottom: 2px;
 }
 
-/* line 169, ../scss/screen.scss */
+/* line 178, ../scss/screen.scss */
 .text blockquote {
   padding: .75rem;
 }
-/* line 171, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 .text blockquote p {
   font-size: 1.5em;
 }
 
-/* line 176, ../scss/screen.scss */
+/* line 185, ../scss/screen.scss */
 .text blockquote :last-child {
   margin-bottom: 0;
 }
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
-/* line 182, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 body {
   background-color: lightgrey;
   font-family: 'Graphik-Medium', sans-serif;
@@ -493,7 +515,7 @@ body {
   }
 }
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 203, ../scss/screen.scss */
+/* line 212, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -507,7 +529,104 @@ body {
   clear: both;
 }
 
-/* ----- 4.2 Blog Article  -------------------------------------------------- */
+/* ----- 0.0 Cards  ------------------------------------------------------ */
+/* line 1, ../scss/_card.scss */
+.section-header {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 91.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 4.16667%;
+  background-color: white;
+  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-size: .8em;
+}
+
+/* line 9, ../scss/_card.scss */
+.online-recent {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 91.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 4.16667%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #bebebe;
+  padding-bottom: 1em;
+}
+
+/* line 19, ../scss/_card.scss */
+.card-large {
+  width: 23em;
+  height: 100%;
+  background-color: white;
+  margin: 2em 1em 1em 1em;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 27, ../scss/_card.scss */
+.card-large a {
+  color: black;
+  text-decoration: none;
+}
+/* line 33, ../scss/_card.scss */
+.card-large-image figure img {
+  display: block;
+}
+/* line 37, ../scss/_card.scss */
+.card-large-info {
+  height: 15em;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: .5em .8em .8em .8em;
+}
+/* line 44, ../scss/_card.scss */
+.card-large-info__group {
+  top: 0.6em;
+  right: 0.8em;
+  bottom: 0.8em;
+  left: 0.8em;
+}
+/* line 51, ../scss/_card.scss */
+.card-large-info__title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+/* line 56, ../scss/_card.scss */
+.card-large-info__contributor {
+  font-family: 'Druk-Wide-Medium', sans-serif;
+  text-align: center;
+  font-size: .8em;
+  text-decoration: underline;
+}
+/* line 62, ../scss/_card.scss */
+.card-large-info__issue {
+  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-size: .8em;
+  margin-bottom: 2.5em;
+}
+/* line 67, ../scss/_card.scss */
+.card-large-info__summary {
+  line-height: 1.2em;
+  font-size: .8em;
+}
+
+/* ----- 4.2 Article  -------------------------------------------------- */
 /* line 1, ../scss/_article.scss */
 .article {
   background-color: whitesmoke;
@@ -519,6 +638,7 @@ body {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+  margin-left: 4.16667%;
 }
 @media (max-width: 500px) {
   /* line 1, ../scss/_article.scss */
@@ -532,7 +652,7 @@ body {
     padding-right: 0.83333%;
   }
 }
-/* line 11, ../scss/_article.scss */
+/* line 12, ../scss/_article.scss */
 .article-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -545,7 +665,7 @@ body {
   text-align: center;
 }
 @media (max-width: 500px) {
-  /* line 11, ../scss/_article.scss */
+  /* line 12, ../scss/_article.scss */
   .article-info {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -557,24 +677,24 @@ body {
     margin-left: 20.83333%;
   }
 }
-/* line 23, ../scss/_article.scss */
+/* line 24, ../scss/_article.scss */
 .article-header {
   margin-bottom: 2.5em;
 }
-/* line 26, ../scss/_article.scss */
+/* line 27, ../scss/_article.scss */
 .article-header__title {
   font-size: 2em;
   margin-bottom: 1.7em;
 }
-/* line 29, ../scss/_article.scss */
+/* line 30, ../scss/_article.scss */
 .article-header__title a {
   border-bottom: 0;
 }
-/* line 34, ../scss/_article.scss */
+/* line 35, ../scss/_article.scss */
 .article-header__date {
   text-align: center;
 }
-/* line 38, ../scss/_article.scss */
+/* line 39, ../scss/_article.scss */
 .article-header__issue {
   -webkit-align-self: flex-start;
   align-self: flex-start;
@@ -583,19 +703,19 @@ body {
   text-align: left;
   margin-bottom: 5em;
 }
-/* line 46, ../scss/_article.scss */
+/* line 47, ../scss/_article.scss */
 .article-header__contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .8em;
   margin-bottom: 7em;
   text-decoration: underline;
 }
-/* line 53, ../scss/_article.scss */
+/* line 54, ../scss/_article.scss */
 .article-header__summary {
   font-size: 1.7em;
   line-height: 1.3em;
 }
-/* line 59, ../scss/_article.scss */
+/* line 60, ../scss/_article.scss */
 .article-more {
   font-size: 75%;
   text-transform: uppercase;
@@ -605,7 +725,7 @@ body {
   border-bottom: 2px solid #71efac;
 }
 
-/* line 69, ../scss/_article.scss */
+/* line 70, ../scss/_article.scss */
 .article-printed {
   -webkit-align-self: flex-end;
   align-self: flex-end;
@@ -613,23 +733,23 @@ body {
   top: 6.6rem;
   right: 0;
 }
-/* line 74, ../scss/_article.scss */
+/* line 75, ../scss/_article.scss */
 .article-printed figure {
   line-height: 0;
 }
-/* line 78, ../scss/_article.scss */
+/* line 79, ../scss/_article.scss */
 .article-printed__cover {
   height: auto;
   width: 8em;
   padding: 1em;
 }
-/* line 84, ../scss/_article.scss */
+/* line 85, ../scss/_article.scss */
 .article-printed__info {
   min-width: 9em;
   max-width: 9em;
   padding: .5em;
 }
-/* line 89, ../scss/_article.scss */
+/* line 90, ../scss/_article.scss */
 .article-printed__info p {
   color: white;
   font-family: 'Druk-Wide-Medium', sans-serif;
@@ -637,19 +757,19 @@ body {
   line-height: 2em;
 }
 
-/* line 99, ../scss/_article.scss */
+/* line 100, ../scss/_article.scss */
 .article .text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
+  width: 80.41667%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   margin-left: 19.58333%;
   margin-bottom: 3em;
 }
-/* line 105, ../scss/_article.scss */
+/* line 106, ../scss/_article.scss */
 .article .text h2, .article .text h3 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -661,7 +781,7 @@ body {
   font-family: 'Graphik-Medium', sans-serif;
   margin-bottom: 1em;
 }
-/* line 111, ../scss/_article.scss */
+/* line 112, ../scss/_article.scss */
 .article .text ul, .article .text ol {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -671,7 +791,7 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 115, ../scss/_article.scss */
+/* line 116, ../scss/_article.scss */
 .article .text p {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -682,7 +802,7 @@ body {
   padding-right: 0.83333%;
   margin-bottom: 1em;
 }
-/* line 120, ../scss/_article.scss */
+/* line 121, ../scss/_article.scss */
 .article .text figure:first-of-type {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -694,7 +814,7 @@ body {
   margin-left: -8.33333%;
   margin-bottom: 1em;
 }
-/* line 126, ../scss/_article.scss */
+/* line 127, ../scss/_article.scss */
 .article .text figure {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -705,19 +825,19 @@ body {
   padding-right: 0.83333%;
   margin-bottom: 1em;
 }
-/* line 130, ../scss/_article.scss */
+/* line 131, ../scss/_article.scss */
 .article .text figure figcaption {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .8em;
   text-decoration: underline;
 }
-/* line 137, ../scss/_article.scss */
+/* line 138, ../scss/_article.scss */
 .article .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
-/* line 143, ../scss/_article.scss */
+/* line 144, ../scss/_article.scss */
 .article .text ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -727,11 +847,11 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 147, ../scss/_article.scss */
+/* line 148, ../scss/_article.scss */
 .article .text ol > li {
   list-style: decimal;
 }
-/* line 151, ../scss/_article.scss */
+/* line 152, ../scss/_article.scss */
 .article .text pre, .article .text code {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -741,7 +861,7 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 155, ../scss/_article.scss */
+/* line 156, ../scss/_article.scss */
 .article .text blockquote {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -755,7 +875,7 @@ body {
   line-height: 1.8em;
   margin-bottom: 0;
 }
-/* line 161, ../scss/_article.scss */
+/* line 162, ../scss/_article.scss */
 .article .text blockquote p {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -767,21 +887,21 @@ body {
   font-size: 1.5em;
   margin-top: .4em;
 }
-/* line 168, ../scss/_article.scss */
+/* line 169, ../scss/_article.scss */
 .article .article-end {
   margin-bottom: 3em;
 }
-/* line 172, ../scss/_article.scss */
+/* line 173, ../scss/_article.scss */
 .article .article-end__contributor h2 {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .8em;
   text-decoration: underline;
 }
-/* line 177, ../scss/_article.scss */
+/* line 178, ../scss/_article.scss */
 .article .article-end__contributor h2:hover {
   text-decoration: none;
 }
-/* line 182, ../scss/_article.scss */
+/* line 183, ../scss/_article.scss */
 .article .article-end__printed, .article .article-end__uploaded {
   font-family: 'Druk-Wide-Medium', sans-serif;
   margin-bottom: 0 !important;

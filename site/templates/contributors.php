@@ -13,8 +13,7 @@
       </div>
 
       <?php foreach($page->children() as $contributor): ?>
-      <a id="<?php echo $contributor->uid() ?>">
-      <article class="contributor">
+      <article class="contributor" id="<?php echo $contributor->uid() ?>">
 
         <figure class="contributor-profilepic">
           <img src="<?php echo $contributor->profilepic() ?>" alt="<?php echo $contributor->title()->html() ?>">

@@ -1,5 +1,5 @@
 <?php if($item->coverimage()->isNotEmpty()): ?>
   <figure>
-    <img src="<?= $item->coverimage()->toFile()->url() ?>" alt="" />
+    <img src="<?= $item->coverimage()->toFile()->focusCrop(500, 350)->url(); ?>" alt="" />
   </figure>
 <?php endif ?>

@@ -18,22 +18,41 @@
       <?php endif ?>
     </header>
 
-    <section class="">
+    <h2 class="section-header">RECENT</h2>
+    <section class="online-recent group">
       <?php if($articles->count()): ?>
         <?php foreach($articles as $article): ?>
+        <?php $contributor = $pages->find('contributors/' . $article->contributor()) ?>
+        <?php $issue = $pages->find('magazine/' . $article->printed()) ?>
 
           <article class="card-large">
-
-            <div class="card-large-image">
-              <?php snippet('coverimage', $article) ?>
-            </div>
+            <a href="<?= $article->url() ?>">
+            <?php if ($article->coverimage()->isNotEmpty()) : ?>
+              <div class="card-large-image">
+                <?php snippet('coverimage', $article) ?>
+              </div>
+            <?php endif; ?>
 
             <header class="card-large-info">
-              <h2 class="card-large-info__title">
-                <a href="<?= $article->url() ?>"><?= $article->title()->html() ?></a>
-              </h2>
-            </header>
 
+                <div class="card-large-info__group">
+                  <?php if ($article->printed()->isNotEmpty()) : ?>
+                    <h3 class="card-large-info__issue">
+                      <?= $issue->title()->upper()->html() ?>
+                    </h3>
+                  <?php endif; ?>
+                  <h2 class="card-large-info__title" style="color: <?= $article->parent()->color() ?>">
+                    <?= $article->title()->upper()->html() ?>
+                  </h2>
+                  <h3 class="card-large-info__contributor" style="color: <?= $article->parent()->color() ?>">
+                    <?= $contributor->title()->upper() ?>
+                  </h3>
+                </div>
+                <p class="card-large-info__summary">
+                  <?= $article->summary()->html() ?>
+                </p>
+            </header>
+            </a>
           </article>
 
         <?php endforeach ?>
