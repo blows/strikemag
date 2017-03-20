@@ -1,13 +1,13 @@
-<article class="card-large">
+<article class="card-large-portrait">
 
-<a href="<?= $article->url() ?>">
+<a href="<?= $article->url() ?>" class="card-portrait">
 <?php if ($article->coverimage()->isNotEmpty()) : ?>
-  <div class="card-large-image">
+  <div class="card-large-portrait-image">
     <?php snippet('coverimage', $article) ?>
   </div>
 <?php endif; ?>
 
-<header class="card-large-info">
+<header class="card-large-portrait-info">
 
     <div class="card-large-info__group">
       <?php if ($article->printed()->isNotEmpty()) : ?>

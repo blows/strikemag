@@ -1,14 +1,13 @@
 <article class="card-large">
-
 <a href="<?= $article->url() ?>">
-<?php if ($article->coverimage()->isNotEmpty()) : ?>
-  <div class="card-large-image">
-    <?php snippet('coverimage', $article) ?>
-  </div>
-<?php endif; ?>
 
-<header class="card-large-info">
+  <?php if ($article->coverimage()->isNotEmpty()) : ?>
+    <div class="card-large-image">
+      <?php snippet('coverimage', $article) ?>
+    </div>
+  <?php endif; ?>
 
+  <header class="card-large-info">
     <div class="card-large-info__group">
       <?php if ($article->printed()->isNotEmpty()) : ?>
         <h3 class="card-large-info__issue">
@@ -25,7 +24,7 @@
     <p class="card-large-info__summary">
       <?= $article->summary()->html() ?>
     </p>
-</header>
+  </header>
 
 </a>
 </article>

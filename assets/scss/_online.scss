@@ -1,0 +1,17 @@
+.section-header {
+  @include span(11);
+  @include push(.5);
+  background-color: white;
+  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-size: .8em;
+}
+
+.online-recent {
+  @include span(11);
+  @include push(.5);
+  @include display-flex;
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  background-color: rgb(190, 190, 190);
+  padding-bottom: 1em;
+}
