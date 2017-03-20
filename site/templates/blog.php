@@ -5,13 +5,7 @@
     <header class="">
       <h1><?= $page->title()->html() ?></h1>
 
-      <?php
-      // This page uses a separate controller to set variables, which can be used
-      // within this template file. This results in less logic in your templates,
-      // making them more readable. Learn more about controllers at:
-      // https://getkirby.com/docs/developer-guide/advanced/controllers
-      if($pagination->page() == 1):
-      ?>
+      <?php if($pagination->page() == 1):?>
         <div class="intro text">
           <?= $page->text()->kirbytext() ?>
         </div>
@@ -22,42 +16,39 @@
     <section class="online-recent group">
       <?php if($articles->count()): ?>
         <?php foreach($articles as $article): ?>
-        <?php $contributor = $pages->find('contributors/' . $article->contributor()) ?>
-        <?php $issue = $pages->find('magazine/' . $article->printed()) ?>
 
-          <article class="card-large">
-            <a href="<?= $article->url() ?>">
-            <?php if ($article->coverimage()->isNotEmpty()) : ?>
-              <div class="card-large-image">
-                <?php snippet('coverimage', $article) ?>
-              </div>
-            <?php endif; ?>
+          <?php if($article->coverimage()->isNotEmpty()): ?>
 
-            <header class="card-large-info">
+          <?php $ci = $article->coverimage()->toFile() ?>
 
-                <div class="card-large-info__group">
-                  <?php if ($article->printed()->isNotEmpty()) : ?>
-                    <h3 class="card-large-info__issue">
-                      <?= $issue->title()->upper()->html() ?>
-                    </h3>
-                  <?php endif; ?>
-                  <h2 class="card-large-info__title" style="color: <?= $article->parent()->color() ?>">
-                    <?= $article->title()->upper()->html() ?>
-                  </h2>
-                  <h3 class="card-large-info__contributor" style="color: <?= $article->parent()->color() ?>">
-                    <?= $contributor->title()->upper() ?>
-                  </h3>
-                </div>
-                <p class="card-large-info__summary">
-                  <?= $article->summary()->html() ?>
-                </p>
-            </header>
-            </a>
-          </article>
+            <?php if($ci->orientation() == 'portrait'): ?>
+            <?php snippet('cardLargePortrait', array(
+            'article' => $article,
+            'contributor' => $pages->find('contributors/' . $article->contributor()),
+            'issue' => $pages->find('magazine/' . $article->printed())
+            )) ?>
+
+            <?php else: ?>
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $article,
+            'contributor' => $pages->find('contributors/' . $article->contributor()),
+            'issue' => $pages->find('magazine/' . $article->printed())
+            )) ?>
+            <?php endif ?>
+
+          <?php else: ?>
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $article,
+            'contributor' => $pages->find('contributors/' . $article->contributor()),
+            'issue' => $pages->find('magazine/' . $article->printed())
+            )) ?>
+
+          <?php endif ?>
 
         <?php endforeach ?>
+
       <?php else: ?>
-        <p>This blog does not contain any articles yet.</p>
+        <p>Where did all of the articles go?</p>
       <?php endif ?>
     </section>
 

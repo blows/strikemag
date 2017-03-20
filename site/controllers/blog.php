@@ -13,9 +13,9 @@ return function($site, $pages, $page) {
 
   // Merge all Online-Only articles with uploaded articles within Issues
   $webonly = $pages->find('online')->children()->visible();
-  $magazine  = $pages->find('magazine')->grandChildren()->visible();
+  $magazine = $pages->find('magazine')->grandChildren()->visible();
   $webPlusMag = new Pages(array($webonly, $magazine));
-  $online = $webPlusMag->flip()->paginate(($perpage >= 1)? $perpage : 6);
+  $online = $webPlusMag->flip()->paginate(($perpage >= 1)? $perpage : 4);
 
   return [
     'articles'   => $online,
