@@ -10,11 +10,18 @@
   @include span(12);
   padding-top: 3em;
   padding-bottom: 3em;
+  @media all and (max-width: 500px) {
+    padding-top: 2em;
+  }
   &__image {
     padding-right: 3em;
     figure {
       @include span(5);
       @include push(1);
+      @media all and (max-width: 500px) {
+        @include span(12);
+        @include push(.6);
+      }
       img {
         height: auto;
         width: 100%;
@@ -23,6 +30,10 @@
   }
   &__detail {
     @include span(5);
+    @media all and (max-width: 500px) {
+      @include span(11);
+      @include push(.5);
+    }
     padding-left: 3em;
     padding-top: 1em;
   }
@@ -39,6 +50,10 @@
   }
   &__detail-buy {
     @include span(5);
+    @media all and (max-width: 500px) {
+      @include span(11);
+      @include push(.5);
+    }
     text-align: center;
   }
 }
@@ -54,7 +69,12 @@
     border-bottom: .5px solid grey;
   }
   &__content {
+    display: none;
     @include span(6);
+    @media all and (max-width: 500px) {
+      @include span(12);
+      border-right: none;
+    }
     text-align: center;
     line-height: 1.3em;
     border-right: .5px solid grey;

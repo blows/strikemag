@@ -1,5 +1,6 @@
 jQuery(document).ready(function(){
 
+// Menu
 $( ".cross" ).hide();
 $( ".menu" ).hide();
 $( ".hamburger" ).click(function() {
@@ -14,6 +15,11 @@ $( ".menu" ).slideToggle( "slow", function() {
 $( ".cross" ).hide();
 $( ".hamburger" ).show();
 });
+});
+
+// Magazine Contents Show/Hide
+$( ".issue-contents__title" ).click(function() {
+$( ".issue-contents__content" ).slideToggle("medium");
 });
 
 });
