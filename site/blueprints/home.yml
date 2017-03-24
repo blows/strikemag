@@ -14,3 +14,14 @@ fields:
   text:
     label: Text
     type:  textarea
+
+  featured:
+    label: Featured Banner
+    type: select
+    search: true
+    options: query
+    query:
+      page: /
+      fetch: pages
+      template: article
+      flip: true

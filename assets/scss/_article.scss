@@ -6,7 +6,9 @@
   @include push(.5);
 
   @media (max-width: 500px) {
-      @include span(11);
+    padding-top: 1rem;
+    @include span(11.8);
+    @include push(.1);
     }
 
   &-info {
@@ -14,8 +16,8 @@
     @include push(1.50);
 
     @media (max-width: 500px) {
-        @include span(7);
-        @include push(2.5);
+        @include span(11);
+        @include push(.5);
       }
 
     text-align: center;
@@ -72,6 +74,11 @@
   position: absolute;
   top: 6.6rem;
   right: 0;
+
+  @media (max-width: 500px) {
+      display: none;
+    }
+
   figure {
     line-height: 0;
   }
@@ -96,36 +103,83 @@
   }
 }
 
+.article-share {
+  @include span(8.75);
+  @include push(1.50);
+  padding-bottom: 2em;
+  color: grey;
+
+  a {
+    color: grey;
+  }
+
+  @media (max-width: 500px) {
+      @include span(11);
+      @include push(.5);
+      font-size: .8em;
+    }
+}
+
 .article {
   .text {
     @include span(9.65);
     @include push(2.35);
     margin-bottom: 3em;
+
+    @media (max-width: 500px) {
+        @include span(12);
+        @include push(0);
+      }
   }
 
   .text h2, .text h3 {
     @include span(7);
     font-family: 'Graphik-Medium', sans-serif;
     margin-bottom: 1em;
+
+    @media (max-width: 500px) {
+        @include span(11);
+        @include push(.5);
+      }
   }
 
   .text ul, .text ol {
     @include span(7);
+
+    @media (max-width: 500px) {
+        @include span(11);
+        @include push(.5);
+      }
   }
 
   .text p {
     @include span(7);
     margin-bottom: 1em;
+
+    @media (max-width: 500px) {
+        @include span(11);
+        @include push(.5);
+      }
   }
 
   .text figure:first-of-type {
     @include span(9);
     @include pull(1);
     margin-bottom: 1em;
+
+    @media (max-width: 500px) {
+        @include span(12);
+        @include push(0);
+      }
   }
 
   .text figure {
     @include span(7);
+
+    @media (max-width: 500px) {
+        @include span(11);
+        @include push(.5);
+      }
 
     margin-bottom: 1em;
     figcaption {
@@ -143,6 +197,11 @@
 
   .text ul {
     @include span(7);
+
+    @media (max-width: 500px) {
+        @include span(11);
+        @include push(.5);
+      }
   }
 
   .text ol > li {
@@ -151,6 +210,11 @@
 
   .text pre, .text code {
     @include span(7);
+
+    @media (max-width: 500px) {
+        @include span(11);
+        @include push(.5);
+      }
   }
 
   .text blockquote {
@@ -159,10 +223,20 @@
     font-size: 1.4em;
     line-height: 1.8em;
     margin-bottom: 0;
+
+    @media (max-width: 500px) {
+        @include span(11);
+        @include push(.5);
+      }
+
     p {
       @include span(12);
       font-size: 1.5em;
       margin-top: .4em;
+
+      @media (max-width: 500px) {
+          margin-left: 0;
+        }
     }
   }
 

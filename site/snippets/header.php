@@ -20,6 +20,16 @@
   <?php echo js($js->url()) ?>
   <?php endforeach ?>
 
+  <?php if(isset($article)) : ?>
+    <style type="text/css">
+      <?php if($color = $article->parent()->color()) : ?>
+         .card-large:hover {
+           background-color: <?php echo $color ?>;
+         }
+      <?php endif; ?>
+    </style>
+  <?php endif ?>
+
 </head>
 <body>
 

@@ -34,6 +34,26 @@
         <!-- <hr /> -->
       </header>
 
+      <div class="article-share">
+        <p>Estimated Read Time: <?php echo $page->text()->readingtime(array(
+          'format' => '{minutesCount} {minutesLabel}',
+          'format.alt' => '{secondsCount} {secondsLabel}',
+          'format.alt.enable' => true
+          )); ?>
+        </p>
+        <p>Share:
+          <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
+            Twitter
+          </a>
+          <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+            Facebook
+          </a>
+          <a href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
+            Email
+          </a>
+        </p>
+      </div>
+
       <div class="text">
         <?= $page->text()->kirbytext() ?>
 

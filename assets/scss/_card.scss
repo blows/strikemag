@@ -53,26 +53,27 @@
   }
 }
 
-.card-large-portrait {
+.portrait {
   @extend .card-large;
   width: 32.4em;
   height: 23em;
   a {
     @include display-flex;
     @include flex-direction(row-reverse);
-  }
-  &-image {
-  height: 23em;
-    figure img {
-      display: block;
-      min-height: 23em;
+    .card-large-image {
+    height: 23em;
+      figure img {
+        display: block;
+        min-height: 23em;
+      }
     }
-  }
-  &-info {
-    width: 50%;
-    @include display-flex;
-    @include flex-direction(column);
-    @include justify-content(space-between);
-    margin: .5em .8em .8em .8em;
+    .card-large-info {
+      width: 50%;
+      min-height: 21.8em;
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(space-between);
+      margin: .5em .8em .8em .8em;
+    }
   }
 }

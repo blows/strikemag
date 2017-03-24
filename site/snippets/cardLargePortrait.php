@@ -1,14 +1,16 @@
-<article class="card-large-portrait">
+<article class="card-large card-large-portrait portrait">
 
-<a href="<?= $article->url() ?>" class="card-portrait">
+<a href="<?= $article->url() ?>" class="">
 <?php if ($article->coverimage()->isNotEmpty()) : ?>
-  <div class="card-large-portrait-image">
-    <?php snippet('coverimage', $article) ?>
+  <div class="card-large-image">
+    <?php $ci = $article->coverimage()->toFile() ?>
+    <figure>
+      <img src="<?php echo $ci->focusCrop(350, 500)->url(); ?>" alt="" />
+    </figure>
   </div>
 <?php endif; ?>
 
-<header class="card-large-portrait-info">
-
+<header class="card-large-info">
     <div class="card-large-info__group">
       <?php if ($article->printed()->isNotEmpty()) : ?>
         <h3 class="card-large-info__issue">

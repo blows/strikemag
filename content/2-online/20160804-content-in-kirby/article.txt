@@ -26,7 +26,7 @@ Kirby’s content is written Kirbytext by default. It is basically an extended v
 
 <!-- For the following example, left and right parenthesis have been replaced by their HTML entities, so the tag will not get parsed in this article. -->
 
-<pre><code>&#40;email: hello@example.com&#41;</code></pre>
+<pre><code>(email: hello@example.com)</code></pre>
 
 It is not only handier than typing “`<a href="mailto: …`”, but also encodes every character of the provided email address as an HTML entity to make the life of spambots a little harder. You can also define your own Kirbytags and even override the behavior of Kirby’s built-in tags. Your custom tags will be stored within `/site/tags`.
 
@@ -38,3 +38,23 @@ It is not only handier than typing “`<a href="mailto: …`”, but also encode
 - (link: https://getkirby.com/docs/content/text text: Formatting text) (Kirby Documentation)
 - (link: https://getkirby.com/docs/cookbook/blog text: Creating a Kirby-powered blog) (Kirby Cookbook)
 - (link: https://getkirby.com/docs/developer-guide/kirbytext/tags text: How to create custom Kirbytags) (Kirby Documentation)
+
+----
+
+Contributor: evening-class
+
+----
+
+Artwork: 
+
+----
+
+Uploaded: 2017-03-20
+
+----
+
+Printed: 
+
+----
+
+Summary: 

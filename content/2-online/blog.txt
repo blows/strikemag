@@ -6,4 +6,4 @@ Text: Blogging with Kirby is as easy as it’s fun. This simple blog shows just 
 
 ----
 
-Perpage: 5
+Perpage: 4

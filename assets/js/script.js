@@ -17,3 +17,15 @@ $( ".hamburger" ).show();
 });
 
 });
+
+// Portrait Cards becone Landscape on smaller screens
+$(window).on('load, resize', function mobileViewUpdate() {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 770) {
+        $(".card-large-portrait").removeClass("portrait");
+    };
+
+    if (viewportWidth > 771) {
+        $(".card-large-portrait").addClass("portrait");
+    };
+});

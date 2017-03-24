@@ -2,7 +2,7 @@
 
   <main class="main" role="main">
 
-    <header class="">
+    <!-- <header class="">
       <h1><?= $page->title()->html() ?></h1>
 
       <?php if($pagination->page() == 1):?>
@@ -10,9 +10,9 @@
           <?= $page->text()->kirbytext() ?>
         </div>
       <?php endif ?>
-    </header>
+    </header> -->
 
-    <h2 class="section-header">RECENT</h2>
+    <!-- <h2 class="section-header">RECENT</h2> -->
     <section class="online-recent group">
       <?php if($articles->count()): ?>
         <?php foreach($articles as $article): ?>

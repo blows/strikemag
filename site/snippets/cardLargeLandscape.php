@@ -3,7 +3,10 @@
 
   <?php if ($article->coverimage()->isNotEmpty()) : ?>
     <div class="card-large-image">
-      <?php snippet('coverimage', $article) ?>
+      <?php $ci = $article->coverimage()->toFile() ?>
+      <figure>
+        <img src="<?php echo $ci->focusCrop(500, 350)->url(); ?>" alt="" />
+      </figure>
     </div>
   <?php endif; ?>
 
