@@ -14,6 +14,9 @@
   <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
   <?php echo css($css->url()) ?>
   <?php endforeach ?>
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/6a356015ff.js"></script>
+
 
   <!-- custom javascript -->
   <?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>

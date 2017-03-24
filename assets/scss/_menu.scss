@@ -59,7 +59,11 @@
     font-size: 0.8em;
     width: 100%;
     background: white;
-    position: absolute;
+    position: fixed;
+    top: 3.8em;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
 }
 

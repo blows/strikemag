@@ -282,7 +282,7 @@ body {
 /* ----- 3.1  Header  ------------------------------------------------------- */
 /* line 1, ../scss/_header.scss */
 .header {
-  padding-top: 1.5rem;
+  padding-top: 0;
   font-size: 0;
   width: 100%;
   background: #ffffff;
@@ -290,60 +290,65 @@ body {
 
 /* line 10, ../scss/_header.scss */
 .branding {
-  text-align: center;
+  width: 50%;
+  vertical-align: baseline;
+  display: inline-block;
   font-size: 1.5rem;
-  line-height: 1.95rem;
-  margin-bottom: .45rem;
   background-color: black;
   position: relative;
   display: inline-block;
+  line-height: 3rem;
+  margin-bottom: 0;
+  white-space: nowrap;
+  text-align: center;
 }
 
-/* line 20, ../scss/_header.scss */
+/* line 24, ../scss/_header.scss */
 .branding a {
   border-bottom: 0;
 }
-/* line 23, ../scss/_header.scss */
+/* line 27, ../scss/_header.scss */
 .branding a img {
   height: 2em;
   padding: .2em;
   vertical-align: middle;
 }
 
-/* line 30, ../scss/_header.scss */
+/* line 34, ../scss/_header.scss */
 .navigation {
+  width: 50%;
+  vertical-align: baseline;
+  position: relative;
+  display: inline-block;
   background-color: white;
   text-align: center;
   font-size: 1.2rem;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
-/* line 35, ../scss/_header.scss */
+/* line 43, ../scss/_header.scss */
 .navigation a {
   text-decoration: none;
   color: black;
 }
+/* line 47, ../scss/_header.scss */
+.navigation .hamburger {
+  display: inline;
+}
 
-@media all and (min-width: 56em) {
-  /* line 42, ../scss/_header.scss */
-  .header {
-    padding-top: 0;
+/* line 52, ../scss/_header.scss */
+.navigation-menu {
+  display: none;
+}
+
+@media all and (max-width: 500px) {
+  /* line 57, ../scss/_header.scss */
+  .navigation-page {
+    display: none;
   }
 
-  /* line 45, ../scss/_header.scss */
-  .branding {
-    line-height: 3rem;
-    margin-bottom: 0;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  /* line 51, ../scss/_header.scss */
-  .branding,
-  .navigation {
-    vertical-align: baseline;
-    width: 50%;
-    position: relative;
-    display: inline-block;
+  /* line 60, ../scss/_header.scss */
+  .navigation-menu {
+    display: block;
   }
 }
 /* -----  3.2 Menu  --------------------------------------------------------- */
@@ -417,11 +422,15 @@ body {
   font-size: 0.8em;
   width: 100%;
   background: white;
-  position: absolute;
+  position: fixed;
+  top: 3.8em;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
 }
 
-/* line 66, ../scss/_menu.scss */
+/* line 70, ../scss/_menu.scss */
 .menu ul {
   margin: 0;
   padding: 0;
@@ -429,40 +438,40 @@ body {
   list-style-image: none;
 }
 
-/* line 73, ../scss/_menu.scss */
+/* line 77, ../scss/_menu.scss */
 .menu li {
   display: block;
   padding: 15px 0;
 }
 
-/* line 78, ../scss/_menu.scss */
+/* line 82, ../scss/_menu.scss */
 .menu li:hover {
   display: block;
   background: white;
   padding: 15px 0;
 }
 
-/* line 84, ../scss/_menu.scss */
+/* line 88, ../scss/_menu.scss */
 .menu ul li a {
   text-decoration: none;
   margin: 0;
   color: black;
 }
 
-/* line 90, ../scss/_menu.scss */
+/* line 94, ../scss/_menu.scss */
 .menu ul li a:hover {
   color: black;
   text-decoration: none;
 }
 
-/* line 95, ../scss/_menu.scss */
+/* line 99, ../scss/_menu.scss */
 .menu a {
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
 }
 
-/* line 101, ../scss/_menu.scss */
+/* line 105, ../scss/_menu.scss */
 .menu a:hover {
   text-decoration: none;
   color: black;

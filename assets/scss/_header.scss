@@ -1,5 +1,5 @@
 .header {
-  padding-top: 1.5rem;
+  padding-top: 0;
   font-size: 0;
   width:100%;
   background: #ffffff;
@@ -8,13 +8,17 @@
 }
 
 .branding {
-  text-align: center;
+  width: 50%;
+  vertical-align: baseline;
+  display: inline-block;
   font-size: 1.5rem;
-  line-height: 1.95rem;
-  margin-bottom: .45rem;
   background-color: black;
   position: relative;
   display: inline-block;
+  line-height: 3rem;
+  margin-bottom: 0;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .branding a {
@@ -28,6 +32,10 @@
 }
 
 .navigation {
+  width: 50%;
+  vertical-align: baseline;
+  position: relative;
+  display: inline-block;
   background-color: white;
   text-align: center;
   font-size: 1.2rem;
@@ -36,23 +44,20 @@
     text-decoration: none;
     color: black;
   }
+  .hamburger {
+    display: inline;
+  }
 }
 
-@media all and (min-width: 56em) {
-  .header {
-    padding-top: 0;
+.navigation-menu {
+  display: none;
+}
+
+@media all and (max-width: 500px) {
+  .navigation-page {
+    display: none;
   }
-  .branding {
-    line-height: 3rem;
-    margin-bottom: 0;
-    white-space: nowrap;
-    text-align: center;
-  }
-  .branding,
-  .navigation {
-    vertical-align: baseline;
-    width: 50%;
-    position: relative;
-    display: inline-block;
+  .navigation-menu {
+    display: block;
   }
 }
