@@ -29,6 +29,9 @@
     &__title {
       font-size: 2em;
       margin-bottom: 1.7em;
+      @media (max-width: 500px) {
+        line-height: 1.1em;
+      }
       a {
         border-bottom: 0;
       }
@@ -127,7 +130,7 @@
     margin-bottom: 3em;
 
     @media (max-width: 500px) {
-        @include span(12);
+        @include span(full inside no-gutters);
         @include push(0);
       }
   }
