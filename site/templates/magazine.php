@@ -28,19 +28,19 @@
           <div class="issue-contents" style="background-color: <?= $issue->color1() ?>;">
             <div class="issue-contents__title"><h1>CONTENTS</h1></div>
 
-            <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
-              <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
-              <div class="issue-contents__content" style="background-color: <?= $issue->color1() ?>;">
-                <?php if($content->isVisible()): ?>
-                  <a href="<?= $content->url() ?>"><p class="issue-contents__content-online">ONLINE</p>
-                  <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1></a>
-                  <h3 class="issue-contents__content-contributor"><?= $contributor->title()->upper() ?></h3></a>
-                <?php else: ?>
-                  <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
-                  <h3 class="issue-contents__content-contributor"><?= $contributor->title()->upper() ?></h3>
-                <?php endif ?>
-              </div>
-            <?php endforeach ?>
+              <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
+                <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
+                <div class="issue-contents__content" style="background-color: <?= $issue->color1() ?>;">
+                  <?php if($content->isVisible()): ?>
+                    <a href="<?= $content->url() ?>"><p class="issue-contents__content-online">ONLINE</p>
+                    <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1></a>
+                    <h3 class="issue-contents__content-contributor"><?= $contributor->title()->upper() ?></h3></a>
+                  <?php else: ?>
+                    <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
+                    <h3 class="issue-contents__content-contributor"><?= $contributor->title()->upper() ?></h3>
+                  <?php endif ?>
+                </div>
+              <?php endforeach ?>
 
           </div>
 

@@ -1,4 +1,4 @@
-  <footer class="footer cf" role="contentinfo">
+  <footer class="footer group" role="contentinfo">
     <div class="footer-left">
       <ul>
       <?php foreach($site->find('home', 'magazine', 'contributors') as $subpage): ?>
@@ -28,6 +28,10 @@
           <a href="http://www.strikemag.org" target="_blank">IG</a>
         </li>
       </ul>
+    </div>
+    <div class="footer-newsletter">
+      <p>Sign up to our irregular newsletter receive our irregular newsletter updates</p>
+      <?php snippet('newsletter') ?>
     </div>
   </footer>
 

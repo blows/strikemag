@@ -481,64 +481,106 @@ body {
 /* line 1, ../scss/_footer.scss */
 .footer {
   padding-top: 1.5rem;
-  font-size: 0;
-  font-family: 'Druk-Wide-Medium', sans-serif;
   height: 20vh;
 }
 
-/* line 8, ../scss/_footer.scss */
+/* line 6, ../scss/_footer.scss */
 .footer-left,
 .footer-right {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  font-family: 'Druk-Wide-Medium', sans-serif;
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.95rem;
-  margin-bottom: .45rem;
   position: relative;
   display: inline-block;
   vertical-align: middle;
   padding-top: 3em;
   padding-bottom: 3em;
-  height: 100%;
+  height: auto;
+  min-height: 14em;
 }
-/* line 20, ../scss/_footer.scss */
+/* line 21, ../scss/_footer.scss */
 .footer-left a:hover,
 .footer-right a:hover {
   text-decoration: underline;
 }
+@media all and (max-width: 500px) {
+  /* line 6, ../scss/_footer.scss */
+  .footer-left,
+  .footer-right {
+    display: block;
+  }
+}
 
-/* line 25, ../scss/_footer.scss */
+/* line 29, ../scss/_footer.scss */
 .footer-left {
   background-color: white;
 }
-/* line 27, ../scss/_footer.scss */
+/* line 31, ../scss/_footer.scss */
 .footer-left a {
   color: black;
   text-decoration: none;
 }
 
-/* line 33, ../scss/_footer.scss */
+/* line 37, ../scss/_footer.scss */
 .footer-right {
   background-color: black;
 }
-/* line 35, ../scss/_footer.scss */
+/* line 39, ../scss/_footer.scss */
 .footer-right a {
   color: white;
   text-decoration: none;
 }
 
-@media all and (min-width: 56em) {
-  /* line 42, ../scss/_footer.scss */
+/* line 45, ../scss/_footer.scss */
+.footer-newsletter {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 91.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 4.16667%;
+  height: 2em;
+  text-align: center;
+}
+/* line 50, ../scss/_footer.scss */
+.footer-newsletter #mc_embed_signup input.email {
+  width: 60%;
+  max-width: 25em;
+}
+/* line 54, ../scss/_footer.scss */
+.footer-newsletter p {
+  margin: .8em;
+}
+
+@media all and (min-width: 501px) {
+  /* line 60, ../scss/_footer.scss */
   .footer {
     padding-top: 0;
   }
 
-  /* line 45, ../scss/_footer.scss */
+  /* line 63, ../scss/_footer.scss */
   .footer-left,
   .footer-right {
     line-height: 3rem;
     margin-bottom: 0;
     white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
   }
 }
 /* -----  3.4 Main Content  ------------------------------------------------- */
@@ -547,7 +589,6 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 3rem;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .main:after {
@@ -1142,14 +1183,15 @@ body {
 /* line 1, ../scss/_about.scss */
 .about {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-/* line 6, ../scss/_about.scss */
+/* line 7, ../scss/_about.scss */
 .about-text h1, .about-text h2 {
   text-align: center;
 }
 
-/* line 11, ../scss/_about.scss */
+/* line 12, ../scss/_about.scss */
 .about-section {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1161,12 +1203,12 @@ body {
   margin-left: 25%;
   padding-bottom: 1em;
 }
-/* line 15, ../scss/_about.scss */
+/* line 16, ../scss/_about.scss */
 .about-section h1, .about-section h2 {
   padding-bottom: 1em;
 }
 
-/* line 20, ../scss/_about.scss */
+/* line 21, ../scss/_about.scss */
 .about-stockists {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1178,23 +1220,23 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 24, ../scss/_about.scss */
+/* line 25, ../scss/_about.scss */
 .about-stockists h1, .about-stockists h2 {
   padding-bottom: 1em;
 }
 
-/* line 30, ../scss/_about.scss */
+/* line 31, ../scss/_about.scss */
 .stockists_stock {
   background-color: whitesmoke;
   padding-top: .5em;
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
 }
-/* line 35, ../scss/_about.scss */
+/* line 36, ../scss/_about.scss */
 .stockists_stock p {
   color: black;
 }
-/* line 38, ../scss/_about.scss */
+/* line 39, ../scss/_about.scss */
 .stockists_stock div {
   display: -webkit-flex;
   display: flex;
@@ -1203,52 +1245,52 @@ body {
   padding-left: 8.3%;
   padding-right: 8.3%;
 }
-/* line 44, ../scss/_about.scss */
+/* line 45, ../scss/_about.scss */
 .stockists_stock p {
   display: inline;
 }
-/* line 48, ../scss/_about.scss */
+/* line 49, ../scss/_about.scss */
 .stockists_stock:hover {
   background-color: black;
 }
-/* line 50, ../scss/_about.scss */
+/* line 51, ../scss/_about.scss */
 .stockists_stock:hover p {
   color: white;
 }
-/* line 54, ../scss/_about.scss */
+/* line 55, ../scss/_about.scss */
 .stockists_country {
   width: 33.33%;
 }
-/* line 58, ../scss/_about.scss */
+/* line 59, ../scss/_about.scss */
 .stockists_city {
   width: 33.33%;
   text-align: center;
 }
-/* line 62, ../scss/_about.scss */
+/* line 63, ../scss/_about.scss */
 .stockists_stockist {
   width: 33.33%;
   text-align: right;
 }
 
-/* line 68, ../scss/_about.scss */
+/* line 69, ../scss/_about.scss */
 ul.stockists {
   margin-left: 0;
 }
-/* line 70, ../scss/_about.scss */
+/* line 71, ../scss/_about.scss */
 ul.stockists a {
   text-decoration: none;
 }
 
-/* line 75, ../scss/_about.scss */
+/* line 76, ../scss/_about.scss */
 .about-menu {
   background-color: whitesmoke;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
-/* line 78, ../scss/_about.scss */
+/* line 79, ../scss/_about.scss */
 .about-menu ul {
   text-align: center;
 }
-/* line 81, ../scss/_about.scss */
+/* line 82, ../scss/_about.scss */
 .about-menu ul li {
   display: inline-block;
   padding-left: 1em;
@@ -1256,12 +1298,12 @@ ul.stockists a {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-/* line 87, ../scss/_about.scss */
+/* line 88, ../scss/_about.scss */
 .about-menu ul li a {
   color: black;
   text-decoration: none;
 }
-/* line 91, ../scss/_about.scss */
+/* line 92, ../scss/_about.scss */
 .about-menu ul li a:hover {
   text-decoration: underline;
 }
@@ -1451,7 +1493,7 @@ ul.stockists a {
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
 }
-/* line 71, ../scss/_magazine.scss */
+/* line 72, ../scss/_magazine.scss */
 .issue-contents__content {
   display: none;
   -moz-box-sizing: border-box;
@@ -1467,7 +1509,7 @@ ul.stockists a {
   border-bottom: .5px solid grey;
 }
 @media all and (max-width: 500px) {
-  /* line 71, ../scss/_magazine.scss */
+  /* line 72, ../scss/_magazine.scss */
   .issue-contents__content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1479,16 +1521,16 @@ ul.stockists a {
     border-right: none;
   }
 }
-/* line 82, ../scss/_magazine.scss */
+/* line 83, ../scss/_magazine.scss */
 .issue-contents__content a {
   color: black;
   text-decoration: none;
 }
-/* line 88, ../scss/_magazine.scss */
+/* line 89, ../scss/_magazine.scss */
 .issue-contents__content:hover .issue-contents__content-online, .issue-contents__content:hover .issue-contents__content-contributor {
   color: white;
 }
-/* line 92, ../scss/_magazine.scss */
+/* line 93, ../scss/_magazine.scss */
 .issue-contents__content-online {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
@@ -1496,11 +1538,11 @@ ul.stockists a {
   position: absolute;
   padding-top: .5em;
 }
-/* line 99, ../scss/_magazine.scss */
+/* line 100, ../scss/_magazine.scss */
 .issue-contents__content-title {
   padding-top: 1.5em;
 }
-/* line 102, ../scss/_magazine.scss */
+/* line 103, ../scss/_magazine.scss */
 .issue-contents__content-contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
