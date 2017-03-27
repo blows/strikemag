@@ -2,7 +2,7 @@ Title: che
 
 ----
 
-Profilepic: contributor-che.jpg
+Profilepic: 
 
 ----
 
@@ -19,3 +19,7 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Role: Worker,Woman,Fellow Straggler

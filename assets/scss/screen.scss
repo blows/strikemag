@@ -239,6 +239,12 @@ body {
   // padding-bottom: 3rem;
 }
 
+.flex-center {
+  @include display-flex;
+  @include justify-content(center);
+  @include flex-direction(column);
+}
+
 /* ----- 0.0 Online  ------------------------------------------------------ */
 
 @import "online";

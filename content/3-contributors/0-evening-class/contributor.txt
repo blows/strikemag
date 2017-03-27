@@ -19,3 +19,7 @@ Website: http://www.evening-class.org
 ----
 
 Twitter: https://twitter.com/evening_class
+
+----
+
+Role: Group
