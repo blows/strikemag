@@ -12,8 +12,8 @@
     }
 
   &-info {
-    @include span(8.75);
-    @include push(1.50);
+    @include span(9);
+    @include push(1.6);
 
     @media (max-width: 500px) {
         @include span(11);
@@ -21,6 +21,24 @@
       }
 
     text-align: center;
+  }
+
+  &-share {
+    @include span(9);
+    @include push(1.6);
+    font-size: .8em;
+    padding-bottom: 2em;
+    color: grey;
+
+    a {
+      color: grey;
+    }
+
+    @media (max-width: 500px) {
+        @include span(11);
+        @include push(.5);
+        font-size: .8em;
+      }
   }
 
   &-header {
@@ -106,27 +124,10 @@
   }
 }
 
-.article-share {
-  @include span(8.75);
-  @include push(1.50);
-  padding-bottom: 2em;
-  color: grey;
-
-  a {
-    color: grey;
-  }
-
-  @media (max-width: 500px) {
-      @include span(11);
-      @include push(.5);
-      font-size: .8em;
-    }
-}
-
 .article {
   .text {
-    @include span(9.65);
-    @include push(2.35);
+    @include span(9);
+    @include push(1.6);
     margin-bottom: 3em;
 
     @media (max-width: 500px) {
@@ -156,7 +157,8 @@
   }
 
   .text p {
-    @include span(7);
+    @include span(8.5);
+    @include push(1.75);
     margin-bottom: 1em;
 
     @media (max-width: 500px) {
@@ -166,8 +168,8 @@
   }
 
   .text figure:first-of-type {
-    @include span(9);
-    @include pull(1);
+    @include span(12);
+    @include push(0);
     margin-bottom: 1em;
 
     @media (max-width: 500px) {
@@ -177,7 +179,8 @@
   }
 
   .text figure {
-    @include span(7);
+    @include span(8.5);
+    @include push(1.75);
 
     @media (max-width: 500px) {
         @include span(11);
@@ -221,8 +224,7 @@
   }
 
   .text blockquote {
-    @include span(8);
-    @include pull(1);
+    @include span(10.25);
     font-size: 1.4em;
     line-height: 1.8em;
     margin-bottom: 0;
@@ -236,6 +238,7 @@
       @include span(12);
       font-size: 1.5em;
       margin-top: .4em;
+      margin-left: 0;
 
       @media (max-width: 500px) {
           margin-left: 0;
@@ -244,15 +247,18 @@
   }
 
   .article-end {
-    margin-bottom: 3em;
 
     &__contributor {
-      h2 {
+        @include span(8.5);
+        @include push(1.75);
+
+      a {
         font-family: 'Druk-Wide-Medium', sans-serif;
         font-size: .8em;
         text-decoration: underline;
       }
-      h2:hover {
+
+      a:hover {
         text-decoration: none;
       }
     }
@@ -265,4 +271,14 @@
     }
   }
 
-}
+  .article-end-share {
+    p {
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 2em;
+      a {
+        padding: .3em;
+      }
+    }
+  }
+} // .article .text

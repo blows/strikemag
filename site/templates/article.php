@@ -54,15 +54,29 @@
         </p>
       </div>
 
-      <div class="text">
+      <div class="text group">
         <?= $page->text()->kirbytext() ?>
 
         <div class="article-end">
-          <a class="article-end__contributor" href="<?php echo $pages->find('contributors')->url() . "#" . $contributor->uid() ?>"><h2 class="article-header__contributor" style="color: <?= $page->parent()->color() ?>"><?php echo $contributor->title()->upper()->html() ?></h2></a>
+          <h2 class="article-end__contributor"><a href="<?php echo $pages->find('contributors')->url() . "#" . $contributor->uid() ?>" style="color: <?= $page->parent()->color() ?>">TXT: <?php echo $contributor->title()->upper()->html() ?></a></h2>
           <?php if ($page->printed()->isNotEmpty()) : ?>
             <p class="article-end__printed">PRINTED: <?= $issue->date('d/m/Y', 'printed') ?></p>
           <?php endif; ?>
           <p class="article-end__uploaded">UPLOADED: <?= $page->date('d/m/Y', 'uploaded') ?></p>
+        </div>
+
+        <div class="article-end-share">
+          <p>Share:
+            <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
+              Twitter
+            </a>
+            <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+              Facebook
+            </a>
+            <a href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
+              Email
+            </a>
+          </p>
         </div>
       </div>
 
