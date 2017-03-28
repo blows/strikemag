@@ -1,0 +1,33 @@
+Title: Issue 5
+
+----
+
+Name: Feminist
+
+----
+
+Coverimage: 05-spread-01.jpg
+
+----
+
+Printed: 2015-08-26
+
+----
+
+Summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+
+----
+
+Color: rgba(104, 186, 119, 1)
+
+----
+
+Color1: rgba(210, 222, 209, 1)
+
+----
+
+Color2: rgba(255, 167, 15, 1)
+
+----
+
+Color3: #000000
