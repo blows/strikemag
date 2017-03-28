@@ -1,91 +1,20 @@
-.alphabet-letter {
-  width: 100%;
-  font-family: 'Druk-Wide-Medium', sans-serif;
-  margin-left: .5em;
-  margin-top: 2em;
-}
-
-.contributors-intro {
-  @include span(11);
-  @include push(.5);
-  margin-top: 1em;
-  margin-bottom: 1em;
-
-  h1 {
-    margin-left: .5em;
-  }
-}
-
-.contributors-flex-center {
-  @include span(11);
-  @include push(.5);
-  @include display-flex;
-  @include justify-content(center);
-  @include flex-direction(column);
-}
-
 .contributors {
-  @include display-flex;
-  @include flex-wrap(wrap);
-  margin-bottom: 3rem;
+  @include span(11);
+  @include push(.5);
 }
 
 .contributor {
-  margin: .5em;
-  margin-bottom: 1.2em;
-
-  a {
-    color: black;
-    text-decoration: none;
-  }
-
-  &-wrap {
-    // Remove whitespace between profilepic and info
-    @include display-flex;
-  }
-
-  &-info {
-    @include display-flex;
-    @include flex-direction(column);
-    @include justify-content(space-between);
-    background-color: white;
-  }
-
-  &-info, &-profilepic {
-    height: 9em;
-    width: 9em;
+  @include span(4);
+  margin-bottom: 1em;
+  &-name {
+    background-color: black;
   }
 
   &-profilepic {
     background-color: yellow;
-    vertical-align: bottom;
-  }
-
-  &-name {
-    font-family: 'Druk-Wide-Medium', sans-serif;
-    line-height: 1.1em;
-    font-size: .7em;
-  }
-
-  &-role {
-    font-size: .7em;
-    line-height: 1.1em;
-    li {
-      display: inline;
-    }
-    li::after {
-      content: ", ";
-    }
-    li:last-child::after {
-      content: "";
-    }
   }
 
   &-bio {
-
-  }
-
-  h1, ul {
-    padding: 12px;
+    background-color: white;
   }
 }

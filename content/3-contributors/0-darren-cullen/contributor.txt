@@ -6,7 +6,7 @@ Profilepic:
 
 ----
 
-Bio: Darren Cullen is an artist and political cartoonist whose artwork satirises topics ranging from the insidious nature of advertising, to the culpability of the Santa lie and armed forces recruitment propaganda. Based in London.
+Bio: Darren Cullen is a satirical artist, illustrator and writer based in London.
 
 ----
 
@@ -19,7 +19,3 @@ Website: http://www.spellingmistakescostlives.com
 ----
 
 Twitter: https://twitter.com/darren_cullen
-
-----
-
-Role: Artist

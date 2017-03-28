@@ -2,11 +2,11 @@ Title: Corin Faife
 
 ----
 
-Profilepic: contributor-corin-faife.png
+Profilepic: 
 
 ----
 
-Bio: Freelance journalist writing on tech, cities and much in between.
+Bio: A dude
 
 ----
 
@@ -18,8 +18,4 @@ Website:
 
 ----
 
-Twitter: https://twitter.com/corintxt
-
-----
-
-Role: Journalist
+Twitter: 

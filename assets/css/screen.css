@@ -597,16 +597,6 @@ body {
   clear: both;
 }
 
-/* line 242, ../scss/screen.scss */
-.flex-center {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-
 /* ----- 0.0 Online  ------------------------------------------------------ */
 /* line 1, ../scss/_online.scss */
 .section-header {
@@ -1561,15 +1551,7 @@ ul.stockists a {
 
 /* ----- 0.0 Contributors  ------------------------------------------------------ */
 /* line 1, ../scss/_contributors.scss */
-.alphabet-letter {
-  width: 100%;
-  font-family: 'Druk-Wide-Medium', sans-serif;
-  margin-left: .5em;
-  margin-top: 2em;
-}
-
-/* line 8, ../scss/_contributors.scss */
-.contributors-intro {
+.contributors {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1578,100 +1560,28 @@ ul.stockists a {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   margin-left: 4.16667%;
-  margin-top: 1em;
+}
+
+/* line 6, ../scss/_contributors.scss */
+.contributor {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   margin-bottom: 1em;
 }
-/* line 14, ../scss/_contributors.scss */
-.contributors-intro h1 {
-  margin-left: .5em;
+/* line 9, ../scss/_contributors.scss */
+.contributor-name {
+  background-color: black;
 }
-
-/* line 19, ../scss/_contributors.scss */
-.contributors-flex-center {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 91.66667%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-  margin-left: 4.16667%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-
-/* line 27, ../scss/_contributors.scss */
-.contributors {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
-}
-
-/* line 33, ../scss/_contributors.scss */
-.contributor {
-  margin: .5em;
-  margin-bottom: 1.2em;
-}
-/* line 37, ../scss/_contributors.scss */
-.contributor a {
-  color: black;
-  text-decoration: none;
-}
-/* line 42, ../scss/_contributors.scss */
-.contributor-wrap {
-  display: -webkit-flex;
-  display: flex;
-}
-/* line 47, ../scss/_contributors.scss */
-.contributor-info {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  background-color: white;
-}
-/* line 54, ../scss/_contributors.scss */
-.contributor-info, .contributor-profilepic {
-  height: 9em;
-  width: 9em;
-}
-/* line 59, ../scss/_contributors.scss */
+/* line 13, ../scss/_contributors.scss */
 .contributor-profilepic {
   background-color: yellow;
-  vertical-align: bottom;
 }
-/* line 64, ../scss/_contributors.scss */
-.contributor-name {
-  font-family: 'Druk-Wide-Medium', sans-serif;
-  line-height: 1.1em;
-  font-size: .7em;
-}
-/* line 70, ../scss/_contributors.scss */
-.contributor-role {
-  font-size: .7em;
-  line-height: 1.1em;
-}
-/* line 73, ../scss/_contributors.scss */
-.contributor-role li {
-  display: inline;
-}
-/* line 76, ../scss/_contributors.scss */
-.contributor-role li::after {
-  content: ", ";
-}
-/* line 79, ../scss/_contributors.scss */
-.contributor-role li:last-child::after {
-  content: "";
-}
-/* line 88, ../scss/_contributors.scss */
-.contributor h1, .contributor ul {
-  padding: 12px;
+/* line 17, ../scss/_contributors.scss */
+.contributor-bio {
+  background-color: white;
 }

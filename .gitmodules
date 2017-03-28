@@ -4,6 +4,3 @@
 [submodule "site/plugins/focus"]
 	path = site/plugins/focus
 	url = https://github.com/flokosiol/kirby-focus.git
-[submodule "site/plugins/colorlist"]
-	path = site/plugins/colorlist
-	url = https://github.com/Thiousi/kirby-color-list/
