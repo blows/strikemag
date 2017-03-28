@@ -549,8 +549,8 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   margin-left: 4.16667%;
-  height: 2em;
   text-align: center;
+  padding-bottom: 1em;
 }
 /* line 50, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup input.email {

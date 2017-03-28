@@ -45,8 +45,8 @@
 .footer-newsletter {
   @include span(11);
   @include push(.5);
-  height: 2em;
   text-align: center;
+  padding-bottom: 1em;
   #mc_embed_signup input.email {
     width: 60%;
     max-width: 25em;
