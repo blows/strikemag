@@ -22,10 +22,14 @@ fields:
     type: image
     width: 1/2
 
+  role:
+    label: Role/s
+    type: tags
+    required: true
+
   bio:
     label: Bio
     type: textarea
-    required: true
 
   email:
     label: Email

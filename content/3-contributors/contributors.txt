@@ -2,4 +2,8 @@ Title: Contributors
 
 ----
 
-Text: 
+Text:
+
+----
+
+Colors: #ffccff, #ff99ff, #ff66ff, #ccffcc, #99ff99, #66ff66, #ccffff, #66ccff, #3399ff, #ccccff, #cc99ff, #cc66ff

@@ -19,9 +19,13 @@
 
       <h1><?php echo $page->title()->html() ?></h1>
 
+      <?php if ($page->profilepic()->isNotEmpty()) : ?>
       <figure>
-        <img src="<?php echo $page->profilepic()->url() ?>">
+        <img src="<?php echo $page->profilepic()->toFile()->url() ?>">
       </figure>
+      <?php else: ?>
+        <div class="" style="background-color: blue"></div>
+      <?php endif; ?>
 
       <ul class="articles">
         <?php foreach($articles->filterBy('contributor', $page->uid()) as $article): ?>
