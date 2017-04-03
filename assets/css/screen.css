@@ -371,7 +371,7 @@ body {
 
 /* line 15, ../scss/_menu.scss */
 .menu-item.is-active a {
-  border-bottom: 2px solid #71efac;
+  border-bottom: 2px solid black;
 }
 
 @media all and (min-width: 56em) {
@@ -777,7 +777,7 @@ body {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-left: 13.33333%;
+  margin-left: 12.5%;
   text-align: center;
 }
 @media (max-width: 500px) {
@@ -802,7 +802,7 @@ body {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-left: 13.33333%;
+  margin-left: 12.5%;
   font-size: .8em;
   padding-bottom: 2em;
   color: grey;
@@ -926,7 +926,7 @@ body {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-left: 13.33333%;
+  margin-left: 12.5%;
   margin-bottom: 3em;
 }
 @media (max-width: 500px) {
@@ -1556,11 +1556,15 @@ ul.stockists a {
   color: black;
   text-decoration: none;
 }
-/* line 89, ../scss/_magazine.scss */
-.issue-contents__content:hover .issue-contents__content-online, .issue-contents__content:hover .issue-contents__content-contributor {
+/* line 88, ../scss/_magazine.scss */
+.issue-contents__content:hover {
+  background-color: black;
+}
+/* line 90, ../scss/_magazine.scss */
+.issue-contents__content:hover .issue-contents__content-title, .issue-contents__content:hover .issue-contents__content-online, .issue-contents__content:hover .issue-contents__content-contributor {
   color: white;
 }
-/* line 93, ../scss/_magazine.scss */
+/* line 94, ../scss/_magazine.scss */
 .issue-contents__content-online {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
@@ -1568,11 +1572,11 @@ ul.stockists a {
   position: absolute;
   padding-top: .5em;
 }
-/* line 100, ../scss/_magazine.scss */
+/* line 101, ../scss/_magazine.scss */
 .issue-contents__content-title {
   padding-top: 1.5em;
 }
-/* line 103, ../scss/_magazine.scss */
+/* line 104, ../scss/_magazine.scss */
 .issue-contents__content-contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;

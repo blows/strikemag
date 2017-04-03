@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header', array('issues' => $issues)) ?>
 
   <main class="main" role="main">
 
@@ -6,7 +6,7 @@
 
       <?= $page->text()->kirbytext() ?>
 
-      <?php foreach($page->children()->visible()->sortBy('sort', 'desc') as $issue): ?>
+      <?php foreach($issues as $issue): ?>
         <div class="issue group" id="<?php echo $issue->uid() ?>">
 
           <div class="issue-summary text" style="background-color: <?= $issue->color() ?>;">
@@ -25,12 +25,12 @@
             </div>
           </div>
 
-          <div class="issue-contents" style="background-color: <?= $issue->color1() ?>;">
+          <div class="issue-contents" style="background-color:<?php echo $issue->color1() ?>";>
             <div class="issue-contents__title"><h1>CONTENTS</h1></div>
 
               <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
                 <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
-                <div class="issue-contents__content" style="background-color: <?= $issue->color1() ?>;">
+                <div class="issue-contents__content">
                   <?php if($content->isVisible()): ?>
                     <a href="<?= $content->url() ?>"><p class="issue-contents__content-online">ONLINE</p>
                     <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1></a>

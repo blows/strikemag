@@ -14,24 +14,20 @@
   <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
   <?php echo css($css->url()) ?>
   <?php endforeach ?>
+
+  <?php if(isset($issue)) : ?>
+    <style type="text/css">
+        
+    </style>
+  <?php endif ?>
+
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6a356015ff.js"></script>
-
 
   <!-- custom javascript -->
   <?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
   <?php echo js($js->url()) ?>
   <?php endforeach ?>
-
-  <?php if(isset($article)) : ?>
-    <style type="text/css">
-      <?php if($color = $article->parent()->color()) : ?>
-         .card-large:hover {
-           background-color: <?php echo $color ?>;
-         }
-      <?php endif; ?>
-    </style>
-  <?php endif ?>
 
 </head>
 <body>

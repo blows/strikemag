@@ -13,7 +13,7 @@
 
   &-info {
     @include span(9);
-    @include push(1.6);
+    @include push(1.5);
 
     @media (max-width: 500px) {
         @include span(11);
@@ -25,7 +25,7 @@
 
   &-share {
     @include span(9);
-    @include push(1.6);
+    @include push(1.5);
     font-size: .8em;
     padding-bottom: 2em;
     color: grey;
@@ -127,7 +127,7 @@
 .article {
   .text {
     @include span(9);
-    @include push(1.6);
+    @include push(1.5);
     margin-bottom: 3em;
 
     @media (max-width: 500px) {

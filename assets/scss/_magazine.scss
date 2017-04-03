@@ -86,7 +86,8 @@
     }
   }
   &__content:hover {
-    .issue-contents__content-online, .issue-contents__content-contributor {
+    background-color: black;
+    .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
       color: white;
     }
   }
