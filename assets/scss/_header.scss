@@ -1,8 +1,11 @@
 .header {
+  position: fixed;
   padding-top: 0;
   font-size: 0;
   width:100%;
   background: #ffffff;
+  top: 0;
+  transition: top 0.2s ease-in-out;
   // height:60px;
   // line-height:60px;
 }
@@ -60,4 +63,7 @@
   .navigation-menu {
     display: block;
   }
+}
+.nav-up {
+    top: -4rem;
 }

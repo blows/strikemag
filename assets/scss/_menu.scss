@@ -57,14 +57,19 @@
     z-index: 1000000;
     font-weight: bold;
     font-size: 0.8em;
-    width: 100%;
+    width: 50%;
     background: white;
     position: fixed;
     top: 3.8em;
-    bottom: 0;
-    left: 0;
     right: 0;
     text-align: center;
+
+    // small screens
+    @media (max-width: 500px) {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+      }
 }
 
 .menu ul {

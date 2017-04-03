@@ -259,22 +259,23 @@ body {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 20px;
   line-height: 1.5em;
+  padding-top: 2.9em;
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 199, ../scss/screen.scss */
+  /* line 200, ../scss/screen.scss */
   body {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 211, ../scss/screen.scss */
+  /* line 212, ../scss/screen.scss */
   body {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 219, ../scss/screen.scss */
+  /* line 220, ../scss/screen.scss */
   body {
     font-size: 14px;
   }
@@ -282,13 +283,16 @@ body {
 /* ----- 3.1  Header  ------------------------------------------------------- */
 /* line 1, ../scss/_header.scss */
 .header {
+  position: fixed;
   padding-top: 0;
   font-size: 0;
   width: 100%;
   background: #ffffff;
+  top: 0;
+  transition: top 0.2s ease-in-out;
 }
 
-/* line 10, ../scss/_header.scss */
+/* line 13, ../scss/_header.scss */
 .branding {
   width: 50%;
   vertical-align: baseline;
@@ -303,18 +307,18 @@ body {
   text-align: center;
 }
 
-/* line 24, ../scss/_header.scss */
+/* line 27, ../scss/_header.scss */
 .branding a {
   border-bottom: 0;
 }
-/* line 27, ../scss/_header.scss */
+/* line 30, ../scss/_header.scss */
 .branding a img {
   height: 2em;
   padding: .2em;
   vertical-align: middle;
 }
 
-/* line 34, ../scss/_header.scss */
+/* line 37, ../scss/_header.scss */
 .navigation {
   width: 50%;
   vertical-align: baseline;
@@ -325,32 +329,37 @@ body {
   font-size: 1.2rem;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
-/* line 43, ../scss/_header.scss */
+/* line 46, ../scss/_header.scss */
 .navigation a {
   text-decoration: none;
   color: black;
 }
-/* line 47, ../scss/_header.scss */
+/* line 50, ../scss/_header.scss */
 .navigation .hamburger {
   display: inline;
 }
 
-/* line 52, ../scss/_header.scss */
+/* line 55, ../scss/_header.scss */
 .navigation-menu {
   display: none;
 }
 
 @media all and (max-width: 500px) {
-  /* line 57, ../scss/_header.scss */
+  /* line 60, ../scss/_header.scss */
   .navigation-page {
     display: none;
   }
 
-  /* line 60, ../scss/_header.scss */
+  /* line 63, ../scss/_header.scss */
   .navigation-menu {
     display: block;
   }
 }
+/* line 67, ../scss/_header.scss */
+.nav-up {
+  top: -4rem;
+}
+
 /* -----  3.2 Menu  --------------------------------------------------------- */
 /* line 1, ../scss/_menu.scss */
 .menu {
@@ -420,17 +429,23 @@ body {
   z-index: 1000000;
   font-weight: bold;
   font-size: 0.8em;
-  width: 100%;
+  width: 50%;
   background: white;
   position: fixed;
   top: 3.8em;
-  bottom: 0;
-  left: 0;
   right: 0;
   text-align: center;
 }
+@media (max-width: 500px) {
+  /* line 56, ../scss/_menu.scss */
+  .menu {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+}
 
-/* line 70, ../scss/_menu.scss */
+/* line 75, ../scss/_menu.scss */
 .menu ul {
   margin: 0;
   padding: 0;
@@ -438,40 +453,40 @@ body {
   list-style-image: none;
 }
 
-/* line 77, ../scss/_menu.scss */
+/* line 82, ../scss/_menu.scss */
 .menu li {
   display: block;
   padding: 15px 0;
 }
 
-/* line 82, ../scss/_menu.scss */
+/* line 87, ../scss/_menu.scss */
 .menu li:hover {
   display: block;
   background: white;
   padding: 15px 0;
 }
 
-/* line 88, ../scss/_menu.scss */
+/* line 93, ../scss/_menu.scss */
 .menu ul li a {
   text-decoration: none;
   margin: 0;
   color: black;
 }
 
-/* line 94, ../scss/_menu.scss */
+/* line 99, ../scss/_menu.scss */
 .menu ul li a:hover {
   color: black;
   text-decoration: none;
 }
 
-/* line 99, ../scss/_menu.scss */
+/* line 104, ../scss/_menu.scss */
 .menu a {
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
 }
 
-/* line 105, ../scss/_menu.scss */
+/* line 110, ../scss/_menu.scss */
 .menu a:hover {
   text-decoration: none;
   color: black;
@@ -585,7 +600,7 @@ body {
   }
 }
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 236, ../scss/screen.scss */
+/* line 237, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -598,7 +613,7 @@ body {
   clear: both;
 }
 
-/* line 242, ../scss/screen.scss */
+/* line 243, ../scss/screen.scss */
 .flex-center {
   display: -webkit-flex;
   display: flex;

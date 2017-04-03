@@ -17,7 +17,7 @@
 
   <?php if(isset($issue)) : ?>
     <style type="text/css">
-        
+
     </style>
   <?php endif ?>
 
@@ -32,7 +32,7 @@
 </head>
 <body>
 
-  <header class="header" role="banner">
+  <header class="header nav-down" role="banner">
 
       <div class="branding">
         <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-white.svg')->url() ?>" alt="STRIKE! Magazine"></a>
