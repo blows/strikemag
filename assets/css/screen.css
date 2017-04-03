@@ -1523,9 +1523,20 @@ ul.stockists a {
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
 }
-/* line 72, ../scss/_magazine.scss */
-.issue-contents__content {
+/* line 70, ../scss/_magazine.scss */
+.issue-contents__title h1 {
+  display: inline-block;
+}
+/* line 73, ../scss/_magazine.scss */
+.issue-contents__title i {
+  padding: .3em;
+}
+/* line 78, ../scss/_magazine.scss */
+.issue-contents-group {
   display: none;
+}
+/* line 82, ../scss/_magazine.scss */
+.issue-contents__content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1539,7 +1550,7 @@ ul.stockists a {
   border-bottom: .5px solid grey;
 }
 @media all and (max-width: 500px) {
-  /* line 72, ../scss/_magazine.scss */
+  /* line 82, ../scss/_magazine.scss */
   .issue-contents__content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1551,20 +1562,20 @@ ul.stockists a {
     border-right: none;
   }
 }
-/* line 83, ../scss/_magazine.scss */
+/* line 92, ../scss/_magazine.scss */
 .issue-contents__content a {
   color: black;
   text-decoration: none;
 }
-/* line 88, ../scss/_magazine.scss */
+/* line 97, ../scss/_magazine.scss */
 .issue-contents__content:hover {
   background-color: black;
 }
-/* line 90, ../scss/_magazine.scss */
+/* line 99, ../scss/_magazine.scss */
 .issue-contents__content:hover .issue-contents__content-title, .issue-contents__content:hover .issue-contents__content-online, .issue-contents__content:hover .issue-contents__content-contributor {
   color: white;
 }
-/* line 94, ../scss/_magazine.scss */
+/* line 103, ../scss/_magazine.scss */
 .issue-contents__content-online {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
@@ -1572,11 +1583,11 @@ ul.stockists a {
   position: absolute;
   padding-top: .5em;
 }
-/* line 101, ../scss/_magazine.scss */
+/* line 110, ../scss/_magazine.scss */
 .issue-contents__content-title {
   padding-top: 1.5em;
 }
-/* line 104, ../scss/_magazine.scss */
+/* line 113, ../scss/_magazine.scss */
 .issue-contents__content-contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;

@@ -16,7 +16,7 @@
               </figure>
             </div>
             <div class="issue-summary__detail">
-              <h1 class="issue-summary__detail-title"><?= $issue->title()->html() ?>: <?= $issue->name()->html() ?></h1>
+              <h1 class="issue-summary__detail-title"><?= $issue->title()->upper()->html() ?>: <?= $issue->name()->html() ?></h1>
               <h3 class="issue-summary__detail-printed">PRINTED: <?= $issue->date('d/m/Y', 'printed') ?></h3>
               <p class="issue-summary__detail-summary"><?= $issue->summary()->html() ?></p>
             </div>
@@ -26,8 +26,8 @@
           </div>
 
           <div class="issue-contents" style="background-color:<?php echo $issue->color1() ?>";>
-            <div class="issue-contents__title"><h1>CONTENTS</h1></div>
-
+            <div class="issue-contents__title"><h1><?php echo $issue->title()->upper() ?> CONTENTS</h1><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+<div class="issue-contents-group">
               <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
                 <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
                 <div class="issue-contents__content">
@@ -41,7 +41,7 @@
                   <?php endif ?>
                 </div>
               <?php endforeach ?>
-
+</div>
           </div>
 
         </div>

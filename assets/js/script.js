@@ -19,7 +19,8 @@ $( ".hamburger" ).show();
 
 // Magazine Contents Show/Hide
 $( ".issue-contents__title" ).click(function() {
-$( ".issue-contents__content" ).slideToggle("medium");
+$(this).next( ".issue-contents-group" ).slideToggle("medium");
+$(this).find( "i" ).toggleClass("fa-angle-down fa-angle-up");
 });
 
 });

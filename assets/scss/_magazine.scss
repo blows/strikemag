@@ -67,10 +67,19 @@
     padding-top: .5em;
     padding-bottom: .5em;
     border-bottom: .5px solid grey;
+    h1 {
+      display: inline-block;
+    }
+    i {
+      padding: .3em;
+    }
+  }
+
+  &-group {
+    display: none;
   }
 
   &__content {
-    display: none;
     @include span(6);
     @media all and (max-width: 500px) {
       @include span(12);
