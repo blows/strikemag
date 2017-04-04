@@ -6,7 +6,10 @@
 
       <?= $page->text()->kirbytext() ?>
 
+      <?php $colors = []; ?>
       <?php foreach($issues as $issue): ?>
+        <?php $class = 'background-' . uniqid(); $colors[$class] = $issue; ?>
+
         <div class="issue group" id="<?php echo $issue->uid() ?>">
 
           <div class="issue-summary text" style="background-color: <?= $issue->color() ?>;">
@@ -30,7 +33,7 @@
 <div class="issue-contents-group">
               <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
                 <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
-                <div class="issue-contents__content">
+                <div class="issue-contents__content <?= $class ?>">
                   <?php if($content->isVisible()): ?>
                     <a href="<?= $content->url() ?>"><p class="issue-contents__content-online">ONLINE</p>
                     <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1></a>
@@ -47,6 +50,18 @@
         </div>
 
       <?php endforeach ?>
+
+      <style>
+  <?php foreach($colors as $class => $issue): ?>
+    .<?= $class ?> {
+      background: <?= $issue->color1() ?>;
+    }
+
+    .<?= $class ?>:hover, .<?= $class ?>:focus {
+      background: <?= $issue->color() ?>;
+    }
+  <?php endforeach ?>
+</style>
 
     </div>
 

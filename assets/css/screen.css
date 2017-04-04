@@ -370,26 +370,40 @@ body {
 
 /* line 7, ../scss/_menu.scss */
 .menu-item {
-  display: block;
+  display: inline-block;
+  padding: 1em;
+}
+@media (max-width: 500px) {
+  /* line 7, ../scss/_menu.scss */
+  .menu-item {
+    display: block;
+  }
 }
 
-/* line 11, ../scss/_menu.scss */
+/* line 16, ../scss/_menu.scss */
 .menu-item a {
   border-bottom: 0;
 }
+@media (max-width: 500px) {
+  /* line 16, ../scss/_menu.scss */
+  .menu-item a {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 
-/* line 15, ../scss/_menu.scss */
+/* line 25, ../scss/_menu.scss */
 .menu-item.is-active a {
   border-bottom: 2px solid black;
 }
 
 @media all and (min-width: 56em) {
-  /* line 20, ../scss/_menu.scss */
+  /* line 30, ../scss/_menu.scss */
   .menu {
     text-align: center;
   }
 }
-/* line 25, ../scss/_menu.scss */
+/* line 35, ../scss/_menu.scss */
 .hamburger {
   background: none;
   position: absolute;
@@ -406,7 +420,7 @@ body {
   z-index: 10000000000000;
 }
 
-/* line 40, ../scss/_menu.scss */
+/* line 50, ../scss/_menu.scss */
 .cross {
   background: none;
   position: absolute;
@@ -424,28 +438,20 @@ body {
   z-index: 10000000000000;
 }
 
-/* line 56, ../scss/_menu.scss */
+/* line 66, ../scss/_menu.scss */
 .menu {
   z-index: 1000000;
   font-weight: bold;
   font-size: 0.8em;
-  width: 50%;
+  width: 100%;
   background: white;
   position: fixed;
   top: 3.8em;
   right: 0;
   text-align: center;
 }
-@media (max-width: 500px) {
-  /* line 56, ../scss/_menu.scss */
-  .menu {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-  }
-}
 
-/* line 75, ../scss/_menu.scss */
+/* line 78, ../scss/_menu.scss */
 .menu ul {
   margin: 0;
   padding: 0;
@@ -453,40 +459,27 @@ body {
   list-style-image: none;
 }
 
-/* line 82, ../scss/_menu.scss */
-.menu li {
-  display: block;
-  padding: 15px 0;
-}
-
-/* line 87, ../scss/_menu.scss */
-.menu li:hover {
-  display: block;
-  background: white;
-  padding: 15px 0;
-}
-
-/* line 93, ../scss/_menu.scss */
+/* line 85, ../scss/_menu.scss */
 .menu ul li a {
   text-decoration: none;
   margin: 0;
   color: black;
 }
 
-/* line 99, ../scss/_menu.scss */
+/* line 91, ../scss/_menu.scss */
 .menu ul li a:hover {
   color: black;
   text-decoration: none;
 }
 
-/* line 104, ../scss/_menu.scss */
+/* line 96, ../scss/_menu.scss */
 .menu a {
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
 }
 
-/* line 110, ../scss/_menu.scss */
+/* line 102, ../scss/_menu.scss */
 .menu a:hover {
   text-decoration: none;
   color: black;

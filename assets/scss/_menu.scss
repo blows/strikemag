@@ -5,11 +5,21 @@
 }
 
 .menu-item {
-  display: block;
+  display: inline-block;
+  padding: 1em;
+  // small screens
+  @media (max-width: 500px) {
+      display: block;
+  }
 }
 
 .menu-item a {
   border-bottom: 0;
+  // small screens
+  @media (max-width: 500px) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .menu-item.is-active a {
@@ -57,19 +67,12 @@
     z-index: 1000000;
     font-weight: bold;
     font-size: 0.8em;
-    width: 50%;
+    width: 100%;
     background: white;
     position: fixed;
     top: 3.8em;
     right: 0;
     text-align: center;
-
-    // small screens
-    @media (max-width: 500px) {
-        width: 100%;
-        left: 0;
-        bottom: 0;
-      }
 }
 
 .menu ul {
@@ -77,17 +80,6 @@
     padding: 0;
     list-style-type: none;
     list-style-image: none;
-}
-
-.menu li {
-    display: block;
-    padding: 15px 0;
-}
-
-.menu li:hover {
-    display: block;
-    background: white;
-    padding: 15px 0;
 }
 
 .menu ul li a {
