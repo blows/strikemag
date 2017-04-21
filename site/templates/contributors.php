@@ -24,19 +24,19 @@
 
                   <?php if ($contributor->profilepic()->isNotEmpty()): ?>
                     <figure class="contributor-profilepic">
-                      <img src="<?php echo $contributor->profilepic()->toFile()->focusCrop(150, 150)->url() ?>" alt="<?php echo $contributor->title()->html() ?>">
+                      <span><img src="<?php echo $contributor->profilepic()->toFile()->focusCrop(150, 150)->url() ?>" alt="<?php echo $contributor->title()->html() ?>"></span>
                     </figure>
                   <?php else: ?>
                     <div class="contributor-profilepic" style="background-color: <?php $colors = $page->colors()->split(','); $shuffle = a::shuffle($colors); echo $color = a::first($shuffle); ?>"></div>
                   <?php endif; ?>
 
-                  <div class="contributor-info">
+                  <div class="contributor-info"><span>
                     <h1 class="contributor-name"><?php echo $contributor->title()->upper()->html() ?></h1>
                     <ul class="contributor-role">
                       <?php foreach($contributor->role()->split(',') as $role): ?>
                       <li><?php echo $role ?></li>
                       <?php endforeach ?>
-                    </ul>
+                    </ul></span>
                   </div>
 
                 </div>
