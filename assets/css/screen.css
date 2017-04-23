@@ -352,10 +352,11 @@ body {
 
   /* line 63, ../scss/_header.scss */
   .navigation-menu {
-    display: block;
+    display: inline;
+    font-size: .7em;
   }
 }
-/* line 67, ../scss/_header.scss */
+/* line 68, ../scss/_header.scss */
 .nav-up {
   top: -4rem;
 }
@@ -371,7 +372,7 @@ body {
 /* line 7, ../scss/_menu.scss */
 .menu-item {
   display: inline-block;
-  padding: 1em;
+  padding: .85em;
 }
 @media (max-width: 500px) {
   /* line 7, ../scss/_menu.scss */
@@ -387,58 +388,22 @@ body {
 @media (max-width: 500px) {
   /* line 16, ../scss/_menu.scss */
   .menu-item a {
-    padding-left: 1em;
-    padding-right: 1em;
+    margin: 1em;
   }
 }
 
-/* line 25, ../scss/_menu.scss */
+/* line 24, ../scss/_menu.scss */
 .menu-item.is-active a {
   border-bottom: 2px solid black;
 }
 
 @media all and (min-width: 56em) {
-  /* line 30, ../scss/_menu.scss */
+  /* line 29, ../scss/_menu.scss */
   .menu {
     text-align: center;
   }
 }
-/* line 35, ../scss/_menu.scss */
-.hamburger {
-  background: none;
-  position: absolute;
-  top: 0;
-  right: 1em;
-  line-height: 45px;
-  padding: 5px 15px 0px 15px;
-  color: black;
-  border: 0;
-  font-size: 1.4em;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
-}
-
-/* line 50, ../scss/_menu.scss */
-.cross {
-  background: none;
-  position: absolute;
-  top: 0px;
-  right: 1em;
-  line-height: 45px;
-  padding: 7px 15px 0px 15px;
-  color: black;
-  border: 0;
-  font-size: 3em;
-  line-height: 65px;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
-}
-
-/* line 66, ../scss/_menu.scss */
+/* line 34, ../scss/_menu.scss */
 .menu {
   z-index: 1000000;
   font-weight: bold;
@@ -451,7 +416,7 @@ body {
   text-align: center;
 }
 
-/* line 78, ../scss/_menu.scss */
+/* line 46, ../scss/_menu.scss */
 .menu ul {
   margin: 0;
   padding: 0;
@@ -459,32 +424,66 @@ body {
   list-style-image: none;
 }
 
-/* line 85, ../scss/_menu.scss */
+/* line 53, ../scss/_menu.scss */
 .menu ul li a {
   text-decoration: none;
   margin: 0;
   color: black;
 }
 
-/* line 91, ../scss/_menu.scss */
+/* line 59, ../scss/_menu.scss */
 .menu ul li a:hover {
   color: black;
   text-decoration: none;
 }
 
-/* line 96, ../scss/_menu.scss */
+/* line 64, ../scss/_menu.scss */
 .menu a {
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
 }
 
-/* line 102, ../scss/_menu.scss */
+/* line 70, ../scss/_menu.scss */
 .menu a:hover {
   text-decoration: none;
   color: black;
 }
 
+@media (min-width: 300px) {
+  /* line 76, ../scss/_menu.scss */
+  .hamburger {
+    font-size: .8em;
+    line-height: 1em;
+    right: 1.5em;
+  }
+}
+@media (min-width: 360px) {
+  /* line 84, ../scss/_menu.scss */
+  .hamburger {
+    font-size: .8em;
+    line-height: 1em;
+    right: 2.8em;
+  }
+}
+@media (min-width: 500px) {
+  /* line 92, ../scss/_menu.scss */
+  .hamburger, .cross {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    line-height: 25px;
+    padding: 5px 15px 0px 15px;
+    color: black;
+    border: 0;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+  }
+}
 /* -----  3.3 Footer  ------------------------------------------------------- */
 /* line 1, ../scss/_footer.scss */
 .footer {

@@ -8,6 +8,9 @@
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
 
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/6a356015ff.js"></script>
+
   <?= css('assets/css/screen.css') ?>
 
   <!-- custom css -->
@@ -20,9 +23,6 @@
 
     </style>
   <?php endif ?>
-
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/6a356015ff.js"></script>
 
   <!-- custom javascript -->
   <?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>

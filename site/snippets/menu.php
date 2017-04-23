@@ -8,7 +8,7 @@
 
     <a href="" class="navigation-menu">MENU</a>
 
-    <i class="hamburger fa fa-bars" aria-hidden="true"></i>
+    <i class="hamburger fa fa-bars" id="hamburger" aria-hidden="true"></i>
     <i class="cross fa fa-times" aria-hidden="true"></i>
 
   <ul class="menu">
