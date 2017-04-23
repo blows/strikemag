@@ -3,9 +3,9 @@ jQuery(document).ready(function(){
 // Menu
 $( ".cross" ).hide();
 $( ".menu" ).hide();
-$( ".hamburger" ).click(function() {
+$( "#hamburger" ).click(function() {
 $( ".menu" ).slideToggle( "medium", function() {
-$( ".hamburger" ).hide();
+$( "#hamburger" ).hide();
 $( ".cross" ).show();
 });
 });
@@ -13,7 +13,7 @@ $( ".cross" ).show();
 $( ".cross" ).click(function() {
 $( ".menu" ).slideToggle( "medium", function() {
 $( ".cross" ).hide();
-$( ".hamburger" ).show();
+$( "#hamburger" ).show();
 });
 });
 

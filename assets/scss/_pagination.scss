@@ -1,6 +1,42 @@
 .pagination {
-  background-color: black;
   &-item {
-    width: 50%;
+    @include span(6);
+    font-family: 'Druk-Wide-Medium', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+    // margin-bottom: .45rem;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    height: auto;
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
+}
+
+.pagination-item.left, .pagination-item.right {
+  background-color: black;
+  color: white;
+  a {
+    color: white;
+  }
+  &:hover {
+    background-color: white;
+    color: black;
+    a {
+      color: black;
+    }
+  }
+}
+
+
+.is-inactive {
+  color: black;
 }

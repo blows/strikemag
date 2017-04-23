@@ -18,26 +18,26 @@ $directionPrev = @$flip ? 'right' : 'left';
 $directionNext = @$flip ? 'left'  : 'right';
 
 if($page->hasNextVisible() || $page->hasPrevVisible()): ?>
-  <nav class="pagination <?= !@$flip ?: ' flip' ?> wrap cf">
+  <nav class="pagination <?= !@$flip ?: ' flip' ?>">
 
     <?php if($page->hasPrevVisible()): ?>
-      <a class="pagination-item <?= $directionPrev ?>" href="<?= $page->prevVisible()->url() ?>" rel="prev" title="<?= $page->prevVisible()->title()->html() ?>">
-        <?= (new Asset("assets/images/arrow-{$directionPrev}.svg"))->content() ?>
-      </a>
+      <div class="pagination-item <?= $directionPrev ?>"><a href="<?= $page->prevVisible()->url() ?>" rel="prev" title="<?= $page->prevVisible()->title()->html() ?>">
+        BACK
+      </a></div>
     <?php else: ?>
-      <span class="pagination-item <?= $directionPrev ?> is-inactive">
-        <?= (new Asset("assets/images/arrow-{$directionPrev}.svg"))->content() ?>
-      </span>
+      <div class="pagination-item <?= $directionPrev ?> is-inactive"><span>
+        BACK
+      </span></div>
     <?php endif ?>
 
     <?php if($page->hasNextVisible()): ?>
-      <a class="pagination-item <?= $directionNext ?>" href="<?= $page->nextVisible()->url() ?>" rel="next" title="<?= $page->nextVisible()->title()->html() ?>">
-        <?= (new Asset("assets/images/arrow-{$directionNext}.svg"))->content() ?>
-      </a>
+      <div class="pagination-item <?= $directionNext ?>"><a href="<?= $page->nextVisible()->url() ?>" rel="next" title="<?= $page->nextVisible()->title()->html() ?>">
+        NEXT
+      </a></div>
     <?php else: ?>
-      <span class="pagination-item <?= $directionNext ?> is-inactive">
-        <?= (new Asset("assets/images/arrow-{$directionNext}.svg"))->content() ?>
-      </span>
+      <div class="pagination-item <?= $directionNext ?> is-inactive"><span>
+        NEXT
+      </span></div>
     <?php endif ?>
 
   </nav>

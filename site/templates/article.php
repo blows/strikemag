@@ -2,7 +2,7 @@
 
   <main style="background-image: linear-gradient(lightgrey, <?= $page->parent()->color() ?> 15%, <?= $page->parent()->color() ?> 50%, <?= $page->parent()->color2() ?>);" class="main" role="main">
 
-    <article class="article">
+    <article class="article group">
 
       <?php $contributor = $pages->find('contributors/' . $page->contributor()) ?>
       <?php $issue = $pages->find('magazine/' . $page->printed()) ?>
@@ -82,8 +82,8 @@
 
     </article>
 
-    <?php snippet('prevnext', ['flip' => true]) ?>
-
   </main>
+
+  <?php snippet('prevnext', ['flip' => true]) ?>
 
 <?php snippet('footer') ?>

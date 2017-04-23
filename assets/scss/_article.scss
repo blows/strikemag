@@ -137,13 +137,15 @@
   }
 
   .text h2, .text h3 {
-    @include span(7);
+    @include span(8.5);
+    @include push(1.75);
     font-family: 'Graphik-Medium', sans-serif;
     margin-bottom: 1em;
+    text-transform: uppercase;
 
     @media (max-width: 500px) {
-        @include span(11);
-        @include push(.5);
+      @include span(full inside no-gutters);
+      @include push(0);
       }
   }
 
