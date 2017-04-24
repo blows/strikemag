@@ -250,6 +250,16 @@ body {
   @include flex-direction(column);
 }
 
+.home-featured {
+  background-color: red;
+  figure {
+    height: 65vh;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 /* ----- 0.0 Online  ------------------------------------------------------ */
 
 @import "online";

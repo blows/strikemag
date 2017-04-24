@@ -72,6 +72,12 @@
       font-size: .8em;
       margin-bottom: 7em;
       text-decoration: underline;
+      a:after {
+        content: ","
+      }
+      a:last-of-type:after {
+        content: ""
+      }
     }
 
     &__summary {

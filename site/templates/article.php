@@ -4,16 +4,21 @@
 
     <article class="article group">
 
-      <?php $contributor = $pages->find('contributors/' . $page->contributor()) ?>
-      <?php $issue = $pages->find('magazine/' . $page->printed()) ?>
-
       <header class="article-info">
         <?php if ($page->printed()->isNotEmpty()) : ?>
           <h3 class="article-header__issue" style="color: <?= $page->parent()->color() ?>"><?php echo $issue->title()->upper() ?></h3>
         <?php endif; ?>
         <div class="article-header">
           <h1 class="article-header__title" style="color: <?= $page->parent()->color() ?>"><?= $page->title()->upper()->html() ?></h1>
-          <a href="<?php echo $pages->find('contributors')->url() . "#" . $contributor->uid() ?>"><h2 class="article-header__contributor" style="color: <?= $page->parent()->color() ?>"><?php echo $contributor->title()->upper()->html() ?></h2></a>
+
+          <h2 class="article-header__contributor" style="color: <?= $page->parent()->color() ?>">
+          <?php foreach ($page->contributor()->split() as $name): ?>
+            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+                <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+            </a>
+          <?php endforeach; ?>
+          </h2>
+
           <p class="article-header__summary"><?= $page->summary()->html() ?></p>
         </div>
 
@@ -58,7 +63,15 @@
         <?= $page->text()->kirbytext() ?>
 
         <div class="article-end">
-          <h2 class="article-end__contributor"><a href="<?php echo $pages->find('contributors')->url() . "#" . $contributor->uid() ?>" style="color: <?= $page->parent()->color() ?>">TXT: <?php echo $contributor->title()->upper()->html() ?></a></h2>
+
+          <h2 class="article-header__contributor" style="color: <?= $page->parent()->color() ?>">
+          <?php foreach ($page->contributor()->split() as $name): ?>
+            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+                <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+            </a>
+          <?php endforeach; ?>
+          </h2>
+
           <?php if ($page->printed()->isNotEmpty()) : ?>
             <p class="article-end__printed">PRINTED: <?= $issue->date('d/m/Y', 'printed') ?></p>
           <?php endif; ?>

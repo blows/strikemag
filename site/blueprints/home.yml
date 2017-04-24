@@ -7,16 +7,8 @@ fields:
     label: Title
     type:  text
 
-  intro:
-    label: Intro
-    type:  textarea
-
-  text:
-    label: Text
-    type:  textarea
-
-  featured:
-    label: Featured Banner
+  featuredarticle:
+    label: Featured Article
     type: select
     search: true
     options: query
