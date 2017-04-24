@@ -17,6 +17,7 @@ return function($site, $pages, $page) {
   $webPlusMag = new Pages(array($webonly, $magazine));
   $online = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 6);
 
+
   return [
     'articles'   => $online,
     'pagination' => $online->pagination()

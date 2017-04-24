@@ -251,12 +251,29 @@ body {
 }
 
 .home-featured {
+  position: relative;
   background-color: red;
-  figure {
-    height: 65vh;
-    img {
-      width: 100%;
-    }
+  @include span(12);
+  padding: 0;
+  height: auto;
+  img {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+  }
+  &-title {
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%)) ;
+    width: 100%;
+    padding: 0 10%;
+    text-align: center;
+    z-index: 3;
+    text-shadow: 0 0 8px rgba(153,153,153,.8);
   }
 }
 

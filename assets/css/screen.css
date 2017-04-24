@@ -671,15 +671,41 @@ body {
 
 /* line 253, ../scss/screen.scss */
 .home-featured {
+  position: relative;
   background-color: red;
-}
-/* line 255, ../scss/screen.scss */
-.home-featured figure {
-  height: 65vh;
-}
-/* line 257, ../scss/screen.scss */
-.home-featured figure img {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 0;
+  height: auto;
+}
+/* line 259, ../scss/screen.scss */
+.home-featured img {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+}
+/* line 265, ../scss/screen.scss */
+.home-featured-title {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 10%;
+  text-align: center;
+  z-index: 3;
+  text-shadow: 0 0 8px rgba(153, 153, 153, 0.8);
 }
 
 /* ----- 0.0 Online  ------------------------------------------------------ */

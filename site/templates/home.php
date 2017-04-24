@@ -13,10 +13,16 @@
     </header> -->
 
 
-    <section class="home-featured">
-      <figure>
-        
-      </figure>
+    <section class="home-featured group">
+      <?php $uids = $page->featuredarticle()->split(); ?>
+      <?php foreach($uids as $post): ?> <?php $post = $pages->index()->findBy('uid', $post); ?>
+        <a href="<?php echo $post->url(); ?>">
+          <h2 class="home-featured-title">
+            <?php echo $post->title(); ?>
+          </h2>
+        </a>
+        <img src="<?php echo $post->coverimage()->toFile()->focusCrop(1000, 450)->url(); ?>" alt="<?php echo $post->title(); ?>"/>
+      <?php endforeach ?>
     </section>
 
     <h2 class="section-header">RECENT</h2>
