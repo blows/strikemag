@@ -12,9 +12,10 @@
       <?php endif ?>
     </header> -->
 
+
     <section class="home-featured">
       <figure>
-
+        
       </figure>
     </section>
 

@@ -21,7 +21,9 @@
         <?= $article->title()->upper()->html() ?>
       </h2>
       <h3 class="card-large-info__contributor" style="color: <?= $article->parent()->color() ?>">
-        <?= $contributor->title()->upper() ?>
+        <?php foreach ($article->contributor()->split() as $name): ?>
+              <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+        <?php endforeach; ?>
       </h3>
     </div>
     <p class="card-large-info__summary">
