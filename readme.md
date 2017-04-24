@@ -5,4 +5,8 @@ Alongside the magazine we organise exhibitions, parties, workshops and co-ordina
 
 ## To Do
 
-- Currently updating
+- Article: color inherited from parent, else selected manually
+- Article: add category
+- Online: add search feature
+
+Still updating...
