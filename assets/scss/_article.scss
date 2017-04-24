@@ -47,6 +47,7 @@
     &__title {
       font-size: 2em;
       margin-bottom: 1.7em;
+      line-height: 1.2em;
       @media (max-width: 500px) {
         line-height: 1.1em;
       }
@@ -204,9 +205,12 @@
   }
 
   .text hr {
-    /* We use a more muted style for horizontal rules within
-       the main content. */
-    color: #1f00ff
+    @include span(8);
+    @include push(2);
+    margin-bottom: 1.8em;
+    height: 1px;
+    background: black;
+    border: 0;
   }
 
   .text ul {

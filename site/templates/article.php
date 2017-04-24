@@ -11,9 +11,9 @@
         <div class="article-header">
           <h1 class="article-header__title" style="color: <?= $page->parent()->color() ?>"><?= $page->title()->upper()->html() ?></h1>
 
-          <h2 class="article-header__contributor" style="color: <?= $page->parent()->color() ?>">
+          <h2 class="article-header__contributor">
           <?php foreach ($page->contributor()->split() as $name): ?>
-            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+            <a style="color: <?= $page->parent()->color() ?>" href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
                 <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
             </a>
           <?php endforeach; ?>
@@ -64,9 +64,9 @@
 
         <div class="article-end">
 
-          <h2 class="article-header__contributor" style="color: <?= $page->parent()->color() ?>">
+          <h2 class="article-header__contributor">
           <?php foreach ($page->contributor()->split() as $name): ?>
-            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+            <a style="color: <?= $page->parent()->color() ?>" href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
                 <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
             </a>
           <?php endforeach; ?>
@@ -80,13 +80,13 @@
 
         <div class="article-end-share">
           <p>Share:
-            <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
+            <a style="color: <?= $page->parent()->color2() ?>" href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
               Twitter
             </a>
-            <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+            <a style="color: <?= $page->parent()->color2() ?>" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
               Facebook
             </a>
-            <a href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
+            <a style="color: <?= $page->parent()->color2() ?>" href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
               Email
             </a>
           </p>
