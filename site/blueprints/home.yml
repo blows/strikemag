@@ -1,5 +1,7 @@
 title: Home
 
+icon: home
+
 pages: false
 
 fields:
@@ -8,7 +10,7 @@ fields:
     type:  text
 
   featuredarticle:
-    label: Featured Article
+    label: Featured Post
     type: select
     search: true
     options: query
@@ -17,3 +19,6 @@ fields:
       fetch: pages
       template: article
       flip: true
+
+  # feature1:
+  #   title: Featured Post
