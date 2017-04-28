@@ -36,14 +36,20 @@
                 <div class="issue-contents__content <?= $class ?>">
                   <?php if($content->isVisible()): ?>
                     <a href="<?= $content->url() ?>"><p class="issue-contents__content-online">ONLINE</p>
-                    <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1></a>
-                    <h3 class="issue-contents__content-contributor"><?= $contributor->title()->upper() ?></h3></a>
+                    <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1>
+                    <?php foreach ($content->contributor()->split() as $name): ?>
+                          <h3 class="issue-contents__content-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+                    <?php endforeach; ?></a>
                   <?php else: ?>
                     <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
-                    <h3 class="issue-contents__content-contributor"><?= $contributor->title()->upper() ?></h3>
+                    <?php foreach ($content->contributor()->split() as $name): ?>
+                          <h3 class="issue-contents__content-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+                    <?php endforeach; ?>
                   <?php endif ?>
                 </div>
               <?php endforeach ?>
+
+
 </div>
           </div>
 

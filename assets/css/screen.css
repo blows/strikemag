@@ -1740,6 +1740,15 @@ ul.stockists a {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
   padding-bottom: 1.5em;
+  display: inline-block;
+}
+/* line 118, ../scss/_magazine.scss */
+.issue-contents__content-contributor:after {
+  content: ",";
+}
+/* line 121, ../scss/_magazine.scss */
+.issue-contents__content-contributor:last-of-type:after {
+  content: "";
 }
 
 /* ----- 0.0 Contributors  ------------------------------------------------------ */

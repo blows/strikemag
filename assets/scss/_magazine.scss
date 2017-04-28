@@ -114,5 +114,12 @@
     font-family: 'Druk-Wide-Medium', sans-serif;
     font-size: .5em;
     padding-bottom: 1.5em;
+    display: inline-block;
+    &:after {
+      content:","
+    }
+    &:last-of-type:after {
+      content:""
+    }
   }
 }
