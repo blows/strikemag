@@ -4,10 +4,10 @@ jQuery(document).ready(function(){
 $( ".cross" ).hide();
 $( ".menu" ).hide();
 $( "#hamburger" ).click(function() {
-$( ".menu" ).slideToggle( "medium", function() {
-$( "#hamburger" ).hide();
-$( ".cross" ).show();
-});
+  $( ".menu" ).slideToggle( "medium", function() {
+  $( "#hamburger" ).hide();
+  $( ".cross" ).show();
+  });
 });
 
 $( ".cross" ).click(function() {

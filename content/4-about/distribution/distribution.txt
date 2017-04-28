@@ -14,9 +14,29 @@ Stockists:
 
 - 
   country: UK
+  city: Bristol
+  stockist: Kebele Coop
+  link: https://network23.org/kebele2
+- 
+  country: UK
+  city: London
+  stockist: 56a Infoshop
+  link: http://56a.org.uk/
+- 
+  country: UK
+  city: London
+  stockist: Dog Section Press
+  link: http://dogsection.bigcartel.com/
+- 
+  country: UK
   city: London
   stockist: Housmans
   link: http://www.housmans.com/
+- 
+  country: UK
+  city: London
+  stockist: Institute of Contemporary Arts
+  link: https://www.ica.art
 - 
   country: UK
   city: London

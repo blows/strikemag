@@ -6,7 +6,7 @@ Contributor: ray-filar
 
 ----
 
-Coverimage: manarchist-quiz.jpg
+Coverimage: manarchist-logo.jpg
 
 ----
 

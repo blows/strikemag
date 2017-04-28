@@ -255,7 +255,7 @@ figcaption {
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
 /* line 191, ../scss/screen.scss */
 body {
-  background-color: lightgrey;
+  background-color: #f2f2f2;
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 20px;
   line-height: 1.5em;
@@ -415,9 +415,10 @@ body {
   top: 3.8em;
   right: 0;
   text-align: center;
+  display: none;
 }
 
-/* line 46, ../scss/_menu.scss */
+/* line 47, ../scss/_menu.scss */
 .menu ul {
   margin: 0;
   padding: 0;
@@ -425,34 +426,34 @@ body {
   list-style-image: none;
 }
 
-/* line 53, ../scss/_menu.scss */
+/* line 54, ../scss/_menu.scss */
 .menu ul li a {
   text-decoration: none;
   margin: 0;
   color: black;
 }
 
-/* line 59, ../scss/_menu.scss */
+/* line 60, ../scss/_menu.scss */
 .menu ul li a:hover {
   color: black;
   text-decoration: none;
 }
 
-/* line 64, ../scss/_menu.scss */
+/* line 65, ../scss/_menu.scss */
 .menu a {
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
 }
 
-/* line 70, ../scss/_menu.scss */
+/* line 71, ../scss/_menu.scss */
 .menu a:hover {
   text-decoration: none;
   color: black;
 }
 
 @media (min-width: 300px) {
-  /* line 76, ../scss/_menu.scss */
+  /* line 77, ../scss/_menu.scss */
   .hamburger {
     font-size: .8em;
     line-height: 1em;
@@ -460,7 +461,7 @@ body {
   }
 }
 @media (min-width: 360px) {
-  /* line 84, ../scss/_menu.scss */
+  /* line 85, ../scss/_menu.scss */
   .hamburger {
     font-size: .8em;
     line-height: 1em;
@@ -468,7 +469,7 @@ body {
   }
 }
 @media (min-width: 500px) {
-  /* line 92, ../scss/_menu.scss */
+  /* line 93, ../scss/_menu.scss */
   .hamburger, .cross {
     background: none;
     position: absolute;
@@ -763,7 +764,7 @@ body {
   flex-wrap: wrap;
   -webkit-justify-content: center;
   justify-content: center;
-  background-color: #bebebe;
+  background-color: #d1d1d1;
   padding-bottom: 1em;
 }
 
@@ -1398,7 +1399,7 @@ body {
 
 /* line 31, ../scss/_about.scss */
 .stockists_stock {
-  background-color: whitesmoke;
+  background-color: #fafafa;
   padding-top: .5em;
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
@@ -1445,38 +1446,44 @@ body {
 
 /* line 69, ../scss/_about.scss */
 ul.stockists {
+  border-top: .5px solid grey;
   margin-left: 0;
 }
-/* line 71, ../scss/_about.scss */
+/* line 72, ../scss/_about.scss */
 ul.stockists a {
   text-decoration: none;
 }
 
-/* line 76, ../scss/_about.scss */
+/* line 77, ../scss/_about.scss */
 .about-menu {
-  background-color: whitesmoke;
+  background-color: #fafafa;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
-/* line 79, ../scss/_about.scss */
+/* line 80, ../scss/_about.scss */
 .about-menu ul {
   text-align: center;
 }
-/* line 82, ../scss/_about.scss */
+/* line 83, ../scss/_about.scss */
 .about-menu ul li {
   display: inline-block;
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: .75em;
+  padding-bottom: .75em;
 }
-/* line 88, ../scss/_about.scss */
+/* line 89, ../scss/_about.scss */
 .about-menu ul li a {
   color: black;
   text-decoration: none;
 }
-/* line 92, ../scss/_about.scss */
+/* line 93, ../scss/_about.scss */
 .about-menu ul li a:hover {
   text-decoration: underline;
+}
+
+/* line 99, ../scss/_about.scss */
+.about-menu.is-active a {
+  border-bottom: 2px solid black;
 }
 
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
