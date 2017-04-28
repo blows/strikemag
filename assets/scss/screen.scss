@@ -252,28 +252,45 @@ body {
 
 .home-featured {
   position: relative;
-  background-color: red;
+  z-index: 5;
   @include span(12);
   padding: 0;
   height: auto;
   img {
-    position: absolute;
     height: auto;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
   }
-  &-title {
+  &-text {
     position: absolute;
-    z-index: 3;
+    z-index: 15;
     color: #fff;
-    position: absolute;
     top: 50%;
     @include transform(translateY(-50%)) ;
-    width: 100%;
+    width: 80%;
     padding: 0 10%;
     text-align: center;
-    z-index: 3;
     text-shadow: 0 0 8px rgba(153,153,153,.8);
+    text-decoration: none;
+  }
+  &-title {
+    font-family: 'Graphik-Medium', sans-serif;
+    font-size: 4em;
+    line-height: 1em;
+    padding-bottom: .5em;
+  }
+  &-contributor {
+    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    text-decoration: underline;
+    display: inline;
+    &:after {
+      content: ",";
+    }
+    &:last-of-type:after {
+      content: "";
+    }
   }
 }
 

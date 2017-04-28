@@ -16,12 +16,21 @@
     <section class="home-featured group">
       <?php $uids = $page->featuredarticle()->split(); ?>
       <?php foreach($uids as $post): ?> <?php $post = $pages->index()->findBy('uid', $post); ?>
-        <a href="<?php echo $post->url(); ?>">
+        <a href="<?php echo $post->url(); ?>" class="home-featured-text">
           <h2 class="home-featured-title">
             <?php echo $post->title(); ?>
           </h2>
+
+            <?php foreach ($post->contributor()->split() as $name): ?>
+                  <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+            <?php endforeach; ?>
+
         </a>
-        <img src="<?php echo $post->coverimage()->toFile()->focusCrop(1000, 450)->url(); ?>" alt="<?php echo $post->title(); ?>"/>
+        <?php if($post->coverimage()->isNotEmpty()): ?>
+          <img src="<?php echo $post->coverimage()->toFile()->focusCrop(1000, 450)->url(); ?>" alt="<?php echo $post->title(); ?>"/>
+        <?php else: ?>
+          <img src="<?php echo $pages->find('home')->images()->sortBy('sort', 'asc')->first()->focusCrop(1000, 450)->url(); ?>" alt="<?php echo $post->title(); ?>"/>
+        <?php endif ?>
       <?php endforeach ?>
     </section>
 

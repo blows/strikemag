@@ -2,6 +2,12 @@ title: Home
 
 icon: home
 
+files:
+  fields:
+    focus:
+      label: Crop focus
+      type: focus
+
 pages: false
 
 fields:
