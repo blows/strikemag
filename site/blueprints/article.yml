@@ -55,7 +55,7 @@ fields:
     format: LL
     placeholder: Select a date…
     default: today
-    required: true
+    # required: true
     width: 1/2
 
   printed:
