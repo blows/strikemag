@@ -20,11 +20,11 @@
       <h2 class="card-large-info__title" style="color: <?= $article->parent()->color() ?>">
         <?= $article->title()->upper()->html() ?>
       </h2>
-      <h3 class="card-large-info__contributor" style="color: <?= $article->parent()->color() ?>">
         <?php foreach ($article->contributor()->split() as $name): ?>
-              <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+              <h3 class="card-large-info__contributor" style="color: <?= $article->parent()->color() ?>">
+                <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+              </h3>
         <?php endforeach; ?>
-      </h3>
     </div>
     <p class="card-large-info__summary">
       <?= $article->summary()->html() ?>

@@ -818,40 +818,48 @@ body {
   font-size: .8em;
   text-decoration: underline;
 }
-/* line 44, ../scss/_card.scss */
+/* line 43, ../scss/_card.scss */
+.card-large-info__contributor::after {
+  content: ",";
+}
+/* line 46, ../scss/_card.scss */
+.card-large-info__contributor:last-of-type::after {
+  content: "";
+}
+/* line 50, ../scss/_card.scss */
 .card-large-info__issue {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .8em;
   margin-bottom: 2.5em;
 }
-/* line 49, ../scss/_card.scss */
+/* line 55, ../scss/_card.scss */
 .card-large-info__summary {
   line-height: 1.2em;
   font-size: .8em;
 }
 
-/* line 56, ../scss/_card.scss */
+/* line 62, ../scss/_card.scss */
 .portrait {
   width: 32.4em;
   height: 23em;
 }
-/* line 60, ../scss/_card.scss */
+/* line 66, ../scss/_card.scss */
 .portrait a {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
-/* line 63, ../scss/_card.scss */
+/* line 69, ../scss/_card.scss */
 .portrait a .card-large-image {
   height: 23em;
 }
-/* line 65, ../scss/_card.scss */
+/* line 71, ../scss/_card.scss */
 .portrait a .card-large-image figure img {
   display: block;
   min-height: 23em;
 }
-/* line 70, ../scss/_card.scss */
+/* line 76, ../scss/_card.scss */
 .portrait a .card-large-info {
   width: 50%;
   min-height: 21.8em;
