@@ -1,0 +1,27 @@
+.support-bar {
+  @include span(12);
+  text-align: center;
+  background-color: red;
+  &__plea {
+    font-size: .8em;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+  }
+  &__buttons {
+    padding-top: .5em;
+    padding-bottom: 1.5em;
+  }
+  &__button {
+    display: inline-block;
+    height: 6em;
+    width: 6em;
+    line-height: 6em;
+    @include border-radius(50%);
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+  }
+}

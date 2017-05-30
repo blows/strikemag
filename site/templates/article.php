@@ -95,6 +95,8 @@
 
     </article>
 
+    <?php snippet('support') ?>
+
   </main>
 
   <?php snippet('prevnext', ['flip' => true]) ?>

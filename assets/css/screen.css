@@ -1875,3 +1875,44 @@ ul.stockists a {
 .contributor h1, .contributor ul {
   padding: 12px;
 }
+
+/* ----- 0.0 Support Bar  ------------------------------------------------------ */
+/* line 1, ../scss/_support.scss */
+.support-bar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+  background-color: red;
+}
+/* line 5, ../scss/_support.scss */
+.support-bar__plea {
+  font-size: .8em;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+}
+/* line 10, ../scss/_support.scss */
+.support-bar__buttons {
+  padding-top: .5em;
+  padding-bottom: 1.5em;
+}
+/* line 14, ../scss/_support.scss */
+.support-bar__button {
+  display: inline-block;
+  height: 6em;
+  width: 6em;
+  line-height: 6em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  margin-left: .2em;
+  margin-right: .2em;
+}
