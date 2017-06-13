@@ -294,6 +294,27 @@ body {
   }
 }
 
+.home-banner {
+  position: relative;
+  z-index: 5;
+  @include span(12);
+  padding: 0;
+  height: auto;
+  margin-top: 2rem;
+  img {
+    height: auto;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.home-support {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 2rem;
+}
+
 /* ----- 0.0 Online  ------------------------------------------------------ */
 
 @import "online";
