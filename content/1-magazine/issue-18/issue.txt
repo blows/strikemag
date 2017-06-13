@@ -1,0 +1,33 @@
+Title: Issue 18
+
+----
+
+Name: The Body As...
+
+----
+
+Coverimage: 
+
+----
+
+Printed: 2017-06-02
+
+----
+
+Summary: 
+
+----
+
+Color: #000000
+
+----
+
+Color1: #000000
+
+----
+
+Color2: #000000
+
+----
+
+Color3: #000000
