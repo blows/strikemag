@@ -2,4 +2,12 @@ Title: Home
 
 ----
 
-Featuredarticle: every-building-an-empty
+Featuredarticle: on-the-phenomenon-of-bullshit-jobs
+
+----
+
+Banner1: screenshot-2017-06-01-23.47.09.png
+
+----
+
+Link1: http://strikemag.bigcartel.com/

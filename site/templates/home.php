@@ -39,24 +39,61 @@
       <?php if($articles->count()): ?>
         <?php foreach($articles as $article): ?>
 
+          <!-- <?php if($article->printed('issue-18')): ?> -->
+
           <?php if($article->coverimage()->isNotEmpty()): ?>
 
-          <?php $ci = $article->coverimage()->toFile() ?>
 
-            <?php if($ci->orientation() == 'portrait'): ?>
-            <?php snippet('cardLargePortrait', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed())
-            )) ?>
 
-            <?php else: ?>
+
             <?php snippet('cardLargeLandscape', array(
             'article' => $article,
             'contributor' => $pages->find('contributors/' . $article->contributor()),
             'issue' => $pages->find('magazine/' . $article->printed())
             )) ?>
-            <?php endif ?>
+
+
+          <?php else: ?>
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $article,
+            'contributor' => $pages->find('contributors/' . $article->contributor()),
+            'issue' => $pages->find('magazine/' . $article->printed())
+            )) ?>
+
+          <?php endif ?>
+
+          <?php endif ?>
+
+        <?php endforeach ?>
+
+      <?php else: ?>
+        <p>Where did all of the articles go?</p>
+      <?php endif ?>
+    </section>
+
+    <?php if ($page->banner1()->isNotEmpty()) : ?>
+      <div class="home-banner group">
+        <?php $ci = $page->banner1()->toFile() ?>
+        <a href="<?php echo $page->link1()->html() ?>">
+          <figure>
+            <img src="<?php echo $ci->focusCrop(1000, 450)->url(); ?>" alt="" />
+          </figure>
+        </a>
+      </div>
+    <?php endif ?>
+
+    <h2 class="section-header">ARCHIVE</h2>
+    <section class="online-archive group">
+      <?php if($archives->count()): ?>
+        <?php foreach($archives->shuffle() as $article): ?>
+
+          <?php if($article->coverimage()->isNotEmpty()): ?>
+
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $article,
+            'contributor' => $pages->find('contributors/' . $article->contributor()),
+            'issue' => $pages->find('magazine/' . $article->printed())
+            )) ?>
 
           <?php else: ?>
             <?php snippet('cardLargeLandscape', array(
@@ -74,7 +111,9 @@
       <?php endif ?>
     </section>
 
-    <?php snippet('pagination') ?>
+    <section class="home-support">
+      <?php snippet('support') ?>
+    </section>
 
   </main>
 

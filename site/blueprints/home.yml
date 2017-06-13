@@ -26,5 +26,15 @@ fields:
       template: article
       flip: true
 
+  banner1:
+    label: Banner
+    type: image
+    width: 1/2
+
+  link1:
+    label: Banner Link
+    type: url
+    width: 1/2
+
   # feature1:
   #   title: Featured Post
