@@ -17,6 +17,17 @@
       <a href="<?= $item->url() ?>"><?= $item->title()->upper() ?></a>
     </li>
     <?php endforeach ?>
+
+    <a href="/search" data-auto-route="true" title="search articles" aria-label="search articles" id="search-button" class="icon">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </a>
+
+
+<form class="search" method="post" action="<?= page('search')->url() ?>">
+<input type="search" name="q" placeholder="search articles" value="<?php echo (!empty($query)) ? esc($query) : '' ?>">
+<!-- <input type="submit" value="Search"> -->
+</form>
+
   </ul>
 
 </nav>
