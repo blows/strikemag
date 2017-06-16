@@ -95,6 +95,12 @@
 
     </article>
 
+    <ul>
+    <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
+      <li><a href='<?php echo $related->url(); ?>'><?php echo $related->title(); ?></a></li>
+    <?php endforeach ?>
+    </ul>
+
     <?php snippet('support') ?>
 
   </main>

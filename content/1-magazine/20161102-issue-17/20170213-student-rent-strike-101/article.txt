@@ -82,3 +82,7 @@ For more reading:
 (link: https://i-d.vice.com/en_gb/article/debt-factories-with-degrees-how-your-university-became-your-landlord text: iD - debt factories with degrees? how your university became your landlord)
 
 (link: https://www.theguardian.com/education/2016/sep/17/uk-university-students-rent-strike-rising-cost-accommodation text: The Guardian - University students across UK prepare for wave of rent strikes)
+
+----
+
+Tags: test

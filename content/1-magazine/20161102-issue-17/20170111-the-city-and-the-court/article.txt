@@ -6,7 +6,7 @@ Coverimage: 17-samuli-saarinen-the-city-and-the-court-nina-power-01.png
 
 ----
 
-Text:
+Text: 
 
 (image: 17-samuli-saarinen-the-city-and-the-court-nina-power-01.png caption: IMG: Samuli Saarinen)
 
@@ -57,3 +57,11 @@ Artwork: samuli-saarinen
 ----
 
 Summary: Do we understand what a city is if we do not know where the courthouses, police stations and prisons are?
+
+----
+
+Tags: test
+
+----
+
+Category: text

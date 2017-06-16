@@ -74,6 +74,12 @@ fields:
     validate:
       maxLength: 140
 
+  tags:
+    label: Tags
+    type: tags
+    lower: true
+    index: all
+
   text:
     label: Article
     type: markdown
