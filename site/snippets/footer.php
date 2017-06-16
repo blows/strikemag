@@ -36,6 +36,7 @@
   </footer>
 
   <?= js('assets/js/jquery.min.js') ?>
+  <?= js('assets/plugins/embed/js/embed.js') ?>
   <?= js('assets/js/script.js') ?>
 
 </body>

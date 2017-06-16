@@ -11,6 +11,7 @@
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6a356015ff.js"></script>
 
+  <?= css('assets/plugins/embed/css/embed.css') ?>
   <?= css('assets/css/screen.css') ?>
 
   <!-- custom css -->

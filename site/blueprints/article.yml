@@ -10,6 +10,14 @@ options:
 
 files:
   fields:
+    credit:
+      label: Contributed By
+      type: multiselect
+      search: true
+      options: query
+      query:
+        page: contributors
+        fetch: children
     focus:
       label: Crop focus
       type: focus
@@ -38,6 +46,14 @@ fields:
     options:
       text: Text
       video: Video
+
+  media:
+    label: Media (Video/Playlist)
+    type: embed
+    width: 2/3
+    preview: true
+    info: true
+    cheatsheet: false
 
   coverimage:
     label: Cover Image

@@ -1,0 +1,12 @@
+{
+  "name":        "embed",
+  "description": "Kirby Embed Plugin",
+  "author":      "Nico Hoffmann <nico@getkirby.com>",
+  "version":     "3.0.1",
+  "type":        "kirby-plugin",
+  "license":     "MIT",
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/distantnative/embed"
+  }
+}

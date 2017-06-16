@@ -7,3 +7,19 @@ Text: Blogging with Kirby is as easy as it’s fun. This simple blog shows just 
 ----
 
 Perpage: 4
+
+----
+
+Color: rgba(174, 41, 255, 1)
+
+----
+
+Color1: rgba(214, 148, 255, 1)
+
+----
+
+Color2: #000000
+
+----
+
+Color3: #000000

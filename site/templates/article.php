@@ -60,6 +60,25 @@
       </div>
 
       <div class="text group">
+        <?php if($page->media()->isNotEmpty()): ?>
+          <figure>
+            <?= $page->media()->embed() ?>
+          </figure>
+        <?php elseif($page->coverimage()->isNotEmpty()) : ?>
+          <figure>
+            <img src="<?= $page->coverimage()->toFile()->url() ?>">
+            <?php if($page->coverimage()->toFile()->credit()->isNotEmpty()) : ?>
+              <figcaption>
+                <?php foreach ($page->coverimage()->toFile()->credit()->split() as $name): ?>
+                  <a style="color: <?= $page->parent()->color() ?>" href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+                      <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+                  </a>
+                <?php endforeach; ?>
+              </figcaption>
+            <?php endif; ?>
+          </figure>
+        <?php endif; ?>
+
         <?= $page->text()->kirbytext() ?>
 
         <div class="article-end">

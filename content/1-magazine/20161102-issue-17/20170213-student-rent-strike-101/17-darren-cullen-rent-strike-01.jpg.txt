@@ -1,1 +1,5 @@
-Focus: 
+Focus: {"x":0.53,"y":0.58}
+
+----
+
+Credit: darren-cullen
