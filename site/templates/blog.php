@@ -12,6 +12,11 @@
       <?php endif ?>
     </header> -->
 
+    <form class="search" method="post" action="<?= page('search')->url() ?>">
+    <input type="search" name="q" placeholder="search articles" value="<?php echo (!empty($query)) ? esc($query) : '' ?>">
+    <!-- <input type="submit" value="Search"> -->
+    </form>
+
     <!-- <h2 class="section-header">RECENT</h2> -->
     <section class="online-recent group">
       <?php if($articles->count()): ?>

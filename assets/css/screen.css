@@ -294,34 +294,7 @@ body {
 }
 
 /* line 14, ../scss/_header.scss */
-.branding {
-  width: 50%;
-  vertical-align: baseline;
-  display: inline-block;
-  font-size: 1.5rem;
-  background-color: black;
-  position: relative;
-  display: inline-block;
-  line-height: 3rem;
-  margin-bottom: 0;
-  white-space: nowrap;
-  text-align: center;
-}
-
-/* line 28, ../scss/_header.scss */
-.branding a {
-  border-bottom: 0;
-}
-/* line 31, ../scss/_header.scss */
-.branding a img {
-  height: 2em;
-  padding: .2em;
-  vertical-align: middle;
-}
-
-/* line 38, ../scss/_header.scss */
 .navigation {
-  width: 50%;
   vertical-align: baseline;
   position: relative;
   display: inline-block;
@@ -330,34 +303,34 @@ body {
   font-size: 1.2rem;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
-/* line 47, ../scss/_header.scss */
+/* line 22, ../scss/_header.scss */
 .navigation a {
   text-decoration: none;
   color: black;
 }
-/* line 51, ../scss/_header.scss */
+/* line 26, ../scss/_header.scss */
 .navigation .hamburger {
   display: inline;
 }
 
-/* line 56, ../scss/_header.scss */
+/* line 31, ../scss/_header.scss */
 .navigation-menu {
   display: none;
 }
 
 @media all and (max-width: 500px) {
-  /* line 61, ../scss/_header.scss */
+  /* line 36, ../scss/_header.scss */
   .navigation-page {
     display: none;
   }
 
-  /* line 64, ../scss/_header.scss */
+  /* line 39, ../scss/_header.scss */
   .navigation-menu {
     display: inline;
     font-size: .7em;
   }
 }
-/* line 69, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
 .nav-up {
   top: -4rem;
 }
@@ -368,90 +341,88 @@ body {
   text-align: center;
   font-weight: 500;
   background-color: white;
+  font-weight: bold;
+  font-size: 1em;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
 }
 
-/* line 7, ../scss/_menu.scss */
+/* line 14, ../scss/_menu.scss */
 .menu-item {
-  display: inline-block;
-  padding: .85em;
+  float: left;
+  width: 20%;
+  padding-top: .85em;
+  padding-bottom: .85em;
 }
 @media (max-width: 500px) {
-  /* line 7, ../scss/_menu.scss */
+  /* line 14, ../scss/_menu.scss */
   .menu-item {
     display: block;
   }
 }
 
-/* line 16, ../scss/_menu.scss */
-.menu-item a {
+/* line 25, ../scss/_menu.scss */
+li.menu-item {
+  background-color: black;
   border-bottom: 0;
 }
+/* line 28, ../scss/_menu.scss */
+li.menu-item:hover {
+  background-color: purple;
+}
+/* line 31, ../scss/_menu.scss */
+li.menu-item a {
+  color: white;
+}
 @media (max-width: 500px) {
-  /* line 16, ../scss/_menu.scss */
-  .menu-item a {
+  /* line 25, ../scss/_menu.scss */
+  li.menu-item {
     margin: 1em;
   }
 }
 
-/* line 24, ../scss/_menu.scss */
-.menu-item.is-active a {
-  border-bottom: 2px solid black;
+/* line 40, ../scss/_menu.scss */
+li.menu-item.is-active {
+  background-color: purple;
+}
+
+/* line 44, ../scss/_menu.scss */
+.branding {
+  vertical-align: baseline;
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  line-height: 3rem;
+  margin-bottom: 0;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 59, ../scss/_menu.scss */
+.branding a {
+  border-bottom: 0;
+}
+/* line 62, ../scss/_menu.scss */
+.branding a img {
+  height: 2em;
+  padding-top: .31em;
+  padding-bottom: .31em;
+  vertical-align: middle;
 }
 
 @media all and (min-width: 56em) {
-  /* line 29, ../scss/_menu.scss */
+  /* line 71, ../scss/_menu.scss */
   .menu {
     text-align: center;
   }
 }
-/* line 34, ../scss/_menu.scss */
-.menu {
-  font-weight: bold;
-  font-size: 0.8em;
-  width: 100%;
-  background: white;
-  position: fixed;
-  z-index: 20;
-  top: 3.8em;
-  right: 0;
-  text-align: center;
-  display: none;
-}
-
-/* line 47, ../scss/_menu.scss */
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  list-style-image: none;
-}
-
-/* line 54, ../scss/_menu.scss */
-.menu ul li a {
-  text-decoration: none;
-  margin: 0;
-  color: black;
-}
-
-/* line 60, ../scss/_menu.scss */
-.menu ul li a:hover {
-  color: black;
-  text-decoration: none;
-}
-
-/* line 65, ../scss/_menu.scss */
-.menu a {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: black;
-}
-
-/* line 71, ../scss/_menu.scss */
-.menu a:hover {
-  text-decoration: none;
-  color: black;
-}
-
 @media (min-width: 300px) {
   /* line 77, ../scss/_menu.scss */
   .hamburger {

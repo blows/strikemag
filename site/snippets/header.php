@@ -35,10 +35,6 @@
 
   <header class="header nav-down" role="banner">
 
-      <div class="branding">
-        <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-white.svg')->url() ?>" alt="STRIKE! Magazine"></a>
-      </div>
-
       <?php snippet('menu') ?>
 
   </header>

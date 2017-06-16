@@ -1,0 +1,5 @@
+Title: Shop
+
+----
+
+Ext-url: http://strikemag.bigcartel.com/
