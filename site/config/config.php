@@ -42,6 +42,7 @@ c::set('routes', array(
       $page = page($uid);
 
       if(!$page) $page = page('online/' . $uid);
+      if(!$page) $page = page('magazine')->grandchildren()->findby('uid', $uid);
       if(!$page) $page = site()->errorPage();
 
       return site()->visit($page);
@@ -51,7 +52,13 @@ c::set('routes', array(
   array(
     'pattern' => 'online/(:any)',
     'action'  => function($uid) {
-      go($uid);
+      return go($uid);
     }
+  ),
+  array(
+     'pattern' => 'magazine/(:any)/(:any)',
+     'action'  => function($issue, $article) {
+       return go($article);
+     }
   )
 ));
