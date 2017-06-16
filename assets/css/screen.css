@@ -354,8 +354,6 @@ body {
 .menu-item {
   float: left;
   width: 20%;
-  padding-top: .85em;
-  padding-bottom: .85em;
 }
 @media (max-width: 500px) {
   /* line 14, ../scss/_menu.scss */
@@ -364,32 +362,37 @@ body {
   }
 }
 
-/* line 25, ../scss/_menu.scss */
+/* line 23, ../scss/_menu.scss */
 li.menu-item {
   background-color: black;
   border-bottom: 0;
 }
-/* line 28, ../scss/_menu.scss */
+/* line 26, ../scss/_menu.scss */
 li.menu-item:hover {
   background-color: purple;
 }
-/* line 31, ../scss/_menu.scss */
+/* line 29, ../scss/_menu.scss */
 li.menu-item a {
   color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: .85em;
+  padding-bottom: .85em;
 }
 @media (max-width: 500px) {
-  /* line 25, ../scss/_menu.scss */
+  /* line 23, ../scss/_menu.scss */
   li.menu-item {
     margin: 1em;
   }
 }
 
-/* line 40, ../scss/_menu.scss */
+/* line 43, ../scss/_menu.scss */
 li.menu-item.is-active {
   background-color: purple;
 }
 
-/* line 44, ../scss/_menu.scss */
+/* line 47, ../scss/_menu.scss */
 .branding {
   vertical-align: baseline;
   display: inline-block;
@@ -401,16 +404,16 @@ li.menu-item.is-active {
   margin-bottom: 0;
   white-space: nowrap;
   text-align: center;
+}
+
+/* line 60, ../scss/_menu.scss */
+li.branding.menu-item a {
+  border-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-
-/* line 59, ../scss/_menu.scss */
-.branding a {
-  border-bottom: 0;
-}
-/* line 62, ../scss/_menu.scss */
-.branding a img {
+/* line 65, ../scss/_menu.scss */
+li.branding.menu-item a img {
   height: 2em;
   padding-top: .31em;
   padding-bottom: .31em;
@@ -418,13 +421,13 @@ li.menu-item.is-active {
 }
 
 @media all and (min-width: 56em) {
-  /* line 71, ../scss/_menu.scss */
+  /* line 74, ../scss/_menu.scss */
   .menu {
     text-align: center;
   }
 }
 @media (min-width: 300px) {
-  /* line 77, ../scss/_menu.scss */
+  /* line 80, ../scss/_menu.scss */
   .hamburger {
     font-size: .8em;
     line-height: 1em;
@@ -432,7 +435,7 @@ li.menu-item.is-active {
   }
 }
 @media (min-width: 360px) {
-  /* line 85, ../scss/_menu.scss */
+  /* line 88, ../scss/_menu.scss */
   .hamburger {
     font-size: .8em;
     line-height: 1em;
@@ -440,7 +443,7 @@ li.menu-item.is-active {
   }
 }
 @media (min-width: 500px) {
-  /* line 93, ../scss/_menu.scss */
+  /* line 96, ../scss/_menu.scss */
   .hamburger, .cross {
     background: none;
     position: absolute;
