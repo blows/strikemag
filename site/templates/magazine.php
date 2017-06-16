@@ -14,9 +14,14 @@
 
           <div class="issue-summary text" style="background-color: <?= $issue->color() ?>;">
             <div class="issue-summary__image">
-              <figure>
-                <img src="<?= $issue->coverimage()->toFile()->uri() ?>" alt="STRIKE! <?= $issue->title()->html() ?>" />
-              </figure>
+              <ul class="rslides">
+                <?php foreach($issue->images()->sortBy('sort', 'asc') as $image) : ?>
+                    <li><img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>" class="img-responsive" /></li>
+                <?php endforeach ?>
+              </ul>
+              <!-- <figure>
+                <img src="<?= $issue->coverimage()->toFile()->url() ?>" alt="STRIKE! <?= $issue->title()->html() ?>" />
+              </figure> -->
             </div>
             <div class="issue-summary__detail">
               <h1 class="issue-summary__detail-title"><?= $issue->title()->upper()->html() ?>: <?= $issue->name()->html() ?></h1>
@@ -30,7 +35,7 @@
 
           <div class="issue-contents" style="background-color:<?php echo $issue->color1() ?>";>
             <div class="issue-contents__title"><h1><?php echo $issue->title()->upper() ?> CONTENTS</h1><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-<div class="issue-contents-group">
+            <div class="issue-contents-group">
               <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
                 <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
                 <div class="issue-contents__content <?= $class ?>">
@@ -48,9 +53,7 @@
                   <?php endif ?>
                 </div>
               <?php endforeach ?>
-
-
-</div>
+            </div>
           </div>
 
         </div>

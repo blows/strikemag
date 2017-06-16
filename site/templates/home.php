@@ -39,12 +39,7 @@
       <?php if($articles->count()): ?>
         <?php foreach($articles as $article): ?>
 
-          <!-- <?php if($article->printed('issue-18')): ?> -->
-
           <?php if($article->coverimage()->isNotEmpty()): ?>
-
-
-
 
             <?php snippet('cardLargeLandscape', array(
             'article' => $article,
@@ -59,8 +54,6 @@
             'contributor' => $pages->find('contributors/' . $article->contributor()),
             'issue' => $pages->find('magazine/' . $article->printed())
             )) ?>
-
-          <?php endif ?>
 
           <?php endif ?>
 

@@ -1723,7 +1723,39 @@ ul.stockists a {
   height: auto;
   width: 100%;
 }
-/* line 31, ../scss/_magazine.scss */
+/* line 30, ../scss/_magazine.scss */
+.issue-summary__image .rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+/* line 37, ../scss/_magazine.scss */
+.issue-summary__image .rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+/* line 45, ../scss/_magazine.scss */
+.issue-summary__image .rslides li:first-child {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+/* line 50, ../scss/_magazine.scss */
+.issue-summary__image .rslides img {
+  display: inline-block;
+  height: auto;
+  float: left;
+  width: auto;
+  height: 100%;
+  border: 0;
+}
+/* line 60, ../scss/_magazine.scss */
 .issue-summary__detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1736,7 +1768,7 @@ ul.stockists a {
   padding-top: 1em;
 }
 @media all and (max-width: 500px) {
-  /* line 31, ../scss/_magazine.scss */
+  /* line 60, ../scss/_magazine.scss */
   .issue-summary__detail {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1748,21 +1780,21 @@ ul.stockists a {
     margin-left: 4.16667%;
   }
 }
-/* line 40, ../scss/_magazine.scss */
+/* line 69, ../scss/_magazine.scss */
 .issue-summary__detail-title {
   font-family: 'Graphik-Medium', sans-serif;
   padding-bottom: 1em;
 }
-/* line 44, ../scss/_magazine.scss */
+/* line 73, ../scss/_magazine.scss */
 .issue-summary__detail-printed {
   margin-top: 0;
   padding-bottom: 1em;
 }
-/* line 48, ../scss/_magazine.scss */
+/* line 77, ../scss/_magazine.scss */
 .issue-summary__detail-summary {
   padding-bottom: 3em;
 }
-/* line 51, ../scss/_magazine.scss */
+/* line 80, ../scss/_magazine.scss */
 .issue-summary__detail-buy {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1774,7 +1806,7 @@ ul.stockists a {
   text-align: center;
 }
 @media all and (max-width: 500px) {
-  /* line 51, ../scss/_magazine.scss */
+  /* line 80, ../scss/_magazine.scss */
   .issue-summary__detail-buy {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1787,7 +1819,7 @@ ul.stockists a {
   }
 }
 
-/* line 61, ../scss/_magazine.scss */
+/* line 90, ../scss/_magazine.scss */
 .issue-contents {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1798,7 +1830,7 @@ ul.stockists a {
   padding-right: 0.83333%;
   padding: 0;
 }
-/* line 64, ../scss/_magazine.scss */
+/* line 93, ../scss/_magazine.scss */
 .issue-contents__title {
   font-family: 'Druk-Wide-Medium', sans-serif;
   text-align: center;
@@ -1806,19 +1838,19 @@ ul.stockists a {
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
 }
-/* line 70, ../scss/_magazine.scss */
+/* line 99, ../scss/_magazine.scss */
 .issue-contents__title h1 {
   display: inline-block;
 }
-/* line 73, ../scss/_magazine.scss */
+/* line 102, ../scss/_magazine.scss */
 .issue-contents__title i {
   padding: .3em;
 }
-/* line 78, ../scss/_magazine.scss */
+/* line 107, ../scss/_magazine.scss */
 .issue-contents-group {
   display: none;
 }
-/* line 82, ../scss/_magazine.scss */
+/* line 111, ../scss/_magazine.scss */
 .issue-contents__content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1833,7 +1865,7 @@ ul.stockists a {
   border-bottom: .5px solid grey;
 }
 @media all and (max-width: 500px) {
-  /* line 82, ../scss/_magazine.scss */
+  /* line 111, ../scss/_magazine.scss */
   .issue-contents__content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1845,20 +1877,20 @@ ul.stockists a {
     border-right: none;
   }
 }
-/* line 92, ../scss/_magazine.scss */
+/* line 121, ../scss/_magazine.scss */
 .issue-contents__content a {
   color: black;
   text-decoration: none;
 }
-/* line 97, ../scss/_magazine.scss */
+/* line 126, ../scss/_magazine.scss */
 .issue-contents__content:hover {
   background-color: black;
 }
-/* line 99, ../scss/_magazine.scss */
+/* line 128, ../scss/_magazine.scss */
 .issue-contents__content:hover .issue-contents__content-title, .issue-contents__content:hover .issue-contents__content-online, .issue-contents__content:hover .issue-contents__content-contributor {
   color: white;
 }
-/* line 103, ../scss/_magazine.scss */
+/* line 132, ../scss/_magazine.scss */
 .issue-contents__content-online {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
@@ -1866,22 +1898,22 @@ ul.stockists a {
   position: absolute;
   padding-top: .5em;
 }
-/* line 110, ../scss/_magazine.scss */
+/* line 139, ../scss/_magazine.scss */
 .issue-contents__content-title {
   padding-top: 1.5em;
 }
-/* line 113, ../scss/_magazine.scss */
+/* line 142, ../scss/_magazine.scss */
 .issue-contents__content-contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
   padding-bottom: 1.5em;
   display: inline-block;
 }
-/* line 118, ../scss/_magazine.scss */
+/* line 147, ../scss/_magazine.scss */
 .issue-contents__content-contributor:after {
   content: ",";
 }
-/* line 121, ../scss/_magazine.scss */
+/* line 150, ../scss/_magazine.scss */
 .issue-contents__content-contributor:last-of-type:after {
   content: "";
 }
