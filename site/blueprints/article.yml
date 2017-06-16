@@ -32,6 +32,13 @@ fields:
       fetch: children
     width: 1/2
 
+  category:
+    label: Category
+    type: radio
+    options:
+      text: Text
+      video: Video
+
   coverimage:
     label: Cover Image
     type: image

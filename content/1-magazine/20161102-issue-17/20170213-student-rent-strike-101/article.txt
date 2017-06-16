@@ -86,3 +86,7 @@ For more reading:
 ----
 
 Tags: test
+
+----
+
+Category: text

@@ -5,9 +5,9 @@
     <article class="article group">
 
       <header class="article-info">
-        <?php if ($page->printed()->isNotEmpty()) : ?>
-          <h3 class="article-header__issue" style="color: <?= $page->parent()->color() ?>"><?php echo $issue->title()->upper() ?></h3>
-        <?php endif; ?>
+          <h3 class="article-header__issue" style="color: <?= $page->parent()->color() ?>">
+            (<?= $page->category()->upper()->html() ?>) <?php if ($page->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?><?php endif; ?>
+          </h3>
         <div class="article-header">
           <h1 class="article-header__title" style="color: <?= $page->parent()->color() ?>"><?= $page->title()->upper()->html() ?></h1>
 

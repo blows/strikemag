@@ -88,3 +88,7 @@ The overall message is that although these giant, venture-capital backed corpora
 ----
 
 Tags: test
+
+----
+
+Category: text

@@ -12,11 +12,9 @@
 
   <header class="card-large-info">
     <div class="card-large-info__group">
-      <?php if ($article->printed()->isNotEmpty()) : ?>
-        <h3 class="card-large-info__issue">
-          <?= $issue->title()->upper()->html() ?>
-        </h3>
-      <?php endif; ?>
+      <h3 class="card-large-info__issue">
+        (<?= $article->category()->upper()->html() ?>) <?php if ($article->printed()->isNotEmpty()) : ?><?= $issue->title()->upper()->html() ?><?php endif; ?>
+      </h3>
       <h2 class="card-large-info__title" style="color: <?= $article->parent()->color() ?>">
         <?= $article->title()->upper()->html() ?>
       </h2>

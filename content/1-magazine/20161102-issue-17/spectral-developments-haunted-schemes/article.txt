@@ -27,3 +27,11 @@ Summary:
 ----
 
 Text: 
+
+----
+
+Category: text
+
+----
+
+Tags: 
