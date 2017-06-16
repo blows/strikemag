@@ -463,13 +463,6 @@ li.branding.menu-item a img {
 /* -----  3.3 Footer  ------------------------------------------------------- */
 /* line 1, ../scss/_footer.scss */
 .footer {
-  padding-top: 1.5rem;
-  height: 20vh;
-}
-
-/* line 6, ../scss/_footer.scss */
-.footer-left,
-.footer-right {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -477,53 +470,12 @@ li.branding.menu-item a img {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  font-family: 'Druk-Wide-Medium', sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.95rem;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  height: auto;
-  min-height: 14em;
-}
-/* line 21, ../scss/_footer.scss */
-.footer-left a:hover,
-.footer-right a:hover {
-  text-decoration: underline;
-}
-@media all and (max-width: 500px) {
-  /* line 6, ../scss/_footer.scss */
-  .footer-left,
-  .footer-right {
-    display: block;
-    min-height: 10em;
-  }
+  padding-top: 1.5rem;
+  height: 20vh;
+  background-color: purple;
 }
 
-/* line 30, ../scss/_footer.scss */
-.footer-left {
-  background-color: white;
-}
-/* line 32, ../scss/_footer.scss */
-.footer-left a {
-  color: black;
-  text-decoration: none;
-}
-
-/* line 38, ../scss/_footer.scss */
-.footer-right {
-  background-color: black;
-}
-/* line 40, ../scss/_footer.scss */
-.footer-right a {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 46, ../scss/_footer.scss */
+/* line 8, ../scss/_footer.scss */
 .footer-newsletter {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -536,35 +488,39 @@ li.branding.menu-item a img {
   text-align: center;
   padding-bottom: 1em;
 }
-/* line 51, ../scss/_footer.scss */
+/* line 13, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup input.email {
-  width: 60%;
-  max-width: 25em;
+  width: 90%;
 }
-/* line 55, ../scss/_footer.scss */
+/* line 16, ../scss/_footer.scss */
 .footer-newsletter p {
   margin: .8em;
 }
 
+/* line 25, ../scss/_footer.scss */
+.footer-links, .footer-socials {
+  display: inline-block;
+}
+/* line 27, ../scss/_footer.scss */
+.footer-links li, .footer-socials li {
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 33, ../scss/_footer.scss */
+.footer-links {
+  float: left;
+}
+
+/* line 37, ../scss/_footer.scss */
+.footer-socials {
+  float: right;
+}
+
 @media all and (min-width: 501px) {
-  /* line 61, ../scss/_footer.scss */
+  /* line 42, ../scss/_footer.scss */
   .footer {
     padding-top: 0;
-  }
-
-  /* line 64, ../scss/_footer.scss */
-  .footer-left,
-  .footer-right {
-    line-height: 3rem;
-    margin-bottom: 0;
-    white-space: nowrap;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
   }
 }
 /* -----  Pagination  ------------------------------------------------------- */

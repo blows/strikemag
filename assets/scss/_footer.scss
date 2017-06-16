@@ -1,46 +1,8 @@
 .footer {
+  @include span(12);
   padding-top: 1.5rem;
   height: 20vh;
-}
-
-.footer-left,
-.footer-right {
-  @include span(12);
-  font-family: 'Druk-Wide-Medium', sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.95rem;
-  // margin-bottom: .45rem;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  height: auto;
-  min-height: 14em;
-  a:hover {
-    text-decoration: underline;
-  }
-  @media all and (max-width: 500px) {
-    display: block;
-    min-height: 10em;
-  }
-}
-
-.footer-left {
-  background-color: white;
-  a {
-    color: black;
-    text-decoration: none;
-  }
-}
-
-.footer-right {
-  background-color: black;
-  a {
-    color: white;
-    text-decoration: none;
-  }
+  background-color: purple;
 }
 
 .footer-newsletter {
@@ -49,23 +11,35 @@
   text-align: center;
   padding-bottom: 1em;
   #mc_embed_signup input.email {
-    width: 60%;
-    max-width: 25em;
+    width: 90%;
   }
   p {
     margin: .8em;
   }
 }
 
+.footer-nav {
+
+}
+
+.footer-links, .footer-socials {
+  display: inline-block;
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+}
+
+.footer-links {
+  float: left;
+}
+
+.footer-socials {
+  float: right;
+}
+
 @media all and (min-width: 501px) {
   .footer {
     padding-top: 0;
-  }
-  .footer-left,
-  .footer-right {
-    line-height: 3rem;
-    margin-bottom: 0;
-    white-space: nowrap;
-    @include span(6);
   }
 }
