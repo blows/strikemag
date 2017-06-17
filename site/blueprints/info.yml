@@ -1,0 +1,65 @@
+title: Info
+
+icon: info-circle
+
+pages:
+  num: zero
+
+files: false
+
+options:
+  template: false
+  status: false
+  url: false
+  delete: false
+
+fields:
+  title:
+    label: Title
+    type: title
+
+  aboutus:
+    label: About
+    type: textarea
+
+  contact:
+    label: Contact
+    type: textarea
+
+  submissions:
+    label: Submissions
+    type: textarea
+
+  writing:
+    label: Writing
+    type: textarea
+
+  art:
+    label: Art/Design
+    type: textarea
+
+  videox:
+    label: Video
+    type: textarea
+
+  distribution:
+    label: Distribution
+    type: textarea
+
+  stockists:
+    label: Stockists
+    type: structure
+    style: table
+    modalsize: medium
+    entry: >
+      {{stockist}} {{location}} {{link}}
+    fields:
+      stockist:
+        label: Stockist
+        type: text
+      link:
+        label: Link
+        type: url
+      location:
+        label: City, Country
+        type: text

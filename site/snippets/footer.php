@@ -13,9 +13,9 @@
       </ul>
 
       <ul class="footer-socials">
-        <li><a href="http://www.strikemag.org" target="_blank">FB</a></li>
-        <li><a href="http://www.strikemag.org" target="_blank">TW</a></li>
-        <li><a href="http://www.strikemag.org" target="_blank">IG</a></li>
+        <li><a href="http://www.strikemag.org" target="_blank">Facebook</a></li>
+        <li><a href="http://www.strikemag.org" target="_blank">Twitter</a></li>
+        <li><a href="http://www.strikemag.org" target="_blank">Instagram</a></li>
       </ul>
     </div>
 
