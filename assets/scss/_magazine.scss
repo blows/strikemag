@@ -64,32 +64,34 @@
     }
   }
   &__detail {
-    @include span(5);
+    @include span(6);
+    @include push(3);
     @media all and (max-width: 500px) {
       @include span(11);
       @include push(.5);
     }
-    padding-left: 3em;
-    padding-top: 1em;
+    padding-top: 3.5em;
   }
   &__detail-title {
     font-family: 'Graphik-Medium', sans-serif;
-    padding-bottom: 1em;
+    font-size: 2.5em;
+    padding-bottom: .4em;
   }
   &__detail-printed {
     margin-top: 0;
-    padding-bottom: 1em;
-  }
-  &__detail-summary {
+    font-size: .7em;
     padding-bottom: 3em;
   }
+  &__detail-summary {
+    padding-bottom: 2em;
+  }
   &__detail-buy {
-    @include span(5);
+    @include span(6);
+    @include push(3);
     @media all and (max-width: 500px) {
       @include span(11);
       @include push(.5);
     }
-    text-align: center;
   }
 }
 

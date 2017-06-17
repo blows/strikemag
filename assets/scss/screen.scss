@@ -65,6 +65,20 @@ button {
   margin: 0;
 }
 
+a.button {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 3px 3px 3px 3px;
+  color: $strikeMainColor;
+  padding: 1em;
+  display: inline-block;
+  margin: 0;
+  &:hover {
+    background-color: $strikeMainColor;
+    color: white;
+  }
+}
+
 /* -----  1.4 Images & Figures  --------------------------------------------- */
 
 img {
@@ -96,7 +110,7 @@ figcaption {
 }
 
 .text h1, .text h2, .text h3 {
-  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-family: 'Graphik-Medium', sans-serif;
 }
 
 .text ul, .text ol {

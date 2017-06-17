@@ -136,22 +136,38 @@ button {
   margin: 0;
 }
 
+/* line 68, ../scss/screen.scss */
+a.button {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 3px 3px 3px 3px;
+  color: #a200ff;
+  padding: 1em;
+  display: inline-block;
+  margin: 0;
+}
+/* line 76, ../scss/screen.scss */
+a.button:hover {
+  background-color: #a200ff;
+  color: white;
+}
+
 /* -----  1.4 Images & Figures  --------------------------------------------- */
-/* line 70, ../scss/screen.scss */
+/* line 84, ../scss/screen.scss */
 img {
   border-style: none;
   width: 100%;
   height: auto;
 }
 
-/* line 76, ../scss/screen.scss */
+/* line 90, ../scss/screen.scss */
 figcaption {
   font-size: .75rem;
   line-height: 1.5rem;
 }
 
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
-/* line 83, ../scss/screen.scss */
+/* line 97, ../scss/screen.scss */
 .intro {
   text-align: center;
   font-weight: 500;
@@ -159,46 +175,46 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* line 98, ../scss/screen.scss */
+/* line 112, ../scss/screen.scss */
 .text h1, .text h2, .text h3 {
-  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-family: 'Graphik-Medium', sans-serif;
 }
 
-/* line 102, ../scss/screen.scss */
+/* line 116, ../scss/screen.scss */
 .text ul, .text ol {
   margin-left: 1.5em;
 }
 
-/* line 106, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 .text p {
   font-weight: 400;
 }
 
-/* line 114, ../scss/screen.scss */
+/* line 128, ../scss/screen.scss */
 .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
 
-/* line 120, ../scss/screen.scss */
+/* line 134, ../scss/screen.scss */
 .text ul {
   list-style: none;
 }
 
-/* line 134, ../scss/screen.scss */
+/* line 148, ../scss/screen.scss */
 .text ol > li {
   list-style: decimal;
 }
 
-/* line 138, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 .text pre, .text code {
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
 }
 
-/* line 144, ../scss/screen.scss */
+/* line 158, ../scss/screen.scss */
 .text code {
   margin: -.25em 0;
   padding: .25em .15em;
@@ -206,7 +222,7 @@ figcaption {
   bottom: .05em;
 }
 
-/* line 151, ../scss/screen.scss */
+/* line 165, ../scss/screen.scss */
 .text pre > code {
   display: block;
   margin: 0;
@@ -217,7 +233,7 @@ figcaption {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  /* line 161, ../scss/screen.scss */
+  /* line 175, ../scss/screen.scss */
   .text pre > code {
     /* Enables smoother scrolling for code sections on
        mobile (i.e. touch) devices. */
@@ -225,7 +241,7 @@ figcaption {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 169, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 .text kbd {
   padding: 3px 7px;
   margin: -3px 2px;
@@ -239,22 +255,22 @@ figcaption {
   bottom: 2px;
 }
 
-/* line 182, ../scss/screen.scss */
+/* line 196, ../scss/screen.scss */
 .text blockquote {
   padding: .75rem;
 }
-/* line 184, ../scss/screen.scss */
+/* line 198, ../scss/screen.scss */
 .text blockquote p {
   font-size: 1.5em;
 }
 
-/* line 189, ../scss/screen.scss */
+/* line 203, ../scss/screen.scss */
 .text blockquote :last-child {
   margin-bottom: 0;
 }
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
-/* line 195, ../scss/screen.scss */
+/* line 209, ../scss/screen.scss */
 body {
   background-color: #f2f2f2;
   font-family: 'Graphik-Medium', sans-serif;
@@ -264,19 +280,19 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 204, ../scss/screen.scss */
+  /* line 218, ../scss/screen.scss */
   body {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 216, ../scss/screen.scss */
+  /* line 230, ../scss/screen.scss */
   body {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 224, ../scss/screen.scss */
+  /* line 238, ../scss/screen.scss */
   body {
     font-size: 14px;
   }
@@ -621,7 +637,7 @@ li.branding.menu-item a img {
 }
 
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 245, ../scss/screen.scss */
+/* line 259, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -634,7 +650,7 @@ li.branding.menu-item a img {
   clear: both;
 }
 
-/* line 251, ../scss/screen.scss */
+/* line 265, ../scss/screen.scss */
 .flex-center {
   display: -webkit-flex;
   display: flex;
@@ -644,7 +660,7 @@ li.branding.menu-item a img {
   flex-direction: column;
 }
 
-/* line 257, ../scss/screen.scss */
+/* line 271, ../scss/screen.scss */
 .home-featured {
   position: relative;
   z-index: 5;
@@ -658,13 +674,13 @@ li.branding.menu-item a img {
   padding: 0;
   height: auto;
 }
-/* line 263, ../scss/screen.scss */
+/* line 277, ../scss/screen.scss */
 .home-featured img {
   height: auto;
   width: 100%;
   z-index: 10;
 }
-/* line 268, ../scss/screen.scss */
+/* line 282, ../scss/screen.scss */
 .home-featured-text {
   position: absolute;
   z-index: 15;
@@ -680,14 +696,14 @@ li.branding.menu-item a img {
   text-shadow: 0 0 8px rgba(153, 153, 153, 0.8);
   text-decoration: none;
 }
-/* line 280, ../scss/screen.scss */
+/* line 294, ../scss/screen.scss */
 .home-featured-title {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 4em;
   line-height: 1em;
   padding-bottom: .5em;
 }
-/* line 286, ../scss/screen.scss */
+/* line 300, ../scss/screen.scss */
 .home-featured-contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: 1.2em;
@@ -695,16 +711,16 @@ li.branding.menu-item a img {
   text-decoration: underline;
   display: inline;
 }
-/* line 292, ../scss/screen.scss */
+/* line 306, ../scss/screen.scss */
 .home-featured-contributor:after {
   content: ",";
 }
-/* line 295, ../scss/screen.scss */
+/* line 309, ../scss/screen.scss */
 .home-featured-contributor:last-of-type:after {
   content: "";
 }
 
-/* line 301, ../scss/screen.scss */
+/* line 315, ../scss/screen.scss */
 .home-banner {
   position: relative;
   z-index: 5;
@@ -719,14 +735,14 @@ li.branding.menu-item a img {
   height: auto;
   margin-top: 2rem;
 }
-/* line 308, ../scss/screen.scss */
+/* line 322, ../scss/screen.scss */
 .home-banner img {
   height: auto;
   width: 100%;
   z-index: 10;
 }
 
-/* line 315, ../scss/screen.scss */
+/* line 329, ../scss/screen.scss */
 .home-support {
   position: relative;
   float: left;
@@ -1752,12 +1768,12 @@ ul.stockists a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 41.66667%;
+  width: 50%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  padding-left: 3em;
-  padding-top: 1em;
+  margin-left: 25%;
+  padding-top: 3.5em;
 }
 @media all and (max-width: 500px) {
   /* line 66, ../scss/_magazine.scss */
@@ -1775,30 +1791,32 @@ ul.stockists a {
 /* line 75, ../scss/_magazine.scss */
 .issue-summary__detail-title {
   font-family: 'Graphik-Medium', sans-serif;
-  padding-bottom: 1em;
+  font-size: 2.5em;
+  padding-bottom: .4em;
 }
-/* line 79, ../scss/_magazine.scss */
+/* line 80, ../scss/_magazine.scss */
 .issue-summary__detail-printed {
   margin-top: 0;
-  padding-bottom: 1em;
-}
-/* line 83, ../scss/_magazine.scss */
-.issue-summary__detail-summary {
+  font-size: .7em;
   padding-bottom: 3em;
 }
-/* line 86, ../scss/_magazine.scss */
+/* line 85, ../scss/_magazine.scss */
+.issue-summary__detail-summary {
+  padding-bottom: 2em;
+}
+/* line 88, ../scss/_magazine.scss */
 .issue-summary__detail-buy {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 41.66667%;
+  width: 50%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  text-align: center;
+  margin-left: 25%;
 }
 @media all and (max-width: 500px) {
-  /* line 86, ../scss/_magazine.scss */
+  /* line 88, ../scss/_magazine.scss */
   .issue-summary__detail-buy {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1811,7 +1829,7 @@ ul.stockists a {
   }
 }
 
-/* line 96, ../scss/_magazine.scss */
+/* line 98, ../scss/_magazine.scss */
 .issue-contents {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1823,7 +1841,7 @@ ul.stockists a {
   padding: 0;
   padding-bottom: 3em;
 }
-/* line 100, ../scss/_magazine.scss */
+/* line 102, ../scss/_magazine.scss */
 .issue-contents__title {
   font-family: 'Druk-Wide-Medium', sans-serif;
   text-align: center;
@@ -1831,15 +1849,15 @@ ul.stockists a {
   padding-bottom: .5em;
   border-bottom: .5px solid grey;
 }
-/* line 106, ../scss/_magazine.scss */
+/* line 108, ../scss/_magazine.scss */
 .issue-contents__title h1 {
   display: inline-block;
 }
-/* line 109, ../scss/_magazine.scss */
+/* line 111, ../scss/_magazine.scss */
 .issue-contents__title i {
   padding: .3em;
 }
-/* line 118, ../scss/_magazine.scss */
+/* line 120, ../scss/_magazine.scss */
 .issue-contents__content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1854,7 +1872,7 @@ ul.stockists a {
   line-height: 1.3em;
 }
 @media all and (max-width: 500px) {
-  /* line 118, ../scss/_magazine.scss */
+  /* line 120, ../scss/_magazine.scss */
   .issue-contents__content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1865,37 +1883,37 @@ ul.stockists a {
     padding-right: 0.83333%;
   }
 }
-/* line 129, ../scss/_magazine.scss */
+/* line 131, ../scss/_magazine.scss */
 .issue-contents__content:nth-of-type(1) {
   border-width: 3px 3px 3px 3px;
 }
-/* line 132, ../scss/_magazine.scss */
+/* line 134, ../scss/_magazine.scss */
 .issue-contents__content a {
   display: block;
   color: black;
   text-decoration: none;
 }
-/* line 138, ../scss/_magazine.scss */
+/* line 140, ../scss/_magazine.scss */
 .issue-contents__content:hover {
   background-color: black;
 }
-/* line 140, ../scss/_magazine.scss */
+/* line 142, ../scss/_magazine.scss */
 .issue-contents__content:hover .issue-contents__content-title, .issue-contents__content:hover .issue-contents__content-online, .issue-contents__content:hover .issue-contents__content-contributor {
   color: white;
 }
-/* line 144, ../scss/_magazine.scss */
+/* line 146, ../scss/_magazine.scss */
 .issue-contents__content.offline {
   color: lightgrey;
 }
-/* line 146, ../scss/_magazine.scss */
+/* line 148, ../scss/_magazine.scss */
 .issue-contents__content.offline:hover {
   color: lightgrey;
 }
-/* line 151, ../scss/_magazine.scss */
+/* line 153, ../scss/_magazine.scss */
 .issue-contents__content:hover.offline .issue-contents__content-title, .issue-contents__content:hover.offline .issue-contents__content-online, .issue-contents__content:hover.offline .issue-contents__content-contributor {
   color: lightgrey;
 }
-/* line 155, ../scss/_magazine.scss */
+/* line 157, ../scss/_magazine.scss */
 .issue-contents__content-online {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
@@ -1903,34 +1921,34 @@ ul.stockists a {
   position: absolute;
   padding-top: .5em;
 }
-/* line 162, ../scss/_magazine.scss */
+/* line 164, ../scss/_magazine.scss */
 .issue-contents__content-title {
   padding-top: 1.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-/* line 167, ../scss/_magazine.scss */
+/* line 169, ../scss/_magazine.scss */
 .issue-contents__content-contributor {
   padding-bottom: 1.5em;
   padding-left: 1.5em;
   display: inline-block;
 }
-/* line 174, ../scss/_magazine.scss */
+/* line 176, ../scss/_magazine.scss */
 .issue-contents__content-contributor span:after {
   content: ",";
 }
-/* line 177, ../scss/_magazine.scss */
+/* line 179, ../scss/_magazine.scss */
 .issue-contents__content-contributor span:last-of-type:after {
   content: "";
 }
 
-/* line 186, ../scss/_magazine.scss */
+/* line 188, ../scss/_magazine.scss */
 .magazine-more {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: black;
 }
-/* line 190, ../scss/_magazine.scss */
+/* line 192, ../scss/_magazine.scss */
 .magazine-more__explore {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1945,12 +1963,12 @@ ul.stockists a {
   padding-left: 3em;
   padding-bottom: 1.5em;
 }
-/* line 198, ../scss/_magazine.scss */
+/* line 200, ../scss/_magazine.scss */
 .magazine-more__issues {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-/* line 203, ../scss/_magazine.scss */
+/* line 205, ../scss/_magazine.scss */
 .magazine-more__issue-cover {
   display: inline-block;
   height: auto;
@@ -1966,7 +1984,7 @@ ul.stockists a {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-/* line 211, ../scss/_magazine.scss */
+/* line 213, ../scss/_magazine.scss */
 .magazine-more__issue-cover:nth-of-type(-n+3) {
   height: auto;
   -moz-box-sizing: border-box;
@@ -1979,12 +1997,12 @@ ul.stockists a {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-/* line 218, ../scss/_magazine.scss */
+/* line 220, ../scss/_magazine.scss */
 .magazine-more__issue-hover {
   position: relative;
   background-color: #a200ff;
 }
-/* line 221, ../scss/_magazine.scss */
+/* line 223, ../scss/_magazine.scss */
 .magazine-more__issue-hover h5 {
   display: none;
   text-align: center;
@@ -1999,15 +2017,15 @@ ul.stockists a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 232, ../scss/_magazine.scss */
+/* line 234, ../scss/_magazine.scss */
 .magazine-more__issue-hover img {
   display: block;
 }
-/* line 236, ../scss/_magazine.scss */
+/* line 238, ../scss/_magazine.scss */
 .magazine-more__issue-hover:hover h5 {
   display: block;
 }
-/* line 239, ../scss/_magazine.scss */
+/* line 241, ../scss/_magazine.scss */
 .magazine-more__issue-hover:hover img {
   opacity: 0;
 }

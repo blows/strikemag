@@ -6,7 +6,8 @@
       <p>Explore all the back issues of our quarterly publication.</p>
     </div>
 
-    <?php $background = 'background-' . uniqid(); $colors[$background] = $page; ?>
+    <?php $box = 'background-' . uniqid(); $colors[$box] = $page; ?>
+    <?php $word = 'word-' . uniqid(); $colors[$word] = $page; ?>
 
     <div class="issue group" id="<?php echo $page->uid() ?>">
 
@@ -19,13 +20,15 @@
           </ul>
         </div>
         <div class="issue-summary__detail">
-          <h1 class="issue-summary__detail-title"><?= $page->title()->upper()->html() ?>: <?= $page->name()->html() ?></h1>
+          <h1 class="issue-summary__detail-title"><?= $page->title()->upper()->html() ?><?php if ($page->name()->isNotEmpty()): ?>&mdash;<?= $page->name()->upper()->html() ?><?php endif ?></h1>
           <h3 class="issue-summary__detail-printed">PRINTED: <?= $page->date('d/m/Y', 'printed') ?></h3>
           <p class="issue-summary__detail-summary"><?= $page->summary()->html() ?></p>
         </div>
-        <div class="issue-summary__detail-buy">
-          <button type="button">GET THE ISSUE</button>
-        </div>
+        <?php if ($page->buy()->isNotEmpty()): ?>
+          <div class="issue-summary__detail-buy">
+            <a class="button <?= $box ?> <?= $word ?>" href="<?= $page->buy()->html() ?>" target="_blank">GET THE ISSUE</a>
+          </div>
+        <?php endif ?>
       </div>
 
       <div class="issue-contents">
@@ -35,7 +38,7 @@
             <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
 
               <?php if($content->isVisible()): ?>
-                <div class="issue-contents__content <?= $background ?>">
+                <div class="issue-contents__content <?= $box ?>">
                   <a href="<?= $content->url() ?>">
                   <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1>
                   <h3 class="issue-contents__content-contributor">
@@ -45,7 +48,7 @@
                   </h3></a>
                 </div>
               <?php else: ?>
-                <div class="issue-contents__content <?= $background ?> offline">
+                <div class="issue-contents__content <?= $box ?> offline">
                   <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
                   <h3 class="issue-contents__content-contributor">
                     <?php foreach ($content->contributor()->split() as $name): ?>
@@ -54,7 +57,7 @@
                   </h3>
                 </div>
               <?php endif ?>
-            
+
           <?php endforeach ?>
         </div>
       </div>
@@ -68,7 +71,7 @@
           <div class="magazine-more__issue-cover">
             <a href="<?= $issue->url() ?>" alt="<?= $issue->title()->html() ?>: <?= $issue->name()->html() ?>">
               <div class="magazine-more__issue-hover">
-                <h5><?= $issue->title()->html() ?>: <?= $issue->name()->html() ?></h5>
+                <h5><?= $issue->title()->upper()->html() ?><?php if ($issue->name()->isNotEmpty()): ?>&mdash;<?= $issue->name()->upper()->html() ?><?php endif ?></h5>
                 <img src="<?= $issue->coverimage()->toFile()->url() ?>" alt="STRIKE! <?= $issue->title()->html() ?>" />
               </div>
             </a>
@@ -78,17 +81,25 @@
     </div>
 
   <style>
-  <?php foreach($colors as $background => $issue): ?>
-    .<?= $background ?> {
+  <?php foreach($colors as $box => $issue): ?>
+    .<?= $box ?> {
       border-color: <?= $issue->color() ?>;
     }
 
-    .<?= $background ?>:hover, .<?= $background ?>:focus {
-      background: <?= $issue->color() ?>;
+    .<?= $box ?>:hover, .<?= $box ?>:focus {
+      background: <?= $issue->color() ?> !important;
     }
 
-    .<?= $background ?>:hover.offline, .<?= $background ?>:focus.offline {
-      background: transparent;
+    .<?= $box ?>:hover.offline, .<?= $box ?>:focus.offline {
+      background: transparent !important;
+    }
+
+    .<?= $word ?> {
+      color: <?= $issue->color() ?> !important;
+    }
+
+    .<?= $word ?>:hover, .<?= $word ?>:focus {
+      color: white !important;
     }
   <?php endforeach ?>
   </style>
