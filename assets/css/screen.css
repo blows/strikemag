@@ -141,33 +141,34 @@ a.button {
   text-decoration: none;
   border-style: solid;
   border-width: 3px 3px 3px 3px;
+  border-color: #a200ff;
   color: #a200ff;
-  padding: 1em;
+  padding: .75em 1em .75em 1em;
   display: inline-block;
   margin: 0;
 }
-/* line 76, ../scss/screen.scss */
+/* line 77, ../scss/screen.scss */
 a.button:hover {
   background-color: #a200ff;
   color: white;
 }
 
 /* -----  1.4 Images & Figures  --------------------------------------------- */
-/* line 84, ../scss/screen.scss */
+/* line 85, ../scss/screen.scss */
 img {
   border-style: none;
   width: 100%;
   height: auto;
 }
 
-/* line 90, ../scss/screen.scss */
+/* line 91, ../scss/screen.scss */
 figcaption {
   font-size: .75rem;
   line-height: 1.5rem;
 }
 
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
-/* line 97, ../scss/screen.scss */
+/* line 98, ../scss/screen.scss */
 .intro {
   text-align: center;
   font-weight: 500;
@@ -175,46 +176,46 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* line 112, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 .text h1, .text h2, .text h3 {
   font-family: 'Graphik-Medium', sans-serif;
 }
 
-/* line 116, ../scss/screen.scss */
+/* line 117, ../scss/screen.scss */
 .text ul, .text ol {
   margin-left: 1.5em;
 }
 
-/* line 120, ../scss/screen.scss */
+/* line 121, ../scss/screen.scss */
 .text p {
   font-weight: 400;
 }
 
-/* line 128, ../scss/screen.scss */
+/* line 129, ../scss/screen.scss */
 .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
 
-/* line 134, ../scss/screen.scss */
+/* line 135, ../scss/screen.scss */
 .text ul {
   list-style: none;
 }
 
-/* line 148, ../scss/screen.scss */
+/* line 149, ../scss/screen.scss */
 .text ol > li {
   list-style: decimal;
 }
 
-/* line 152, ../scss/screen.scss */
+/* line 153, ../scss/screen.scss */
 .text pre, .text code {
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
 }
 
-/* line 158, ../scss/screen.scss */
+/* line 159, ../scss/screen.scss */
 .text code {
   margin: -.25em 0;
   padding: .25em .15em;
@@ -222,7 +223,7 @@ figcaption {
   bottom: .05em;
 }
 
-/* line 165, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 .text pre > code {
   display: block;
   margin: 0;
@@ -233,7 +234,7 @@ figcaption {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  /* line 175, ../scss/screen.scss */
+  /* line 176, ../scss/screen.scss */
   .text pre > code {
     /* Enables smoother scrolling for code sections on
        mobile (i.e. touch) devices. */
@@ -241,7 +242,7 @@ figcaption {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 183, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 .text kbd {
   padding: 3px 7px;
   margin: -3px 2px;
@@ -255,22 +256,22 @@ figcaption {
   bottom: 2px;
 }
 
-/* line 196, ../scss/screen.scss */
+/* line 197, ../scss/screen.scss */
 .text blockquote {
   padding: .75rem;
 }
-/* line 198, ../scss/screen.scss */
+/* line 199, ../scss/screen.scss */
 .text blockquote p {
   font-size: 1.5em;
 }
 
-/* line 203, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 .text blockquote :last-child {
   margin-bottom: 0;
 }
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
-/* line 209, ../scss/screen.scss */
+/* line 210, ../scss/screen.scss */
 body {
   background-color: #f2f2f2;
   font-family: 'Graphik-Medium', sans-serif;
@@ -280,19 +281,19 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 218, ../scss/screen.scss */
+  /* line 219, ../scss/screen.scss */
   body {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 230, ../scss/screen.scss */
+  /* line 231, ../scss/screen.scss */
   body {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 238, ../scss/screen.scss */
+  /* line 239, ../scss/screen.scss */
   body {
     font-size: 14px;
   }
@@ -637,7 +638,7 @@ li.branding.menu-item a img {
 }
 
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 259, ../scss/screen.scss */
+/* line 260, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -650,7 +651,7 @@ li.branding.menu-item a img {
   clear: both;
 }
 
-/* line 265, ../scss/screen.scss */
+/* line 266, ../scss/screen.scss */
 .flex-center {
   display: -webkit-flex;
   display: flex;
@@ -660,7 +661,7 @@ li.branding.menu-item a img {
   flex-direction: column;
 }
 
-/* line 271, ../scss/screen.scss */
+/* line 272, ../scss/screen.scss */
 .home-featured {
   position: relative;
   z-index: 5;
@@ -674,13 +675,13 @@ li.branding.menu-item a img {
   padding: 0;
   height: auto;
 }
-/* line 277, ../scss/screen.scss */
+/* line 278, ../scss/screen.scss */
 .home-featured img {
   height: auto;
   width: 100%;
   z-index: 10;
 }
-/* line 282, ../scss/screen.scss */
+/* line 283, ../scss/screen.scss */
 .home-featured-text {
   position: absolute;
   z-index: 15;
@@ -696,14 +697,14 @@ li.branding.menu-item a img {
   text-shadow: 0 0 8px rgba(153, 153, 153, 0.8);
   text-decoration: none;
 }
-/* line 294, ../scss/screen.scss */
+/* line 295, ../scss/screen.scss */
 .home-featured-title {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 4em;
   line-height: 1em;
   padding-bottom: .5em;
 }
-/* line 300, ../scss/screen.scss */
+/* line 301, ../scss/screen.scss */
 .home-featured-contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: 1.2em;
@@ -711,16 +712,16 @@ li.branding.menu-item a img {
   text-decoration: underline;
   display: inline;
 }
-/* line 306, ../scss/screen.scss */
+/* line 307, ../scss/screen.scss */
 .home-featured-contributor:after {
   content: ",";
 }
-/* line 309, ../scss/screen.scss */
+/* line 310, ../scss/screen.scss */
 .home-featured-contributor:last-of-type:after {
   content: "";
 }
 
-/* line 315, ../scss/screen.scss */
+/* line 316, ../scss/screen.scss */
 .home-banner {
   position: relative;
   z-index: 5;
@@ -735,14 +736,14 @@ li.branding.menu-item a img {
   height: auto;
   margin-top: 2rem;
 }
-/* line 322, ../scss/screen.scss */
+/* line 323, ../scss/screen.scss */
 .home-banner img {
   height: auto;
   width: 100%;
   z-index: 10;
 }
 
-/* line 329, ../scss/screen.scss */
+/* line 330, ../scss/screen.scss */
 .home-support {
   position: relative;
   float: left;
@@ -1476,36 +1477,76 @@ li.branding.menu-item a img {
 }
 
 /* ----- 0.0 About  --------------------------------------------------------- */
-/* line 1, ../scss/_about.scss */
-.about {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-/* line 7, ../scss/_about.scss */
-.about-text h1, .about-text h2 {
-  text-align: center;
-}
-
-/* line 12, ../scss/_about.scss */
-.about-section {
+/* line 5, ../scss/_about.scss */
+.info-nav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 50%;
+  width: 91.66667%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-left: 25%;
-  padding-bottom: 1em;
+  margin-left: 4.16667%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  float: none;
+  text-align: right;
 }
-/* line 16, ../scss/_about.scss */
-.about-section h1, .about-section h2 {
-  padding-bottom: 1em;
+/* line 12, ../scss/_about.scss */
+.info-nav a {
+  font-family: 'Druk-Wide-Medium', sans-serif;
+  margin-left: 1em;
 }
 
-/* line 21, ../scss/_about.scss */
-.about-stockists {
+/* line 18, ../scss/_about.scss */
+.info-jump {
+  position: relative;
+  top: -3em;
+}
+
+/* line 27, ../scss/_about.scss */
+.info-section {
+  padding-top: 4em;
+  padding-bottom: 6em;
+}
+/* line 28, ../scss/_about.scss */
+.info-section__wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 91.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 4.16667%;
+}
+/* line 34, ../scss/_about.scss */
+.info-section h1, .info-section h2 {
+  padding-bottom: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-size: 1.6em;
+}
+/* line 40, ../scss/_about.scss */
+.info-section p {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  float: right;
+}
+
+/* line 46, ../scss/_about.scss */
+.info-stockists {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1516,98 +1557,94 @@ li.branding.menu-item a img {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 25, ../scss/_about.scss */
-.about-stockists h1, .about-stockists h2 {
+/* line 50, ../scss/_about.scss */
+.info-stockists h1, .info-stockists h2 {
   padding-bottom: 1em;
 }
 
-/* line 31, ../scss/_about.scss */
+/* line 55, ../scss/_about.scss */
+.stockists {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 57, ../scss/_about.scss */
 .stockists_stock {
-  background-color: #fafafa;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  border-bottom: .5px solid grey;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 0 3px 0;
 }
-/* line 36, ../scss/_about.scss */
+/* line 61, ../scss/_about.scss */
+.stockists_stock:first-of-type {
+  border-width: 3px 0 3px 0;
+}
+/* line 64, ../scss/_about.scss */
+.stockists_stock a {
+  display: block;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+/* line 69, ../scss/_about.scss */
 .stockists_stock p {
-  color: black;
+  color: white;
+  display: inline;
 }
-/* line 39, ../scss/_about.scss */
+/* line 73, ../scss/_about.scss */
 .stockists_stock div {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding-left: 8.3%;
-  padding-right: 8.3%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
-/* line 45, ../scss/_about.scss */
-.stockists_stock p {
-  display: inline;
-}
-/* line 49, ../scss/_about.scss */
+/* line 80, ../scss/_about.scss */
 .stockists_stock:hover {
-  background-color: black;
+  background-color: white;
 }
-/* line 51, ../scss/_about.scss */
+/* line 82, ../scss/_about.scss */
 .stockists_stock:hover p {
-  color: white;
+  color: black;
 }
-/* line 55, ../scss/_about.scss */
-.stockists_country {
-  width: 33.33%;
-}
-/* line 59, ../scss/_about.scss */
-.stockists_city {
-  width: 33.33%;
-  text-align: center;
-}
-/* line 63, ../scss/_about.scss */
-.stockists_stockist {
-  width: 33.33%;
+/* line 86, ../scss/_about.scss */
+.stockists_location {
+  width: 50%;
   text-align: right;
 }
+/* line 90, ../scss/_about.scss */
+.stockists_stockist {
+  width: 50%;
+  text-align: left;
+}
 
-/* line 69, ../scss/_about.scss */
+/* line 96, ../scss/_about.scss */
 ul.stockists {
-  border-top: .5px solid grey;
   margin-left: 0;
 }
-/* line 72, ../scss/_about.scss */
+/* line 98, ../scss/_about.scss */
 ul.stockists a {
   text-decoration: none;
 }
 
-/* line 77, ../scss/_about.scss */
-.about-menu {
-  background-color: #fafafa;
-  font-family: 'Druk-Wide-Medium', sans-serif;
-}
-/* line 80, ../scss/_about.scss */
-.about-menu ul {
-  text-align: center;
-}
-/* line 83, ../scss/_about.scss */
-.about-menu ul li {
-  display: inline-block;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: .75em;
-  padding-bottom: .75em;
-}
-/* line 89, ../scss/_about.scss */
-.about-menu ul li a {
-  color: black;
-  text-decoration: none;
-}
-/* line 93, ../scss/_about.scss */
-.about-menu ul li a:hover {
-  text-decoration: underline;
+/* line 103, ../scss/_about.scss */
+#about, #contribute, #stockists {
+  background-color: black;
+  color: white;
 }
 
-/* line 99, ../scss/_about.scss */
-.about-menu.is-active a {
-  border-bottom: 2px solid black;
+/* line 108, ../scss/_about.scss */
+#stockists {
+  padding-bottom: 6em;
+}
+
+/* line 112, ../scss/_about.scss */
+#contact, #distribute {
+  background-color: white;
+  color: black;
 }
 
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
