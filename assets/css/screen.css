@@ -508,38 +508,41 @@ li.branding.menu-item a img {
 }
 /* line 13, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup input.email {
-  width: 85%;
+  width: 84%;
   float: left;
 }
 /* line 16, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup input.email::-webkit-input-placeholder {
-  color: white;
+  color: whitesmoke;
 }
 /* line 19, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup input.email::-moz-placeholder {
-  color: white;
+  color: whitesmoke;
 }
 /* line 22, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup input.email:-moz-placeholder {
   /* Older versions of Firefox */
-  color: white;
+  color: whitesmoke;
 }
 /* line 25, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup input.email:-ms-input-placeholder {
-  color: white;
+  color: whitesmoke;
 }
 /* line 29, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup .button {
   float: left;
-  width: 15%;
+  width: 16%;
+  border-width: 3px 3px 3px 0;
 }
-/* line 33, ../scss/_footer.scss */
+/* line 34, ../scss/_footer.scss */
 .footer-newsletter p {
-  margin-top: .8em;
-  margin-bottom: .8em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.8em;
+  line-height: 1.5em;
 }
 
-/* line 39, ../scss/_footer.scss */
+/* line 42, ../scss/_footer.scss */
 .footer-nav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -549,36 +552,45 @@ li.branding.menu-item a img {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   margin-left: 4.16667%;
+  margin-top: 3em;
 }
 
-/* line 44, ../scss/_footer.scss */
+/* line 48, ../scss/_footer.scss */
 .footer-links, .footer-socials {
   display: inline-block;
-  margin-bottom: .8em;
+  margin-bottom: 1em;
 }
-/* line 47, ../scss/_footer.scss */
+/* line 51, ../scss/_footer.scss */
 .footer-links li, .footer-socials li {
   display: inline-block;
   list-style: none;
 }
-/* line 50, ../scss/_footer.scss */
+/* line 54, ../scss/_footer.scss */
 .footer-links li a, .footer-socials li a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 57, ../scss/_footer.scss */
+/* line 61, ../scss/_footer.scss */
 .footer-links {
   float: left;
 }
+/* line 63, ../scss/_footer.scss */
+.footer-links a {
+  margin-right: 1.5em;
+}
 
-/* line 61, ../scss/_footer.scss */
+/* line 68, ../scss/_footer.scss */
 .footer-socials {
   float: right;
 }
+/* line 70, ../scss/_footer.scss */
+.footer-socials a {
+  margin-left: 1.5em;
+}
 
 @media all and (min-width: 501px) {
-  /* line 66, ../scss/_footer.scss */
+  /* line 76, ../scss/_footer.scss */
   .footer {
     padding-top: 0;
   }
@@ -1661,14 +1673,14 @@ ul.stockists a {
 #mc_embed_signup input.email {
   font-family: inherit;
   font-size: 1em;
-  border: .2em solid black;
+  border: 3px solid black;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   color: white;
   background-color: transparent;
   box-sizing: border-box;
-  height: 4em;
+  height: 3em;
   padding: 0px 1em;
   display: inline-block;
   margin: 0;
@@ -1681,22 +1693,20 @@ ul.stockists a {
 #mc_embed_signup .button {
   font-family: inherit;
   font-size: 1em;
-  border: none;
+  border: 3px solid black;
   border-radius: 0;
-  letter-spacing: .03em;
   color: #fff;
   background-color: black;
   box-sizing: border-box;
-  height: 4em;
-  line-height: 4em;
+  height: 3em;
   padding: 0 1.5em;
   display: inline-block;
   margin: 0;
 }
 
-/* line 44, ../scss/_mailchimp.scss */
+/* line 42, ../scss/_mailchimp.scss */
 #mc_embed_signup .button:hover {
-  background-color: #222;
+  background-color: transparent;
   cursor: pointer;
 }
 

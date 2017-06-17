@@ -11,39 +11,43 @@
   @include push(.5);
   padding-bottom: 1em;
   #mc_embed_signup input.email {
-    width: 85%;
+    width: 84%;
     float: left;
     &::-webkit-input-placeholder {
-    	color: white;
+    	color: whitesmoke;
     }
     &::-moz-placeholder {
-    	color: white;
+    	color: whitesmoke;
     }
     &:-moz-placeholder {   /* Older versions of Firefox */
-    	color: white;
+    	color: whitesmoke;
     }
     &:-ms-input-placeholder {
-    	color: white;
+    	color: whitesmoke;
     }
   }
   #mc_embed_signup .button {
     float: left;
-    width: 15%;
+    width: 16%;
+    border-width: 3px 3px 3px 0;
   }
   p {
-    margin-top: .8em;
-    margin-bottom: .8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.8em;
+    line-height: 1.5em;
   }
 }
 
 .footer-nav {
   @include span(11);
   @include push(.5);
+  margin-top: 3em;
 }
 
 .footer-links, .footer-socials {
   display: inline-block;
-  margin-bottom: .8em;
+  margin-bottom: 1em;
   li {
     display: inline-block;
     list-style: none;
@@ -56,10 +60,16 @@
 
 .footer-links {
   float: left;
+  a {
+    margin-right: 1.5em;
+  }
 }
 
 .footer-socials {
   float: right;
+  a {
+    margin-left: 1.5em;
+  }
 }
 
 @media all and (min-width: 501px) {

@@ -1,7 +1,7 @@
   <footer class="footer group" role="contentinfo">
 
     <div class="footer-newsletter">
-      <p>Sign up to our irregular newsletter receive our irregular newsletter updates</p>
+      <p>Sign up to our newsletter to stay up to date with all STRIKE! activity</p>
       <?php snippet('newsletter') ?>
     </div>
 
