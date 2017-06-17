@@ -2,20 +2,21 @@
 
   <main class="main" role="main">
 
-    <?php $class = 'background-' . uniqid(); $colors[$class] = $page; ?>
+    <div class="magazine-intro">
+      <p>Explore all the back issues of our quarterly publication.</p>
+    </div>
+
+    <?php $background = 'background-' . uniqid(); $colors[$background] = $page; ?>
 
     <div class="issue group" id="<?php echo $page->uid() ?>">
 
-      <div class="issue-summary text" style="background-color: <?= $page->color() ?>;">
-        <div class="issue-summary__image">
+      <div class="issue-summary text">
+        <div class="issue-summary__image" style="background-color: <?= $page->color() ?>;">
           <ul class="rslides">
             <?php foreach($page->images()->sortBy('sort', 'asc') as $image) : ?>
                 <li><img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>" class="img-responsive" /></li>
             <?php endforeach ?>
           </ul>
-          <!-- <figure>
-            <img src="<?= $page->coverimage()->toFile()->url() ?>" alt="STRIKE! <?= $page->title()->html() ?>" />
-          </figure> -->
         </div>
         <div class="issue-summary__detail">
           <h1 class="issue-summary__detail-title"><?= $page->title()->upper()->html() ?>: <?= $page->name()->html() ?></h1>
@@ -27,25 +28,33 @@
         </div>
       </div>
 
-      <div class="issue-contents" style="background-color:<?php echo $page->color1() ?>";>
-        <div class="issue-contents__title"><h1><?php echo $page->title()->upper() ?> CONTENTS</h1><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+      <div class="issue-contents">
+        <!-- <div class="issue-contents__title"><h1><?php echo $page->title()->upper() ?> CONTENTS</h1><i class="fa fa-angle-down" aria-hidden="true"></i></div> -->
         <div class="issue-contents-group">
           <?php foreach($page->children()->sortBy('sort', 'desc') as $content): ?>
             <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
-            <div class="issue-contents__content <?= $class ?>">
+
               <?php if($content->isVisible()): ?>
-                <a href="<?= $content->url() ?>"><p class="issue-contents__content-online">ONLINE</p>
-                <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1>
-                <?php foreach ($content->contributor()->split() as $name): ?>
-                      <h3 class="issue-contents__content-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
-                <?php endforeach; ?></a>
+                <div class="issue-contents__content <?= $background ?>">
+                  <a href="<?= $content->url() ?>">
+                  <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1>
+                  <h3 class="issue-contents__content-contributor">
+                    <?php foreach ($content->contributor()->split() as $name): ?>
+                          <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+                    <?php endforeach; ?>
+                  </h3></a>
+                </div>
               <?php else: ?>
-                <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
-                <?php foreach ($content->contributor()->split() as $name): ?>
-                      <h3 class="issue-contents__content-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
-                <?php endforeach; ?>
+                <div class="issue-contents__content <?= $background ?> offline">
+                  <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
+                  <h3 class="issue-contents__content-contributor">
+                    <?php foreach ($content->contributor()->split() as $name): ?>
+                        <span><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></span>
+                    <?php endforeach; ?>
+                  </h3>
+                </div>
               <?php endif ?>
-            </div>
+            
           <?php endforeach ?>
         </div>
       </div>
@@ -53,7 +62,7 @@
     </div>
 
     <div class="magazine-more">
-      <p class="magazine-more__explore">More Issues</p>
+      <p class="magazine-more__explore">MORE ISSUES</p>
       <div class="magazine-more__issues group">
         <?php foreach($issues->not($latest) as $issue): ?>
           <div class="magazine-more__issue-cover">
@@ -69,16 +78,20 @@
     </div>
 
   <style>
-<?php foreach($colors as $class => $issue): ?>
-.<?= $class ?> {
-  background: <?= $issue->color1() ?>;
-}
+  <?php foreach($colors as $background => $issue): ?>
+    .<?= $background ?> {
+      border-color: <?= $issue->color() ?>;
+    }
 
-.<?= $class ?>:hover, .<?= $class ?>:focus {
-  background: <?= $issue->color() ?>;
-}
-<?php endforeach ?>
-</style>
+    .<?= $background ?>:hover, .<?= $background ?>:focus {
+      background: <?= $issue->color() ?>;
+    }
+
+    .<?= $background ?>:hover.offline, .<?= $background ?>:focus.offline {
+      background: transparent;
+    }
+  <?php endforeach ?>
+  </style>
 
   </main>
 

@@ -1,5 +1,12 @@
 .magazine {
-
+  &-intro {
+    @include span(11);
+    @include push(.5);
+    p {
+      padding-top: .85em;
+      padding-bottom: .85em;
+    }
+  }
 }
 
 .issue {
@@ -8,7 +15,6 @@
 
 .issue-summary {
   @include span(12);
-  padding-top: 3em;
   padding-bottom: 3em;
   @media all and (max-width: 500px) {
     padding-top: 2em;
@@ -90,6 +96,7 @@
 .issue-contents {
   @include span(12);
   padding: 0;
+  padding-bottom: 3em;
   &__title {
     font-family: 'Druk-Wide-Medium', sans-serif;
     text-align: center;
@@ -109,16 +116,21 @@
   }
 
   &__content {
-    @include span(6);
+    @include span(11);
+    @include push(.5);
+    // padding: 0;
+    border-style: solid;
+    border-width: 0 3px 3px 3px;
+    line-height: 1.3em;
     @media all and (max-width: 500px) {
       @include span(12);
-      border-right: none;
+
     }
-    text-align: center;
-    line-height: 1.3em;
-    border-right: .5px solid grey;
-    border-bottom: .5px solid grey;
+    &:nth-of-type(1) {
+      border-width: 3px 3px 3px 3px;
+    }
     a {
+      display: block;
       color: black;
       text-decoration: none;
     }
@@ -127,6 +139,17 @@
     background-color: black;
     .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
       color: white;
+    }
+  }
+  &__content.offline {
+    color: lightgrey;
+    &:hover {
+      color: lightgrey;
+    }
+  }
+  &__content:hover.offline {
+    .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
+      color: lightgrey;
     }
   }
   &__content-online {
@@ -138,17 +161,22 @@
   }
   &__content-title {
     padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
   &__content-contributor {
-    font-family: 'Druk-Wide-Medium', sans-serif;
-    font-size: .5em;
+    // font-family: 'Druk-Wide-Medium', sans-serif;
     padding-bottom: 1.5em;
+    padding-left: 1.5em;
     display: inline-block;
-    &:after {
-      content:","
-    }
-    &:last-of-type:after {
-      content:""
+    // Commas between multiple authors
+    span {
+      &:after {
+        content:","
+      }
+      &:last-of-type:after {
+        content:""
+      }
     }
   }
 }
@@ -156,6 +184,8 @@
 $issue-padding: 1.5em;
 
 .magazine-more {
+  padding-top: $issue-padding*2;
+  padding-bottom: $issue-padding*2;
   background-color: black;
   &__explore {
     @include span(12);
@@ -163,6 +193,7 @@ $issue-padding: 1.5em;
     color: white;
     font-family: 'Druk-Wide-Medium', sans-serif;
     padding-left: $issue-padding*2;
+    padding-bottom: $issue-padding;
   }
   &__issues {
     // @include span(12);
@@ -177,7 +208,7 @@ $issue-padding: 1.5em;
     padding-right: $issue-padding;
     padding-top: $issue-padding;
     padding-bottom: $issue-padding;
-    &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
+    &:nth-of-type(-n+3) {
       height: auto;
       @include span(4);
       padding-left: $issue-padding;
