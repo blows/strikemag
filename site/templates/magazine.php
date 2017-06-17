@@ -1,4 +1,4 @@
-<?php snippet('header', array('issues' => $issues)) ?>
+<?php snippet('header') ?>
 
   <main class="main" role="main">
 
@@ -7,7 +7,7 @@
       <?= $page->text()->kirbytext() ?>
 
       <?php $colors = []; ?>
-      <?php foreach($issues as $issue): ?>
+      <?php $issue = $issues->first() ?>
         <?php $class = 'background-' . uniqid(); $colors[$class] = $issue; ?>
 
         <div class="issue group" id="<?php echo $issue->uid() ?>">
@@ -58,7 +58,21 @@
 
         </div>
 
-      <?php endforeach ?>
+        <div class="magazine-more">
+          <p class="magazine-more__explore">More Issues</p>
+          <div class="magazine-more__issues group">
+            <?php foreach($issues->not($latest) as $issue): ?>
+              <div class="magazine-more__issue-cover">
+                <a href="<?= $issue->url() ?>" alt="<?= $issue->title()->html() ?>: <?= $issue->name()->html() ?>">
+                  <div class="magazine-more__issue-hover">
+                    <h5><?= $issue->title()->html() ?>: <?= $issue->name()->html() ?></h5>
+                    <img src="<?= $issue->coverimage()->toFile()->url() ?>" alt="STRIKE! <?= $issue->title()->html() ?>" />
+                  </div>
+                </a>
+              </div>
+            <?php endforeach ?>
+          </div>
+        </div>
 
       <style>
   <?php foreach($colors as $class => $issue): ?>

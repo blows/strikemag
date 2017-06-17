@@ -18,10 +18,10 @@ jQuery(document).ready(function(){
 // });
 
 // Magazine Contents Show/Hide
-$( ".issue-contents__title" ).click(function() {
-$(this).next( ".issue-contents-group" ).slideToggle("medium");
-$(this).find( "i" ).toggleClass("fa-angle-down fa-angle-up");
-});
+// $( ".issue-contents__title" ).click(function() {
+// $(this).next( ".issue-contents-group" ).slideToggle("medium");
+// $(this).find( "i" ).toggleClass("fa-angle-down fa-angle-up");
+// });
 
 $(".rslides").responsiveSlides({
   auto: false,             // Boolean: Animate automatically, true or false

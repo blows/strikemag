@@ -1822,10 +1822,6 @@ ul.stockists a {
 .issue-contents__title i {
   padding: .3em;
 }
-/* line 107, ../scss/_magazine.scss */
-.issue-contents-group {
-  display: none;
-}
 /* line 111, ../scss/_magazine.scss */
 .issue-contents__content {
   -moz-box-sizing: border-box;
@@ -1892,6 +1888,91 @@ ul.stockists a {
 /* line 150, ../scss/_magazine.scss */
 .issue-contents__content-contributor:last-of-type:after {
   content: "";
+}
+
+/* line 158, ../scss/_magazine.scss */
+.magazine-more {
+  background-color: black;
+}
+/* line 160, ../scss/_magazine.scss */
+.magazine-more__explore {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  display: block;
+  color: white;
+  font-family: 'Druk-Wide-Medium', sans-serif;
+  padding-left: 3em;
+}
+/* line 167, ../scss/_magazine.scss */
+.magazine-more__issues {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+/* line 172, ../scss/_magazine.scss */
+.magazine-more__issue-cover {
+  display: inline-block;
+  height: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+/* line 180, ../scss/_magazine.scss */
+.magazine-more__issue-cover:nth-of-type(1), .magazine-more__issue-cover:nth-of-type(2), .magazine-more__issue-cover:nth-of-type(3) {
+  height: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+/* line 187, ../scss/_magazine.scss */
+.magazine-more__issue-hover {
+  position: relative;
+  background-color: #a200ff;
+}
+/* line 190, ../scss/_magazine.scss */
+.magazine-more__issue-hover h5 {
+  display: none;
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 201, ../scss/_magazine.scss */
+.magazine-more__issue-hover img {
+  display: block;
+}
+/* line 205, ../scss/_magazine.scss */
+.magazine-more__issue-hover:hover h5 {
+  display: block;
+}
+/* line 208, ../scss/_magazine.scss */
+.magazine-more__issue-hover:hover img {
+  opacity: 0;
 }
 
 /* ----- 0.0 Contributors  ------------------------------------------------------ */

@@ -19,12 +19,6 @@
   <?php echo css($css->url()) ?>
   <?php endforeach ?>
 
-  <?php if(isset($issue)) : ?>
-    <style type="text/css">
-
-    </style>
-  <?php endif ?>
-
   <!-- custom javascript -->
   <?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
   <?php echo js($js->url()) ?>

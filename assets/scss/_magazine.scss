@@ -105,7 +105,7 @@
   }
 
   &-group {
-    display: none;
+    // display: none;
   }
 
   &__content {
@@ -149,6 +149,65 @@
     }
     &:last-of-type:after {
       content:""
+    }
+  }
+}
+
+$issue-padding: 1.5em;
+
+.magazine-more {
+  background-color: black;
+  &__explore {
+    @include span(12);
+    display: block;
+    color: white;
+    font-family: 'Druk-Wide-Medium', sans-serif;
+    padding-left: $issue-padding*2;
+  }
+  &__issues {
+    // @include span(12);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  &__issue-cover {
+    display: inline-block;
+    height: auto;
+    @include span(3);
+    padding-left: $issue-padding;
+    padding-right: $issue-padding;
+    padding-top: $issue-padding;
+    padding-bottom: $issue-padding;
+    &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
+      height: auto;
+      @include span(4);
+      padding-left: $issue-padding;
+      padding-right: $issue-padding;
+    }
+  }
+  &__issue-hover {
+    position: relative;
+    background-color: $strikeMainColor;
+    h5 {
+      display: none;
+      text-align: center;
+      color: white;
+      width: 50%;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%,-50%));
+    }
+    img {
+      display: block;
+    }
+    &:hover {
+      h5 {
+        display: block;
+      }
+      img {
+        opacity: 0;
+      }
     }
   }
 }
