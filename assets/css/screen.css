@@ -118,8 +118,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   align-self: center;
 }
 
+/* -----  1.2 Colors  --------------------------------------------- */
 /* -----  1.4 Buttons  --------------------------------------------- */
-/* line 49, ../scss/screen.scss */
+/* line 53, ../scss/screen.scss */
 button {
   font-size: 13px;
   border: none;
@@ -136,21 +137,21 @@ button {
 }
 
 /* -----  1.4 Images & Figures  --------------------------------------------- */
-/* line 66, ../scss/screen.scss */
+/* line 70, ../scss/screen.scss */
 img {
   border-style: none;
   width: 100%;
   height: auto;
 }
 
-/* line 72, ../scss/screen.scss */
+/* line 76, ../scss/screen.scss */
 figcaption {
   font-size: .75rem;
   line-height: 1.5rem;
 }
 
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
-/* line 79, ../scss/screen.scss */
+/* line 83, ../scss/screen.scss */
 .intro {
   text-align: center;
   font-weight: 500;
@@ -158,46 +159,46 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* line 94, ../scss/screen.scss */
+/* line 98, ../scss/screen.scss */
 .text h1, .text h2, .text h3 {
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
 
-/* line 98, ../scss/screen.scss */
+/* line 102, ../scss/screen.scss */
 .text ul, .text ol {
   margin-left: 1.5em;
 }
 
-/* line 102, ../scss/screen.scss */
+/* line 106, ../scss/screen.scss */
 .text p {
   font-weight: 400;
 }
 
-/* line 110, ../scss/screen.scss */
+/* line 114, ../scss/screen.scss */
 .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
 
-/* line 116, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 .text ul {
   list-style: none;
 }
 
-/* line 130, ../scss/screen.scss */
+/* line 134, ../scss/screen.scss */
 .text ol > li {
   list-style: decimal;
 }
 
-/* line 134, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 .text pre, .text code {
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
 }
 
-/* line 140, ../scss/screen.scss */
+/* line 144, ../scss/screen.scss */
 .text code {
   margin: -.25em 0;
   padding: .25em .15em;
@@ -205,7 +206,7 @@ figcaption {
   bottom: .05em;
 }
 
-/* line 147, ../scss/screen.scss */
+/* line 151, ../scss/screen.scss */
 .text pre > code {
   display: block;
   margin: 0;
@@ -216,7 +217,7 @@ figcaption {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  /* line 157, ../scss/screen.scss */
+  /* line 161, ../scss/screen.scss */
   .text pre > code {
     /* Enables smoother scrolling for code sections on
        mobile (i.e. touch) devices. */
@@ -224,7 +225,7 @@ figcaption {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 165, ../scss/screen.scss */
+/* line 169, ../scss/screen.scss */
 .text kbd {
   padding: 3px 7px;
   margin: -3px 2px;
@@ -238,22 +239,22 @@ figcaption {
   bottom: 2px;
 }
 
-/* line 178, ../scss/screen.scss */
+/* line 182, ../scss/screen.scss */
 .text blockquote {
   padding: .75rem;
 }
-/* line 180, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 .text blockquote p {
   font-size: 1.5em;
 }
 
-/* line 185, ../scss/screen.scss */
+/* line 189, ../scss/screen.scss */
 .text blockquote :last-child {
   margin-bottom: 0;
 }
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
-/* line 191, ../scss/screen.scss */
+/* line 195, ../scss/screen.scss */
 body {
   background-color: #f2f2f2;
   font-family: 'Graphik-Medium', sans-serif;
@@ -263,19 +264,19 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 200, ../scss/screen.scss */
+  /* line 204, ../scss/screen.scss */
   body {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 212, ../scss/screen.scss */
+  /* line 216, ../scss/screen.scss */
   body {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 220, ../scss/screen.scss */
+  /* line 224, ../scss/screen.scss */
   body {
     font-size: 14px;
   }
@@ -369,7 +370,7 @@ li.menu-item {
 }
 /* line 26, ../scss/_menu.scss */
 li.menu-item:hover {
-  background-color: purple;
+  background-color: #a200ff;
 }
 /* line 29, ../scss/_menu.scss */
 li.menu-item a {
@@ -389,7 +390,7 @@ li.menu-item a {
 
 /* line 43, ../scss/_menu.scss */
 li.menu-item.is-active {
-  background-color: purple;
+  background-color: #a200ff;
 }
 
 /* line 47, ../scss/_menu.scss */
@@ -471,11 +472,12 @@ li.branding.menu-item a img {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   padding-top: 1.5rem;
-  height: 20vh;
-  background-color: purple;
+  min-height: 20vh;
+  background-color: #a200ff;
+  color: white;
 }
 
-/* line 8, ../scss/_footer.scss */
+/* line 9, ../scss/_footer.scss */
 .footer-newsletter {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -485,40 +487,81 @@ li.branding.menu-item a img {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   margin-left: 4.16667%;
-  text-align: center;
   padding-bottom: 1em;
 }
 /* line 13, ../scss/_footer.scss */
 .footer-newsletter #mc_embed_signup input.email {
-  width: 90%;
+  width: 85%;
+  float: left;
 }
 /* line 16, ../scss/_footer.scss */
+.footer-newsletter #mc_embed_signup input.email::-webkit-input-placeholder {
+  color: white;
+}
+/* line 19, ../scss/_footer.scss */
+.footer-newsletter #mc_embed_signup input.email::-moz-placeholder {
+  color: white;
+}
+/* line 22, ../scss/_footer.scss */
+.footer-newsletter #mc_embed_signup input.email:-moz-placeholder {
+  /* Older versions of Firefox */
+  color: white;
+}
+/* line 25, ../scss/_footer.scss */
+.footer-newsletter #mc_embed_signup input.email:-ms-input-placeholder {
+  color: white;
+}
+/* line 29, ../scss/_footer.scss */
+.footer-newsletter #mc_embed_signup .button {
+  float: left;
+  width: 15%;
+}
+/* line 33, ../scss/_footer.scss */
 .footer-newsletter p {
-  margin: .8em;
+  margin-top: .8em;
+  margin-bottom: .8em;
 }
 
-/* line 25, ../scss/_footer.scss */
+/* line 39, ../scss/_footer.scss */
+.footer-nav {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 91.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 4.16667%;
+}
+
+/* line 44, ../scss/_footer.scss */
 .footer-links, .footer-socials {
   display: inline-block;
+  margin-bottom: .8em;
 }
-/* line 27, ../scss/_footer.scss */
+/* line 47, ../scss/_footer.scss */
 .footer-links li, .footer-socials li {
   display: inline-block;
   list-style: none;
 }
+/* line 50, ../scss/_footer.scss */
+.footer-links li a, .footer-socials li a {
+  color: inherit;
+  text-decoration: none;
+}
 
-/* line 33, ../scss/_footer.scss */
+/* line 57, ../scss/_footer.scss */
 .footer-links {
   float: left;
 }
 
-/* line 37, ../scss/_footer.scss */
+/* line 61, ../scss/_footer.scss */
 .footer-socials {
   float: right;
 }
 
 @media all and (min-width: 501px) {
-  /* line 42, ../scss/_footer.scss */
+  /* line 66, ../scss/_footer.scss */
   .footer {
     padding-top: 0;
   }
@@ -578,7 +621,7 @@ li.branding.menu-item a img {
 }
 
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 241, ../scss/screen.scss */
+/* line 245, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -591,7 +634,7 @@ li.branding.menu-item a img {
   clear: both;
 }
 
-/* line 247, ../scss/screen.scss */
+/* line 251, ../scss/screen.scss */
 .flex-center {
   display: -webkit-flex;
   display: flex;
@@ -601,7 +644,7 @@ li.branding.menu-item a img {
   flex-direction: column;
 }
 
-/* line 253, ../scss/screen.scss */
+/* line 257, ../scss/screen.scss */
 .home-featured {
   position: relative;
   z-index: 5;
@@ -615,13 +658,13 @@ li.branding.menu-item a img {
   padding: 0;
   height: auto;
 }
-/* line 259, ../scss/screen.scss */
+/* line 263, ../scss/screen.scss */
 .home-featured img {
   height: auto;
   width: 100%;
   z-index: 10;
 }
-/* line 264, ../scss/screen.scss */
+/* line 268, ../scss/screen.scss */
 .home-featured-text {
   position: absolute;
   z-index: 15;
@@ -637,14 +680,14 @@ li.branding.menu-item a img {
   text-shadow: 0 0 8px rgba(153, 153, 153, 0.8);
   text-decoration: none;
 }
-/* line 276, ../scss/screen.scss */
+/* line 280, ../scss/screen.scss */
 .home-featured-title {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 4em;
   line-height: 1em;
   padding-bottom: .5em;
 }
-/* line 282, ../scss/screen.scss */
+/* line 286, ../scss/screen.scss */
 .home-featured-contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: 1.2em;
@@ -652,16 +695,16 @@ li.branding.menu-item a img {
   text-decoration: underline;
   display: inline;
 }
-/* line 288, ../scss/screen.scss */
+/* line 292, ../scss/screen.scss */
 .home-featured-contributor:after {
   content: ",";
 }
-/* line 291, ../scss/screen.scss */
+/* line 295, ../scss/screen.scss */
 .home-featured-contributor:last-of-type:after {
   content: "";
 }
 
-/* line 297, ../scss/screen.scss */
+/* line 301, ../scss/screen.scss */
 .home-banner {
   position: relative;
   z-index: 5;
@@ -676,14 +719,14 @@ li.branding.menu-item a img {
   height: auto;
   margin-top: 2rem;
 }
-/* line 304, ../scss/screen.scss */
+/* line 308, ../scss/screen.scss */
 .home-banner img {
   height: auto;
   width: 100%;
   z-index: 10;
 }
 
-/* line 311, ../scss/screen.scss */
+/* line 315, ../scss/screen.scss */
 .home-support {
   position: relative;
   float: left;
@@ -1557,20 +1600,22 @@ ul.stockists a {
   text-align: center;
   background: none;
   clear: left;
-  font: 14px Helvetica,Arial,sans-serif;
   width: 100%;
+  font-family: 'Graphik-Medium', sans-serif !important;
 }
 
-/* line 8, ../scss/_mailchimp.scss */
+/* line 9, ../scss/_mailchimp.scss */
 #mc_embed_signup input.email {
+  font-family: inherit;
+  font-size: 1em;
   border: .2em solid black;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  color: #343434;
-  background-color: #fff;
+  color: white;
+  background-color: transparent;
   box-sizing: border-box;
-  height: 32px;
+  height: 4em;
   padding: 0px 1em;
   display: inline-block;
   margin: 0;
@@ -1579,23 +1624,24 @@ ul.stockists a {
   vertical-align: top;
 }
 
-/* line 24, ../scss/_mailchimp.scss */
+/* line 28, ../scss/_mailchimp.scss */
 #mc_embed_signup .button {
-  font-size: 13px;
+  font-family: inherit;
+  font-size: 1em;
   border: none;
   border-radius: 0;
   letter-spacing: .03em;
   color: #fff;
   background-color: black;
   box-sizing: border-box;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 18px;
+  height: 4em;
+  line-height: 4em;
+  padding: 0 1.5em;
   display: inline-block;
   margin: 0;
 }
 
-/* line 38, ../scss/_mailchimp.scss */
+/* line 44, ../scss/_mailchimp.scss */
 #mc_embed_signup .button:hover {
   background-color: #222;
   cursor: pointer;

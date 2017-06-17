@@ -2,39 +2,46 @@
   text-align: center;
   background: none;
   clear: left;
-  font: 14px Helvetica,Arial,sans-serif;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Graphik-Medium', sans-serif !important;
+}
 
 #mc_embed_signup input.email {
+  font-family: inherit;
+  font-size: 1em;
   border: .2em solid black;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  color: #343434;
-  background-color: #fff;
+  color: white;
+  background-color: transparent;
   box-sizing: border-box;
-  height: 32px;
+  height: 4em;
   padding: 0px 1em;
   display: inline-block;
   margin: 0;
   width: 360px;
   max-width: 100%;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 #mc_embed_signup .button {
-  font-size: 13px;
+  font-family: inherit;
+  font-size: 1em;
   border: none;
   border-radius: 0;
   letter-spacing: .03em;
   color: #fff;
   background-color: black;
   box-sizing: border-box;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 18px;
+  height: 4em;
+  line-height: 4em;
+  padding: 0 1.5em;
   display: inline-block;
-  margin: 0; }
+  margin: 0;
+}
 
 #mc_embed_signup .button:hover {
   background-color: #222;
-  cursor: pointer; }
+  cursor: pointer;
+}

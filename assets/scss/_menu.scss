@@ -24,7 +24,7 @@ li.menu-item {
   background-color: black;
   border-bottom: 0;
   &:hover {
-    background-color: purple;
+    background-color: $strikeMainColor;
   }
   a {
     color: white;
@@ -41,7 +41,7 @@ li.menu-item {
 }
 
 li.menu-item.is-active {
-  background-color: purple;
+  background-color: $strikeMainColor;
 }
 
 .branding {
