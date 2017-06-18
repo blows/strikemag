@@ -18,7 +18,7 @@
           </h2>
 
           <h3 class="article-header__meta">
-            <?php if ($page->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?> <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
+            <?php if ($page->parent()->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?> <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
           </h3>
 
           <h3 class="article-header__meta">
@@ -47,7 +47,7 @@
         <!-- <hr /> -->
       </header>
 
-      <div class="text group">
+      <div class="text">
         <?php if($page->media()->isNotEmpty()): ?>
           <figure>
             <?= $page->media()->embed() ?>
@@ -95,6 +95,24 @@
               </a>
             </p>
           </div>
+
+          <?php if ($page->printed()->isNotEmpty()) : ?>
+              <div class="article-end__buy" style="border-color: <?= $page->parent()->color() ?>; color: <?= $page->parent()->color() ?>;">
+                <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
+                  <div class="article-end__buy-cover" style="border-color: <?= $page->parent()->color() ?>;">
+                    <figure id="end-cover">
+                      <?php echo thumb($cover, array('width' => 200)); ?>
+                    </figure>
+                  </div>
+                </a>
+                <div class="article-end__info">
+                  <p>Originally published in <?= $issue->title()->html() ?><?php if ($issue->name()->isNotEmpty()) :?>&mdash;<?= $issue->name()->html() ?><?php endif ?>, <?= $issue->date('F Y', 'printed') ?>.
+                    <br><br>
+                    Available from our shop.
+                  </p>
+                </div>
+              </div>
+          <?php endif; ?>
 
         </div>
       </div>

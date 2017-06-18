@@ -28,8 +28,6 @@ Summary: How might we understand work in the gig-economy and begin to conceive o
 
 Text: 
 
-(image: samuli-saarninen-uber.png caption: IMG: Samuli Saarinen)
-
 ## 1. Free as in 'freelance'
 Be your own boss! Build your freelance business! Turn your skills to income! Earn cash with your car! Ride with us! Join the movement!
 No startup company would be complete without a snappy, aspirational, high-energy slogan behind it, but these examples differ from the usual vague promises (‘be better’/ ‘think different’/ etc) in that they are aimed not at the service consumer, but at the worker who will provide the service in the first place.
@@ -40,7 +38,7 @@ Each of the above was taken verbatim from the sign up pages of various gig econo
 
 > “Be your own boss!” actually translates in practice to “Help us skirt employment law!” 
 
-To understand the appeal of the casual, contractless, app-directed work of the new gig economy, it is important to recognise that the above outcomes – readily available work and exploitative conditions – are two sides of the same coin. Gig economy jobs do provide flexible working hours and an easy source of income for those who cannot or do not want to find conventional employment but this is predicated on a model in which the barrier of entry to the labour market is set very low, which in turn ensures that any individual worker is almost immediately replaceable, and as a result, can be treated with the minimum of concern.
+To understand the appeal of the casual, contractless, app-directed work of the new gig economy, it is important to recognise that the above outcomes – readily available work and exploitative conditions – are two sides of the same coin. Gig economy jobs do provide (link: http://www.google.com text: flexible) working hours and an easy source of income for those who cannot or do not want to find conventional employment but this is predicated on a model in which the barrier of entry to the labour market is set very low, which in turn ensures that any individual worker is almost immediately replaceable, and as a result, can be treated with the minimum of concern.
 
 This business model was made possible through a masterstroke of both branding and legal positioning in which the pioneers in the field – most prominently Uber – declared that their workers were all self-employed rather than employees of the company; thus the uplifting call to “Be your own boss!” actually translates in practice to “Help us skirt employment law!” Effectively, labelling them as freelancers freed Uber from the obligations of a responsible employer.
 To avoid this intentional doublespeak, I propose that instead of using terms like ‘freelancers’ or 'partners', we can talk about this class of employees more accurately as the autoprecariat. (This builds on the existing term precariat to reflect the precarious nature of the work, with the prefix ‘auto’ designating that the character of the work is both self-employed and managed through automated systems.)
@@ -92,3 +90,11 @@ Tags: test
 ----
 
 Category: text
+
+----
+
+Subtitle: 
+
+----
+
+Media: 

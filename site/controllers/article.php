@@ -19,11 +19,13 @@ return function($site, $pages, $page) {
   // Contributor and Issue
   $contributor = $pages->find('contributors/' . $page->contributor());
   $issue = $pages->find('magazine/' . $page->printed());
+  $cover = $issue->coverimage()->toFile();
 
   return [
     'relatedPages' => $relatedPages,
     'contributor' => $contributor,
-    'issue' => $issue
+    'issue' => $issue,
+    'cover' => $cover
   ];
 
 };
