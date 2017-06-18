@@ -58,8 +58,8 @@
             <?php if($page->coverimage()->toFile()->credit()->isNotEmpty()) : ?>
               <figcaption>
                 <?php foreach ($page->coverimage()->toFile()->credit()->split() as $name): ?>
-                  <a style="color: <?= $page->parent()->color() ?>" href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
-                      <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+                  <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+                      IMAGE: <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
                   </a>
                 <?php endforeach; ?>
               </figcaption>
