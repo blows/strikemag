@@ -34,7 +34,7 @@
       <?php endforeach ?>
     </section>
 
-    <h2 class="section-header">RECENT</h2>
+    <!-- <h2 class="section-header">RECENT</h2> -->
     <section class="online-recent group">
       <?php if($articles->count()): ?>
         <?php foreach($articles as $article): ?>
@@ -75,7 +75,7 @@
       </div>
     <?php endif ?>
 
-    <h2 class="section-header">ARCHIVE</h2>
+    <!-- <h2 class="section-header">ARCHIVE</h2> -->
     <section class="online-archive group">
       <?php if($archives->count()): ?>
         <?php foreach($archives->shuffle() as $article): ?>

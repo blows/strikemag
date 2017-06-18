@@ -8,27 +8,32 @@
 }
 
 .online-recent {
-  @include span(11);
-  @include push(.5);
+  @include span(12);
   @include display-flex;
   @include flex-wrap(wrap);
   @include justify-content(center);
-  background-color: #d1d1d1;
   padding-bottom: 1em;
   article:nth-of-type(1), article:nth-of-type(2) {
-    width: 26em;
+    width: 31.5em;
     .card-large-info {
-      height: 18em;
+      height: 21em;
+      margin: 1em 1.3em 1em 1.3em;
+      &__title {
+        font-size: 1.6em;
+        line-height: 1em;
+      }
+      &__contributor {
+        font-size: 1.6em;
+        line-height: 1em;
+      }
     }
   }
 }
 
 .online-archive {
-  @include span(11);
-  @include push(.5);
+  @include span(12);
   @include display-flex;
   @include flex-wrap(wrap);
   @include justify-content(center);
-  background-color: #d1d1d1;
   padding-bottom: 1em;
 }

@@ -21,7 +21,7 @@
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(space-between);
-    margin: .5em .8em .8em .8em;
+    margin: .5em .8em 1em .8em;
 
     &__group {
       top: 0.6em;
@@ -40,6 +40,7 @@
       font-size: 1.35em;
       &::after {
           content: ",";
+          margin-left: -.2em;
       }
       &:last-of-type::after {
           content: "";
@@ -47,9 +48,10 @@
     }
     &__issue {
       font-size: .7em;
+      padding-bottom: .3em;
     }
     &__summary {
-      line-height: 1.2em;
+      line-height: 1.42em;
       font-size: .7em;
     }
   }

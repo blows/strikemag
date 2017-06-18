@@ -14,7 +14,7 @@ Video: https://vimeo.com/211208752
 
 ----
 
-Coverimage: 
+Coverimage: screenshot-2017-06-18-19.26.03.png
 
 ----
 
@@ -49,3 +49,7 @@ Film made with the help from Movement for Justice By Any Means Necessary and oth
 ----
 
 Media: https://vimeo.com/211208752
+
+----
+
+Subtitle: 

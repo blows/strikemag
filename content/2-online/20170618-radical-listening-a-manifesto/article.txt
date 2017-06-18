@@ -6,7 +6,7 @@ Contributor: sarah-hempstock, soofiya-andry
 
 ----
 
-Coverimage: 
+Coverimage: screenshot-2017-06-18-19.28.05.png
 
 ----
 
@@ -100,3 +100,11 @@ Category: text
 ----
 
 Tags: 
+
+----
+
+Subtitle: 
+
+----
+
+Media: 
