@@ -1,6 +1,7 @@
 .article {
   background-color: whitesmoke;
   margin-top: 3em;
+  margin-bottom: 3em;
 
   @include span(11);
   @include push(.5);
@@ -376,5 +377,23 @@
     width: 100% !important;
     padding: 1em !important;
     margin: 0 !important;
+  }
+}
+
+.article-related {
+  display: inline-block;
+  @include span(12);
+  background-color: lightgrey;
+  h3 {
+    @include push(.5);
+    font-family: 'Druk-Wide-Medium', sans-serif;
+    padding-top: 1em;
+  }
+  ul {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    background-color: #d1d1d1;
+    padding-bottom: 3em;
   }
 }

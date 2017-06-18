@@ -119,16 +119,25 @@
 
     </article>
 
-    <ul>
-    <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
-      <li><a href='<?php echo $related->url(); ?>'><?php echo $related->title(); ?></a></li>
-    <?php endforeach ?>
-    </ul>
-
-    <?php snippet('support') ?>
+    <?php if ($page->tags()->isNotEmpty()) : ?>
+    <section class="article-related">
+      <h3 class="">RELATED</h3>
+      <ul>
+      <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
+        <?php snippet('cardLargeLandscape', array(
+        'article' => $related,
+        'contributor' => $pages->find('contributors/' . $related->contributor()),
+        'issue' => $pages->find('magazine/' . $related->printed())
+        )) ?>
+      <?php endforeach ?>
+      </ul>
+    </section>
+  <?php endif ?>
 
   </main>
 
-  <?php snippet('prevnext', ['flip' => true]) ?>
+
+
+  <!-- <?php snippet('prevnext', ['flip' => true]) ?> -->
 
 <?php snippet('footer') ?>
