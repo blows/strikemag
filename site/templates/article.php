@@ -69,34 +69,33 @@
 
         <?= $page->text()->kirbytext() ?>
 
-        <div class="article-end">
+        <div class="article-credit">
 
-          <h2 class="article-header__contributor">
+          <h2 class="article-credit__contributor">
           <?php foreach ($page->contributor()->split() as $name): ?>
-            <a style="color: <?= $page->parent()->color() ?>" href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
                 <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
             </a>
           <?php endforeach; ?>
           </h2>
 
-          <?php if ($page->printed()->isNotEmpty()) : ?>
-            <p class="article-end__printed">PRINTED: <?= $issue->date('d/m/Y', 'printed') ?></p>
-          <?php endif; ?>
-          <p class="article-end__uploaded">UPLOADED: <?= $page->date('d/m/Y', 'uploaded') ?></p>
-        </div>
+          <div class="article-end">
+            <p class="article-end__chat">IF YOU LIKED THIS, PLEASE</p>
+            <p class="article-end__support"><a href="" class="button article-end__button">SUBSCRIBE</a>
+            <a href="" class="button article-end__button">DONATE</a></p>
+            <p class="article-end__share">SHARE<br>
+              <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </a>
+            </p>
+          </div>
 
-        <div class="article-end-share">
-          <p>Share:
-            <a style="color: <?= $page->parent()->color2() ?>" href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
-              Twitter
-            </a>
-            <a style="color: <?= $page->parent()->color2() ?>" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
-              Facebook
-            </a>
-            <a style="color: <?= $page->parent()->color2() ?>" href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
-              Email
-            </a>
-          </p>
         </div>
       </div>
 

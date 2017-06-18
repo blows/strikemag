@@ -44,7 +44,11 @@
       margin-top: 1em;
       margin-bottom: 1em;
       a {
+        color: black;
         text-decoration: none !important;
+        &:hover {
+          color: black;
+        }
       }
       a:after {
         content: ","
@@ -221,8 +225,8 @@
 
   .text blockquote {
     @include span(12);
-    font-size: 1.4em;
-    line-height: 1.8em;
+    font-size: 1.75em;
+    line-height: 1.75em;
     margin-bottom: 0;
 
     @media (max-width: 500px) {
@@ -241,21 +245,31 @@
         }
     }
   }
+}
 
-  .article-end {
-
+  .article-credit {
     &__contributor {
-        @include span(8.5);
-        @include push(1.75);
-
+        @include span(9);
+        @include push(1.5);
+        display: inline-block;
+        font-size: .7em;
+        margin-top: 3em;
+        margin-bottom: 6em !important;
       a {
-        font-family: 'Druk-Wide-Medium', sans-serif;
+        color: black;
         font-size: .8em;
-        text-decoration: underline;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: $strikeMainColor;
+        padding-bottom: .2em;
+        padding-top: .2em;
+        text-decoration: none;
       }
 
       a:hover {
+        color: black;
         text-decoration: none;
+        background-color: $strikeMainColor;
       }
     }
 
@@ -267,14 +281,62 @@
     }
   }
 
-  .article-end-share {
+  .article-end {
+    border-color: $strikeMainColor;
+    color: $strikeMainColor;
+    text-align: center;
     p {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-bottom: 0 !important;
+      border-style: solid;
+      border-width: 3px 3px 3px 3px;
+      border-color: $strikeMainColor;
+    }
+    &__chat {
+      width: 100%;
+      padding: 2em 0 2em 0;
+      line-height: 1em;
+    }
+    p.article-end__support {
+      border-width: 0 3px 0 3px;
+    }
+    a.article-end__button {
+      @include span(4.5);
+      font-size: 1.6em;
+      line-height: 1em;
+      display: inline-block;
+      border-width: 0;
+      width: 50%;
+      text-decoration: none;
+      color: $strikeMainColor;
+      padding: 1.1em 0 1.1em 0;
+      margin: 0;
+      &:hover {
+        background-color: $strikeMainColor;
+        color: white;
+      }
+      &:last-of-type {
+        border-width: 0 0 0 3px;
+      }
+    }
+    &__share {
+      width: 100%;
+      padding: .5em 0 0 0;
       text-align: center;
-      font-size: 1.2em;
-      margin-top: 2em;
+      font-size: 1.6em;
+      float: none;
       a {
-        padding: .3em;
+        text-align: center;
+        color: $strikeMainColor;
+        text-decoration: none;
+        i.fa {
+          padding: .4em;
+        }
+        i.fa:hover, i.fa:focus,  {
+          background-color: $strikeMainColor;
+          color: white;
+        }
       }
     }
   }
-} // .article .text
