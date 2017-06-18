@@ -1,5 +1,5 @@
 .card-large {
-  width: 16.7em;
+  width: 21em;
   height: 100%;
   background-color: white;
   margin: 1em 1em 1em 1em;
@@ -17,7 +17,7 @@
     }
   }
   &-info {
-    height: 11.5em;
+    height: 14em;
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(space-between);
@@ -31,15 +31,13 @@
     }
 
     &__title {
-      text-align: center;
-      font-size: 1.5em;
-      margin-bottom: .5em;
+      font-family: 'Graphik-Medium', sans-serif;
+      font-size: 1.35em;
+      margin-left: 0;
     }
     &__contributor {
-      font-family: 'Druk-Wide-Medium', sans-serif;
-      text-align: center;
-      font-size: .8em;
-      text-decoration: underline;
+      font-family: 'Graphik-Medium', sans-serif;
+      font-size: 1.35em;
       &::after {
           content: ",";
       }
@@ -48,13 +46,11 @@
       }
     }
     &__issue {
-      font-family: 'Druk-Wide-Medium', sans-serif;
-      font-size: .8em;
-      margin-bottom: 2.5em;
+      font-size: .7em;
     }
     &__summary {
       line-height: 1.2em;
-      font-size: .8em;
+      font-size: .7em;
     }
   }
 }

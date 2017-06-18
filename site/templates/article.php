@@ -121,7 +121,7 @@
 
     <?php if ($page->tags()->isNotEmpty()) : ?>
     <section class="article-related">
-      <h3 class="">RELATED</h3>
+      <h2 class="article-related__header">RELATED</h2>
       <ul>
       <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
         <?php snippet('cardLargeLandscape', array(

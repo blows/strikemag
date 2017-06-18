@@ -384,16 +384,18 @@
   display: inline-block;
   @include span(12);
   background-color: lightgrey;
-  h3 {
+  &__header {
     @include push(.5);
     font-family: 'Druk-Wide-Medium', sans-serif;
     padding-top: 1em;
   }
   ul {
+    // @include span(11);
+    // @include push(.5);
     @include display-flex;
     @include flex-wrap(wrap);
     @include justify-content(center);
     background-color: #d1d1d1;
-    padding-bottom: 3em;
+    padding-bottom: 2.5em;
   }
 }
