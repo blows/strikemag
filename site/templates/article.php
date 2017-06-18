@@ -1,63 +1,51 @@
 <?php snippet('header') ?>
 
-  <main style="background-image: linear-gradient(lightgrey, <?= $page->parent()->color() ?> 15%, <?= $page->parent()->color() ?> 50%, <?= $page->parent()->color2() ?>);" class="main" role="main">
+  <main style="background-image: linear-gradient(<?= $page->parent()->color() ?> 15%, <?= $page->parent()->color() ?> 50%, <?= $page->parent()->color2() ?>);" class="main" role="main">
 
     <article class="article group">
 
       <header class="article-info">
-          <h3 class="article-header__issue" style="color: <?= $page->parent()->color() ?>">
-            (<?= $page->category()->upper()->html() ?>) <?php if ($page->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?><?php endif; ?>
-          </h3>
         <div class="article-header">
-          <h1 class="article-header__title" style="color: <?= $page->parent()->color() ?>"><?= $page->title()->upper()->html() ?></h1>
+          <h1 class="article-header__title"><?= $page->title()->upper()->html() ?></h1>
+          <?php if ($page->subtitle()->isNotEmpty()) : ?><h1 class="article-header__subtitle"><?= $page->subtitle()->upper()->html() ?></h1><?php endif ?>
 
           <h2 class="article-header__contributor">
           <?php foreach ($page->contributor()->split() as $name): ?>
-            <a style="color: <?= $page->parent()->color() ?>" href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
                 <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
             </a>
           <?php endforeach; ?>
           </h2>
 
-          <p class="article-header__summary"><?= $page->summary()->html() ?></p>
+          <h3 class="article-header__meta">
+            <?php if ($page->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?> <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
+          </h3>
+
+          <h3 class="article-header__meta">
+            <?php echo $page->date('d.m.y', 'uploaded') ?>
+          </h3>
+
+          <h3 class="article-header__meta">
+            <p>Estimated Read Time: <?php echo $page->text()->readingtime(array(
+              'format' => '{minutesCount} {minutesLabel}',
+              'format.alt' => '{secondsCount} {secondsLabel}',
+              'format.alt.enable' => true
+              )); ?>
+            </p>
+          </h3>
         </div>
 
         <?php if ($page->printed()->isNotEmpty()) : ?>
-          <a href="shop">
+          <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
             <div class="article-printed">
               <figure>
                 <img class="article-printed__cover" style="background-color: <?= $page->parent()->color() ?>" src="<?= $issue->coverimage()->toFile()->url() ?>" alt="STRIKE! <?= $issue->title()->html() ?>" />
               </figure>
-              <div class="article-printed__info" style="background-color: <?= $page->parent()->color2() ?>">
-                <p>Printed: <?= $issue->date('d/m/Y', 'printed') ?></p>
-                <p>Uploaded: <?= $page->date('d/m/Y', 'uploaded') ?></p>
-                <p>Get the issue here</p>
-              </div>
             </div>
           </a>
         <?php endif; ?>
         <!-- <hr /> -->
       </header>
-
-      <div class="article-share">
-        <p>Estimated Read Time: <?php echo $page->text()->readingtime(array(
-          'format' => '{minutesCount} {minutesLabel}',
-          'format.alt' => '{secondsCount} {secondsLabel}',
-          'format.alt.enable' => true
-          )); ?>
-        </p>
-        <p>Share:
-          <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
-            Twitter
-          </a>
-          <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
-            Facebook
-          </a>
-          <a href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
-            Email
-          </a>
-        </p>
-      </div>
 
       <div class="text group">
         <?php if($page->media()->isNotEmpty()): ?>

@@ -40,6 +40,11 @@ fields:
       fetch: children
     width: 1/2
 
+  subtitle:
+    label: Subtitle
+    typle: text
+    width: 2/3
+
   category:
     label: Category
     type: radio

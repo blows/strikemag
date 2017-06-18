@@ -1,6 +1,6 @@
 .article {
   background-color: whitesmoke;
-  padding-top: 3rem;
+  margin-top: 3em;
 
   @include span(11);
   @include push(.5);
@@ -19,60 +19,33 @@
         @include span(11);
         @include push(.5);
       }
-
-    text-align: center;
-  }
-
-  &-share {
-    @include span(9);
-    @include push(1.5);
-    font-size: .8em;
-    padding-bottom: 2em;
-    color: grey;
-
-    a {
-      color: grey;
-    }
-
-    @media (max-width: 500px) {
-        @include span(11);
-        @include push(.5);
-        font-size: .8em;
-      }
   }
 
   &-header {
-    margin-bottom: 2.5em;
+    margin-top: 6em;
+    margin-bottom: 6em;
 
     &__title {
-      font-size: 2em;
-      margin-bottom: 1.7em;
-      line-height: 1.2em;
+      font-size: 2.5em;
+      line-height: 1em;
       @media (max-width: 500px) {
-        line-height: 1.1em;
-      }
-      a {
-        border-bottom: 0;
+        line-height: 2.5em;
       }
     }
 
-    &__date {
-      text-align: center;
-    }
-
-    &__issue {
-      @include align-self(flex-start);
-      font-family: 'Druk-Wide-Medium', sans-serif;
-      font-size: .8em;
-      text-align: left;
-      margin-bottom: 5em;
+    &__subtitle {
+      font-size: 2.5em;
+      line-height: 1em;
     }
 
     &__contributor {
-      font-family: 'Druk-Wide-Medium', sans-serif;
-      font-size: .8em;
-      margin-bottom: 7em;
-      text-decoration: underline;
+      font-size: 2.5em;
+      line-height: 1em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      a {
+        text-decoration: none !important;
+      }
       a:after {
         content: ","
       }
@@ -81,9 +54,15 @@
       }
     }
 
-    &__summary {
-      font-size: 1.7em;
-      line-height: 1.3em;
+    &__date {
+      text-align: center;
+    }
+
+    &__meta {
+      display: inline-block;
+      @include align-self(flex-start);
+      font-size: .7em;
+      margin-right: 3em;
     }
   }
 
@@ -100,7 +79,7 @@
 .article-printed {
   @include align-self(flex-end);
   position: absolute;
-  top: 6.6rem;
+  top: 3em;
   right: 0;
 
   @media (max-width: 500px) {
