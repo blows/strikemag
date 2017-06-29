@@ -18,12 +18,12 @@
       <?php foreach($uids as $post): ?> <?php $post = $pages->index()->findBy('uid', $post); ?>
         <a href="<?php echo $post->url(); ?>" class="home-featured-text">
           <h2 class="home-featured-title">
-            <?php echo $post->title(); ?>
+            <?php echo $post->title()->upper()->widont(); ?>
           </h2>
-
-            <?php foreach ($post->contributor()->split() as $name): ?>
-                  <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
-            <?php endforeach; ?>
+          <br>
+          <?php foreach ($post->contributor()->split() as $name): ?>
+                <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+          <?php endforeach; ?>
 
         </a>
         <?php if($post->coverimage()->isNotEmpty()): ?>
@@ -104,9 +104,9 @@
       <?php endif ?>
     </section>
 
-    <section class="home-support">
-      <?php snippet('support') ?>
-    </section>
+      <!-- <section class="home-support">
+        <?php snippet('support') ?>
+      </section> -->
 
   </main>
 

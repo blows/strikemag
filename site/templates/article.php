@@ -6,8 +6,8 @@
 
       <header class="article-info">
         <div class="article-header">
-          <h1 class="article-header__title"><?= $page->title()->upper()->html() ?></h1>
-          <?php if ($page->subtitle()->isNotEmpty()) : ?><h1 class="article-header__subtitle"><?= $page->subtitle()->upper()->html() ?></h1><?php endif ?>
+          <h1 class="article-header__title"><?= $page->title()->upper()->widont() ?></h1>
+          <?php if ($page->subtitle()->isNotEmpty()) : ?><h1 class="article-header__subtitle"><?= $page->subtitle()->upper()->widont() ?></h1><?php endif ?>
 
           <h2 class="article-header__contributor">
           <?php foreach ($page->contributor()->split() as $name): ?>

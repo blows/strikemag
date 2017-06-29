@@ -16,7 +16,7 @@
         <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title()->upper() ?> <?php endif; ?>(<?= $article->category()->upper()->html() ?>)
       </h3>
       <h2 class="card-large-info__title">
-        <?= $article->title()->upper()->html() ?>
+        <?= $article->title()->upper()->widont() ?>
       </h2>
         <?php foreach ($article->contributor()->split() as $name): ?>
               <h3 class="card-large-info__contributor">
