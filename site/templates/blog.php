@@ -2,44 +2,37 @@
 
   <main class="main" role="main">
 
-    <!-- <header class="">
-      <h1><?= $page->title()->html() ?></h1>
+    <section class="online-nav">
+      <div class="online-nav__search">
+        <form class="search" method="post" action="<?= page('online/search')->url() ?>">
+        <input type="search" name="q" placeholder="Search" value="<?php echo (!empty($query)) ? esc($query) : '' ?>">
+        <!-- <input type="submit" value="Search"> -->
+        </form>
+      </div>
 
-      <?php if($pagination->page() == 1):?>
-        <div class="intro text">
-          <?= $page->text()->kirbytext() ?>
-        </div>
-      <?php endif ?>
-    </header> -->
+      <div class="online-nav__filter">
+        <form id="filters" method="post">
+            <?php foreach($category as $item): ?>
+              <?php if(!$item) continue ?>
+              <button class="button" <?php e(isset($data['category']) && $data['category'] == $item, ' selected') ?> value="<?php echo $item ?>" name="category" onclick="this.form.submit()"><?php echo $item->upper()?></button>
+            <?php endforeach ?>
+        </form>
+      </div>
+    </section>
 
-    <form class="search" method="post" action="<?= page('search')->url() ?>">
-    <input type="search" name="q" placeholder="search articles" value="<?php echo (!empty($query)) ? esc($query) : '' ?>">
-    <!-- <input type="submit" value="Search"> -->
-    </form>
-
-    <!-- <h2 class="section-header">RECENT</h2> -->
-    <section class="online-recent group">
-      <?php if($articles->count()): ?>
-        <?php foreach($articles as $article): ?>
+    <section class="online-archive group">
+      <?php if($cards->count()): ?>
+        <?php foreach($cards as $article): ?>
+          <?php if(!$article) continue ?>
 
           <?php if($article->coverimage()->isNotEmpty()): ?>
 
-          <?php $ci = $article->coverimage()->toFile() ?>
-
-            <?php if($ci->orientation() == 'portrait'): ?>
-            <?php snippet('cardLargePortrait', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed())
-            )) ?>
-
-            <?php else: ?>
             <?php snippet('cardLargeLandscape', array(
             'article' => $article,
             'contributor' => $pages->find('contributors/' . $article->contributor()),
             'issue' => $pages->find('magazine/' . $article->printed())
             )) ?>
-            <?php endif ?>
+
 
           <?php else: ?>
             <?php snippet('cardLargeLandscape', array(
@@ -55,7 +48,10 @@
       <?php else: ?>
         <p>Where did all of the articles go?</p>
       <?php endif ?>
+
     </section>
+
+
 
     <?php snippet('pagination') ?>
 

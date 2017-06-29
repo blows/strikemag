@@ -270,6 +270,7 @@ body {
 }
 
 .home-featured {
+  font-family: 'Graphik-Medium', sans-serif;
   position: relative;
   z-index: 5;
   @include span(12);
@@ -283,27 +284,26 @@ body {
   }
   &-text {
     position: absolute;
+    background-color: black;
     z-index: 15;
     color: #fff;
     top: 50%;
-    @include transform(translateY(-50%)) ;
-    width: 80%;
-    padding: 0 10%;
+    left: 50%;
+    @include transform(translate(-50%, -50%)) ;
+    // width: 80%;
+    padding: 2.4em;
     text-align: center;
     text-shadow: 0 0 8px rgba(153,153,153,.8);
     text-decoration: none;
   }
   &-title {
-    font-family: 'Graphik-Medium', sans-serif;
-    font-size: 4em;
+    font-size: 2.5em;
     line-height: 1em;
-    padding-bottom: .5em;
   }
   &-contributor {
-    font-family: 'Druk-Wide-Medium', sans-serif;
-    font-size: 1.2em;
-    line-height: 1.1em;
-    text-decoration: underline;
+    font-size: 2.5em;
+    line-height: 1em;
+    // text-decoration: underline;
     display: inline;
     &:after {
       content: ",";
@@ -347,9 +347,9 @@ body {
 
 @import "article";
 
-/* ----- 0.0 About  --------------------------------------------------------- */
+/* ----- 0.0 Info  --------------------------------------------------------- */
 
-@import "about";
+@import "info";
 
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
 

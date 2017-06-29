@@ -17,7 +17,7 @@
     }
   }
   &-info {
-    height: 14em;
+    height: 12.5em;
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(space-between);
