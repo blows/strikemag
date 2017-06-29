@@ -28,6 +28,11 @@ fields:
     type:  title
     width: 1/2
 
+  subtitle:
+    label: Subtitle
+    typle: text
+    width: 1/2
+
   contributor:
     label: Contributed By
     width: 1/2
@@ -38,19 +43,20 @@ fields:
     query:
       page: contributors
       fetch: children
-    width: 1/2
-
-  subtitle:
-    label: Subtitle
-    typle: text
     width: 2/3
 
   category:
     label: Category
-    type: radio
+    type: fieldtoggle
     options:
       text: Text
       video: Video
+      audio: Audio
+    show:
+      video: media
+      audio: media
+    hide:
+      text: media
 
   media:
     label: Media (Video/Playlist)
