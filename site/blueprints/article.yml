@@ -5,7 +5,7 @@ pages: false
 icon: file-text-o
 
 options:
-  url: false
+  url: true
   status: true
 
 files:
@@ -23,6 +23,10 @@ files:
       type: focus
 
 fields:
+  tab1:
+    label: Info
+    type: tabs
+
   title:
     label: Title
     type:  title
@@ -45,6 +49,57 @@ fields:
       fetch: children
     width: 2/3
 
+  uploaded:
+    icon: calendar
+    label: Uploaded
+    type: date
+    format: LL
+    placeholder: Select a date…
+    default: today
+    # required: true
+    width: 1/2
+
+  printed:
+    icon: newspaper-o
+    label: Printed
+    width: 1/2
+    type: select
+    options: query
+    query:
+      page: magazine
+      fetch: children
+      flip: true
+
+  summary:
+    label: Summary
+    type: textarea
+    validate:
+      maxLength: 140
+
+  tags:
+    label: Tags
+    type: tags
+    lower: true
+    index: all
+
+  tab2:
+    label: Media
+    type: tabs
+
+  artwork:
+    label: Artwork By
+    type: multiselect
+    search: true
+    options: query
+    query:
+      page: contributors
+      fetch: children
+
+  coverimage:
+    label: Cover Image
+    type: image
+    width: 1/2
+
   category:
     label: Category
     type: fieldtoggle
@@ -66,53 +121,9 @@ fields:
     info: true
     cheatsheet: false
 
-  coverimage:
-    label: Cover Image
-    type: image
-    width: 1/2
-
-  artwork:
-    label: Artwork By
-    width: 1/2
-    type: multiselect
-    search: true
-    options: query
-    query:
-      page: contributors
-      fetch: children
-    width: 1/2
-
-  uploaded:
-    icon: calendar
-    label: Uploaded
-    type: date
-    format: LL
-    placeholder: Select a date…
-    default: today
-    # required: true
-    width: 1/2
-
-  printed:
-    icon: newspaper-o
-    label: Printed
-    width: 1/2
-    type: select
-    options: query
-    query:
-      page: magazine
-      fetch: children
-
-  summary:
-    label: Summary
-    type: textarea
-    validate:
-      maxLength: 140
-
-  tags:
-    label: Tags
-    type: tags
-    lower: true
-    index: all
+  tab3:
+    label: Text
+    type: tabs
 
   text:
     label: Article
