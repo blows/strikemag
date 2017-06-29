@@ -1,0 +1,5 @@
+Credit: cameron-k
+
+----
+
+Focus: {"x":0.65,"y":0.1}
