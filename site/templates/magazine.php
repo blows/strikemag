@@ -17,11 +17,11 @@
 
           <div class="issue-summary text">
             <div class="issue-summary__image" style="background-color: <?= $issue->color() ?>;">
-              <ul class="rslides">
+              <div id="issue-slider" style="background-color: <?= $issue->color() ?>;">
                 <?php foreach($issue->images()->sortBy('sort', 'asc') as $image) : ?>
-                    <li><img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>" class="img-responsive" /></li>
+                    <img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>" />
                 <?php endforeach ?>
-              </ul>
+              </div>
             </div>
             <div class="issue-summary__detail">
               <h1 class="issue-summary__detail-title"><?= $issue->title()->upper()->html() ?>: <?= $issue->name()->html() ?></h1>
@@ -85,7 +85,7 @@
       <style>
   <?php foreach($colors as $box => $issue): ?>
     .<?= $box ?> {
-      border-color: <?= $issue->color() ?>;
+      border-color: <?= $issue->color() ?> !important;
     }
 
     .<?= $box ?>:hover, .<?= $box ?>:focus {

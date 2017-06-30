@@ -276,6 +276,7 @@ body {
   @include span(12);
   padding: 0;
   height: auto;
+  margin-bottom: 2em;
   img {
     height: auto;
     width: 100%;
@@ -320,11 +321,12 @@ body {
   @include span(12);
   padding: 0;
   height: auto;
-  margin-top: 2rem;
+  margin-bottom: 2em;
   img {
     height: auto;
     width: 100%;
     z-index: 10;
+    display: block;
   }
 }
 
@@ -332,7 +334,7 @@ body {
   position: relative;
   float: left;
   width: 100%;
-  margin-top: 2rem;
+  margin-bottom: 2em;
 }
 
 /* ----- 0.0 Online  ------------------------------------------------------ */
@@ -354,6 +356,11 @@ body {
 /* ----- 0.0 MailChimp  ----------------------------------------------------- */
 
 @import "mailchimp";
+
+/* ----- 0.0 IIS  ------------------------------------------------------ */
+
+@import "iis";
+@import "iis-theme-default";
 
 /* ----- 0.0 Magazine  ------------------------------------------------------ */
 

@@ -6,6 +6,7 @@
       <p>Explore all the back issues of our quarterly publication.</p>
     </div>
 
+    <?php $colors = []; ?>
     <?php $box = 'background-' . uniqid(); $colors[$box] = $page; ?>
     <?php $word = 'word-' . uniqid(); $colors[$word] = $page; ?>
 
@@ -13,11 +14,11 @@
 
       <div class="issue-summary text">
         <div class="issue-summary__image" style="background-color: <?= $page->color() ?>;">
-          <ul class="rslides">
+          <div id="issue-slider" style="background-color: <?= $page->color() ?>;">
             <?php foreach($page->images()->sortBy('sort', 'asc') as $image) : ?>
-                <li><img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>" class="img-responsive" /></li>
+                <img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>" />
             <?php endforeach ?>
-          </ul>
+          </div>
         </div>
         <div class="issue-summary__detail">
           <h1 class="issue-summary__detail-title"><?= $page->title()->upper()->html() ?><?php if ($page->name()->isNotEmpty()): ?>&mdash;<?= $page->name()->upper()->html() ?><?php endif ?></h1>
