@@ -44,6 +44,10 @@
   @include align-self(center);
 }
 
+.display-none {
+  display: none !important;
+}
+
 /* -----  1.2 Colors  --------------------------------------------- */
 
 $strikeMainColor: rgb(162, 0, 255);
