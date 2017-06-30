@@ -1,4 +1,4 @@
-<article class="card-large">
+<article class="card-large <?= $box ?>">
 <a href="<?= $article->url() ?>">
 
   <?php if ($article->coverimage()->isNotEmpty()) : ?>

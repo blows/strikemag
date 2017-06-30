@@ -890,7 +890,7 @@ li.branding.menu-item a img {
 /* line 90, ../scss/_online.scss */
 .online-recent article:nth-of-type(1) .card-large-info, .online-recent article:nth-of-type(2) .card-large-info {
   height: 21em;
-  margin: 1em 1.3em 1em 1.3em;
+  padding: 1em 1.3em 1em 1.3em;
 }
 /* line 93, ../scss/_online.scss */
 .online-recent article:nth-of-type(1) .card-large-info__title, .online-recent article:nth-of-type(2) .card-large-info__title {
@@ -902,8 +902,13 @@ li.branding.menu-item a img {
   font-size: 1.6em;
   line-height: 1em;
 }
+/* line 101, ../scss/_online.scss */
+.online-recent article:nth-of-type(1) .card-large-info__summary, .online-recent article:nth-of-type(2) .card-large-info__summary {
+  font-size: 1em;
+  line-height: 1.5em;
+}
 
-/* line 105, ../scss/_online.scss */
+/* line 109, ../scss/_online.scss */
 .online-archive {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -937,10 +942,14 @@ li.branding.menu-item a img {
   text-decoration: none;
 }
 /* line 15, ../scss/_card.scss */
+.card-large:hover a, .portrait:hover a, .card-large:focus a, .portrait:focus a {
+  color: white;
+}
+/* line 21, ../scss/_card.scss */
 .card-large-image figure img {
   display: block;
 }
-/* line 19, ../scss/_card.scss */
+/* line 25, ../scss/_card.scss */
 .card-large-info {
   height: 12.5em;
   display: -webkit-flex;
@@ -949,68 +958,68 @@ li.branding.menu-item a img {
   flex-direction: column;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  margin: .5em .8em 1em .8em;
+  padding: .5em .8em 1em .8em;
 }
-/* line 26, ../scss/_card.scss */
+/* line 32, ../scss/_card.scss */
 .card-large-info__group {
   top: 0.6em;
   right: 0.8em;
   bottom: 0.8em;
   left: 0.8em;
 }
-/* line 33, ../scss/_card.scss */
+/* line 39, ../scss/_card.scss */
 .card-large-info__title {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 1.35em;
   margin-left: 0;
 }
-/* line 38, ../scss/_card.scss */
+/* line 44, ../scss/_card.scss */
 .card-large-info__contributor {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 1.35em;
 }
-/* line 41, ../scss/_card.scss */
+/* line 47, ../scss/_card.scss */
 .card-large-info__contributor::after {
   content: ",";
   margin-left: -.2em;
 }
-/* line 45, ../scss/_card.scss */
+/* line 51, ../scss/_card.scss */
 .card-large-info__contributor:last-of-type::after {
   content: "";
 }
-/* line 49, ../scss/_card.scss */
+/* line 55, ../scss/_card.scss */
 .card-large-info__issue {
   font-size: .7em;
   padding-bottom: .3em;
 }
-/* line 53, ../scss/_card.scss */
+/* line 59, ../scss/_card.scss */
 .card-large-info__summary {
   line-height: 1.42em;
   font-size: .7em;
 }
 
-/* line 60, ../scss/_card.scss */
+/* line 66, ../scss/_card.scss */
 .portrait {
   width: 32.4em;
   height: 23em;
 }
-/* line 64, ../scss/_card.scss */
+/* line 70, ../scss/_card.scss */
 .portrait a {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
-/* line 67, ../scss/_card.scss */
+/* line 73, ../scss/_card.scss */
 .portrait a .card-large-image {
   height: 23em;
 }
-/* line 69, ../scss/_card.scss */
+/* line 75, ../scss/_card.scss */
 .portrait a .card-large-image figure img {
   display: block;
   min-height: 23em;
 }
-/* line 74, ../scss/_card.scss */
+/* line 80, ../scss/_card.scss */
 .portrait a .card-large-info {
   width: 50%;
   min-height: 21.8em;
@@ -1023,7 +1032,7 @@ li.branding.menu-item a img {
   margin: .5em .8em .8em .8em;
 }
 
-/* line 85, ../scss/_card.scss */
+/* line 91, ../scss/_card.scss */
 .card-small {
   width: 15em;
   height: 100%;
@@ -1032,16 +1041,16 @@ li.branding.menu-item a img {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 93, ../scss/_card.scss */
+/* line 99, ../scss/_card.scss */
 .card-small a {
   color: black;
   text-decoration: none;
 }
-/* line 99, ../scss/_card.scss */
+/* line 105, ../scss/_card.scss */
 .card-small-image figure img {
   display: block;
 }
-/* line 103, ../scss/_card.scss */
+/* line 109, ../scss/_card.scss */
 .card-small-info {
   height: 15em;
   display: -webkit-flex;
@@ -1050,43 +1059,43 @@ li.branding.menu-item a img {
   flex-direction: column;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  margin: .5em .8em .8em .8em;
+  padding: .5em .8em .8em .8em;
 }
-/* line 110, ../scss/_card.scss */
+/* line 116, ../scss/_card.scss */
 .card-small-info__group {
   top: 0.6em;
   right: 0.8em;
   bottom: 0.8em;
   left: 0.8em;
 }
-/* line 117, ../scss/_card.scss */
+/* line 123, ../scss/_card.scss */
 .card-small-info__title {
   text-align: center;
   font-size: 1.5em;
   margin-bottom: .5em;
 }
-/* line 122, ../scss/_card.scss */
+/* line 128, ../scss/_card.scss */
 .card-small-info__contributor {
   font-family: 'Druk-Wide-Medium', sans-serif;
   text-align: center;
   font-size: .8em;
   text-decoration: underline;
 }
-/* line 127, ../scss/_card.scss */
+/* line 133, ../scss/_card.scss */
 .card-small-info__contributor::after {
   content: ",";
 }
-/* line 130, ../scss/_card.scss */
+/* line 136, ../scss/_card.scss */
 .card-small-info__contributor:last-of-type::after {
   content: "";
 }
-/* line 134, ../scss/_card.scss */
+/* line 140, ../scss/_card.scss */
 .card-small-info__issue {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .8em;
   margin-bottom: 2.5em;
 }
-/* line 139, ../scss/_card.scss */
+/* line 145, ../scss/_card.scss */
 .card-small-info__summary {
   line-height: 1.2em;
   font-size: .8em;

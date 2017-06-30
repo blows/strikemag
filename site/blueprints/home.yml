@@ -21,10 +21,19 @@ fields:
     search: true
     options: query
     query:
-      page: /
+      page: online
       fetch: pages
       template: article
-      flip: true
+
+  featuredarticle2:
+    label: Featured Post
+    type: select
+    search: true
+    options: query
+    query:
+      page: online
+      fetch: pages
+      template: article
 
   banner1:
     label: Banner

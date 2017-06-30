@@ -89,7 +89,7 @@
     width: 31.5em;
     .card-large-info {
       height: 21em;
-      margin: 1em 1.3em 1em 1.3em;
+      padding: 1em 1.3em 1em 1.3em;
       &__title {
         font-size: 1.6em;
         line-height: 1em;
@@ -97,6 +97,10 @@
       &__contributor {
         font-size: 1.6em;
         line-height: 1em;
+      }
+      &__summary {
+        font-size: 1em;
+        line-height: 1.5em;
       }
     }
   }

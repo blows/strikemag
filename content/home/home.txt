@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-Featuredarticle: the-city-and-the-court
+Featuredarticle: freedom-and-the-autoprecariat-understanding-the-new-gig-economy
 
 ----
 
@@ -11,3 +11,7 @@ Banner1: screenshot-2017-06-01-23.47.09.png
 ----
 
 Link1: http://strikemag.bigcartel.com/
+
+----
+
+Featuredarticle2: guardianships-as-scabbing-every-building-is-an-empty
