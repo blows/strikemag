@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 30;
   padding-top: 0;
-  font-size: 0;
+  // font-size: 0;
   width:100%;
   background: #ffffff;
   top: 0;
@@ -17,7 +17,6 @@
   display: inline-block;
   background-color: white;
   text-align: center;
-  font-size: 1.2rem;
   font-family: 'Druk-Wide-Medium', sans-serif;
   a {
     text-decoration: none;
@@ -38,7 +37,7 @@
   }
   .navigation-menu {
     display: inline;
-    font-size: .7em;
+    // font-size: .7em;
   }
 }
 .nav-up {

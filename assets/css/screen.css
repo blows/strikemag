@@ -125,7 +125,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* -----  1.2 Colors  --------------------------------------------- */
 /* -----  1.4 Buttons  --------------------------------------------- */
-/* line 57, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
 button {
   font-size: 13px;
   border: none;
@@ -141,7 +141,7 @@ button {
   margin: 0;
 }
 
-/* line 72, ../scss/screen.scss */
+/* line 73, ../scss/screen.scss */
 a.button {
   text-decoration: none;
   border-style: solid;
@@ -152,28 +152,28 @@ a.button {
   display: inline-block;
   margin: 0;
 }
-/* line 81, ../scss/screen.scss */
+/* line 82, ../scss/screen.scss */
 a.button:hover {
   background-color: #b433ff;
   color: white;
 }
 
 /* -----  1.4 Images & Figures  --------------------------------------------- */
-/* line 89, ../scss/screen.scss */
+/* line 90, ../scss/screen.scss */
 img {
   border-style: none;
   width: 100%;
   height: auto;
 }
 
-/* line 95, ../scss/screen.scss */
+/* line 96, ../scss/screen.scss */
 figcaption {
   font-size: .75rem;
   line-height: 1.5rem;
 }
 
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
-/* line 102, ../scss/screen.scss */
+/* line 103, ../scss/screen.scss */
 .intro {
   text-align: center;
   font-weight: 500;
@@ -181,46 +181,46 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* line 117, ../scss/screen.scss */
+/* line 118, ../scss/screen.scss */
 .text h1, .text h2, .text h3 {
   font-family: 'Graphik-Medium', sans-serif;
 }
 
-/* line 121, ../scss/screen.scss */
+/* line 122, ../scss/screen.scss */
 .text ul, .text ol {
   margin-left: 1.5em;
 }
 
-/* line 125, ../scss/screen.scss */
+/* line 126, ../scss/screen.scss */
 .text p {
   font-weight: 400;
 }
 
-/* line 133, ../scss/screen.scss */
+/* line 134, ../scss/screen.scss */
 .text hr {
   /* We use a more muted style for horizontal rules within
      the main content. */
   color: #1f00ff;
 }
 
-/* line 139, ../scss/screen.scss */
+/* line 140, ../scss/screen.scss */
 .text ul {
   list-style: none;
 }
 
-/* line 153, ../scss/screen.scss */
+/* line 154, ../scss/screen.scss */
 .text ol > li {
   list-style: decimal;
 }
 
-/* line 157, ../scss/screen.scss */
+/* line 158, ../scss/screen.scss */
 .text pre, .text code {
   background-color: #eafded;
   font-family: Courier, monospace;
   font-size: .75rem;
 }
 
-/* line 163, ../scss/screen.scss */
+/* line 164, ../scss/screen.scss */
 .text code {
   margin: -.25em 0;
   padding: .25em .15em;
@@ -228,7 +228,7 @@ figcaption {
   bottom: .05em;
 }
 
-/* line 170, ../scss/screen.scss */
+/* line 171, ../scss/screen.scss */
 .text pre > code {
   display: block;
   margin: 0;
@@ -239,7 +239,7 @@ figcaption {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  /* line 180, ../scss/screen.scss */
+  /* line 181, ../scss/screen.scss */
   .text pre > code {
     /* Enables smoother scrolling for code sections on
        mobile (i.e. touch) devices. */
@@ -247,7 +247,7 @@ figcaption {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 188, ../scss/screen.scss */
+/* line 189, ../scss/screen.scss */
 .text kbd {
   padding: 3px 7px;
   margin: -3px 2px;
@@ -261,22 +261,22 @@ figcaption {
   bottom: 2px;
 }
 
-/* line 201, ../scss/screen.scss */
+/* line 202, ../scss/screen.scss */
 .text blockquote {
   padding: .75rem;
 }
-/* line 203, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 .text blockquote p {
   font-size: 1.5em;
 }
 
-/* line 208, ../scss/screen.scss */
+/* line 209, ../scss/screen.scss */
 .text blockquote :last-child {
   margin-bottom: 0;
 }
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
-/* line 214, ../scss/screen.scss */
+/* line 215, ../scss/screen.scss */
 body {
   background-color: #f2f2f2;
   font-family: 'Graphik-Medium', sans-serif;
@@ -286,19 +286,37 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 223, ../scss/screen.scss */
+  /* line 224, ../scss/screen.scss */
   body {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 228, ../scss/screen.scss */
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /* line 232, ../scss/screen.scss */
+  body {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 235, ../scss/screen.scss */
+  /* line 236, ../scss/screen.scss */
   body {
-    font-size: 20px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 240, ../scss/screen.scss */
+  body {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 243, ../scss/screen.scss */
+  /* line 244, ../scss/screen.scss */
   body {
     font-size: 14px;
   }
@@ -309,7 +327,6 @@ body {
   position: fixed;
   z-index: 30;
   padding-top: 0;
-  font-size: 0;
   width: 100%;
   background: #ffffff;
   top: 0;
@@ -323,37 +340,35 @@ body {
   display: inline-block;
   background-color: white;
   text-align: center;
-  font-size: 1.2rem;
   font-family: 'Druk-Wide-Medium', sans-serif;
 }
-/* line 22, ../scss/_header.scss */
+/* line 21, ../scss/_header.scss */
 .navigation a {
   text-decoration: none;
   color: black;
 }
-/* line 26, ../scss/_header.scss */
+/* line 25, ../scss/_header.scss */
 .navigation .hamburger {
   display: inline;
 }
 
-/* line 31, ../scss/_header.scss */
+/* line 30, ../scss/_header.scss */
 .navigation-menu {
   display: none;
 }
 
 @media all and (max-width: 500px) {
-  /* line 36, ../scss/_header.scss */
+  /* line 35, ../scss/_header.scss */
   .navigation-page {
     display: none;
   }
 
-  /* line 39, ../scss/_header.scss */
+  /* line 38, ../scss/_header.scss */
   .navigation-menu {
     display: inline;
-    font-size: .7em;
   }
 }
-/* line 44, ../scss/_header.scss */
+/* line 43, ../scss/_header.scss */
 .nav-up {
   top: -4rem;
 }
@@ -419,11 +434,11 @@ li.menu-item.is-active {
 .branding {
   vertical-align: baseline;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.2em;
   background-color: black;
   position: relative;
   display: inline-block;
-  line-height: 3rem;
+  line-height: 1em;
   margin-bottom: 0;
   white-space: nowrap;
   text-align: center;
@@ -437,7 +452,7 @@ li.branding.menu-item a {
 }
 /* line 65, ../scss/_menu.scss */
 li.branding.menu-item a img {
-  height: 2em;
+  height: 2.05em;
   padding-top: .31em;
   padding-bottom: .31em;
   vertical-align: middle;
@@ -655,7 +670,7 @@ li.branding.menu-item a img {
 }
 
 /* -----  3.4 Main Content  ------------------------------------------------- */
-/* line 264, ../scss/screen.scss */
+/* line 265, ../scss/screen.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -668,7 +683,7 @@ li.branding.menu-item a img {
   clear: both;
 }
 
-/* line 270, ../scss/screen.scss */
+/* line 271, ../scss/screen.scss */
 .flex-center {
   display: -webkit-flex;
   display: flex;
@@ -678,7 +693,7 @@ li.branding.menu-item a img {
   flex-direction: column;
 }
 
-/* line 276, ../scss/screen.scss */
+/* line 277, ../scss/screen.scss */
 .home-featured {
   font-family: 'Graphik-Medium', sans-serif;
   position: relative;
@@ -694,14 +709,14 @@ li.branding.menu-item a img {
   height: auto;
   margin-bottom: 2em;
 }
-/* line 284, ../scss/screen.scss */
+/* line 285, ../scss/screen.scss */
 .home-featured img {
   height: auto;
   width: 100%;
   z-index: 10;
   display: block;
 }
-/* line 290, ../scss/screen.scss */
+/* line 291, ../scss/screen.scss */
 .home-featured-text {
   position: absolute;
   background-color: black;
@@ -718,27 +733,27 @@ li.branding.menu-item a img {
   text-shadow: 0 0 8px rgba(153, 153, 153, 0.8);
   text-decoration: none;
 }
-/* line 304, ../scss/screen.scss */
+/* line 305, ../scss/screen.scss */
 .home-featured-title {
   font-size: 2.5em;
   line-height: 1em;
 }
-/* line 308, ../scss/screen.scss */
+/* line 309, ../scss/screen.scss */
 .home-featured-contributor {
   font-size: 2.5em;
   line-height: 1em;
   display: inline;
 }
-/* line 313, ../scss/screen.scss */
+/* line 314, ../scss/screen.scss */
 .home-featured-contributor:after {
   content: ",";
 }
-/* line 316, ../scss/screen.scss */
+/* line 317, ../scss/screen.scss */
 .home-featured-contributor:last-of-type:after {
   content: "";
 }
 
-/* line 322, ../scss/screen.scss */
+/* line 323, ../scss/screen.scss */
 .home-banner {
   position: relative;
   z-index: 5;
@@ -753,7 +768,7 @@ li.branding.menu-item a img {
   height: auto;
   margin-bottom: 2em;
 }
-/* line 329, ../scss/screen.scss */
+/* line 330, ../scss/screen.scss */
 .home-banner img {
   height: auto;
   width: 100%;
@@ -761,7 +776,7 @@ li.branding.menu-item a img {
   display: block;
 }
 
-/* line 337, ../scss/screen.scss */
+/* line 338, ../scss/screen.scss */
 .home-support {
   position: relative;
   float: left;
@@ -878,85 +893,87 @@ li.branding.menu-item a img {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
+  width: 91.66667%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+  margin-left: 4.16667%;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
-/* line 87, ../scss/_online.scss */
+/* line 89, ../scss/_online.scss */
 .online-recent article:nth-of-type(1), .online-recent article:nth-of-type(2) {
   width: 31.5em;
 }
-/* line 89, ../scss/_online.scss */
+/* line 91, ../scss/_online.scss */
 .online-recent article:nth-of-type(1) .card-large-info, .online-recent article:nth-of-type(2) .card-large-info {
   height: 21em;
   padding: 1em 1.3em 1em 1.3em;
 }
-/* line 92, ../scss/_online.scss */
+/* line 94, ../scss/_online.scss */
 .online-recent article:nth-of-type(1) .card-large-info__title, .online-recent article:nth-of-type(2) .card-large-info__title {
   font-size: 1.6em;
   line-height: 1em;
 }
-/* line 96, ../scss/_online.scss */
+/* line 98, ../scss/_online.scss */
 .online-recent article:nth-of-type(1) .card-large-info__contributor, .online-recent article:nth-of-type(2) .card-large-info__contributor {
   font-size: 1.6em;
   line-height: 1em;
 }
-/* line 100, ../scss/_online.scss */
+/* line 102, ../scss/_online.scss */
 .online-recent article:nth-of-type(1) .card-large-info__summary, .online-recent article:nth-of-type(2) .card-large-info__summary {
   font-size: 1em;
   line-height: 1.5em;
 }
 
-/* line 108, ../scss/_online.scss */
+/* line 110, ../scss/_online.scss */
 .online-archive {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
+  width: 91.66667%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+  margin-left: 4.16667%;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
 /* ----- 0.0 Cards  ------------------------------------------------------ */
 /* line 1, ../scss/_card.scss */
-.card-large, .portrait {
-  width: 21em;
+.card-large {
+  width: 28vw;
   height: 100%;
   background-color: white;
-  margin: 0 1em 2em 1em;
+  margin: 0 0 2em 0;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 9, ../scss/_card.scss */
-.card-large a, .portrait a {
+/* line 11, ../scss/_card.scss */
+.card-large a {
   color: black;
   text-decoration: none;
 }
-/* line 15, ../scss/_card.scss */
-.card-large:hover a, .portrait:hover a, .card-large:focus a, .portrait:focus a {
+/* line 17, ../scss/_card.scss */
+.card-large:hover a, .card-large:focus a {
   color: white;
 }
-/* line 21, ../scss/_card.scss */
+/* line 23, ../scss/_card.scss */
 .card-large-image figure img {
   display: block;
 }
-/* line 25, ../scss/_card.scss */
+/* line 27, ../scss/_card.scss */
 .card-large-info {
-  height: 12.5em;
+  height: 16.3vw;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -965,76 +982,42 @@ li.branding.menu-item a img {
   justify-content: space-between;
   padding: .5em .8em 1em .8em;
 }
-/* line 32, ../scss/_card.scss */
+/* line 34, ../scss/_card.scss */
 .card-large-info__group {
   top: 0.6em;
   right: 0.8em;
   bottom: 0.8em;
   left: 0.8em;
 }
-/* line 39, ../scss/_card.scss */
+/* line 41, ../scss/_card.scss */
 .card-large-info__title {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 1.35em;
   margin-left: 0;
 }
-/* line 44, ../scss/_card.scss */
+/* line 47, ../scss/_card.scss */
 .card-large-info__contributor {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 1.35em;
 }
-/* line 47, ../scss/_card.scss */
+/* line 51, ../scss/_card.scss */
 .card-large-info__contributor::after {
   content: ",";
   margin-left: -.2em;
 }
-/* line 51, ../scss/_card.scss */
+/* line 55, ../scss/_card.scss */
 .card-large-info__contributor:last-of-type::after {
   content: "";
 }
-/* line 55, ../scss/_card.scss */
+/* line 59, ../scss/_card.scss */
 .card-large-info__issue {
   font-size: .7em;
   padding-bottom: .3em;
 }
-/* line 59, ../scss/_card.scss */
+/* line 64, ../scss/_card.scss */
 .card-large-info__summary {
   line-height: 1.42em;
   font-size: .7em;
-}
-
-/* line 66, ../scss/_card.scss */
-.portrait {
-  width: 32.4em;
-  height: 23em;
-}
-/* line 70, ../scss/_card.scss */
-.portrait a {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-/* line 73, ../scss/_card.scss */
-.portrait a .card-large-image {
-  height: 23em;
-}
-/* line 75, ../scss/_card.scss */
-.portrait a .card-large-image figure img {
-  display: block;
-  min-height: 23em;
-}
-/* line 80, ../scss/_card.scss */
-.portrait a .card-large-info {
-  width: 50%;
-  min-height: 21.8em;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  margin: .5em .8em .8em .8em;
 }
 
 /* ----- 4.2 Article  -------------------------------------------------- */

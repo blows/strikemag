@@ -19,7 +19,7 @@
 
 
 
-    <section class="online-archive group">
+    <section class="online-archive">
       <?php if($results->count()) : ?>
         <?php foreach($results as $result): ?>
           <?php $parent = $result->parent() ?>

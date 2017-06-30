@@ -1,8 +1,10 @@
 .card-large {
-  width: 21em;
+  // width: 21em;
+  width: 28vw;
   height: 100%;
   background-color: white;
-  margin: 0 1em 2em 1em;
+  // margin: 0 1em 2em 1em;
+  margin: 0 0 2em 0;
   padding-left: 0;
   padding-right: 0;
 
@@ -23,7 +25,7 @@
     }
   }
   &-info {
-    height: 12.5em;
+    height: 16.3vw;
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(space-between);
@@ -39,11 +41,13 @@
     &__title {
       font-family: 'Graphik-Medium', sans-serif;
       font-size: 1.35em;
+      // font-size: 1.875vw;
       margin-left: 0;
     }
     &__contributor {
       font-family: 'Graphik-Medium', sans-serif;
       font-size: 1.35em;
+      // font-size: 1.875vw;
       &::after {
           content: ",";
           margin-left: -.2em;
@@ -54,36 +58,12 @@
     }
     &__issue {
       font-size: .7em;
+      // font-size: .9723vw;
       padding-bottom: .3em;
     }
     &__summary {
       line-height: 1.42em;
       font-size: .7em;
-    }
-  }
-}
-
-.portrait {
-  @extend .card-large;
-  width: 32.4em;
-  height: 23em;
-  a {
-    @include display-flex;
-    @include flex-direction(row-reverse);
-    .card-large-image {
-    height: 23em;
-      figure img {
-        display: block;
-        min-height: 23em;
-      }
-    }
-    .card-large-info {
-      width: 50%;
-      min-height: 21.8em;
-      @include display-flex;
-      @include flex-direction(column);
-      @include justify-content(space-between);
-      margin: .5em .8em .8em .8em;
     }
   }
 }

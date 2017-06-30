@@ -22,7 +22,7 @@
       </div>
     </section>
 
-    <section class="online-archive group">
+    <section class="online-archive">
       <?php if($cards->count()): ?>
         <?php foreach($cards as $article): ?>
           <?php if(!$article) continue ?>
