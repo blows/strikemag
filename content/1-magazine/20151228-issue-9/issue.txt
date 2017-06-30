@@ -18,7 +18,7 @@ Summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commod
 
 ----
 
-Color: rgba(213, 0, 255, 1)
+Color: rgba(51, 55, 255, 1)
 
 ----
 
@@ -31,3 +31,7 @@ Color2: rgba(8, 8, 8, 1)
 ----
 
 Color3: #000000
+
+----
+
+Buy: 

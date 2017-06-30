@@ -18,7 +18,7 @@ Summary: Anarchist decolonisation, white priviledge, imperial legacies, diversit
 
 ----
 
-Color: rgba(162, 84, 201, 1)
+Color: rgba(255, 135, 51, 1)
 
 ----
 

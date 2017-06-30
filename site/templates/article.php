@@ -1,6 +1,8 @@
 <?php snippet('header') ?>
 
-  <main style="background-image: linear-gradient(<?= $page->parent()->color() ?> 15%, <?= $page->parent()->color() ?> 50%, <?= $page->parent()->color2() ?>);" class="main" role="main">
+  <main style="background-color: <?= $page->parent()->color() ?>" class="main" role="main">
+
+    <?php $colors = []; ?>
 
     <article class="article group">
 
@@ -98,8 +100,8 @@
 
           <?php if ($page->printed()->isNotEmpty()) : ?>
               <div class="article-end__buy" style="border-color: <?= $page->parent()->color() ?>; color: <?= $page->parent()->color() ?>;">
-                <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
-                  <div class="article-end__buy-cover" style="border-color: <?= $page->parent()->color() ?>;">
+                <a id="buy" href="<?php echo $page->parent()->buy()->html() ?>" target="_blank" style="border-color: <?= $page->parent()->color() ?> !important;">
+                  <div class="article-end__buy-cover">
                     <figure id="end-cover">
                       <?php echo thumb($cover, array('width' => 200)); ?>
                     </figure>
@@ -124,10 +126,15 @@
       <h2 class="article-related__header">RELATED</h2>
       <ul>
       <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
+
+        <?php $parent = $related->parent() ?>
+        <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+
         <?php snippet('cardLargeLandscape', array(
         'article' => $related,
         'contributor' => $pages->find('contributors/' . $related->contributor()),
-        'issue' => $pages->find('magazine/' . $related->printed())
+        'issue' => $pages->find('magazine/' . $related->printed()),
+        'box' => $box
         )) ?>
       <?php endforeach ?>
       </ul>
@@ -136,6 +143,20 @@
 
   </main>
 
+  <style>
+    <?php foreach($colors as $box => $parent): ?>
+      .<?= $box ?> {
+        border-color: <?= $parent->color() ?>;
+      }
+
+      .<?= $box ?>:hover, .<?= $box ?>:focus {
+        background: <?= $parent->color() ?> !important;
+      }
+    <?php endforeach ?>
+    #buy:hover {
+      background-color: <?= $page->parent()->color() ?>;
+    }
+  </style>
 
 
   <!-- <?php snippet('prevnext', ['flip' => true]) ?> -->

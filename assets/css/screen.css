@@ -146,15 +146,15 @@ a.button {
   text-decoration: none;
   border-style: solid;
   border-width: 3px 3px 3px 3px;
-  border-color: #a200ff;
-  color: #a200ff;
+  border-color: #b433ff;
+  color: #b433ff;
   padding: .75em 1em .75em 1em;
   display: inline-block;
   margin: 0;
 }
 /* line 81, ../scss/screen.scss */
 a.button:hover {
-  background-color: #a200ff;
+  background-color: #b433ff;
   color: white;
 }
 
@@ -392,7 +392,7 @@ li.menu-item {
 }
 /* line 26, ../scss/_menu.scss */
 li.menu-item:hover {
-  background-color: #a200ff;
+  background-color: #b433ff;
 }
 /* line 29, ../scss/_menu.scss */
 li.menu-item a {
@@ -412,7 +412,7 @@ li.menu-item a {
 
 /* line 43, ../scss/_menu.scss */
 li.menu-item.is-active {
-  background-color: #a200ff;
+  background-color: #b433ff;
 }
 
 /* line 47, ../scss/_menu.scss */
@@ -495,7 +495,7 @@ li.branding.menu-item a img {
   padding-right: 0.83333%;
   padding-top: 1.5rem;
   min-height: 20vh;
-  background-color: #a200ff;
+  background-color: #b433ff;
   color: white;
 }
 
@@ -810,8 +810,8 @@ li.branding.menu-item a img {
   text-decoration: none;
   border-style: solid;
   border-width: 3px 3px 3px 3px;
-  border-color: #a200ff;
-  color: #a200ff;
+  border-color: #b433ff;
+  color: #b433ff;
   padding: 1em;
   display: inline-block;
   font-family: 'Druk-Wide-Medium', sans-serif;
@@ -822,7 +822,7 @@ li.branding.menu-item a img {
 }
 /* line 34, ../scss/_online.scss */
 .online-nav__filter .button:hover {
-  background-color: #a200ff;
+  background-color: #b433ff;
   color: white;
 }
 
@@ -839,7 +839,7 @@ li.branding.menu-item a img {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  color: #a200ff;
+  color: #b433ff;
   background-color: transparent;
   box-sizing: border-box;
   height: 3em;
@@ -851,7 +851,7 @@ li.branding.menu-item a img {
 /* line 58, ../scss/_online.scss */
 .online-nav__search input:focus {
   outline-style: none !important;
-  border-color: #a200ff !important;
+  border-color: #b433ff !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
@@ -1035,75 +1035,6 @@ li.branding.menu-item a img {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   margin: .5em .8em .8em .8em;
-}
-
-/* line 91, ../scss/_card.scss */
-.card-small {
-  width: 15em;
-  height: 100%;
-  background-color: white;
-  margin: 2em 1em 1em 1em;
-  padding-left: 0;
-  padding-right: 0;
-}
-/* line 99, ../scss/_card.scss */
-.card-small a {
-  color: black;
-  text-decoration: none;
-}
-/* line 105, ../scss/_card.scss */
-.card-small-image figure img {
-  display: block;
-}
-/* line 109, ../scss/_card.scss */
-.card-small-info {
-  height: 15em;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  padding: .5em .8em .8em .8em;
-}
-/* line 116, ../scss/_card.scss */
-.card-small-info__group {
-  top: 0.6em;
-  right: 0.8em;
-  bottom: 0.8em;
-  left: 0.8em;
-}
-/* line 123, ../scss/_card.scss */
-.card-small-info__title {
-  text-align: center;
-  font-size: 1.5em;
-  margin-bottom: .5em;
-}
-/* line 128, ../scss/_card.scss */
-.card-small-info__contributor {
-  font-family: 'Druk-Wide-Medium', sans-serif;
-  text-align: center;
-  font-size: .8em;
-  text-decoration: underline;
-}
-/* line 133, ../scss/_card.scss */
-.card-small-info__contributor::after {
-  content: ",";
-}
-/* line 136, ../scss/_card.scss */
-.card-small-info__contributor:last-of-type::after {
-  content: "";
-}
-/* line 140, ../scss/_card.scss */
-.card-small-info__issue {
-  font-family: 'Druk-Wide-Medium', sans-serif;
-  font-size: .8em;
-  margin-bottom: 2.5em;
-}
-/* line 145, ../scss/_card.scss */
-.card-small-info__summary {
-  line-height: 1.2em;
-  font-size: .8em;
 }
 
 /* ----- 4.2 Article  -------------------------------------------------- */
@@ -1537,7 +1468,7 @@ li.branding.menu-item a img {
   color: black;
   border-width: 0 0 1px 0;
   border-style: solid;
-  border-color: #a200ff;
+  border-color: #b433ff;
   padding-bottom: .1em;
   padding-top: .1em;
   text-decoration: none;
@@ -1546,7 +1477,7 @@ li.branding.menu-item a img {
 .article .text a:hover {
   color: black;
   text-decoration: none;
-  background-color: #a200ff;
+  background-color: #b433ff;
 }
 
 /* line 267, ../scss/_article.scss */
@@ -1571,8 +1502,8 @@ li.branding.menu-item a img {
 
 /* line 280, ../scss/_article.scss */
 .article-end {
-  border-color: #a200ff;
-  color: #a200ff;
+  border-color: #b433ff;
+  color: #b433ff;
   text-align: center;
   display: inline-block;
   margin-bottom: 5em;
@@ -1586,7 +1517,7 @@ li.branding.menu-item a img {
   margin-bottom: 0 !important;
   border-style: solid;
   border-width: 3px 3px 3px 3px;
-  border-color: #a200ff;
+  border-color: #b433ff;
 }
 /* line 296, ../scss/_article.scss */
 .article-end__chat {
@@ -1613,13 +1544,13 @@ li.branding.menu-item a img {
   border-width: 0;
   width: 50%;
   text-decoration: none;
-  color: #a200ff;
+  color: #b433ff;
   padding: 1.1em 0 1.1em 0;
   margin: 0;
 }
 /* line 315, ../scss/_article.scss */
 .article-end a.article-end__button:hover {
-  background-color: #a200ff;
+  background-color: #b433ff;
   color: white;
 }
 /* line 319, ../scss/_article.scss */
@@ -1637,7 +1568,7 @@ li.branding.menu-item a img {
 /* line 329, ../scss/_article.scss */
 .article-end__share a {
   text-align: center;
-  color: #a200ff;
+  color: #b433ff;
   border-bottom: 0 !important;
 }
 /* line 333, ../scss/_article.scss */
@@ -1646,12 +1577,12 @@ li.branding.menu-item a img {
 }
 /* line 336, ../scss/_article.scss */
 .article-end__share a i.fa {
-  color: #a200ff;
+  color: #b433ff;
   padding: .4em;
 }
 /* line 340, ../scss/_article.scss */
 .article-end__share a i.fa:hover, .article-end__share a i.fa:focus {
-  background-color: #a200ff;
+  background-color: #b433ff;
   color: white;
 }
 
@@ -2519,7 +2450,7 @@ ul.stockists a {
 /* line 188, ../scss/_magazine.scss */
 .magazine-more__issue-hover {
   position: relative;
-  background-color: #a200ff;
+  background-color: #b433ff;
 }
 /* line 191, ../scss/_magazine.scss */
 .magazine-more__issue-hover h5 {
@@ -2677,7 +2608,7 @@ ul.stockists a {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   text-align: center;
-  background-color: #a200ff;
+  background-color: #b433ff;
   color: white;
 }
 /* line 6, ../scss/_support.scss */
@@ -2690,7 +2621,7 @@ ul.stockists a {
 /* line 12, ../scss/_support.scss */
 .support-bar__buttons {
   padding-top: .5em;
-  padding-bottom: 1.5em;
+  padding-bottom: 2.5em;
 }
 /* line 16, ../scss/_support.scss */
 .support-bar__button {
@@ -2705,5 +2636,5 @@ ul.stockists a {
 /* line 25, ../scss/_support.scss */
 .support-bar__button:hover {
   background-color: white !important;
-  color: #a200ff !important;
+  color: #b433ff !important;
 }
