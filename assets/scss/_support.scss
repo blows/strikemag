@@ -1,9 +1,11 @@
 .support-bar {
   @include span(12);
   text-align: center;
-  background-color: red;
+  background-color: $strikeMainColor;
+  color: white;
   &__plea {
-    font-size: .8em;
+    font-size: 1.6em;
+    line-height: 1.2em;
     padding-top: 1.5em;
     padding-bottom: .5em;
   }
@@ -12,16 +14,17 @@
     padding-bottom: 1.5em;
   }
   &__button {
-    display: inline-block;
-    height: 6em;
-    width: 6em;
-    line-height: 6em;
-    @include border-radius(50%);
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 1em;
-    margin-left: .2em;
-    margin-right: .2em;
+    // display: inline-block;
+    font-size: 1.6em;
+    margin-left: .2em !important;
+    margin-right: .2em !important;
+    padding: 1.3em !important;
+    border-color: white !important;
+    color: white !important;
+    min-width: 6em;
+    &:hover {
+      background-color: white !important;
+      color: $strikeMainColor !important;
+    }
   }
 }

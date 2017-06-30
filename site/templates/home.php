@@ -73,10 +73,48 @@
       <?php endif ?>
     </section>
 
+    <section class="home-support">
+      <?php snippet('support') ?>
+    </section>
+
+    <!-- <h2 class="section-header">ARCHIVE</h2> -->
+    <section class="online-archive group">
+      <?php if($articles->count()): ?>
+        <?php foreach($articles->limit(3) as $article): ?>
+
+          <?php $parent = $article->parent() ?>
+          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+
+          <?php if($article->coverimage()->isNotEmpty()): ?>
+
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $article,
+            'contributor' => $pages->find('contributors/' . $article->contributor()),
+            'issue' => $pages->find('magazine/' . $article->printed()),
+            'box' => $box
+            )) ?>
+
+          <?php else: ?>
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $article,
+            'contributor' => $pages->find('contributors/' . $article->contributor()),
+            'issue' => $pages->find('magazine/' . $article->printed()),
+            'box' => $box
+            )) ?>
+
+          <?php endif ?>
+
+        <?php endforeach ?>
+
+      <?php else: ?>
+        <p>Where did all of the articles go?</p>
+      <?php endif ?>
+    </section>
+
     <section class="home-featured group">
       <?php $uids = $page->featuredarticle2()->split(); ?>
       <?php foreach($uids as $post): ?> <?php $post = $pages->index()->findBy('uid', $post); ?>
-        
+
         <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
 
         <a href="<?php echo $post->url(); ?>" class="home-featured-text <?= $back ?>">
@@ -98,9 +136,9 @@
     </section>
 
     <!-- <h2 class="section-header">ARCHIVE</h2> -->
-    <section class="online-archive group">
-      <?php if($articles->count()): ?>
-        <?php foreach($articles->limit(3) as $article): ?>
+    <section class="online-recent group">
+      <?php if($archives->count()): ?>
+        <?php foreach($archives->shuffle()->limit(5) as $article): ?>
 
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
@@ -141,44 +179,6 @@
         </a>
       </div>
     <?php endif ?>
-
-    <!-- <h2 class="section-header">ARCHIVE</h2> -->
-    <section class="online-archive group">
-      <?php if($archives->count()): ?>
-        <?php foreach($archives->shuffle() as $article): ?>
-
-          <?php $parent = $article->parent() ?>
-          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
-
-          <?php if($article->coverimage()->isNotEmpty()): ?>
-
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
-            )) ?>
-
-          <?php else: ?>
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
-            )) ?>
-
-          <?php endif ?>
-
-        <?php endforeach ?>
-
-      <?php else: ?>
-        <p>Where did all of the articles go?</p>
-      <?php endif ?>
-    </section>
-
-      <!-- <section class="home-support">
-        <?php snippet('support') ?>
-      </section> -->
 
   </main>
 

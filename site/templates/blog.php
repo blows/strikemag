@@ -2,6 +2,8 @@
 
   <main class="main" role="main">
 
+    <?php $colors = []; ?>
+
     <section class="online-nav">
       <div class="online-nav__search">
         <form class="search" method="post" action="<?= page('online/search')->url() ?>">
@@ -25,12 +27,16 @@
         <?php foreach($cards as $article): ?>
           <?php if(!$article) continue ?>
 
+          <?php $parent = $article->parent() ?>
+          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+
           <?php if($article->coverimage()->isNotEmpty()): ?>
 
             <?php snippet('cardLargeLandscape', array(
             'article' => $article,
             'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed())
+            'issue' => $pages->find('magazine/' . $article->printed()),
+            'box' => $box
             )) ?>
 
 
@@ -38,7 +44,8 @@
             <?php snippet('cardLargeLandscape', array(
             'article' => $article,
             'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed())
+            'issue' => $pages->find('magazine/' . $article->printed()),
+            'box' => $box
             )) ?>
 
           <?php endif ?>
@@ -54,6 +61,18 @@
 
 
     <?php snippet('pagination') ?>
+
+    <style>
+      <?php foreach($colors as $box => $parent): ?>
+        .<?= $box ?> {
+          border-color: <?= $parent->color() ?>;
+        }
+
+        .<?= $box ?>:hover, .<?= $box ?>:focus {
+          background: <?= $parent->color() ?> !important;
+        }
+      <?php endforeach ?>
+    </style>
 
   </main>
 

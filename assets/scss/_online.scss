@@ -84,7 +84,6 @@
   @include display-flex;
   @include flex-wrap(wrap);
   @include justify-content(center);
-  padding-bottom: 1em;
   article:nth-of-type(1), article:nth-of-type(2) {
     width: 31.5em;
     .card-large-info {
@@ -111,5 +110,4 @@
   @include display-flex;
   @include flex-wrap(wrap);
   @include justify-content(center);
-  padding-bottom: 1em;
 }

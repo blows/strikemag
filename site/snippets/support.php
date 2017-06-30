@@ -1,7 +1,8 @@
 <div class="support-bar">
-  <p class="support-bar__plea">We don't rely on advertising, we rely on you!</p>
+  <p class="support-bar__plea">We don’t rely on advertising, we rely on you!<br>
+Help us keep publishing the important work we care about</p>
   <div class="support-bar__buttons">
-    <span class="support-bar__button">Subscribe</span>
-    <span class="support-bar__button">Donate</span>
+    <a class="support-bar__button button">SUBSCRIBE</a>
+    <a class="support-bar__button button">DONATE</a>
   </div>
 </div>
