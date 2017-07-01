@@ -3,12 +3,10 @@ jQuery(document).ready(function(){
 // Menu
 // $( ".cross" ).hide();
 // $( ".menu" ).hide();
-// $( "#hamburger" ).click(function() {
-//   $( ".menu" ).slideToggle( "medium", function() {
-//   $( "#hamburger" ).hide();
-//   $( ".cross" ).show();
-//   });
-// });
+$( "#menu-toggle" ).click(function() {
+  $( "#menu-drop" ).toggle( "fast", function() {
+  });
+});
 //
 // $( ".cross" ).click(function() {
 // $( ".menu" ).slideToggle( "medium", function() {
