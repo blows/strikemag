@@ -55,20 +55,20 @@ $strikeBackground: rgb(240, 240, 240);
 
 /* -----  1.4 Buttons  --------------------------------------------- */
 
-button {
-  font-size: 13px;
-  border: none;
-  border-radius: 0;
-  letter-spacing: .03em;
-  color: #fff;
-  background-color: black;
-  box-sizing: border-box;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 18px;
-  display: inline-block;
-  margin: 0;
-}
+// button {
+//   font-size: 13px;
+//   border: none;
+//   border-radius: 0;
+//   letter-spacing: .03em;
+//   color: #fff;
+//   background-color: black;
+//   box-sizing: border-box;
+//   height: 32px;
+//   line-height: 32px;
+//   padding: 0 18px;
+//   display: inline-block;
+//   margin: 0;
+// }
 
 a.button {
   text-decoration: none;
@@ -213,7 +213,7 @@ figcaption {
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
 
 body {
-  background-color: #f2f2f2;
+  background-color: $strikeBackground;
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 20px;
   line-height: 1.5em;
@@ -237,11 +237,11 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-    body { font-size: 16px; }
+    body { font-size: 12px; }
 }
 
 @media screen and (max-width: 550px) {
-    body { font-size: 14px; }
+    body { font-size: 16px; }
 }
 
 /* ----- 3.1  Header  ------------------------------------------------------- */
@@ -280,14 +280,10 @@ body {
   z-index: 5;
   @include span(12);
   padding: 0;
-  height: auto;
   margin-bottom: 2em;
-  img {
-    height: auto;
-    width: 100%;
-    z-index: 10;
-    display: block;
-  }
+  background-position: 50%;
+  background-size: cover;
+  height: 100vh;
   &-text {
     position: absolute;
     background-color: black;
@@ -299,15 +295,15 @@ body {
     // width: 80%;
     padding: 2.4em;
     text-align: center;
-    text-shadow: 0 0 8px rgba(153,153,153,.8);
+    // text-shadow: 0 0 8px rgba(153,153,153,.8);
     text-decoration: none;
   }
   &-title {
-    font-size: 2.5em;
+    font-size: 1.6em;
     line-height: 1em;
   }
   &-contributor {
-    font-size: 2.5em;
+    font-size: 1.6em;
     line-height: 1em;
     // text-decoration: underline;
     display: inline;
@@ -317,6 +313,34 @@ body {
     &:last-of-type:after {
       content: "";
     }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .home-featured {
+    height: 30vh;
+    &-title {
+      font-size: 2.5em;
+      line-height: 1em;
+    }
+    &-contributor {
+      font-size: 2.5em;
+      line-height: 1em;
+      // text-decoration: underline;
+      display: inline;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .home-featured {
+    height: 45vh;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .home-featured {
+    height: 75vh;
   }
 }
 

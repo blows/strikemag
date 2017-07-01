@@ -87,9 +87,9 @@
   // @include justify-content(center);
   @include justify-content(space-between);
   article:nth-of-type(1), article:nth-of-type(2) {
-    width: 31.5em;
+    width: 43.5vw;
     .card-large-info {
-      height: 21em;
+      height: 25.85vw;
       padding: 1em 1.3em 1em 1.3em;
       &__title {
         font-size: 1.6em;
@@ -102,6 +102,18 @@
       &__summary {
         font-size: 1em;
         line-height: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .online-recent {
+    article:nth-of-type(1), article:nth-of-type(2) {
+      width: 100%;
+      .card-large-info {
+        height: 53.2vw;
+        padding: 1em 1.3em 1em 1.3em;
       }
     }
   }
