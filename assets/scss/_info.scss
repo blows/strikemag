@@ -43,14 +43,14 @@
   }
 }
 
-.info-stockists {
-  @include span(12);
-  padding-left: 0;
-  padding-right: 0;
-  h1, h2 {
-    padding-bottom: 1em;
-  }
-}
+// .info-stockists {
+//   @include span(12);
+//   padding-left: 0;
+//   padding-right: 0;
+//   h1, h2 {
+//     padding-bottom: 1em;
+//   }
+// }
 
 .stockists {
   @include span(8);
@@ -97,6 +97,28 @@ ul.stockists {
   margin-left: 0;
   a {
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .info-nav {
+    display: none;
+  }
+  .info-section {
+    padding-top: 2em;
+    padding-bottom: 4em;
+    h1, h2 {
+      @include span(12);
+      // @include push(.5);
+    }
+    p {
+      @include span(12);
+      // @include push(.5);
+    }
+  }
+  .stockists {
+    @include span(12);
+    // @include push(.5);
   }
 }
 
