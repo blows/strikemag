@@ -28,7 +28,7 @@
 </head>
 <body>
 
-  <header class="header nav-down" role="banner">
+  <header class="header" role="banner">
 
       <?php snippet('menu') ?>
 

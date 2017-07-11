@@ -3,7 +3,7 @@
   z-index: 30;
   padding-top: 0;
   // font-size: 0;
-  width:100%;
+  @include span(12);
   background: #ffffff;
   top: 0;
   transition: top 0.2s ease-in-out;
@@ -21,24 +21,4 @@
     text-decoration: none;
     color: black;
   }
-  .hamburger {
-    display: inline;
-  }
-}
-
-.navigation-menu {
-  display: none;
-}
-
-@media all and (max-width: 500px) {
-  .navigation-page {
-    display: none;
-  }
-  .navigation-menu {
-    display: inline;
-    // font-size: .7em;
-  }
-}
-.nav-up {
-    top: -4rem;
 }

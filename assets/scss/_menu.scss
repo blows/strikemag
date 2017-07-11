@@ -6,18 +6,11 @@
   right: 0;
 }
 
-.menu-item {
-  float: left;
-  width: 20%;
-  // small screens
-  @media (max-width: 500px) {
-      display: block;
-  }
-}
-
 li.menu-item {
   background-color: black;
   border-bottom: 0;
+  float: left;
+  width: 20%;
   &:hover {
     background-color: $strikeMainColor;
   }
@@ -37,8 +30,12 @@ li.menu-item {
   }
 }
 
-.menu-toggle, #menu-drop {
+.menu-toggle {
   display: none;
+}
+
+#menu-drop {
+  display: block;
 }
 
 @media screen and (max-width: 550px) {
