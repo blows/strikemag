@@ -70,11 +70,13 @@
       <div class="magazine-more__issues group">
         <?php foreach($issues as $issue): ?>
 
+          <?php $box = 'background-' . uniqid(); $colors[$box] = $issue; ?>
+
           <?php $image = $issue->coverimage()->toFile(); ?>
 
           <div class="magazine-more__issue-cover">
             <a href="<?= $issue->url() ?>" alt="<?= $issue->title()->html() ?>: <?= $issue->name()->html() ?>">
-              <div class="magazine-more__issue-hover">
+              <div class="magazine-more__issue-hover <?= $box ?>">
                 <h5><?= $issue->title()->upper()->html() ?><?php if ($issue->name()->isNotEmpty()): ?>&mdash;<?= $issue->name()->upper()->html() ?><?php endif ?></h5>
                 <img src="<?php echo thumb($image, array('width' => 364.5, 'height' => 500, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?> class="fill" sizes="100vw" srcset="<?php echo thumb($image, array('width' => 600, 'height' => 823, 'quality' => 70, 'crop' => true), false) ?> 600w,
                  <?php echo thumb($image, array('width' => 800, 'height' => 1097, 'quality' => 70, 'crop' => true), false) ?> 800w,
