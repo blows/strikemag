@@ -7,15 +7,15 @@
 
     <div class="footer-nav">
       <ul class="footer-links">
-        <li><a href="http://www.strikemag.org" target="_blank">Contact</a></li>
+        <li><a href="info#contact">Contact</a></li>
         <li><a href="http://www.strikemag.org" target="_blank">Subscribe</a></li>
-        <li><a href="http://www.strikemag.org" target="_blank">Contributors</a></li>
+        <li><a href="contributors">Contributors</a></li>
       </ul>
 
       <ul class="footer-socials">
-        <li><a href="http://www.strikemag.org" target="_blank">Facebook</a></li>
-        <li><a href="http://www.strikemag.org" target="_blank">Twitter</a></li>
-        <li><a href="http://www.strikemag.org" target="_blank">Instagram</a></li>
+        <li><a href="<?php echo $site->facebook()->html() ?>" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        <li><a href="<?php echo $site->twitter()->html() ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="<?php echo $site->instagram()->html() ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
       </ul>
     </div>
 

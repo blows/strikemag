@@ -1,6 +1,6 @@
 .footer {
   @include span(12);
-  padding-top: 1.5rem;
+  padding-top: 1.5em;
   min-height: 20vh;
   background-color: $strikeMainColor;
   color: white;
@@ -36,12 +36,16 @@
     margin-bottom: 2em;
     font-size: 1.8em;
     line-height: 1.5em;
+    text-align: center;
   }
 }
 
 .footer-nav {
   @include span(11);
   @include push(.5);
+  @include display-flex;
+  @include justify-content(space-between);
+  @include align-items(flex-end);
   margin-top: 3em;
 }
 
@@ -68,7 +72,46 @@
 .footer-socials {
   float: right;
   a {
-    margin-left: 1.5em;
+    margin-left: .7em;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding-top: 0;
+  }
+
+  .footer-newsletter {
+    @include span(11);
+    @include push(.5);
+    #mc_embed_signup input.email {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    #mc_embed_signup .button {
+      width: 100%;
+    }
+  }
+
+  .footer-nav {
+    @include span(11);
+    @include push(.5);
+  }
+
+  .footer-links {
+    display: inline-block;
+    margin-bottom: 1em;
+    li {
+      display: block;
+    }
+  }
+
+  .footer-links {
+    float: left;
+    a {
+      margin-right: 1.5em;
+    }
   }
 }
 

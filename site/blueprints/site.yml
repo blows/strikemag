@@ -18,3 +18,21 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+
+  twitter:
+    label: Twitter
+    icon: twitter
+    type: url
+    width: 1/2
+
+  facebook:
+    label: Facebook
+    icon: facebook-f
+    type: url
+    width: 1/2
+
+  instagram:
+    label: Instagram
+    icon: instagram
+    type: url
+    width: 1/2
