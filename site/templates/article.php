@@ -4,7 +4,7 @@
 
     <?php $colors = []; ?>
 
-    <article class="article group">
+    <article class="article">
 
       <header class="article-info">
         <div class="article-header">
