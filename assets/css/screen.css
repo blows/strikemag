@@ -2449,8 +2449,8 @@ ul.stockists a {
 
 /* line 153, ../scss/_magazine.scss */
 .magazine-more {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 3.75vw;
+  padding-bottom: 6vw;
   background-color: black;
 }
 /* line 157, ../scss/_magazine.scss */
@@ -2465,8 +2465,8 @@ ul.stockists a {
   display: block;
   color: white;
   font-family: 'Druk-Wide-Medium', sans-serif;
-  padding-left: 3em;
-  padding-bottom: 1.5em;
+  padding-left: 4.5vw;
+  padding-bottom: 1.5vw;
 }
 /* line 165, ../scss/_magazine.scss */
 .magazine-more__issues {
@@ -2484,10 +2484,10 @@ ul.stockists a {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
 }
 /* line 178, ../scss/_magazine.scss */
 .magazine-more__issue-cover:nth-of-type(-n+3) {
@@ -2499,8 +2499,8 @@ ul.stockists a {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
 }
 /* line 185, ../scss/_magazine.scss */
 .magazine-more__issue-hover {
@@ -2535,6 +2535,50 @@ ul.stockists a {
   opacity: 0;
 }
 
+@media screen and (max-width: 700px) {
+  /* line 214, ../scss/_magazine.scss */
+  .magazine-more {
+    padding-top: 6.75vw;
+    padding-bottom: 9vw;
+  }
+  /* line 217, ../scss/_magazine.scss */
+  .magazine-more__explore {
+    padding-left: 7.5vw;
+    padding-bottom: 3.75vw;
+  }
+  /* line 221, ../scss/_magazine.scss */
+  .magazine-more__issues {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  /* line 226, ../scss/_magazine.scss */
+  .magazine-more__issue-cover {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+  /* line 232, ../scss/_magazine.scss */
+  .magazine-more__issue-cover:nth-of-type(-n+3) {
+    height: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
 /* ----- 0.0 Contributors  ------------------------------------------------------ */
 /* line 1, ../scss/_contributors.scss */
 .alphabet-letter {
