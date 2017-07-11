@@ -971,7 +971,32 @@ li.branding.menu-item a img {
     padding: 1em 1.3em 1em 1.3em;
   }
 }
-/* line 122, ../scss/_online.scss */
+@media screen and (max-width: 700px) {
+  /* line 123, ../scss/_online.scss */
+  .online-nav {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  /* line 127, ../scss/_online.scss */
+  .online-nav__filter {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  /* line 129, ../scss/_online.scss */
+  .online-nav__filter .button {
+    padding: 1em;
+    margin-left: 0;
+  }
+
+  /* line 135, ../scss/_online.scss */
+  .online-nav__search {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-bottom: 5px;
+  }
+}
+/* line 141, ../scss/_online.scss */
 .online-archive {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

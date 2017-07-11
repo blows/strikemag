@@ -119,6 +119,25 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .online-nav {
+    @include flex-wrap(wrap);
+  }
+
+  .online-nav__filter {
+    @include flex(1 1 auto);
+    .button {
+      padding: 1em;
+      margin-left: 0;
+    }
+  }
+
+  .online-nav__search {
+    @include flex(1 1 auto);
+    margin-bottom: 5px;
+  }
+}
+
 .online-archive {
   @include span(11);
   @include push(.5);

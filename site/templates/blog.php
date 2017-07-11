@@ -60,7 +60,7 @@
 
 
 
-    <?php snippet('pagination') ?>
+    
 
     <style>
       <?php foreach($colors as $box => $parent): ?>
