@@ -1,4 +1,4 @@
-Title: Squatting the Frontline: It's Criminal to Criminalise the Homeless
+Title: Squatting the Frontline
 
 ----
 
@@ -6,7 +6,44 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
+
+Britain is facing the worst housing crisis since the Second World War. There are 40,000 homeless. On an average night 4000 people sleep on the streets. The sell-off of council houses and the failure to build new homes has resulted in 1.7 million households currently being on housing waiting lists. Most families in London and the South East will have a 10 year wait before being offered a council or housing association property. Overcrowding has become endemic.  
+
+With little social housing available people are forced to rent in the private sector where they are faced with high rents and the return of Rackmanite, bullying landlords charging extortionate rents for generally poor quality accommodation—often slum conditions. Increases in rents, cuts in housing benefit and the recent introduction of the bedroom tax mean that benefits fail to cover the rent, which in turn brings with it the threat of eviction.
+
+Fighting for a person’s housing rights and eviction is made increasingly tough with the cuts in legal aid, and the withdrawal of many solicitors’ practices from legal aid work altogether. If a single person is evicted there is virtually no support available from the local council, as the person is either designated as intentionally homeless for failing to pay the rent or capable of supporting themselves and therefore not in need of assistance.
+
+For homeless families presenting themselves as homeless at the local council offices, increasingly the assistance offered is a placement in a squalid bed and breakfast for a number of weeks, sometimes located some distance from the family’s community, the children’s schools and the parents’ workplace. The number of families in bed and breakfast has risen sharply over the last year and now stands at more than 2,000 -the highest number in a decade.
+Whilst this is all going on there are in an average year between 650,000 and 700,000 properties standing empty, with 300,000 properties empty on a long term basis (that is, for at least 6 months).
+
+Inevitably, faced with a choice of being homeless, sleeping rough and witnessing a property stand empty, some people will take what can only be described as a completely rational decision and squat an empty property. From the survey figures produced by the homelessness charity Crisis, we know that 6% of the homeless population will be squatting each night and that 40% of single homeless people have squatted at some time.
+
+The survey demonstrates that many of the people who have squatted have real and serious needs. 90% have slept rough. 42% have physical ill health or a disability. 41% of homeless squatters report mental health needs, with 21% self-harming. 15% have a learning disability and 47% have experienced drug dependency.
+
+The survey confirmed that people were squatting because they had no alternative. 78% had already approached the local council for help but had been turned away.
+
+It is a grotesque injustice and immoral that hundreds of thousands of homes stand empty whilst people are sleeping on our streets, living in squalid, overcrowded conditions, or are being ripped off by private landlords, who make fortunes out of housing benefits. As homelessness grows and people become more and more desperate for a roof over their heads, squatting increasingly becomes an option. 
+
+True to form in representing the landlord class, the Coalition Government has appreciated this potentially growing threat and - at the behest of Tory backbench MPs, many of whom are landlords themselves - has responded to the appalling housing crisis with typical class bias by introducing new legislation to criminalise squatting with the imposition of a £5000 fine or up to a year in prison for squatting a residential property.
+
+Prison sentences have already been handed out and we witnessed the recent tragedy of  Daniel Gauntlett, who it seems may have died after being turned away from squatting a site by the Police. With the potential of a severe winter ahead of us, many predict a heightened risk of more deaths and suffering as people are deterred from squatting and, without other alternatives, put their lives at risk to avoid arrest or prison.
+
+There are now calls from Tory backbench MPs, aided by a small number of Labour MPs, including the high profile Chuka Umunna, for new legislation to criminalise squatting in commercial or other non residential properties.
+The involvement of Labour MPs in this reactionary demand flies in the face of the history of the key role Labour movement activists played in the squatters’ movement. After the war when squatting private properties became common place in many areas, as families waited whilst for the Attlee government to deliver them a council house, Labour activists were at the forefront of many local squatting campaigns. 
+
+In each decade since then when people have been forced to choose squatting rather than homelessness, the labour movement has responded with understanding and compassion, not hostility and prejudice. Occupying factories and community facilities threatened with closure has also been a critical strategy used by the labour and trade union movement in our campaigns to protect jobs and public services over generations.
+
+When the Government forced through the last legislation criminalising squatting it was faced with an amazing breadth of opposition, including the Law Society, the Magistrates Association, and the Criminal Bar Association. Even the Metropolitan Police advised Ministers that the law as it stood “was broadly in the right place and the existing array of offences allowed them to tackle the worst cases of squatting (e.g. where squatters caused the rightful homeowner to be displaced).”
+
+It was already the case that if someone came home and found that someone had squatted where they were living they could ask them to leave and if they refused it became a criminal offence. People’s homes were already protected. There was never any evidence produced by the Government demonstrating the need for a change in the law.
+
+The Law Society, representing the solicitors dealing with this area of the law, criticised the government for introducing the new law without any evidence of the need for it. The Society explained that the government’s own consultation paper on the new proposals acknowledged that “there are no reliable data on the nature and extent of squatting. In the absence of such evidence, we have no reason to believe that the existing law does not deal adequately with squatting.”
+The Law Society was not alone in rejecting the need for the criminalisation of squatting. There were over 2000 responses to the Coalition’s consultation on its proposals and over 90% were opposed to this change. The Government ignored its own the consultation and railroaded the new law through Parliament. Despite all the claims to evidence based policymaking, when it comes to legislating on squatting it is government by bar-room anecdote and prejudice.
+
+The Government is starting to go down the same path again in seeking to extend the criminalising of squatting even further. A few anti-squatter stories are planted in Tory supporting papers and media. Tory backbenchers, and now unfortunately some Labour MPs, commence the clamour for more ruthless laws and penalties. The urban myths of wealthy squatters are hauled out again and again. The centuries old divide and rule tactics are rolled out as squatters are depicted as the undeserving poor contrasted with the deserving poor image of hard working families, who pay their rent and wait their turn on the housing waiting list.
+
+In response to this reactionary claptrap this is the time for us all to stand up and be counted. Homelessness has been seen for too long as either at the micro level a matter for personal charitable donations or at the macro level a debate about the policy of housing supply. It is also increasingly becoming a struggle over the ownership of and right to the use of property, especially at the time of crisis. Squatting is on the frontline of that struggle.
 
 ----
 
@@ -22,8 +59,24 @@ Printed:
 
 ----
 
-Artwork: clifford-harper,matt-fish
+Artwork: clifford-harper, matt-fish
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: It's Criminal to Criminalise the Homeless
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

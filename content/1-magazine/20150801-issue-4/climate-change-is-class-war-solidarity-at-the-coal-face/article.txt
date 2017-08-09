@@ -1,4 +1,4 @@
-Title: Climate Change is Class War: Solidarity at the Coal Face
+Title: Climate Change is Class War
 
 ----
 
@@ -6,7 +6,7 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
 
 ----
 
@@ -26,4 +26,20 @@ Artwork: jade-they
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: Solidarity at the Coal Face
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

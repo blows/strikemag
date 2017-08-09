@@ -1,4 +1,4 @@
-Title: Compañeros of the WordTowards a Literacy of Rebellion
+Title: Compañeros of the Word
 
 ----
 
@@ -18,7 +18,7 @@ Uploaded: 2017-04-28
 
 ----
 
-Printed: 
+Printed: issue-2
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: Towards a Literacy of Rebellion
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

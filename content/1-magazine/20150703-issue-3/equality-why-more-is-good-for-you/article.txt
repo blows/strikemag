@@ -1,4 +1,4 @@
-Title: Equality: Why More is Good for You
+Title: Equality
 
 ----
 
@@ -18,7 +18,7 @@ Uploaded: 2017-04-28
 
 ----
 
-Printed: 
+Printed: issue-3
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: Why More is Good for You
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

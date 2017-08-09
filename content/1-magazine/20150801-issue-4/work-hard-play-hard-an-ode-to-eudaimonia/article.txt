@@ -1,4 +1,4 @@
-Title: Work Hard, Play Hard: An Ode to Eudaimonia
+Title: Work Hard, Play Hard
 
 ----
 
@@ -6,7 +6,7 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
 
 ----
 
@@ -26,4 +26,20 @@ Artwork:
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: An Ode to Eudaimonia
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

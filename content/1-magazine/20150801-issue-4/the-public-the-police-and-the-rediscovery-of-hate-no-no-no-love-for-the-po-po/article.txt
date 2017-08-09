@@ -1,4 +1,4 @@
-Title: The Public, the Police and the Rediscovery of Hate! No-No, No Love for the Po-Po
+Title: The Public, the Police and the Rediscovery of Hate
 
 ----
 
@@ -6,7 +6,7 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
 
 ----
 
@@ -26,4 +26,20 @@ Artwork: anthony-freda
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: No-No, No Love for the Po-Po
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

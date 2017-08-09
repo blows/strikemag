@@ -1,4 +1,4 @@
-Title: Laughtivism: Doing it with the lolz
+Title: Laughtivism
 
 ----
 
@@ -6,7 +6,7 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
 
 ----
 
@@ -26,4 +26,20 @@ Artwork: kasia-fijalkowska
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: Doing it with the LOLZ
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

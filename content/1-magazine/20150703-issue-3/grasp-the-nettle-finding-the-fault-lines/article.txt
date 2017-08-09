@@ -1,4 +1,4 @@
-Title: Grasp the Nettle: Finding the Fault Lines
+Title: Grasp the Nettle
 
 ----
 
@@ -18,7 +18,7 @@ Uploaded: 2017-04-28
 
 ----
 
-Printed: 
+Printed: issue-3
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: Finding the Fault Lines
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

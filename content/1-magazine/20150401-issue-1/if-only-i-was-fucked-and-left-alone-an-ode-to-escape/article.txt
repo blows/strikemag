@@ -1,4 +1,4 @@
-Title: If Only I Was Fucked and Left Alone: An Ode To Escape
+Title: If Only I Was Fucked and Left Alone
 
 ----
 
@@ -18,7 +18,7 @@ Uploaded: 2017-04-28
 
 ----
 
-Printed: 
+Printed: issue-1
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: An Ode To Escape
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

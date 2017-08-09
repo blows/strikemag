@@ -1,4 +1,4 @@
-Title: Dirty White Gold: The Seams of Sedition
+Title: Dirty White Gold
 
 ----
 
@@ -18,7 +18,7 @@ Uploaded: 2017-04-28
 
 ----
 
-Printed: 
+Printed: issue-2
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: The Seams of Sedition
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

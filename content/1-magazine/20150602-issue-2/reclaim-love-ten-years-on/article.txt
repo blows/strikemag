@@ -1,4 +1,4 @@
-Title: Reclaim Love: Ten Years On
+Title: Reclaim Love
 
 ----
 
@@ -18,7 +18,7 @@ Uploaded: 2017-04-28
 
 ----
 
-Printed: 
+Printed: issue-2
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: Ten Years On
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

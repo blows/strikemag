@@ -1,4 +1,4 @@
-Title: Out of the Darkness: Into the Light
+Title: Out of the Darkness
 
 ----
 
@@ -18,7 +18,7 @@ Uploaded: 2017-04-28
 
 ----
 
-Printed: 
+Printed: issue-3
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: Into the Light
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

@@ -1,4 +1,4 @@
-Title: John McDonnell MP
+Title: John McDonnell
 
 ----
 
@@ -6,11 +6,11 @@ Profilepic:
 
 ----
 
-Role: -
+Role: MP
 
 ----
 
-Bio: 
+Bio: John McDonnell is the member for Hayes and Harlington, and the last communist in parliament.
 
 ----
 

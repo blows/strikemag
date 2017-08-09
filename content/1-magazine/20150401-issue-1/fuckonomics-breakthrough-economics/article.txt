@@ -1,4 +1,4 @@
-Title: Fuckonomics: Breakthrough Economics
+Title: Fuckonomics
 
 ----
 
@@ -6,7 +6,7 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
 
 ----
 
@@ -14,7 +14,7 @@ Contributor: david-orrell
 
 ----
 
-Uploaded: 
+Uploaded: 2017-07-01
 
 ----
 
@@ -26,4 +26,20 @@ Artwork: ralph-steadman
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: Breakthrough Economics
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

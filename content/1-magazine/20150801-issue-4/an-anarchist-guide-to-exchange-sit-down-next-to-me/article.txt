@@ -1,4 +1,4 @@
-Title: An Anarchist Guide to... Exchange: Sit Down Next to Me
+Title: An Anarchist Guide to... Exchange
 
 ----
 
@@ -6,7 +6,7 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
 
 ----
 
@@ -26,4 +26,20 @@ Artwork: marco-bevilacqua
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: Sit Down Next to Me
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

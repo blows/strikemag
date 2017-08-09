@@ -1,4 +1,4 @@
-Title: Work: A View From 100 Years Hence
+Title: Work
 
 ----
 
@@ -27,3 +27,19 @@ Summary:
 ----
 
 Text: 
+
+----
+
+Subtitle: A View From 100 Years Hence
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

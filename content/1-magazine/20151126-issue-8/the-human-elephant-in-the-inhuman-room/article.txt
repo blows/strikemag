@@ -1,4 +1,4 @@
-Title: The Human Elephant: (In the Inhuman Room)
+Title: The Human Elephant
 
 ----
 
@@ -27,3 +27,19 @@ Summary:
 ----
 
 Text: 
+
+----
+
+Subtitle: (In the Inhuman Room)
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

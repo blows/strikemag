@@ -1,4 +1,4 @@
-Title: Positive Money: Picking Up the Slingshot
+Title: Positive Money
 
 ----
 
@@ -6,7 +6,7 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
 
 ----
 
@@ -26,4 +26,20 @@ Artwork: jed-collins
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: Picking Up the Slingshot
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

@@ -1,4 +1,4 @@
-Title: Climate, Land and HomesYou Are Fucked
+Title: Climate, Land and Homes
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: You Are Fucked
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

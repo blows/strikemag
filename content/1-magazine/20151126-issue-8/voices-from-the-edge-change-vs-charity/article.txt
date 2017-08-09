@@ -1,4 +1,4 @@
-Title: Voices From the Edge: Change vs. Charity
+Title: Voices From the Edge
 
 ----
 
@@ -27,3 +27,19 @@ Summary:
 ----
 
 Text: 
+
+----
+
+Subtitle: Change vs. Charity
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

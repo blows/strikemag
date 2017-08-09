@@ -1,4 +1,4 @@
-Title: Citizen's Income: Freedom From Fear
+Title: Citizen's Income
 
 ----
 
@@ -27,3 +27,19 @@ Summary:
 ----
 
 Text: 
+
+----
+
+Subtitle: Freedom From Fear
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

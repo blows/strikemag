@@ -1,4 +1,4 @@
-Title: Dissent: Do Not Say No
+Title: Dissent
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: Do Not Say No
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

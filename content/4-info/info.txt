@@ -4,12 +4,22 @@ Title: Info
 
 Aboutus: 
 
-STRIKE! is a collective working co-operatively against structural oppression and towards decolonised, intersectional, post-capitalist futures. Primarily producing a radical publication, we aim to be a platform for those involved in grassroots struggle, anti- oppression politics and the creative movements surrounding these issues.
+STRIKE! is a collective working co-operatively against structural oppression and towards decolonised, intersectional, post-capitalist futures. Primarily producing a quarterly radical publication, we aim to be a platform for those involved in grassroots struggle, anti-oppression politics and the creative movements surrounding these issues.
 Alongside the magazine we organise exhibitions, parties, workshops, and actions across London.
 
 ----
 
-Contact: Prompta menandri eam id. Duo dolor doctus ei, utinam assueverit te sea. Cum id eirmod deterruisset. Sit tantas doctus te, in commodo mediocritatem quo. Vel ad affert epicurei, id vix eros minimum salutatus.
+Contact: 
+
+For general enquiries contact: editor@strikemag.org or see our contribute or distribute pages for further info.
+
+Writing: editor@strikemag.org
+Art: design@strikemag.org
+Events: events@strikemag.org
+Video: video@strikemag.org
+Distribution: distribution@strikemag.org
+
+Our main office days are Tuesday and Wednesday, so please be patient if we are slow to respond.
 
 ----
 
@@ -19,13 +29,14 @@ Newsletter: If you'd like an email from us once in a while, sign up for our mail
 
 Submissions: 
 
-Lorem ipsum dolor sit amet, voluptaria sadipscing deterruisset eu eos, ut his feugiat fabellas, vel in partem delenit. Liber errem insolens an mei. An scribentur concludaturque vim. Electram maiestatis ei eos, vis id elitr regione expetenda, dolorem oportere duo cu. Usu wisi vidit antiopam cu, illum expetenda cum in, mel ea facer cetero. At duis prima definiebas eam, nec persius ponderum dissentiunt no. Equidem lucilius temporibus ex cum.
+We accept pitches and submissions! Please refer to this guide before submitting your work.
 
-Prompta menandri eam id. Duo dolor doctus ei, utinam assueverit te sea. Cum id eirmod deterruisset. Sit tantas doctus te, in commodo mediocritatem quo. Vel ad affert epicurei, id vix eros minimum salutatus.
+If you would like to write for the magazine, please send us an email with a pitch around 250 words to editor@strikemag.org. Please familiarise yourself with our site, the articles written before you and the politics we are interested in to make sure this is the right platform for you.  We are not interested in conservative ideas and/or academic jargon, our mission is to promote radical left wing ideas and critical thought that do not require a political science phd to comprehend,  please keep this in mind when submitting. The work we publish will always be anti-capitalist, anti-sexist and anti-racist and we strive to push for intersectional feminist ideals. Our mission is to promote pro sex work and trans inclusive feminism alongside decolonization, anti-imperialist and anti-albeist voices. 
 
-Mel dolores noluisse recusabo an, eripuit constituto ne vim. Te vim iudico indoctum, latine euismod ornatus sea no, no tempor conceptam adversarium quo. An porro eloquentiam ius, doming fierent noluisse te pro, iusto percipit ne his. Reque minimum detraxit eos at. Vide laudem an pro, dico movet reformidans eos ut.
+Our printed issues are usually themed, if your submission does not fit into the current theme, it can be published on the website. Alongside  articles, we are also keen on design, art and video submission. The word count for article submissions is between 800-1500 words. We also accept interviews, design, illustrations and video content.
+STRIKE! Is  run 100% on volunteers who believe in the need for a radical alternative media platform. We currently unfortunately can not pay you, although we are in the midst of fundraising so we can pay our contributors a small fee in the near future.  
 
-Integre tractatos vim ex. In eos sapientem deseruisse scripserit, ei pri etiam graeco voluptatum. No solum urbanitas dissentiunt quo. Ad fabellas adversarium pri, ex scripta inciderint temporibus has. His tincidunt dissentiet ut. In odio ipsum inimicus vix, delectus ullamcorper ex vim, agam nulla eloquentiam at vix.
+Can’t wait to read, see and watch all your wonderful ideas. Look forward to hearing from you soon & don’t be shy!
 
 ----
 
@@ -61,9 +72,11 @@ Prompta menandri eam id. Duo dolor doctus ei, utinam assueverit te sea. Cum id e
 
 Distribution: 
 
-Integre tractatos vim ex. In eos sapientem deseruisse scripserit, ei pri etiam graeco voluptatum. No solum urbanitas dissentiunt quo. Ad fabellas adversarium pri, ex scripta inciderint temporibus has. His tincidunt dissentiet ut. In odio ipsum inimicus vix, delectus ullamcorper ex vim, agam nulla eloquentiam at vix.
+We are self-published and self-distributed, when and how we send post.
 
-Sed ut modus facilis, mei ad quot eleifend. Quod errem dolores et sed. At vix iriure officiis, ne exerci conceptam quaerendum cum, sea duis inani sadipscing ea. Nec an aperiri assentior vulputate, quo alia audire corrumpit et, ut liber paulo sit. Vim et vitae perfecto interesset, rebum inermis volumus mel at, mel idque labore ei. Invidunt senserit usu eu.
+We do post once a week with 2nd class mail, so patience might be needed! If you have any questions about your order then please email distribution@strike.org.
+
+If you’re interesting in stocking STRIKE! Please email <distribution@strikemag.org>.
 
 ----
 
@@ -87,15 +100,15 @@ Stockists:
   link: http://www.housmans.com/
 - 
   location: London, UK
-  stockist: Institute of Contemporary Arts
+  stockist: ICA
   link: https://www.ica.art
 - 
   location: London, UK
-  stockist: 'TATE Modern - Terrace Shop'
+  stockist: TATE Modern—Terrace Shop
   link: >
     http://www.tate.org.uk/visit/tate-modern/terrace-shop
 - 
   location: London, UK
-  stockist: 'TATE Modern - Turbine Hall'
+  stockist: TATE Modern—Turbine Hall
   link: >
     http://www.tate.org.uk/visit/tate-modern/turbine-hall-shop

@@ -1,4 +1,4 @@
-Title: Occupying the Media: When the Going Gets Weird, the Weird Turn Pro
+Title: Occupying the Media
 
 ----
 
@@ -18,7 +18,7 @@ Uploaded: 2017-04-28
 
 ----
 
-Printed: 
+Printed: issue-2
 
 ----
 
@@ -27,3 +27,19 @@ Artwork:
 ----
 
 Summary: 
+
+----
+
+Subtitle: When the Going Gets Weird, the Weird Turn Pro
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 

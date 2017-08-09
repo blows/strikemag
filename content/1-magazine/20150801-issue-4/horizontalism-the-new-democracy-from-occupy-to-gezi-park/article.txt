@@ -1,4 +1,4 @@
-Title: Horizontalism: The New Democracy From Occupy to Gezi Park
+Title: Horizontalism
 
 ----
 
@@ -6,7 +6,7 @@ Coverimage:
 
 ----
 
-Text:
+Text: 
 
 ----
 
@@ -26,4 +26,20 @@ Artwork: hannah-meese
 
 ----
 
-Summary:
+Summary: 
+
+----
+
+Subtitle: The New Democracy From Occupy to Gezi Park
+
+----
+
+Tags: 
+
+----
+
+Category: text
+
+----
+
+Media: 
