@@ -25,7 +25,7 @@
             </div>
             <div class="issue-summary__detail">
               <h1 class="issue-summary__detail-title"><?= $issue->title()->upper()->html() ?>: <?= $issue->name()->html() ?></h1>
-              <h3 class="issue-summary__detail-printed">PRINTED: <?= $issue->date('d/m/Y', 'printed') ?></h3>
+              <p class="issue-summary__detail-printed">PRINTED: <?= $issue->date('d/m/Y', 'printed') ?></p>
               <p class="issue-summary__detail-summary"><?= $issue->summary()->html() ?></p>
             </div>
             <?php if ($issue->buy()->isNotEmpty()): ?>
@@ -44,19 +44,19 @@
                   <?php if($content->isVisible()): ?>
                     <div class="issue-contents__content <?= $box ?>">
                     <a href="<?= $content->url() ?>">
-                    <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1>
+                    <h2 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h2>
                     <?php foreach ($content->contributor()->split() as $name): ?>
-                          <h3 class="issue-contents__content-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+                          <p class="issue-contents__content-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></p>
                     <?php endforeach; ?></a>
                     </div>
                   <?php else: ?>
                     <div class="issue-contents__content <?= $box ?> offline">
-                    <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
-                    <h3 class="issue-contents__content-contributor">
+                    <h2 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h2>
+                    <p class="issue-contents__content-contributor">
                       <?php foreach ($content->contributor()->split() as $name): ?>
                           <span><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></span>
                       <?php endforeach; ?>
-                    </h3>
+                    </p>
                     </div>
                   <?php endif ?>
 
