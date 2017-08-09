@@ -389,13 +389,14 @@
     @include push(.5);
     font-family: 'Druk-Wide-Medium', sans-serif;
     padding-top: 1em;
+    padding-bottom: 1.5em;
   }
   ul {
-    // @include span(11);
-    // @include push(.5);
+    @include span(11);
+    @include push(.5);
     @include display-flex;
     @include flex-wrap(wrap);
-    @include justify-content(center);
+    @include justify-content(space-between);
     background-color: $strikeBackground;
     padding-bottom: 2.5em;
   }

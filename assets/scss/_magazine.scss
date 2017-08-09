@@ -97,6 +97,8 @@
       border-width: 3px 3px 3px 3px;
     }
     a {
+      @include span(6.5);
+      @include push(2.65);
       display: block;
       color: black;
       text-decoration: none;
@@ -110,6 +112,10 @@
   }
   &__content.offline {
     color: lightgrey;
+    .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
+      @include span(6.5);
+      @include push(2.65);
+    }
     &:hover {
       color: lightgrey;
     }
@@ -128,13 +134,13 @@
   }
   &__content-title {
     padding-top: 1.5em;
-    padding-left: 1.5em;
+    // padding-left: 1.5em;
     padding-right: 1.5em;
   }
   &__content-contributor {
     // font-family: 'Druk-Wide-Medium', sans-serif;
     padding-bottom: 1.5em;
-    padding-left: 1.5em;
+    // padding-left: 1.5em;
     display: inline-block;
     // Commas between multiple authors
     span {
@@ -211,6 +217,23 @@ $issue-padding: 1.5vw;
 }
 
 @media screen and (max-width: 700px) {
+  .issue-contents {
+    &__content {
+      @include span(11);
+      @include push(.5);
+      a {
+        @include span(11);
+        @include push(.5);
+      }
+    }
+    &__content.offline {
+      .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
+        @include span(11);
+        @include push(.5);
+      }
+    }
+  }
+
   .magazine-more {
     padding-top: $issue-padding*4.5;
     padding-bottom: $issue-padding*6;
