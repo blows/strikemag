@@ -64,19 +64,6 @@
   @include span(12);
   padding: 0;
   padding-bottom: 3em;
-  &__title {
-    font-family: 'Druk-Wide-Medium', sans-serif;
-    text-align: center;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    border-bottom: .5px solid grey;
-    h1 {
-      display: inline-block;
-    }
-    i {
-      padding: .3em;
-    }
-  }
 
   &-group {
     // display: none;

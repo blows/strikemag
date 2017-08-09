@@ -36,7 +36,6 @@
           </div>
 
           <div class="issue-contents">
-            <!-- <div class="issue-contents__title"><h1><?php echo $issue->title()->upper() ?> CONTENTS</h1><i class="fa fa-angle-down" aria-hidden="true"></i></div> -->
             <div class="issue-contents-group">
               <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
                 <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
@@ -91,31 +90,29 @@
           </div>
         </div>
 
-
-
       <style>
-  <?php foreach($colors as $box => $issue): ?>
-    .<?= $box ?> {
-      border-color: <?= $issue->color() ?> !important;
-    }
+        <?php foreach($colors as $box => $issue): ?>
+          .<?= $box ?> {
+            border-color: <?= $issue->color() ?> !important;
+          }
 
-    .<?= $box ?>:hover, .<?= $box ?>:focus {
-      background: <?= $issue->color() ?> !important;
-    }
+          .<?= $box ?>:hover, .<?= $box ?>:focus {
+            background: <?= $issue->color() ?> !important;
+          }
 
-    .<?= $box ?>:hover.offline, .<?= $box ?>:focus.offline {
-      background: transparent !important;
-    }
+          .<?= $box ?>:hover.offline, .<?= $box ?>:focus.offline {
+            background: transparent !important;
+          }
 
-    .<?= $word ?> {
-      color: <?= $issue->color() ?> !important;
-    }
+          .<?= $word ?> {
+            color: <?= $issue->color() ?> !important;
+          }
 
-    .<?= $word ?>:hover, .<?= $word ?>:focus {
-      color: white !important;
-    }
-  <?php endforeach ?>
-</style>
+          .<?= $word ?>:hover, .<?= $word ?>:focus {
+            color: white !important;
+          }
+        <?php endforeach ?>
+      </style>
 
     </div>
 
