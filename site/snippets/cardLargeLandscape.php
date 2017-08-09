@@ -1,12 +1,19 @@
 <article class="card-large <?= $box ?>">
 <a href="<?= $article->url() ?>">
 
-  <?php if ($article->coverimage()->isNotEmpty()) : ?>
+  <?php if ($article->hasImages()) : ?>
     <div class="card-large-image">
-      <?php $ci = $article->coverimage()->toFile() ?>
-      <figure>
-        <img src="<?php echo $ci->focusCrop(630, 420)->url(); ?>" alt="" />
-      </figure>
+      <?php if ($article->coverimage()->isNotEmpty()) : ?>
+        <?php $ci = $article->coverimage()->toFile() ?>
+        <figure>
+          <img src="<?php echo $ci->focusCrop(630, 420)->url(); ?>" alt="" />
+        </figure>
+      <?php else : ?>
+        <?php $ci = $article->images()->first() ?>
+        <figure>
+          <img src="<?php echo $ci->focusCrop(630, 420)->url(); ?>" alt="" />
+        </figure>
+      <?php endif; ?>
     </div>
   <?php endif; ?>
 
