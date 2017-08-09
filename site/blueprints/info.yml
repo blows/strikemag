@@ -30,18 +30,6 @@ fields:
     label: Submissions
     type: textarea
 
-  writing:
-    label: Writing
-    type: textarea
-
-  art:
-    label: Art/Design
-    type: textarea
-
-  videox:
-    label: Video
-    type: textarea
-
   distribution:
     label: Distribution
     type: textarea

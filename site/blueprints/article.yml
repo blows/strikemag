@@ -103,6 +103,7 @@ fields:
   category:
     label: Category
     type: fieldtoggle
+    columns: 3
     options:
       text: Text
       video: Video
