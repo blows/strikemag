@@ -28,6 +28,13 @@ fields:
     default: 5
     width: 1/4
 
+  summary:
+    label: Page Description
+    type: textarea
+    validate:
+      maxLength: 140
+    help: Appears on things like FB links.
+
   text:
     label: Text
     type: textarea

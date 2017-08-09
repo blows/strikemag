@@ -6,8 +6,36 @@
   <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
+  <?php if($page->isHomepage()): ?>
+    <title><?php echo html($site->title()) ?></title>
+  <?php else: ?>
+    <title><?php echo html($site->title() . ' – ' . $page->title()) ?></title>
+  <?php endif ?>
+
   <meta name="description" content="<?= $site->description()->html() ?>">
+
+  <!-- OpenGraph Tags -->
+  <meta name="DC.Title" content="<?php echo html($page->title()) ?>" />
+  <meta name="DC.Creator" content="<?php echo html($site->author()) ?>" />
+  <meta name="DC.Rights" content="<?php echo html($site->author()) ?>" />
+  <meta name="DC.Publisher" content="<?php echo html($site->author()) ?>" />
+  <meta name="DC.Description" content="<?php echo html($page->summary()) ?>"/ >
+  <meta name="DC.Language" content="de_DE" />
+  <meta property="og:title" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<?php echo html($site->url()) ?>" />
+  <?php if ($page->coverimage()->isNotEmpty()): ?>
+    <meta property="og:image" content="<?php echo html($page->coverimage()->toFile()->url()) ?>" />
+  <?php endif; ?>
+  <meta property="og:description" content="<?php echo html($page->summary()) ?>" />
+  <meta itemprop="name" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>">
+  <meta itemprop="description" content="<?php echo html($page->summary()) ?>">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="<?php echo url('/favicon.ico') ?>" />
+  <link rel="apple-touch-icon" href="<?php echo url('assets/images/icons/icons/iOS/apple-touch-icon-72x72.png') ?>" />
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-72x72.png') ?>" />
+  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-114x114.png') ?>" />
 
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6a356015ff.js"></script>

@@ -103,12 +103,12 @@
                 <a id="buy" href="<?php echo $page->parent()->buy()->html() ?>" target="_blank" style="border-color: <?= $page->parent()->color() ?> !important;">
                   <div class="article-end__buy-cover">
                     <figure id="end-cover">
-                      <?php echo thumb($cover, array('width' => 200)); ?>
+                      <?php echo thumb($cover, array('width' => 400)); ?>
                     </figure>
                   </div>
                 </a>
                 <div class="article-end__info">
-                  <p>Originally published in <?= $issue->title()->html() ?><?php if ($issue->name()->isNotEmpty()) :?>&mdash;<?= $issue->name()->html() ?><?php endif ?>, <?= $issue->date('F Y', 'printed') ?>.
+                  <p>Originally published in <?= $issue->title()->html() ?><?php if ($issue->name()->isNotEmpty()) :?>: <?= $issue->name()->html() ?><?php endif ?>, <?= $issue->date('F Y', 'printed') ?>.
                     <br><br>
                     Available from our shop.
                   </p>

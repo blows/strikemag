@@ -23,3 +23,7 @@ Color2: #000000
 ----
 
 Color3: #000000
+
+----
+
+Summary: STRIKE! Magazine uploads new pieces weekly, from the archive or specially commissioned web-only pieces.

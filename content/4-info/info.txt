@@ -112,3 +112,7 @@ Stockists:
   stockist: TATE Modern—Turbine Hall
   link: >
     http://www.tate.org.uk/visit/tate-modern/turbine-hall-shop
+
+----
+
+Summary: STRIKE! is a collective working co-operatively towards decolonised, intersectional, post-capitalist futures.

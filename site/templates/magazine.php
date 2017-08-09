@@ -5,7 +5,7 @@
     <div class="magazine">
 
       <div class="magazine-intro">
-        <p>Explore all the back issues of our quarterly publication.</p>
+        <p>Explore all the back issues of STRIKE! Magazine</p>
       </div>
 
       <?php $colors = []; ?>
@@ -25,7 +25,7 @@
             </div>
             <div class="issue-summary__detail">
               <h1 class="issue-summary__detail-title"><?= $issue->title()->upper()->html() ?>: <?= $issue->name()->html() ?></h1>
-              <p class="issue-summary__detail-printed">PRINTED: <?= $issue->date('d/m/Y', 'printed') ?></p>
+              <p class="issue-summary__detail-printed">PRINTED: <?= $issue->date('d.m.Y', 'printed') ?></p>
               <p class="issue-summary__detail-summary"><?= $issue->summary()->html() ?></p>
             </div>
             <?php if ($issue->buy()->isNotEmpty()): ?>
@@ -77,7 +77,7 @@
               <div class="magazine-more__issue-cover">
                 <a href="<?= $issue->url() ?>" alt="<?= $issue->title()->html() ?>: <?= $issue->name()->html() ?>">
                   <div class="magazine-more__issue-hover <?= $box ?>">
-                    <h5><?= $issue->title()->upper()->html() ?><?php if ($issue->name()->isNotEmpty()): ?>&mdash;<?= $issue->name()->upper()->html() ?><?php endif ?></h5>
+                    <h5><?= $issue->title()->upper()->html() ?><?php if ($issue->name()->isNotEmpty()): ?>: <?= $issue->name()->upper()->html() ?><?php endif ?></h5>
                     <img src="<?php echo thumb($image, array('width' => 364.5, 'height' => 500, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?> class="fill" sizes="100vw" srcset="<?php echo thumb($image, array('width' => 600, 'height' => 823, 'quality' => 70, 'crop' => true), false) ?> 600w,
                      <?php echo thumb($image, array('width' => 800, 'height' => 1097, 'quality' => 70, 'crop' => true), false) ?> 800w,
                      <?php echo thumb($image, array('width' => 1200, 'height' => 1646, 'quality' => 70, 'crop' => true), false) ?> 1200w,

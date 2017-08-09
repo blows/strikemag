@@ -18,6 +18,13 @@ fields:
     label: Title
     type: title
 
+  summary:
+    label: Page Description
+    type: textarea
+    validate:
+      maxLength: 140
+    help: Appears on things like FB links.
+
   aboutus:
     label: About
     type: textarea

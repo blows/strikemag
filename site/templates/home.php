@@ -4,18 +4,7 @@
 
     <?php $colors = []; ?>
 
-    <!-- <header class="">
-      <h1><?= $page->title()->html() ?></h1>
-
-      <?php if($pagination->page() == 1):?>
-        <div class="intro text">
-          <?= $page->text()->kirbytext() ?>
-        </div>
-      <?php endif ?>
-    </header> -->
-
-    <?php $uid = $page->featuredarticle(); ?>
-    <?php $post = $pages->index()->findBy('uid', $uid); ?>
+    <!-- Featured Banner 1 -->
     <section class="home-featured" style="background-image: url(<?= $post->coverimage()->toFile()->url(); ?>)">
 
         <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
@@ -106,18 +95,17 @@
       <?php endif ?>
     </section>
 
-    <?php $uid = $page->featuredarticle2(); ?>
-    <?php $post = $pages->index()->findBy('uid', $uid); ?>
-    <section class="home-featured" style="background-image: url(<?= $post->coverimage()->toFile()->url(); ?>)">
+    <!-- Featured Banner 2 -->
+    <section class="home-featured" style="background-image: url(<?= $post2->coverimage()->toFile()->url(); ?>)">
 
-        <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
+        <?php $back = 'back-' . uniqid(); $colors[$back] = $post2->parent()->color(); ?>
 
-        <a href="<?php echo $post->url(); ?>" class="home-featured-text <?= $back ?>">
+        <a href="<?php echo $post2->url(); ?>" class="home-featured-text <?= $back ?>">
           <h2 class="home-featured-title">
-            <?php echo $post->title()->upper()->widont(); ?>
+            <?php echo $post2->title()->upper()->widont(); ?>
           </h2>
 
-          <?php foreach ($post->contributor()->split() as $name): ?>
+          <?php foreach ($post2->contributor()->split() as $name): ?>
                 <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
           <?php endforeach; ?>
 

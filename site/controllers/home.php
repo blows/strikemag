@@ -18,10 +18,19 @@ return function($site, $pages, $page) {
   $online = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 6);
   $archives = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 6);
 
+  $uid = $page->featuredarticle();
+  $post = $pages->index()->findBy('uid', $uid);
+  $uid2 = $page->featuredarticle2();
+  $post2 = $pages->index()->findBy('uid', $uid2);
+
   return [
     'articles'   => $online,
     'archives'   => $archives,
-    'pagination' => $online->pagination()
+    'pagination' => $online->pagination(),
+    'uid'        => $uid,
+    'post'       => $post,
+    'uid2'       => $uid2,
+    'post2'      => $post2
   ];
 
 };

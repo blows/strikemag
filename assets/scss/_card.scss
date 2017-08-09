@@ -17,6 +17,9 @@
     a {
       color: white;
     }
+    figure img {
+      @include filter(grayscale(100%));
+    }
   }
 
   &-image {
