@@ -40,6 +40,12 @@
   <!-- Adaptive Images -->
   <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
 
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="assets/js/picturefill.min.js" async></script>
+
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6a356015ff.js"></script>
 

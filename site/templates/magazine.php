@@ -78,7 +78,8 @@
                 <a href="<?= $issue->url() ?>" alt="<?= $issue->title()->html() ?>: <?= $issue->name()->html() ?>">
                   <div class="magazine-more__issue-hover <?= $box ?>">
                     <h5><?= $issue->title()->upper()->html() ?><?php if ($issue->name()->isNotEmpty()): ?>: <?= $issue->name()->upper()->html() ?><?php endif ?></h5>
-                    <img src="<?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?> class="fill" sizes="100vw" srcset="<?php echo thumb($image, array('width' => 504, 'height' => 691, 'quality' => 70, 'crop' => true), false) ?> 600w,
+                    <img src="<?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
+                    srcset="<?php echo thumb($image, array('width' => 504, 'height' => 691, 'quality' => 70, 'crop' => true), false) ?> 600w,
                      <?php echo thumb($image, array('width' => 460, 'height' => 575, 'quality' => 70, 'crop' => true), false) ?> 800w,
                      <?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 70, 'crop' => true), false) ?> 1200w,
                      <?php echo thumb($image, array('width' => 930, 'height' => 1275, 'quality' => 70, 'crop' => true), false) ?> 1600w,
