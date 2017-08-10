@@ -37,6 +37,9 @@
   <link rel="apple-touch-icon" sizes="72x72" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-72x72.png') ?>" />
   <link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-114x114.png') ?>" />
 
+  <!-- Adaptive Images -->
+  <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
+
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6a356015ff.js"></script>
 
