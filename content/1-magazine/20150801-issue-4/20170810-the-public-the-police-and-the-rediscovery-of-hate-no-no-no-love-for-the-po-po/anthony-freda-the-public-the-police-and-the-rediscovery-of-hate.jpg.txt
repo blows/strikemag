@@ -1,0 +1,5 @@
+Credit: anthony-freda
+
+----
+
+Focus: {"x":0.23,"y":0.42}
