@@ -107,9 +107,10 @@ fields:
   category:
     label: Category
     type: fieldtoggle
-    columns: 3
+    columns: 4
     options:
       text: Text
+      img: Image
       video: Video
       audio: Audio
     show:
@@ -117,6 +118,7 @@ fields:
       audio: media
     hide:
       text: media
+      img: media
 
   media:
     label: Media (Video/Playlist)
