@@ -2,7 +2,7 @@ Title: Issue 9
 
 ----
 
-Name:
+Name: 
 
 ----
 
@@ -10,7 +10,7 @@ Coverimage: 09-spread-01.jpg
 
 ----
 
-Printed: 2015-01-08
+Printed: 2015-01-20
 
 ----
 
@@ -22,4 +22,4 @@ Color: rgba(51, 55, 255, 1)
 
 ----
 
-Buy:
+Buy: http://strikemag.bigcartel.com/product/jan-feb-2015
