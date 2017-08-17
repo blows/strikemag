@@ -398,6 +398,6 @@
     @include flex-wrap(wrap);
     @include justify-content(space-between);
     background-color: $strikeBackground;
-    padding-bottom: 2.5em;
+    padding-bottom: 2em;
   }
 }

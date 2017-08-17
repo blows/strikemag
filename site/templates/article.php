@@ -121,7 +121,7 @@
 
     </article>
 
-    <?php if ($page->tags()->isNotEmpty()) : ?>
+    <?php if($no = $relatedPages->count() > 1): ?>
     <section class="article-related">
       <h2 class="article-related__header">RELATED</h2>
       <ul>
