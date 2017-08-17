@@ -121,7 +121,7 @@
 
     </article>
 
-    <?php if($no = $relatedPages->count() > 1): ?>
+    <?php if($relatedPages->count() > 1): ?>
     <section class="article-related">
       <h2 class="article-related__header">RELATED</h2>
       <ul>

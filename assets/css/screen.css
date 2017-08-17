@@ -1677,16 +1677,18 @@ li.branding.menu-item a img {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+  padding-left: 0;
+  padding-right: 0;
   background-color: #f0f0f0;
 }
-/* line 388, ../scss/_article.scss */
+/* line 390, ../scss/_article.scss */
 .article-related__header {
   margin-left: 4.16667%;
   font-family: 'Druk-Wide-Medium', sans-serif;
   padding-top: 1em;
   padding-bottom: 1.5em;
 }
-/* line 394, ../scss/_article.scss */
+/* line 396, ../scss/_article.scss */
 .article-related ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1700,9 +1702,11 @@ li.branding.menu-item a img {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   background-color: #f0f0f0;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 2em;
 }
 

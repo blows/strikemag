@@ -70,7 +70,7 @@ Summary: Do we understand what a city is if we do not know where the courthouses
 
 ----
 
-Tags: test
+Tags: city,court,courtroom,justice,punishment,prison
 
 ----
 
