@@ -936,30 +936,6 @@ li.branding.menu-item a img {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 89, ../scss/_online.scss */
-.online-recent article:nth-of-type(1), .online-recent article:nth-of-type(2) {
-  width: 43.5vw;
-}
-/* line 91, ../scss/_online.scss */
-.online-recent article:nth-of-type(1) .card-large-info, .online-recent article:nth-of-type(2) .card-large-info {
-  height: 25.85vw;
-  padding: 1em 1.3em 1em 1.3em;
-}
-/* line 94, ../scss/_online.scss */
-.online-recent article:nth-of-type(1) .card-large-info__title, .online-recent article:nth-of-type(2) .card-large-info__title {
-  font-size: 1.6em;
-  line-height: 1em;
-}
-/* line 98, ../scss/_online.scss */
-.online-recent article:nth-of-type(1) .card-large-info__contributor, .online-recent article:nth-of-type(2) .card-large-info__contributor {
-  font-size: 1.6em;
-  line-height: 1em;
-}
-/* line 102, ../scss/_online.scss */
-.online-recent article:nth-of-type(1) .card-large-info__summary, .online-recent article:nth-of-type(2) .card-large-info__summary {
-  font-size: 1em;
-  line-height: 1.5em;
-}
 
 @media screen and (max-width: 550px) {
   /* line 112, ../scss/_online.scss */

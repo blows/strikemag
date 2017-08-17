@@ -86,25 +86,25 @@
   @include flex-wrap(wrap);
   // @include justify-content(center);
   @include justify-content(space-between);
-  article:nth-of-type(1), article:nth-of-type(2) {
-    width: 43.5vw;
-    .card-large-info {
-      height: 25.85vw;
-      padding: 1em 1.3em 1em 1.3em;
-      &__title {
-        font-size: 1.6em;
-        line-height: 1em;
-      }
-      &__contributor {
-        font-size: 1.6em;
-        line-height: 1em;
-      }
-      &__summary {
-        font-size: 1em;
-        line-height: 1.5em;
-      }
-    }
-  }
+  // article:nth-of-type(1), article:nth-of-type(2) {
+  //   width: 43.5vw;
+  //   .card-large-info {
+  //     height: 25.85vw;
+  //     padding: 1em 1.3em 1em 1.3em;
+  //     &__title {
+  //       font-size: 1.6em;
+  //       line-height: 1em;
+  //     }
+  //     &__contributor {
+  //       font-size: 1.6em;
+  //       line-height: 1em;
+  //     }
+  //     &__summary {
+  //       font-size: 1em;
+  //       line-height: 1.5em;
+  //     }
+  //   }
+  // }
 }
 
 @media screen and (max-width: 550px) {

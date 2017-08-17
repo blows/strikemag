@@ -6,49 +6,43 @@
 
     <!-- Featured Banner 1 -->
     <section class="home-featured" style="background-image: url(<?= $post->coverimage()->toFile()->url(); ?>)">
-
         <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
-
         <a href="<?php echo $post->url(); ?>" class="home-featured-text <?= $back ?>">
           <h2 class="home-featured-title">
             <?php echo $post->title()->upper()->widont(); ?>
           </h2>
-
           <?php foreach ($post->contributor()->split() as $name): ?>
                 <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
           <?php endforeach; ?>
-
         </a>
-
     </section>
 
-    <!-- <h2 class="section-header">RECENT</h2> -->
+
+
+
+
+
+    <?php $chunks = $articles->limit(12)->chunk(3);
+          $chunk1 = $chunks->nth(0);
+          $chunk2 = $chunks->nth(1);
+          $chunk3 = $chunks->nth(2);
+          $chunk4 = $chunks->nth(3);
+           ?>
+
+    <!-- Pieces 1 -->
     <section class="online-recent">
       <?php if($articles->count()): ?>
-        <?php foreach($articles->limit(2) as $article): ?>
+        <?php foreach($chunk1 as $article): ?>
 
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php if($article->coverimage()->isNotEmpty()): ?>
-
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
-            )) ?>
-
-
-          <?php else: ?>
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
-            )) ?>
-
-          <?php endif ?>
+          <?php snippet('cardLargeLandscape', array(
+          'article' => $article,
+          'contributor' => $pages->find('contributors/' . $article->contributor()),
+          'issue' => $pages->find('magazine/' . $article->printed()),
+          'box' => $box
+          )) ?>
 
         <?php endforeach ?>
 
@@ -61,32 +55,20 @@
       <?php snippet('support') ?>
     </section>
 
-    <!-- <h2 class="section-header">ARCHIVE</h2> -->
-    <section class="online-archive">
+    <!-- Pieces 2 -->
+    <section class="online-recent">
       <?php if($articles->count()): ?>
-        <?php foreach($articles->limit(3) as $article): ?>
+        <?php foreach($chunk2 as $article): ?>
 
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php if($article->coverimage()->isNotEmpty()): ?>
-
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
-            )) ?>
-
-          <?php else: ?>
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
-            )) ?>
-
-          <?php endif ?>
+          <?php snippet('cardLargeLandscape', array(
+          'article' => $article,
+          'contributor' => $pages->find('contributors/' . $article->contributor()),
+          'issue' => $pages->find('magazine/' . $article->printed()),
+          'box' => $box
+          )) ?>
 
         <?php endforeach ?>
 
@@ -97,48 +79,45 @@
 
     <!-- Featured Banner 2 -->
     <section class="home-featured" style="background-image: url(<?= $post2->coverimage()->toFile()->url(); ?>)">
-
         <?php $back = 'back-' . uniqid(); $colors[$back] = $post2->parent()->color(); ?>
-
         <a href="<?php echo $post2->url(); ?>" class="home-featured-text <?= $back ?>">
           <h2 class="home-featured-title">
             <?php echo $post2->title()->upper()->widont(); ?>
           </h2>
-
           <?php foreach ($post2->contributor()->split() as $name): ?>
                 <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
           <?php endforeach; ?>
-
         </a>
-
     </section>
 
-    <!-- <h2 class="section-header">ARCHIVE</h2> -->
+    <!-- Pieces 3 -->
     <section class="online-recent">
-      <?php if($archives->count()): ?>
-        <?php foreach($archives->shuffle()->limit(5) as $article): ?>
+      <?php if($articles->count()): ?>
+        <?php foreach($chunk3 as $article): ?>
 
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php if($article->coverimage()->isNotEmpty()): ?>
+          <?php snippet('cardLargeLandscape', array(
+          'article' => $article,
+          'contributor' => $pages->find('contributors/' . $article->contributor()),
+          'issue' => $pages->find('magazine/' . $article->printed()),
+          'box' => $box
+          )) ?>
 
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
-            )) ?>
+        <?php endforeach ?>
 
-          <?php else: ?>
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
-            )) ?>
+        <?php foreach($chunk4 as $article): ?>
 
-          <?php endif ?>
+          <?php $parent = $article->parent() ?>
+          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+
+          <?php snippet('cardLargeLandscape', array(
+          'article' => $article,
+          'contributor' => $pages->find('contributors/' . $article->contributor()),
+          'issue' => $pages->find('magazine/' . $article->printed()),
+          'box' => $box
+          )) ?>
 
         <?php endforeach ?>
 
@@ -147,6 +126,7 @@
       <?php endif ?>
     </section>
 
+    <!-- Banner Image -->
     <?php if ($page->banner1()->isNotEmpty()) : ?>
       <div class="home-banner">
         <?php $ci = $page->banner1()->toFile() ?>

@@ -15,9 +15,10 @@ return function($site, $pages, $page) {
   $webonly = $pages->find('online')->children()->visible();
   $magazine = $pages->find('magazine')->grandChildren()->visible();
   $webPlusMag = new Pages(array($webonly, $magazine));
-  $online = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 6);
-  $archives = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 6);
+  $online = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 12);
+  $archives = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 12);
 
+  // Featured articles
   $uid = $page->featuredarticle();
   $post = $pages->index()->findBy('uid', $uid);
   $uid2 = $page->featuredarticle2();
