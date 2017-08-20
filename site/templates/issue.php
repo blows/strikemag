@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="issue-summary__detail">
-            <h1 class="issue-summary__detail-title"><?= $page->title()->upper()->html() ?><?php if ($page->name()->isNotEmpty()): ?>&mdash;<?= $page->name()->upper()->html() ?><?php endif ?></h1>
+            <h1 class="issue-summary__detail-title"><?= $page->title()->upper()->html() ?><?php if ($page->name()->isNotEmpty()): ?>: <?= $page->name()->upper()->html() ?><?php endif ?></h1>
             <h3 class="issue-summary__detail-printed">PRINTED: <?= $page->date('d.m.Y', 'printed') ?></h3>
             <p class="issue-summary__detail-summary"><?= $page->summary()->html() ?></p>
           </div>
