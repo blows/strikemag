@@ -1,12 +1,12 @@
-Tab1:
+Tab1: 
 
 ----
 
-Title: Anarchist Guide to... Bakunin
+Title: An Anarchist Guide to... Bakunin
 
 ----
 
-Subtitle:
+Subtitle: 
 
 ----
 
@@ -22,23 +22,23 @@ Printed: issue-14
 
 ----
 
-Summary:
+Summary: 
 
 ----
 
-Tags:
+Tags: 
 
 ----
 
-Tab2:
+Tab2: 
 
 ----
 
-Artwork:
+Artwork: 
 
 ----
 
-Coverimage:
+Coverimage: 
 
 ----
 
@@ -46,12 +46,12 @@ Category: text
 
 ----
 
-Media:
+Media: 
 
 ----
 
-Tab3:
+Tab3: 
 
 ----
 
-Text:
+Text: 
