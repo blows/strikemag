@@ -9,32 +9,33 @@
       <header class="article-info">
         <div class="article-header">
           <h1 class="article-header__title"><?= $page->title()->upper()->widont() ?></h1>
-          <?php if ($page->subtitle()->isNotEmpty()) : ?><h1 class="article-header__subtitle"><?= $page->subtitle()->upper()->widont() ?></h1><?php endif ?>
+          <?php if ($page->subtitle()->isNotEmpty()) : ?>
+            <h2 class="article-header__subtitle"><?= $page->subtitle()->upper()->widont() ?></h2>
+          <?php endif ?>
 
-          <h2 class="article-header__contributor">
-          <?php foreach ($page->contributor()->split() as $name): ?>
-            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
-                <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
-            </a>
-          <?php endforeach; ?>
-          </h2>
+          <div class="article-header__contributor">
+            <?php foreach ($page->contributor()->split() as $name): ?>
+              <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+                  <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+              </a>
+            <?php endforeach; ?>
+          </div>
 
-          <h3 class="article-header__meta">
+          <div class="article-header__meta">
             <?php if ($page->parent()->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?> <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
-          </h3>
+          </div>
 
-          <h3 class="article-header__meta">
+          <div class="article-header__meta">
             <?php echo $page->date('d.m.y', 'uploaded') ?>
-          </h3>
+          </div>
 
-          <h3 class="article-header__meta">
-            <p>Estimated Read Time: <?php echo $page->text()->readingtime(array(
+          <div class="article-header__meta">
+            Estimated Read Time: <?php echo $page->text()->readingtime(array(
               'format' => '{minutesCount} {minutesLabel}',
               'format.alt' => '{secondsCount} {secondsLabel}',
               'format.alt.enable' => true
               )); ?>
-            </p>
-          </h3>
+          </div>
         </div>
 
         <?php if ($page->printed()->isNotEmpty()) : ?>
@@ -73,13 +74,13 @@
 
         <div class="article-credit">
 
-          <h2 class="article-credit__contributor">
+        <div class="article-credit__contributor">
           <?php foreach ($page->contributor()->split() as $name): ?>
             <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
                 <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
             </a>
           <?php endforeach; ?>
-          </h2>
+        </div>
 
           <div class="article-end">
             <p class="article-end__chat">IF YOU LIKED THIS, PLEASE</p>
