@@ -1,6 +1,6 @@
 .article {
   background-color: $strikeBackground;
-  margin-top: span(.5);
+  margin-top: span(.45);
   margin-bottom: span(.5);
 
   @include span(11);
@@ -85,7 +85,7 @@
 .article-printed {
   @include align-self(flex-end);
   position: absolute;
-  top: 3em;
+  top: 3.2em;
   right: 0;
 
   @media (max-width: 550px) {
@@ -268,13 +268,12 @@
   .article-credit {
     @include span(9);
     @include push(1.5);
-    h2.article-credit__contributor {
+    .article-credit__contributor {
         display: inline-block;
         margin-top: 3em;
         margin-bottom: 6em !important;
         margin-left: 0;
         padding-left: 0;
-
     }
   }
 

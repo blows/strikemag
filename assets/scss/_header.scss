@@ -1,14 +1,17 @@
 .header {
-  position: fixed;
-  z-index: 30;
+  // position: fixed;
+  z-index: 31;
   padding-top: 0;
   // font-size: 0;
   @include span(12);
-  background: #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+  background: blue;
   top: 0;
   transition: top 0.2s ease-in-out;
   // height:60px;
   // line-height:60px;
+  height: 0;
 }
 
 .navigation {
