@@ -39,7 +39,7 @@
         </div>
 
         <?php if ($page->printed()->isNotEmpty()) : ?>
-          <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
+          <a href="<?php echo $page->parent()->url() ?>">
             <div class="article-printed">
               <figure>
                 <img class="article-printed__cover" style="background-color: <?= $page->parent()->color() ?>" src="<?= $issue->coverimage()->toFile()->url() ?>" alt="STRIKE! <?= $issue->title()->html() ?>" />
