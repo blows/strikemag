@@ -1,4 +1,4 @@
-Tab1: 
+Tab1:
 
 ----
 
@@ -6,11 +6,11 @@ Title: Another Veteran With a Head Wound
 
 ----
 
-Subtitle: 
+Subtitle:
 
 ----
 
-Contributor: angry-sam
+Contributor: sam-berkson
 
 ----
 
@@ -22,23 +22,23 @@ Printed: issue-9
 
 ----
 
-Summary: 
+Summary:
 
 ----
 
-Tags: 
+Tags:
 
 ----
 
-Tab2: 
+Tab2:
 
 ----
 
-Artwork: 
+Artwork:
 
 ----
 
-Coverimage: 
+Coverimage:
 
 ----
 
@@ -46,12 +46,12 @@ Category: text
 
 ----
 
-Media: 
+Media:
 
 ----
 
-Tab3: 
+Tab3:
 
 ----
 
-Text: 
+Text:
