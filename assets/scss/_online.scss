@@ -86,6 +86,9 @@
   @include flex-wrap(wrap);
   // @include justify-content(center);
   @include justify-content(space-between);
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: span(.25);
   // article:nth-of-type(1), article:nth-of-type(2) {
   //   width: 43.5vw;
   //   .card-large-info {

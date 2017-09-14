@@ -281,7 +281,7 @@ body {
   z-index: 5;
   @include span(12);
   padding: 0;
-  margin-bottom: 2em;
+  margin-bottom: span(.5);
   background-position: 50%;
   background-size: cover;
   height: 100vh;
@@ -351,7 +351,7 @@ body {
   @include span(12);
   padding: 0;
   height: auto;
-  margin-bottom: 2em;
+  margin-bottom: span(.5);
   img {
     height: auto;
     width: 100%;
@@ -364,7 +364,7 @@ body {
   position: relative;
   float: left;
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: span(.5);
 }
 
 /* ----- 0.0 Online  ------------------------------------------------------ */
