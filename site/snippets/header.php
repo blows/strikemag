@@ -19,9 +19,14 @@
   <meta name="DC.Creator" content="<?php echo html($site->author()) ?>" />
   <meta name="DC.Rights" content="<?php echo html($site->author()) ?>" />
   <meta name="DC.Publisher" content="<?php echo html($site->author()) ?>" />
-  <meta name="DC.Description" content="<?php echo html($page->summary()) ?>"/ >
-  <meta name="DC.Language" content="de_DE" />
-  <meta property="og:title" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>" />
+  <meta name="DC.Description" content="<?php echo html($page->summary()) ?>" />
+  <meta name="DC.Language" content="en_GB" />
+  <meta property="og:title" content="<?php echo html($page->title()) ?>
+  <?php if ($page->subtitle()->isNotEmpty()) : ?>
+    – <?= $page->subtitle()->html() ?>
+  <?php endif ?>
+  " />
+  <meta property="og:site_name" content="<?php echo html($site->title()) ?>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<?php echo html($site->url()) ?>" />
   <?php if ($page->coverimage()->isNotEmpty()): ?>
