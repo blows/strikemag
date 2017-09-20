@@ -3,17 +3,22 @@
   <main class="main" role="main">
 
     <header class="contributors-intro">
-      <h1>Join our <?php echo $page->children()->count() ?> published writers and artists, send us a pitch!</h1>
+      <h1><?= $page->title() ?></h1>
+      <p>Join our <?php echo $page->children()->count() ?> published writers and artists, send us a pitch!</p>
+
+      <div class="contributors-nav">
+        <?php foreach($alphabetise as $letter => $items): ?>
+          <a href="#<? echo $letter ?>"><?php echo strtoupper($letter) ?></a>
+        <?php endforeach ?>
+      </div>
     </header>
 
 <div class="contributors-flex-center">
-    <div class="contributors">
-
-      <?php $alphabetise = alphabetise($page->children()->sortby('title'), array('key' => 'title')); ?>
 
       <?php foreach($alphabetise as $letter => $items): ?>
-        <h4 class="alphabet-letter"><?php echo strtoupper($letter) ?></h4>
+        <h4 class="alphabet-letter" id="<? echo $letter ?>"><?php echo strtoupper($letter) ?></h4>
 
+          <div class="contributors">
             <?php foreach($items as $contributor): ?>
               <article class="contributor" id="<?php echo $contributor->uid() ?>">
                 <?php if ($contributor->isVisible()): ?>
@@ -46,10 +51,9 @@
                 <?php endif ?>
               </article>
            	<?php endforeach ?>
-
+</div>
       <?php endforeach ?>
 
-    </div>
   </div>
 
   </main>

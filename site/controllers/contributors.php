@@ -17,8 +17,12 @@ return function($site, $pages, $page) {
   $webPlusMag = new Pages(array($webonly, $magazine));
   $articles = $webPlusMag->flip();
 
+  // Alphabetical Ordering and Searching
+  $alphabetise = alphabetise($page->children()->sortby('title'), array('key' => 'title'));
+
   return [
-    'articles'   => $articles,
+    'articles' => $articles,
+    'alphabetise' => $alphabetise
   ];
 
 };
