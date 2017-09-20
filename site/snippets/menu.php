@@ -11,7 +11,7 @@
       <?php foreach($pages->visible() as $item): ?>
       <li class="menu-item<?= r($item->isOpen(), ' is-active') ?> menu-item__drop">
         <a href="<?php e($item->ext_url()->isNotEmpty(), $item->ext_url(), $item->url()) ?>" <?php e($item->ext_url()->isNotEmpty(), 'target="_blank"', '') ?>>
-          <?php echo html($item->title()->upper()) ?>
+          <?php echo html($item->title()) ?>
         </a>
       </li>
       <?php endforeach ?>

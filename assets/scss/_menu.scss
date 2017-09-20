@@ -16,20 +16,20 @@ li.menu-item {
     background-color: $strikeMainColor;
   }
   a, button {
-    font-family: 'Druk-Wide-Medium', sans-serif;
-    font-size: 1em;
+    font-family: 'Graphik-Medium-Web', sans-serif;
+    font-size: .89em;
     color: white;
     display: block;
     width: 100%;
     height: 100%;
   }
   a {
-    padding-top: .85em;
-    padding-bottom: .85em;
+    padding-top: .25em;
+    padding-bottom: .25em;
   }
   button {
-    padding-top: .84em;
-    padding-bottom: .84em;
+    padding-top: .25em;
+    padding-bottom: .25em;
   }
   // small screens
   @media (max-width: 550px) {
@@ -50,7 +50,7 @@ li.menu-item {
     position: fixed;
   }
   .branding.menu-item {
-    font-size: 1.18em;
+    font-size: .89em;
   }
   .menu-toggle {
     display: block;
@@ -90,7 +90,7 @@ li.branding.menu-item a {
   padding-bottom: 0;
 
   img {
-    height: 2.05em;
+    height: 1.19em;
     padding-top: .31em;
     padding-bottom: .31em;
     vertical-align: middle;
