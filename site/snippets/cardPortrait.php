@@ -16,26 +16,27 @@
         <?php if ($article->coverimage()->isNotEmpty()) : ?>
           <?php $ci = $article->coverimage()->toFile() ?>
           <figure>
-            <img src="<?php echo thumb($ci, array('width' => 672, 'height' => 448, 'quality' => 100), false) ?>" alt="<?= html($article->title()) ?>" sizes="100vw"
-            srcset="<?php echo thumb($ci, array('width' => 504, 'height' => 691, 'quality' => 70, 'crop' => true), false) ?> 600w,
-             <?php echo thumb($ci, array('width' => 448, 'height' => 298, 'quality' => 70, 'crop' => true), false) ?> 800w,
-             <?php echo thumb($ci, array('width' => 672, 'height' => 448, 'quality' => 70, 'crop' => true), false) ?> 1200w,
-             <?php echo thumb($ci, array('width' => 896, 'height' => 598, 'quality' => 70, 'crop' => true), false) ?> 1600w,
-             <?php echo thumb($ci, array('width' => 1120, 'height' => 746, 'quality' => 70, 'crop' => true), false) ?> 2000w" />
+            <img src="<?php echo thumb($ci, array('width' => 672, 'quality' => 100), false) ?>" alt="<?= html($article->title()) ?>" sizes="100vw"
+            srcset="<?php echo thumb($ci, array('width' => 504, 'quality' => 70), false) ?> 600w,
+             <?php echo thumb($ci, array('width' => 448, 'quality' => 70), false) ?> 800w,
+             <?php echo thumb($ci, array('width' => 672, 'quality' => 70), false) ?> 1200w,
+             <?php echo thumb($ci, array('width' => 896, 'quality' => 70), false) ?> 1600w,
+             <?php echo thumb($ci, array('width' => 1120, 'quality' => 70), false) ?> 2000w" />
           </figure>
         <?php endif; ?>
       </div>
     <?php endif; ?>
 
-    <p class="card-portrait-info__issue">
-      <?if ($article->printed()->isNotEmpty()): ?>
-        <?= $article->parent()->title()->upper() ?>
-      <? else: ?>
-        <?= $article->date('d.m.y', 'uploaded')?>
-      <? endif; ?>(<?= $article->category()->upper()->html() ?>)
-    </p>
     <p class="card-portrait-info__summary">
       <?= $article->summary()->html() ?>
+    </p>
+
+    <p class="card-portrait-info__issue">
+      <?if ($article->printed()->isNotEmpty()): ?>
+        <?= $article->parent()->title()->html() ?>
+      <? else: ?>
+        <?= $article->date('d.m.y', 'uploaded')?>
+      <? endif; ?>(<?= $article->category()->title()->html() ?>)
     </p>
   </div>
 

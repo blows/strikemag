@@ -271,31 +271,31 @@ body {
 @media screen and (max-width: 1440px) {
   /* line 225, ../scss/screen.scss */
   body {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 1280px) {
   /* line 229, ../scss/screen.scss */
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1100px) {
   /* line 233, ../scss/screen.scss */
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 980px) {
   /* line 237, ../scss/screen.scss */
   body {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 700px) {
   /* line 241, ../scss/screen.scss */
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -958,48 +958,50 @@ li.branding.menu-item a img {
   flex-wrap: wrap;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 2.08333%;
 }
 
 @media screen and (max-width: 550px) {
-  /* line 115, ../scss/_online.scss */
+  /* line 116, ../scss/_online.scss */
   .online-recent article:nth-of-type(1), .online-recent article:nth-of-type(2) {
     width: 100%;
   }
-  /* line 117, ../scss/_online.scss */
+  /* line 118, ../scss/_online.scss */
   .online-recent article:nth-of-type(1) .card-large-info, .online-recent article:nth-of-type(2) .card-large-info {
     height: 53.2vw;
     padding: 1em 1.3em 1em 1.3em;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 126, ../scss/_online.scss */
+  /* line 127, ../scss/_online.scss */
   .online-nav {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  /* line 130, ../scss/_online.scss */
+  /* line 131, ../scss/_online.scss */
   .online-nav__filter {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
   }
-  /* line 132, ../scss/_online.scss */
+  /* line 133, ../scss/_online.scss */
   .online-nav__filter .button {
     padding: 1em;
     margin-left: 0;
   }
 
-  /* line 138, ../scss/_online.scss */
+  /* line 139, ../scss/_online.scss */
   .online-nav__search {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
     margin-bottom: 5px;
   }
 }
-/* line 144, ../scss/_online.scss */
+/* line 145, ../scss/_online.scss */
 .online-archive {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1115,9 +1117,9 @@ li.branding.menu-item a img {
   margin: 0 0 2em 0;
   padding-left: 0;
   padding-right: 0;
-  -moz-box-shadow: #b433ff 0 0 2em;
-  -webkit-box-shadow: #b433ff 0 0 2em;
-  box-shadow: #b433ff 0 0 2em;
+  -moz-box-shadow: lightgrey 0 0 1.5em;
+  -webkit-box-shadow: lightgrey 0 0 1.5em;
+  box-shadow: lightgrey 0 0 1.5em;
 }
 /* line 98, ../scss/_card.scss */
 .card-portrait a {
@@ -1136,64 +1138,75 @@ li.branding.menu-item a img {
 /* line 113, ../scss/_card.scss */
 .card-portrait-image figure img {
   display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 24vw;
+  padding-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 117, ../scss/_card.scss */
+/* line 123, ../scss/_card.scss */
 .card-portrait-info {
-  height: 32vw;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 1.5em 1.9em 1.5em 1.9em;
+  padding: 1.8rem;
 }
-/* line 124, ../scss/_card.scss */
+/* line 130, ../scss/_card.scss */
 .card-portrait-info__group {
   top: 0.6em;
   right: 0.8em;
   bottom: 0.8em;
   left: 0.8em;
 }
-/* line 131, ../scss/_card.scss */
+/* line 137, ../scss/_card.scss */
 .card-portrait-info__title {
   font-family: 'Graphik-Medium', sans-serif;
-  font-size: 1.35em;
+  font-size: 1.5em;
+  line-height: 1em;
+  padding-bottom: 1.5rem;
   margin-left: 0;
   text-align: center;
 }
-/* line 138, ../scss/_card.scss */
+/* line 146, ../scss/_card.scss */
 .card-portrait-info__contributor {
   font-family: 'Graphik-Medium', sans-serif;
-  font-size: .7em;
+  font-style: italic;
+  font-size: 1.5em;
+  line-height: 1em;
+  padding-bottom: 1.5rem;
   text-align: center;
 }
-/* line 143, ../scss/_card.scss */
+/* line 154, ../scss/_card.scss */
 .card-portrait-info__contributor::after {
   content: ",";
   margin-left: -.2em;
 }
-/* line 147, ../scss/_card.scss */
+/* line 158, ../scss/_card.scss */
 .card-portrait-info__contributor:last-of-type::after {
   content: "";
 }
-/* line 151, ../scss/_card.scss */
+/* line 162, ../scss/_card.scss */
 .card-portrait-info__issue {
-  font-size: .7em;
-  padding-bottom: .3em;
+  font-size: .6em;
+  line-height: 1em;
   text-align: center;
 }
-/* line 157, ../scss/_card.scss */
+/* line 168, ../scss/_card.scss */
 .card-portrait-info__summary {
   line-height: 1.42em;
   font-size: .7em;
+  padding-bottom: 1.5rem;
 }
 
-/* line 164, ../scss/_card.scss */
+/* line 176, ../scss/_card.scss */
 .card-portrait__online {
   background-color: black;
 }
-/* line 166, ../scss/_card.scss */
+/* line 178, ../scss/_card.scss */
 .card-portrait__online a {
   color: white;
 }
