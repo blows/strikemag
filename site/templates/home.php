@@ -37,7 +37,7 @@
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php snippet('cardLargeLandscape', array(
+          <?php snippet('cardPortrait', array(
           'article' => $article,
           'contributor' => $pages->find('contributors/' . $article->contributor()),
           'issue' => $pages->find('magazine/' . $article->printed()),
@@ -63,7 +63,7 @@
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php snippet('cardLargeLandscape', array(
+          <?php snippet('cardPortrait', array(
           'article' => $article,
           'contributor' => $pages->find('contributors/' . $article->contributor()),
           'issue' => $pages->find('magazine/' . $article->printed()),
@@ -98,7 +98,7 @@
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php snippet('cardLargeLandscape', array(
+          <?php snippet('cardPortrait', array(
           'article' => $article,
           'contributor' => $pages->find('contributors/' . $article->contributor()),
           'issue' => $pages->find('magazine/' . $article->printed()),
@@ -112,7 +112,7 @@
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php snippet('cardLargeLandscape', array(
+          <?php snippet('cardPortrait', array(
           'article' => $article,
           'contributor' => $pages->find('contributors/' . $article->contributor()),
           'issue' => $pages->find('magazine/' . $article->printed()),
