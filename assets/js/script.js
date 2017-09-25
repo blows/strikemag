@@ -1,3 +1,5 @@
+
+
 jQuery(document).ready(function(){
 
 // Menu
@@ -21,27 +23,6 @@ $( "#menu-toggle" ).click(function() {
 // $(this).find( "i" ).toggleClass("fa-angle-down fa-angle-up");
 // });
 
-var slider = new IdealImageSlider.Slider({
-	selector: '#issue-slider',
-	// height: 400, // Required but can be set by CSS
-	interval: 99999999,
-  effect: 'fade',
-  transitionDuration: 0
-});
-slider.start();
-
-});
-
-// Portrait Cards becone Landscape on smaller screens
-$(window).on('load, resize', function mobileViewUpdate() {
-    var viewportWidth = $(window).width();
-    if (viewportWidth < 770) {
-        $(".card-large-portrait").removeClass("portrait");
-    };
-
-    if (viewportWidth > 771) {
-        $(".card-large-portrait").addClass("portrait");
-    };
 });
 
 // Hide Header on on scroll down

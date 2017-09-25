@@ -35,6 +35,18 @@
             <?php endif ?>
           </div>
 
+          <?= js('assets/js/iis.min.js') ?>
+
+          <script>
+          var slider = new IdealImageSlider.Slider({
+          	selector: '#issue-slider',
+          	height: 600, // Required but can be set by CSS
+          	interval: 99999999,
+            effect: 'fade',
+            transitionDuration: 0
+          });
+          slider.start();</script>
+
           <div class="issue-contents">
             <div class="issue-contents-group">
               <?php foreach($issue->children()->sortBy('sort', 'desc') as $content): ?>
