@@ -4,9 +4,16 @@
 
     <?php $colors = []; ?>
 
+    <?php $chunks = $articles->limit(12)->chunk(3);
+          $chunk1 = $chunks->nth(0);
+          $chunk2 = $chunks->nth(1);
+          $chunk3 = $chunks->nth(2);
+          $chunk4 = $chunks->nth(3);
+    ?>
+
     <!-- Featured Banner 1 -->
-    <section class="home-featured" style="background-image: url(<?= $post->coverimage()->toFile()->url(); ?>)">
-        <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
+    <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
+    <section class="home-featured" style="background-image: url(<?= $featuredimage; ?>)">
         <a href="<?php echo $post->url(); ?>" class="home-featured-text <?= $back ?>">
           <h2 class="home-featured-title">
             <?php echo $post->title()->upper()->widont(); ?>
@@ -16,18 +23,6 @@
           <?php endforeach; ?>
         </a>
     </section>
-
-
-
-
-
-
-    <?php $chunks = $articles->limit(12)->chunk(3);
-          $chunk1 = $chunks->nth(0);
-          $chunk2 = $chunks->nth(1);
-          $chunk3 = $chunks->nth(2);
-          $chunk4 = $chunks->nth(3);
-           ?>
 
     <!-- Pieces 1 -->
     <section class="online-recent">
@@ -78,7 +73,7 @@
     </section>
 
     <!-- Featured Banner 2 -->
-    <section class="home-featured" style="background-image: url(<?= $post2->coverimage()->toFile()->url(); ?>)">
+    <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
         <?php $back = 'back-' . uniqid(); $colors[$back] = $post2->parent()->color(); ?>
         <a href="<?php echo $post2->url(); ?>" class="home-featured-text <?= $back ?>">
           <h2 class="home-featured-title">

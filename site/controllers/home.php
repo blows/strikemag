@@ -1,12 +1,5 @@
 <?php
 
-// This is a controller file that contains the logic for the blog template.
-// It consists of a single function that returns an associative array with
-// template variables.
-//
-// Learn more about controllers at:
-// https://getkirby.com/docs/developer-guide/advanced/controllers
-
 return function($site, $pages, $page) {
 
   $perpage  = $page->perpage()->int();
@@ -21,8 +14,11 @@ return function($site, $pages, $page) {
   // Featured articles
   $uid = $page->featuredarticle();
   $post = $pages->index()->findBy('uid', $uid);
+  $featuredfile = $post->coverimage()->toFile();
+  $featuredimage = $post->coverimage()->toFile()->url();
   $uid2 = $page->featuredarticle2();
   $post2 = $pages->index()->findBy('uid', $uid2);
+  $featuredimage2 = $post2->coverimage()->toFile()->url();
 
   return [
     'articles'   => $online,
@@ -30,8 +26,11 @@ return function($site, $pages, $page) {
     'pagination' => $online->pagination(),
     'uid'        => $uid,
     'post'       => $post,
+    'featuredfile' => $featuredfile,
+    'featuredimage' => $featuredimage,
     'uid2'       => $uid2,
-    'post2'      => $post2
+    'post2'      => $post2,
+    'featuredimage2' => $featuredimage2
   ];
 
 };
