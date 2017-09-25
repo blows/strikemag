@@ -2980,14 +2980,18 @@ ul.stockists a {
 /* line 16, ../scss/_support.scss */
 .support-bar__button {
   font-size: 1.6em;
+  width: 9em;
+  height: 9em;
+  line-height: 9em;
+  text-align: center;
   margin-left: .2em !important;
   margin-right: .2em !important;
   padding: 1.3em !important;
   border-color: white !important;
+  border-radius: 50%;
   color: white !important;
-  min-width: 6em;
 }
-/* line 25, ../scss/_support.scss */
+/* line 30, ../scss/_support.scss */
 .support-bar__button:hover {
   background-color: white !important;
   color: #b433ff !important;

@@ -16,12 +16,17 @@
   &__button {
     // display: inline-block;
     font-size: 1.6em;
+    width: 9em;
+    height: 9em;
+    line-height: 9em;
+    text-align: center;
     margin-left: .2em !important;
     margin-right: .2em !important;
     padding: 1.3em !important;
     border-color: white !important;
+    border-radius: 50%;
     color: white !important;
-    min-width: 6em;
+    // min-width: 6em;
     &:hover {
       background-color: white !important;
       color: $strikeMainColor !important;
