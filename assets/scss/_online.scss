@@ -149,4 +149,5 @@
   @include flex-wrap(wrap);
   // @include justify-content(center);
   @include justify-content(space-between);
+  @include align-items(center);
 }

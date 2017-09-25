@@ -1017,6 +1017,8 @@ li.branding.menu-item a img {
   flex-wrap: wrap;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 /* ----- 0.0 Cards  ------------------------------------------------------ */

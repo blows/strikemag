@@ -32,7 +32,7 @@
 
           <?php if($article->coverimage()->isNotEmpty()): ?>
 
-            <?php snippet('cardLargeLandscape', array(
+            <?php snippet('cardPortrait', array(
             'article' => $article,
             'contributor' => $pages->find('contributors/' . $article->contributor()),
             'issue' => $pages->find('magazine/' . $article->printed()),
@@ -41,7 +41,7 @@
 
 
           <?php else: ?>
-            <?php snippet('cardLargeLandscape', array(
+            <?php snippet('cardPortrait', array(
             'article' => $article,
             'contributor' => $pages->find('contributors/' . $article->contributor()),
             'issue' => $pages->find('magazine/' . $article->printed()),
@@ -60,7 +60,7 @@
 
 
 
-    
+
 
     <style>
       <?php foreach($colors as $box => $parent): ?>
