@@ -1,10 +1,12 @@
+$article-spacer: 4rem;
+
 .article {
   background-color: $strikeBackground;
-  margin-top: span(.45);
+  // margin-top: span(.45);
   margin-bottom: span(.5);
 
-  @include span(11);
-  @include push(.5);
+  @include span(11.65);
+  @include push(.175);
 
   @media (max-width: 550px) {
     margin-top: span(.2);
@@ -23,28 +25,35 @@
   }
 
   &-header {
-    margin-top: 6em;
-    margin-bottom: 6em;
+    margin-top: $article-spacer * 1.1;
+    margin-bottom: $article-spacer;
     @media (max-width: 550px) {
         margin-top: 1.6em;
         margin-bottom: 1.6em;
       }
 
     &__title {
-      font-size: 2.5em;
+      font-size: 2.75em;
       line-height: 1em;
+      font-family: 'Graphik-Bold', sans-serif;
+      text-align: center;
     }
 
     &__subtitle {
-      font-size: 2.5em;
+      font-size: 2.75em;
       line-height: 1em;
+      font-family: 'Graphik-BoldItalic', sans-serif;
+      font-style: italic;
+      text-align: center;
     }
 
     &__contributor {
-      font-size: 2.5em;
+      font-size: 1.375em;
       line-height: 1em;
-      margin-top: 1em;
-      margin-bottom: 1em;
+      margin-top: $article-spacer;
+      margin-bottom: $article-spacer;
+      font-family: 'Graphik-Bold', sans-serif;
+      text-align: center;
       a {
         color: black;
         text-decoration: none !important;
@@ -65,10 +74,16 @@
     }
 
     &__meta {
-      display: inline-block;
-      @include align-self(flex-start);
+      @include span(9);
+      @include push(1.5);
+      @include display-flex;
+      @include justify-content(center);
+      font-family: Courier;
       font-size: .7em;
-      margin-right: 3em;
+      margin-bottom: $article-spacer;
+      span {
+        margin: 0 1rem;
+      }
     }
   }
 
@@ -85,7 +100,7 @@
 .article-printed {
   @include align-self(flex-end);
   position: absolute;
-  top: 3.2em;
+  top: 1.95em;
   right: 0;
 
   @media (max-width: 550px) {
@@ -99,7 +114,7 @@
   &__cover {
     height: auto;
     width: 8em;
-    padding: 1em;
+    padding: .1em;
   }
 
   &__info {
@@ -128,7 +143,7 @@
       }
   }
 
-  .text h2, .text h3 {
+  .text h1, .text h2, .text h3 {
     @include span(9);
     @include push(1.5);
     font-family: 'Graphik-Medium', sans-serif;
@@ -142,7 +157,9 @@
   }
 
   .text ul, .text ol {
-    @include span(7);
+    @include span(9);
+    @include push(1.5);
+    margin-bottom: 1em;
 
     @media (max-width: 550px) {
         @include span(11);

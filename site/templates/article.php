@@ -8,33 +8,35 @@
 
       <header class="article-info">
         <div class="article-header">
-          <h1 class="article-header__title"><?= $page->title()->upper()->widont() ?></h1>
+          <h1 class="article-header__title"><?= $page->title()->widont() ?></h1>
           <?php if ($page->subtitle()->isNotEmpty()) : ?>
-            <h2 class="article-header__subtitle"><?= $page->subtitle()->upper()->widont() ?></h2>
+            <h2 class="article-header__subtitle"><?= $page->subtitle()->widont() ?></h2>
           <?php endif ?>
 
           <div class="article-header__contributor">
             <?php foreach ($page->contributor()->split() as $name): ?>
               <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
-                  <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+                  <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
               </a>
             <?php endforeach; ?>
           </div>
 
           <div class="article-header__meta">
-            <?php if ($page->parent()->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?> <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
-          </div>
+            <span>
+              <?php if ($page->parent()->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?> <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
+            </span>
 
-          <div class="article-header__meta">
-            <?php echo $page->date('d.m.y', 'uploaded') ?>
-          </div>
+            <span>
+              <?php echo $page->date('d.m.y', 'uploaded') ?>
+            </span>
 
-          <div class="article-header__meta">
-            Estimated Read Time: <?php echo $page->text()->readingtime(array(
-              'format' => '{minutesCount} {minutesLabel}',
-              'format.alt' => '{secondsCount} {secondsLabel}',
-              'format.alt.enable' => true
-              )); ?>
+            <span>
+              Estimated Read Time: <?php echo $page->text()->readingtime(array(
+                'format' => '{minutesCount} {minutesLabel}',
+                'format.alt' => '{secondsCount} {secondsLabel}',
+                'format.alt.enable' => true
+                )); ?>
+            </span>
           </div>
         </div>
 
@@ -131,7 +133,7 @@
         <?php $parent = $related->parent() ?>
         <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-        <?php snippet('cardLargeLandscape', array(
+        <?php snippet('cardPortrait', array(
         'article' => $related,
         'contributor' => $pages->find('contributors/' . $related->contributor()),
         'issue' => $pages->find('magazine/' . $related->printed()),

@@ -8,18 +8,6 @@ Coverimage: 17-samuli-saarinen-the-city-and-the-court-nina-power-01.png
 
 Text: 
 
-Header Main
-
-Header not
-
-* list
-* more
-* list
-
-1. ordered
-2. list
-3. ok 
-
 I’m sitting in a corridor outside Court 8. There are several sounds: the beep of the metal detector gate as it catches someone’s keys; the rapid footsteps of bewigged barristers; Tannoy announcements telling ‘all parties in the case of …’ to hurry to court; swing doors tick-tocking back into place; trolleys of papers wheeled from room to room; an unanswered telephone on the witness desk. And the silent objects: banks of grey plastic chairs, in lines of three, screwed to the ground line the wood-panelled walls, a grey and pink marbled-effect tile floor. Inside the court: the omnipresent crown emblem, the judge, the jury, the ushers, the occasional press person, lawyers, police officers, the witness, the security guard and the defendants. And the public? Often absent.
 
 > The closer you get to the repressive state, the more you understand about control. Or the more you think you do.
@@ -78,8 +66,8 @@ Category: text
 
 ----
 
-Media: 
+Media:
 
 ----
 
-Subtitle: 
+Subtitle:
