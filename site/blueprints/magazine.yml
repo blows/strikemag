@@ -13,6 +13,7 @@ pages: true
 options:
   template: false
   status: false
+  url: false
 
 icon: newspaper-o
 

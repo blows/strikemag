@@ -7,6 +7,7 @@ css_dir = "assets/css"
 sass_dir = "assets/scss"
 images_dir = "assets/images"
 javascripts_dir = "assets/js"
+sourcemap = true
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
