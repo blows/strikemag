@@ -13,16 +13,20 @@
 
     <!-- Featured Banner 1 -->
     <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
-    <section class="home-featured" style="background-image: url(<?= $featuredimage; ?>)">
-        <a href="<?php echo $post->url(); ?>" class="home-featured-text <?= $back ?>">
-          <h2 class="home-featured-title">
-            <?php echo $post->title()->upper()->widont(); ?>
-          </h2>
-          <?php foreach ($post->contributor()->split() as $name): ?>
-                <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
-          <?php endforeach; ?>
-        </a>
-    </section>
+
+    <a href="<?php echo $post->url(); ?>">
+      <section class="home-featured" style="background-image: url(<?= $featuredimage; ?>)">
+      <div class="home-featured-text">
+        <h2 class="home-featured-title">
+          <?php echo $post->title()->upper()->widont(); ?>
+        </h2>
+        <?php foreach ($post->contributor()->split() as $name): ?>
+              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+        <?php endforeach; ?>
+      </div>
+      </section>
+    </a>
+
 
     <!-- Pieces 1 -->
     <section class="online-recent">
@@ -73,17 +77,18 @@
     </section>
 
     <!-- Featured Banner 2 -->
-    <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
-        <?php $back = 'back-' . uniqid(); $colors[$back] = $post2->parent()->color(); ?>
-        <a href="<?php echo $post2->url(); ?>" class="home-featured-text <?= $back ?>">
-          <h2 class="home-featured-title">
-            <?php echo $post2->title()->upper()->widont(); ?>
-          </h2>
-          <?php foreach ($post2->contributor()->split() as $name): ?>
-                <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
-          <?php endforeach; ?>
-        </a>
-    </section>
+    <a href="<?php echo $post->url(); ?>">
+      <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
+      <div class="home-featured-text">
+        <h2 class="home-featured-title">
+          <?php echo $post2->title()->upper()->widont(); ?>
+        </h2>
+        <?php foreach ($post2->contributor()->split() as $name): ?>
+              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+        <?php endforeach; ?>
+      </div>
+      </section>
+    </a>
 
     <!-- Pieces 3 -->
     <section class="online-recent">

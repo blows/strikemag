@@ -1,4 +1,4 @@
-<article class="card-portrait <?= $box ?> <? if ($article->printed()->isEmpty()): ?><?= 'card-portrait__online' ?><? endif ?>">
+<article class="card-portrait <? if ($article->printed()->isEmpty()): ?><?= 'card-portrait__online' ?><? endif ?>">
 <a href="<?= $article->url() ?>">
 
   <div class="card-portrait-info">

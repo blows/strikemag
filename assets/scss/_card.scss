@@ -93,7 +93,7 @@
   margin: 0 0 2em 0;
   padding-left: 0;
   padding-right: 0;
-  @include box-shadow(lightgrey 0 0 1.5em);
+  // @include box-shadow(lightgrey 0 0 1.5em);
 
   a {
     color: black;
@@ -101,9 +101,10 @@
   }
 
   &:hover, &:focus {
-    a {
-      color: white;
-    }
+    // background-color: black;
+    // a {
+    //   color: white;
+    // }
     figure img {
       @include filter(grayscale(100%));
     }
@@ -174,8 +175,17 @@
 }
 
 .card-portrait__online {
-  background-color: black;
+  background-color: #292829;
   a {
     color: white;
+  }
+  &:hover, &:focus {
+    // background-color: white;
+    // a {
+    //   color: black;
+    // }
+    figure img {
+      @include filter(grayscale(100%));
+    }
   }
 }

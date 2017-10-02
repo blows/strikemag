@@ -115,7 +115,7 @@ li#branding.menu-item a {
     padding-top: 0;
     padding-bottom: 0;
     border-radius: 50%;
-    @include box-shadow($strikeMainColor -0.3em .5em 2em);
+    @include box-shadow($strikeMainColor 0 0 .5em);
     &:hover {
       background-color: $strikeMainColor;
     }

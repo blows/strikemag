@@ -5,8 +5,8 @@ $article-spacer: 4rem;
   // margin-top: span(.45);
   margin-bottom: span(.5);
 
-  @include span(11.65);
-  @include push(.175);
+  @include span(11.90);
+  @include push(.05);
 
   @media (max-width: 550px) {
     margin-top: span(.2);
@@ -43,7 +43,6 @@ $article-spacer: 4rem;
       font-size: 2.75em;
       line-height: 1em;
       font-family: 'Graphik-BoldItalic', sans-serif;
-      font-style: italic;
       text-align: center;
     }
 

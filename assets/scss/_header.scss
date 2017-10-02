@@ -21,7 +21,7 @@
   background-color: white;
   text-align: center;
   z-index: 50;
-  @include box-shadow($strikeMainColor 0 0 2em);
+  @include box-shadow($strikeMainColor 0 0 .5em);
   a {
     text-decoration: none;
     color: black;
