@@ -95,6 +95,11 @@
   }
 }
 
+.text ul > li.stockists_stock::before {
+  content: "";
+  display: none;
+}
+
 ul.stockists {
   margin-left: 0;
   a {

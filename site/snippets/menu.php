@@ -1,8 +1,8 @@
 <nav class="navigation" role="navigation">
 
   <ul class="menu">
-    <li class="branding menu-item<?= r(page('home')->isOpen(), ' is-active') ?>">
-      <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-white.svg')->url() ?>" alt="STRIKE! Magazine"></a>
+    <li id="branding" class="menu-item<?= r(page('home')->isOpen(), ' is-active') ?>">
+      <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-white.svg')->url() ?>" alt="STRIKE!"></a>
     </li>
     <li class="menu-toggle menu-item" id="menu-toggle">
       <button>MENU</button>

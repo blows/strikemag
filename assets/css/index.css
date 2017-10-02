@@ -648,7 +648,7 @@ body {
   padding-top: 1.5rem;
 }
 
-.branding {
+#branding {
   text-align: center;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -657,7 +657,7 @@ body {
   margin-bottom: .45rem;
 }
 
-.branding a {
+#branding a {
   border-bottom: 0;
 }
 
@@ -666,13 +666,13 @@ body {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
   }
-  .branding {
+  #branding {
     line-height: 3rem;
     margin-bottom: 0;
     white-space: nowrap;
     text-align: left;
   }
-  .branding,
+  #branding,
   .navigation {
     vertical-align: baseline;
     width: 50%;
