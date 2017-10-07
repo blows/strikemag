@@ -28,8 +28,6 @@ Summary: The Manarchist is the best activist. He knows this in his heart. He alo
 
 Text: 
 
-(image: manarchist-quiz.jpg)
-
 CONTENT WARNING: misogyny, sexual assault, rape
 
 The Manarchist is the best activist. He knows this in his heart. The Manarchist proposes the most radical actions, articulates the most meaningful theories. He alone is enlightened. We all must read Adorno, but only the Manarchist understands him properly.
@@ -61,7 +59,7 @@ Most of us, particularly women, have a story to tell about about the Manarchist.
 
 What distinguishes the Manarchist is that he does not accept that he is one. He will not listen. Now, he will mansplain to you why you are wrong.
 
-****
+(image: manarchist-quiz.jpg)
 
 Written by Ray Filar. Based on conversation with/stories from: Mijke Drift, Kirsty La Rain, Riley Coles, Jasper Jay, Olivia Walker, Linda Stupart, Annette Behrens, Toni Mac, Jacob V Joyce, Sophie Lawton, Deborah Grayson, Marta Owczarek, Selin Yildizoglu, Hannah McStar, Lily Ash Sakula, Abigail Williams.
 
@@ -71,7 +69,7 @@ Category: text
 
 ----
 
-Tags: 
+Tags: issue-14,quiz,manarchist,activism,listening
 
 ----
 

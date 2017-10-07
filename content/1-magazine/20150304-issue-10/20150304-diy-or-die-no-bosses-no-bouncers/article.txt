@@ -26,7 +26,7 @@ Summary: Everyone who walks through our doors has an equal chance of making an i
 
 ----
 
-Tags: london,issue-10
+Tags: london,issue-10,community
 
 ----
 
