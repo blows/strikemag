@@ -179,6 +179,11 @@
     &-info {
       padding: 1.6em;
     }
+    &-image {
+      figure img {
+        max-height: none;
+      }
+    }
   }
 }
 
