@@ -1,4 +1,5 @@
 .magazine {
+  background-color: $strikeArticleBackground;
   &-intro {
     @include span(11);
     @include push(.5);

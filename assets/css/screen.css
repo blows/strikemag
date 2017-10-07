@@ -1571,6 +1571,7 @@ li#branding.menu-item a img {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   margin-left: 0%;
+  max-height: 50%;
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 4em;
@@ -1588,7 +1589,7 @@ li#branding.menu-item a img {
     margin-left: 0%;
   }
 }
-/* line 191, ../scss/_article.scss */
+/* line 192, ../scss/_article.scss */
 .article .text figure {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1603,7 +1604,7 @@ li#branding.menu-item a img {
   margin-bottom: 1em;
 }
 @media (max-width: 550px) {
-  /* line 191, ../scss/_article.scss */
+  /* line 192, ../scss/_article.scss */
   .article .text figure {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1615,15 +1616,15 @@ li#branding.menu-item a img {
     margin-left: 4.16667%;
   }
 }
-/* line 203, ../scss/_article.scss */
+/* line 204, ../scss/_article.scss */
 .article .text figure figcaption {
   font-size: .7em;
 }
-/* line 205, ../scss/_article.scss */
+/* line 206, ../scss/_article.scss */
 .article .text figure figcaption a {
   text-decoration: none;
 }
-/* line 211, ../scss/_article.scss */
+/* line 212, ../scss/_article.scss */
 .article .text hr {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1638,7 +1639,7 @@ li#branding.menu-item a img {
   background: black;
   border: 0;
 }
-/* line 220, ../scss/_article.scss */
+/* line 221, ../scss/_article.scss */
 .article .text ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1649,7 +1650,7 @@ li#branding.menu-item a img {
   padding-right: 0.83333%;
 }
 @media (max-width: 550px) {
-  /* line 220, ../scss/_article.scss */
+  /* line 221, ../scss/_article.scss */
   .article .text ul {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1661,11 +1662,11 @@ li#branding.menu-item a img {
     margin-left: 4.16667%;
   }
 }
-/* line 229, ../scss/_article.scss */
+/* line 230, ../scss/_article.scss */
 .article .text ol > li {
   list-style: decimal;
 }
-/* line 233, ../scss/_article.scss */
+/* line 234, ../scss/_article.scss */
 .article .text pre, .article .text code {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1676,7 +1677,7 @@ li#branding.menu-item a img {
   padding-right: 0.83333%;
 }
 @media (max-width: 550px) {
-  /* line 233, ../scss/_article.scss */
+  /* line 234, ../scss/_article.scss */
   .article .text pre, .article .text code {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1688,7 +1689,7 @@ li#branding.menu-item a img {
     margin-left: 4.16667%;
   }
 }
-/* line 242, ../scss/_article.scss */
+/* line 243, ../scss/_article.scss */
 .article .text blockquote {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1702,7 +1703,7 @@ li#branding.menu-item a img {
   margin-bottom: 0;
 }
 @media (max-width: 550px) {
-  /* line 242, ../scss/_article.scss */
+  /* line 243, ../scss/_article.scss */
   .article .text blockquote {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1714,7 +1715,7 @@ li#branding.menu-item a img {
     margin-left: 4.16667%;
   }
 }
-/* line 253, ../scss/_article.scss */
+/* line 254, ../scss/_article.scss */
 .article .text blockquote p {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1728,12 +1729,12 @@ li#branding.menu-item a img {
   margin-left: 0;
 }
 @media (max-width: 550px) {
-  /* line 253, ../scss/_article.scss */
+  /* line 254, ../scss/_article.scss */
   .article .text blockquote p {
     margin-left: 0;
   }
 }
-/* line 265, ../scss/_article.scss */
+/* line 266, ../scss/_article.scss */
 .article .text a {
   color: black;
   border-width: 0 0 1px 0;
@@ -1743,14 +1744,14 @@ li#branding.menu-item a img {
   padding-top: .1em;
   text-decoration: none;
 }
-/* line 275, ../scss/_article.scss */
+/* line 276, ../scss/_article.scss */
 .article .text a:hover {
   color: black;
   text-decoration: none;
   background-color: #b433ff;
 }
 
-/* line 282, ../scss/_article.scss */
+/* line 283, ../scss/_article.scss */
 .article-credit {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1761,7 +1762,7 @@ li#branding.menu-item a img {
   padding-right: 0.83333%;
   margin-left: 12.5%;
 }
-/* line 285, ../scss/_article.scss */
+/* line 286, ../scss/_article.scss */
 .article-credit .article-credit__contributor {
   display: inline-block;
   margin-top: 3em;
@@ -1770,7 +1771,7 @@ li#branding.menu-item a img {
   padding-left: 0;
 }
 
-/* line 294, ../scss/_article.scss */
+/* line 295, ../scss/_article.scss */
 .article-end {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1783,7 +1784,7 @@ li#branding.menu-item a img {
   text-align: center;
   background-color: #b433ff;
 }
-/* line 299, ../scss/_article.scss */
+/* line 300, ../scss/_article.scss */
 .article-end__chat {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1798,7 +1799,7 @@ li#branding.menu-item a img {
   font-size: 1.6em;
   line-height: 1em;
 }
-/* line 307, ../scss/_article.scss */
+/* line 308, ../scss/_article.scss */
 .article-end p.article-end__support {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1812,7 +1813,7 @@ li#branding.menu-item a img {
   background-color: #000000;
   margin-bottom: 2.5em;
 }
-/* line 314, ../scss/_article.scss */
+/* line 315, ../scss/_article.scss */
 .article-end a.article-end__button {
   font-size: 1.6em;
   line-height: 1em;
@@ -1824,11 +1825,11 @@ li#branding.menu-item a img {
   padding: .6em 0 .6em 0;
   margin: 0;
 }
-/* line 324, ../scss/_article.scss */
+/* line 325, ../scss/_article.scss */
 .article-end a.article-end__button:hover {
   color: white;
 }
-/* line 328, ../scss/_article.scss */
+/* line 329, ../scss/_article.scss */
 .article-end__share {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1845,48 +1846,48 @@ li#branding.menu-item a img {
   padding-bottom: .25em;
   font-size: 1.6em;
 }
-/* line 338, ../scss/_article.scss */
+/* line 339, ../scss/_article.scss */
 .article-end__share a {
   text-decoration: none;
   color: #b433ff;
 }
-/* line 341, ../scss/_article.scss */
+/* line 342, ../scss/_article.scss */
 .article-end__share a i.fa {
   color: #b433ff;
   padding: .4em;
 }
-/* line 345, ../scss/_article.scss */
+/* line 346, ../scss/_article.scss */
 .article-end__share a i.fa:hover, .article-end__share a i.fa:focus {
   color: white;
 }
 
-/* line 352, ../scss/_article.scss */
+/* line 353, ../scss/_article.scss */
 .article-end__buy {
   display: -webkit-flex;
   display: flex;
 }
-/* line 356, ../scss/_article.scss */
+/* line 357, ../scss/_article.scss */
 .article-end__buy a {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
   display: block;
   border: none !important;
 }
-/* line 361, ../scss/_article.scss */
+/* line 362, ../scss/_article.scss */
 .article-end__buy a:hover {
   background-color: transparent !important;
 }
 
-/* line 367, ../scss/_article.scss */
+/* line 368, ../scss/_article.scss */
 .article-end__buy-cover figure#end-cover {
   width: 12em;
 }
-/* line 369, ../scss/_article.scss */
+/* line 370, ../scss/_article.scss */
 .article-end__buy-cover figure#end-cover img {
   display: block;
 }
 
-/* line 374, ../scss/_article.scss */
+/* line 375, ../scss/_article.scss */
 .article-end__info s
 p {
   width: 100% !important;
@@ -1894,7 +1895,7 @@ p {
   margin: 0 !important;
 }
 
-/* line 382, ../scss/_article.scss */
+/* line 383, ../scss/_article.scss */
 .article-related {
   display: inline-block;
   -moz-box-sizing: border-box;
@@ -1908,7 +1909,7 @@ p {
   padding-right: 0;
   background-color: #000000;
 }
-/* line 388, ../scss/_article.scss */
+/* line 389, ../scss/_article.scss */
 .article-related__header {
   margin-left: 4.16667%;
   font-family: 'Graphik-Medium', sans-serif;
@@ -1916,7 +1917,7 @@ p {
   padding-top: .75em;
   padding-bottom: .5em;
 }
-/* line 395, ../scss/_article.scss */
+/* line 396, ../scss/_article.scss */
 .article-related ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1941,108 +1942,103 @@ p {
 }
 
 /* ----- 0.0 Info  --------------------------------------------------------- */
+/* line 1, ../scss/_info.scss */
+.info {
+  background-color: #f0f0f0;
+}
+
 /* line 5, ../scss/_info.scss */
 .info-nav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 91.66667%;
+  width: 95.83333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-left: 4.16667%;
+  margin-left: 2.08333%;
   padding-top: 2em;
   padding-bottom: 2em;
   float: none;
-  text-align: right;
 }
-/* line 12, ../scss/_info.scss */
+/* line 11, ../scss/_info.scss */
 .info-nav a {
-  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-family: 'Graphik-Medium', sans-serif;
   margin-left: 1em;
 }
 
-/* line 18, ../scss/_info.scss */
+/* line 17, ../scss/_info.scss */
 .info-jump {
   position: relative;
   top: -3em;
 }
 
-/* line 27, ../scss/_info.scss */
+/* line 26, ../scss/_info.scss */
 .info-section {
   padding-top: 4em;
-  padding-bottom: 6em;
+  padding-bottom: 5em;
 }
-/* line 28, ../scss/_info.scss */
+/* line 27, ../scss/_info.scss */
 .info-section__wrap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 91.66667%;
+  width: 75%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-left: 4.16667%;
+  margin-left: 12.5%;
 }
-/* line 34, ../scss/_info.scss */
+/* line 33, ../scss/_info.scss */
 .info-section h1, .info-section h2 {
   padding-bottom: 1em;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-family: 'Graphik-Medium', sans-serif;
   font-size: 1.6em;
 }
-/* line 40, ../scss/_info.scss */
+/* line 38, ../scss/_info.scss */
 .info-section p {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 66.66667%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-  float: right;
   padding-bottom: 1em;
 }
-
-/* line 56, ../scss/_info.scss */
-.stockists {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 66.66667%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
+/* line 40, ../scss/_info.scss */
+.info-section p a {
+  color: black;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #b433ff;
+  padding-bottom: .1em;
+  padding-top: .1em;
+  text-decoration: none;
 }
-/* line 58, ../scss/_info.scss */
+/* line 49, ../scss/_info.scss */
+.info-section p a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #b433ff;
+}
+
+/* line 67, ../scss/_info.scss */
 .stockists_stock {
   border-color: white;
   border-style: solid;
   border-width: 0 0 3px 0;
 }
-/* line 62, ../scss/_info.scss */
+/* line 71, ../scss/_info.scss */
 .stockists_stock:first-of-type {
   border-width: 3px 0 3px 0;
 }
-/* line 65, ../scss/_info.scss */
+/* line 74, ../scss/_info.scss */
 .stockists_stock a {
   display: block;
   padding-top: .7em;
   padding-bottom: .7em;
 }
-/* line 70, ../scss/_info.scss */
+/* line 79, ../scss/_info.scss */
 .stockists_stock p {
   color: white;
   display: inline;
   padding-bottom: 0;
 }
-/* line 75, ../scss/_info.scss */
+/* line 84, ../scss/_info.scss */
 .stockists_stock div {
   display: -webkit-flex;
   display: flex;
@@ -2051,52 +2047,52 @@ p {
   padding-left: 1%;
   padding-right: 1%;
 }
-/* line 82, ../scss/_info.scss */
+/* line 91, ../scss/_info.scss */
 .stockists_stock:hover {
   background-color: white;
 }
-/* line 84, ../scss/_info.scss */
+/* line 93, ../scss/_info.scss */
 .stockists_stock:hover p {
   color: black;
 }
-/* line 88, ../scss/_info.scss */
+/* line 97, ../scss/_info.scss */
 .stockists_location {
   width: 50%;
   text-align: right;
 }
-/* line 92, ../scss/_info.scss */
+/* line 101, ../scss/_info.scss */
 .stockists_stockist {
   width: 50%;
   text-align: left;
 }
 
-/* line 98, ../scss/_info.scss */
+/* line 107, ../scss/_info.scss */
 .text ul > li.stockists_stock::before {
   content: "";
   display: none;
 }
 
-/* line 103, ../scss/_info.scss */
+/* line 112, ../scss/_info.scss */
 ul.stockists {
   margin-left: 0;
 }
-/* line 105, ../scss/_info.scss */
+/* line 114, ../scss/_info.scss */
 ul.stockists a {
   text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 111, ../scss/_info.scss */
+  /* line 120, ../scss/_info.scss */
   .info-nav {
     display: none;
   }
 
-  /* line 114, ../scss/_info.scss */
+  /* line 123, ../scss/_info.scss */
   .info-section {
     padding-top: 2em;
     padding-bottom: 4em;
   }
-  /* line 117, ../scss/_info.scss */
+  /* line 126, ../scss/_info.scss */
   .info-section h1, .info-section h2 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2106,7 +2102,7 @@ ul.stockists a {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 121, ../scss/_info.scss */
+  /* line 130, ../scss/_info.scss */
   .info-section p {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2117,7 +2113,7 @@ ul.stockists a {
     padding-right: 0.83333%;
   }
 
-  /* line 126, ../scss/_info.scss */
+  /* line 135, ../scss/_info.scss */
   .stockists {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2128,18 +2124,18 @@ ul.stockists a {
     padding-right: 0.83333%;
   }
 }
-/* line 132, ../scss/_info.scss */
+/* line 141, ../scss/_info.scss */
 #about, #contribute, #stockists {
   background-color: black;
   color: white;
 }
 
-/* line 137, ../scss/_info.scss */
+/* line 146, ../scss/_info.scss */
 #stockists {
   padding-bottom: 6em;
 }
 
-/* line 141, ../scss/_info.scss */
+/* line 150, ../scss/_info.scss */
 #contact, #distribute {
   background-color: white;
   color: black;
@@ -2484,7 +2480,11 @@ ul.stockists a {
 }
 
 /* ----- 0.0 Magazine  ------------------------------------------------------ */
-/* line 2, ../scss/_magazine.scss */
+/* line 1, ../scss/_magazine.scss */
+.magazine {
+  background-color: #f0f0f0;
+}
+/* line 3, ../scss/_magazine.scss */
 .magazine-intro {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2495,13 +2495,13 @@ ul.stockists a {
   padding-right: 0.83333%;
   margin-left: 4.16667%;
 }
-/* line 5, ../scss/_magazine.scss */
+/* line 6, ../scss/_magazine.scss */
 .magazine-intro p {
   padding-top: .85em;
   padding-bottom: .85em;
 }
 
-/* line 16, ../scss/_magazine.scss */
+/* line 17, ../scss/_magazine.scss */
 .issue-summary {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2514,20 +2514,20 @@ ul.stockists a {
   padding-right: 0;
   padding-bottom: 3em;
 }
-/* line 21, ../scss/_magazine.scss */
+/* line 22, ../scss/_magazine.scss */
 .issue-summary__image {
   height: 27em;
 }
-/* line 23, ../scss/_magazine.scss */
+/* line 24, ../scss/_magazine.scss */
 .issue-summary__image #issue-slider {
   height: 27em !important;
   background-image: none !important;
 }
-/* line 26, ../scss/_magazine.scss */
+/* line 27, ../scss/_magazine.scss */
 .issue-summary__image #issue-slider a {
   background-size: auto 90%;
 }
-/* line 31, ../scss/_magazine.scss */
+/* line 32, ../scss/_magazine.scss */
 .issue-summary__detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2540,7 +2540,7 @@ ul.stockists a {
   padding-top: 3.5em;
 }
 @media all and (max-width: 550px) {
-  /* line 31, ../scss/_magazine.scss */
+  /* line 32, ../scss/_magazine.scss */
   .issue-summary__detail {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2552,24 +2552,24 @@ ul.stockists a {
     margin-left: 4.16667%;
   }
 }
-/* line 40, ../scss/_magazine.scss */
+/* line 41, ../scss/_magazine.scss */
 .issue-summary__detail-title {
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 2.5em;
   line-height: 1em;
   padding-bottom: .4em;
 }
-/* line 46, ../scss/_magazine.scss */
+/* line 47, ../scss/_magazine.scss */
 .issue-summary__detail-printed {
   margin-top: 0;
   font-size: .7em;
   padding-bottom: 3em;
 }
-/* line 51, ../scss/_magazine.scss */
+/* line 52, ../scss/_magazine.scss */
 .issue-summary__detail-summary {
   padding-bottom: 2em;
 }
-/* line 54, ../scss/_magazine.scss */
+/* line 55, ../scss/_magazine.scss */
 .issue-summary__detail-buy {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2581,7 +2581,7 @@ ul.stockists a {
   margin-left: 25%;
 }
 @media all and (max-width: 550px) {
-  /* line 54, ../scss/_magazine.scss */
+  /* line 55, ../scss/_magazine.scss */
   .issue-summary__detail-buy {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2594,7 +2594,7 @@ ul.stockists a {
   }
 }
 
-/* line 64, ../scss/_magazine.scss */
+/* line 65, ../scss/_magazine.scss */
 .issue-contents {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2606,7 +2606,7 @@ ul.stockists a {
   padding: 0;
   padding-bottom: 3em;
 }
-/* line 69, ../scss/_magazine.scss */
+/* line 70, ../scss/_magazine.scss */
 .issue-contents-group {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2617,7 +2617,7 @@ ul.stockists a {
   padding-right: 0.83333%;
   margin-left: 4.16667%;
 }
-/* line 74, ../scss/_magazine.scss */
+/* line 75, ../scss/_magazine.scss */
 .issue-contents__content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2630,27 +2630,27 @@ ul.stockists a {
   border-width: 0 3px 3px 3px;
   line-height: 1.3em;
 }
-/* line 80, ../scss/_magazine.scss */
+/* line 81, ../scss/_magazine.scss */
 .issue-contents__content:nth-of-type(odd) {
   border-width: 0 0 3px 3px;
 }
-/* line 83, ../scss/_magazine.scss */
+/* line 84, ../scss/_magazine.scss */
 .issue-contents__content:nth-of-type(even) {
   border-width: 0 3px 3px 3px;
 }
-/* line 86, ../scss/_magazine.scss */
+/* line 87, ../scss/_magazine.scss */
 .issue-contents__content:first-of-type {
   border-width: 3px 0 3px 3px;
 }
-/* line 89, ../scss/_magazine.scss */
+/* line 90, ../scss/_magazine.scss */
 .issue-contents__content:nth-of-type(2) {
   border-width: 3px 3px 3px 3px;
 }
-/* line 92, ../scss/_magazine.scss */
+/* line 93, ../scss/_magazine.scss */
 .issue-contents__content:last-of-type {
   border-width: 0 3px 3px 3px;
 }
-/* line 95, ../scss/_magazine.scss */
+/* line 96, ../scss/_magazine.scss */
 .issue-contents__content a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2664,19 +2664,19 @@ ul.stockists a {
   color: black;
   text-decoration: none;
 }
-/* line 103, ../scss/_magazine.scss */
+/* line 104, ../scss/_magazine.scss */
 .issue-contents__content:hover {
   background-color: black;
 }
-/* line 105, ../scss/_magazine.scss */
+/* line 106, ../scss/_magazine.scss */
 .issue-contents__content:hover .issue-contents__content-title, .issue-contents__content:hover .issue-contents__content-online, .issue-contents__content:hover .issue-contents__content-contributor {
   color: white;
 }
-/* line 109, ../scss/_magazine.scss */
+/* line 110, ../scss/_magazine.scss */
 .issue-contents__content.offline {
   color: lightgrey;
 }
-/* line 111, ../scss/_magazine.scss */
+/* line 112, ../scss/_magazine.scss */
 .issue-contents__content.offline .issue-contents__content-title, .issue-contents__content.offline .issue-contents__content-online, .issue-contents__content.offline .issue-contents__content-contributor {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2687,15 +2687,15 @@ ul.stockists a {
   padding-right: 0.83333%;
   margin-left: 4.16667%;
 }
-/* line 115, ../scss/_magazine.scss */
+/* line 116, ../scss/_magazine.scss */
 .issue-contents__content.offline:hover {
   color: lightgrey;
 }
-/* line 120, ../scss/_magazine.scss */
+/* line 121, ../scss/_magazine.scss */
 .issue-contents__content:hover.offline .issue-contents__content-title, .issue-contents__content:hover.offline .issue-contents__content-online, .issue-contents__content:hover.offline .issue-contents__content-contributor {
   color: lightgrey;
 }
-/* line 124, ../scss/_magazine.scss */
+/* line 125, ../scss/_magazine.scss */
 .issue-contents__content-online {
   font-family: 'Druk-Wide-Medium', sans-serif;
   font-size: .5em;
@@ -2703,32 +2703,32 @@ ul.stockists a {
   position: absolute;
   padding-top: .5em;
 }
-/* line 131, ../scss/_magazine.scss */
+/* line 132, ../scss/_magazine.scss */
 .issue-contents__content-title {
   padding-top: 1.5em;
   padding-right: 1.5em;
 }
-/* line 136, ../scss/_magazine.scss */
+/* line 137, ../scss/_magazine.scss */
 .issue-contents__content-contributor {
   padding-bottom: 1.5em;
   display: inline-block;
 }
-/* line 143, ../scss/_magazine.scss */
+/* line 144, ../scss/_magazine.scss */
 .issue-contents__content-contributor span:after {
   content: ",";
 }
-/* line 146, ../scss/_magazine.scss */
+/* line 147, ../scss/_magazine.scss */
 .issue-contents__content-contributor span:last-of-type:after {
   content: "";
 }
 
-/* line 155, ../scss/_magazine.scss */
+/* line 156, ../scss/_magazine.scss */
 .magazine-more {
   padding-top: 3.75vw;
   padding-bottom: 6vw;
   background-color: black;
 }
-/* line 159, ../scss/_magazine.scss */
+/* line 160, ../scss/_magazine.scss */
 .magazine-more__explore {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2743,12 +2743,12 @@ ul.stockists a {
   padding-left: 4.5vw;
   padding-bottom: 1.5vw;
 }
-/* line 167, ../scss/_magazine.scss */
+/* line 168, ../scss/_magazine.scss */
 .magazine-more__issues {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-/* line 172, ../scss/_magazine.scss */
+/* line 173, ../scss/_magazine.scss */
 .magazine-more__issue-cover {
   display: inline-block;
   height: auto;
@@ -2764,7 +2764,7 @@ ul.stockists a {
   padding-top: 1.5vw;
   padding-bottom: 1.5vw;
 }
-/* line 180, ../scss/_magazine.scss */
+/* line 181, ../scss/_magazine.scss */
 .magazine-more__issue-cover:nth-of-type(-n+3) {
   height: auto;
   -moz-box-sizing: border-box;
@@ -2777,12 +2777,12 @@ ul.stockists a {
   padding-left: 1.5vw;
   padding-right: 1.5vw;
 }
-/* line 187, ../scss/_magazine.scss */
+/* line 188, ../scss/_magazine.scss */
 .magazine-more__issue-hover {
   position: relative;
   background-color: #b433ff;
 }
-/* line 190, ../scss/_magazine.scss */
+/* line 191, ../scss/_magazine.scss */
 .magazine-more__issue-hover h5 {
   display: none;
   text-align: center;
@@ -2797,21 +2797,21 @@ ul.stockists a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 201, ../scss/_magazine.scss */
+/* line 202, ../scss/_magazine.scss */
 .magazine-more__issue-hover img {
   display: block;
 }
-/* line 205, ../scss/_magazine.scss */
+/* line 206, ../scss/_magazine.scss */
 .magazine-more__issue-hover:hover h5 {
   display: block;
 }
-/* line 208, ../scss/_magazine.scss */
+/* line 209, ../scss/_magazine.scss */
 .magazine-more__issue-hover:hover img {
   opacity: 0;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 217, ../scss/_magazine.scss */
+  /* line 218, ../scss/_magazine.scss */
   .issue-contents__content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2821,27 +2821,27 @@ ul.stockists a {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 219, ../scss/_magazine.scss */
+  /* line 220, ../scss/_magazine.scss */
   .issue-contents__content:nth-of-type(odd) {
     border-width: 0 3px 3px 3px;
   }
-  /* line 222, ../scss/_magazine.scss */
+  /* line 223, ../scss/_magazine.scss */
   .issue-contents__content:nth-of-type(even) {
     border-width: 0 3px 3px 3px;
   }
-  /* line 225, ../scss/_magazine.scss */
+  /* line 226, ../scss/_magazine.scss */
   .issue-contents__content:first-of-type {
     border-width: 3px 3px 3px 3px;
   }
-  /* line 228, ../scss/_magazine.scss */
+  /* line 229, ../scss/_magazine.scss */
   .issue-contents__content:nth-of-type(2) {
     border-width: 0 3px 3px 3px;
   }
-  /* line 231, ../scss/_magazine.scss */
+  /* line 232, ../scss/_magazine.scss */
   .issue-contents__content:last-of-type {
     border-width: 0 3px 3px 3px;
   }
-  /* line 234, ../scss/_magazine.scss */
+  /* line 235, ../scss/_magazine.scss */
   .issue-contents__content a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2851,7 +2851,7 @@ ul.stockists a {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 239, ../scss/_magazine.scss */
+  /* line 240, ../scss/_magazine.scss */
   .issue-contents__content.offline .issue-contents__content-title, .issue-contents__content.offline .issue-contents__content-online, .issue-contents__content.offline .issue-contents__content-contributor {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2863,22 +2863,22 @@ ul.stockists a {
     margin-left: 4.16667%;
   }
 
-  /* line 246, ../scss/_magazine.scss */
+  /* line 247, ../scss/_magazine.scss */
   .magazine-more {
     padding-top: 6.75vw;
     padding-bottom: 9vw;
   }
-  /* line 249, ../scss/_magazine.scss */
+  /* line 250, ../scss/_magazine.scss */
   .magazine-more__explore {
     padding-left: 7.5vw;
     padding-bottom: 3.75vw;
   }
-  /* line 253, ../scss/_magazine.scss */
+  /* line 254, ../scss/_magazine.scss */
   .magazine-more__issues {
     padding-left: 1em;
     padding-right: 1em;
   }
-  /* line 258, ../scss/_magazine.scss */
+  /* line 259, ../scss/_magazine.scss */
   .magazine-more__issue-cover {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2892,7 +2892,7 @@ ul.stockists a {
     padding-top: 3vw;
     padding-bottom: 3vw;
   }
-  /* line 264, ../scss/_magazine.scss */
+  /* line 265, ../scss/_magazine.scss */
   .magazine-more__issue-cover:nth-of-type(-n+3) {
     height: auto;
     -moz-box-sizing: border-box;
