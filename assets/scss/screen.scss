@@ -292,7 +292,8 @@ body {
 
 .main {
   @include container;
-  padding-top: span(.35);
+  // padding-top: span(.35);
+  padding-top: span(.7);
   // padding-top: 3rem;
   // padding-bottom: 3rem;
 }

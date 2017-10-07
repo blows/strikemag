@@ -77,12 +77,12 @@
 @media screen and (max-width: 550px) {
   .card-large {
     width: 100%;
-      &-info {
-        height: 53.2vw;
-        // padding: 1em 1.3em 1em 1.3em;
-      }
+    &-info {
+      height: 53.2vw;
+      // padding: 1em 1.3em 1em 1.3em;
     }
   }
+}
 
 .card-portrait {
   // width: 21em;
@@ -170,6 +170,14 @@
       line-height: 1.42em;
       font-size: .7em;
       padding-bottom: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card-portrait {
+    &-info {
+      padding: 1.6em;
     }
   }
 }

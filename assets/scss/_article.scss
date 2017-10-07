@@ -5,8 +5,9 @@ $article-spacer: 4rem;
   // margin-top: span(.45);
   margin-bottom: 0;
 
-  @include span(11.95);
-  @include push(.025);
+  // @include span(11.95);
+  // @include push(.025);
+  @include span(12);
 
   @media (max-width: 550px) {
     margin-top: span(.2);
@@ -97,7 +98,8 @@ $article-spacer: 4rem;
 .article-printed {
   @include align-self(flex-end);
   position: absolute;
-  top: 1.95em;
+  // top: 1.95em;
+  top: 3.85em;
   right: 0;
 
   @media (max-width: 550px) {
@@ -111,7 +113,7 @@ $article-spacer: 4rem;
   &__cover {
     height: auto;
     width: 8em;
-    padding: .1em;
+    // padding: .1em; unhide to have outline
   }
 
   &__info {
@@ -178,6 +180,7 @@ $article-spacer: 4rem;
   .text figure:first-of-type {
     @include span(12);
     @include push(0);
+    max-height: span(6);
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 4em;
