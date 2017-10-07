@@ -6,12 +6,6 @@
     </div>
 
     <div class="footer-nav">
-      <ul class="footer-links">
-        <li><a href="info#contact">Contact</a></li>
-        <li><a href="http://www.strikemag.org" target="_blank">Subscribe</a></li>
-        <li><a href="contributors">Contributors</a></li>
-      </ul>
-
       <ul class="footer-socials">
         <li><a href="<?php echo $site->facebook()->html() ?>" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
         <li><a href="<?php echo $site->twitter()->html() ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

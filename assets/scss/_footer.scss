@@ -3,12 +3,12 @@
   padding-top: 1.5em;
   min-height: 20vh;
   background-color: $strikeMainColor;
-  color: white;
+  color: $strikeText;
 }
 
 .footer-newsletter {
-  @include span(11);
-  @include push(.5);
+  @include span(10);
+  @include push(1);
   padding-bottom: 1em;
   #mc_embed_signup input.email {
     width: 84%;
@@ -32,10 +32,11 @@
     border-width: 3px 3px 3px 0;
   }
   p {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-size: 1.8em;
-    line-height: 1.5em;
+    font-family: 'Graphik-Bold', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    line-height: 1em;
     text-align: center;
   }
 }
@@ -44,9 +45,9 @@
   @include span(11);
   @include push(.5);
   @include display-flex;
-  @include justify-content(space-between);
+  @include justify-content(center);
   @include align-items(flex-end);
-  margin-top: 3em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -74,7 +75,10 @@
   float: right;
   a {
     margin-left: .7em;
-    font-size: 1.5em;
+    font-size: 2.5em;
+  }
+  a:hover {
+    color: white;
   }
 }
 
