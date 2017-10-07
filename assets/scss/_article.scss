@@ -1,17 +1,15 @@
 $article-spacer: 4rem;
 
 .article {
-  background-color: $strikeBackground;
+  background-color: $strikeArticleBackground;
   // margin-top: span(.45);
-  margin-bottom: span(.5);
+  margin-bottom: 0;
 
-  @include span(11.90);
-  @include push(.05);
+  @include span(11.95);
+  @include push(.025);
 
   @media (max-width: 550px) {
     margin-top: span(.2);
-    @include span(11.8);
-    @include push(.1);
     }
 
   &-info {
@@ -287,74 +285,64 @@ $article-spacer: 4rem;
     .article-credit__contributor {
         display: inline-block;
         margin-top: 3em;
-        margin-bottom: 6em !important;
+        margin-bottom: 3em !important;
         margin-left: 0;
         padding-left: 0;
     }
   }
 
   .article-end {
-    border-color: $strikeMainColor;
-    color: $strikeMainColor;
+    @include span(12);
+    font-family: 'Graphik-Bold', sans-serif;
     text-align: center;
-    display: inline-block;
-    margin-bottom: 5em;
-    p {
-      width: 100% !important;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-      margin-left: 0 !important;
-      margin-bottom: 0 !important;
-      border-style: solid;
-      border-width: 3px 3px 3px 3px;
-      border-color: $strikeMainColor;
-    }
+    background-color: $strikeMainColor;
     &__chat {
-      width: 100%;
-      padding: 2em 0 2em 0;
+      @include span(4.5);
+      @include push(3.75);
+      color: $strikeText;
+      padding: 1.5em 0 1em 0;
+      font-size: 1.6em;
       line-height: 1em;
     }
     p.article-end__support {
-      border-width: 0 3px 0 3px;
+      @include span(4.5);
+      @include push(3.75);
+      color: $strikeMainColor;
+      background-color: $strikeBackground;
+      margin-bottom: 2.5em;
     }
     a.article-end__button {
-      @include span(4.5);
       font-size: 1.6em;
       line-height: 1em;
       display: inline-block;
       border-width: 0;
-      width: 50%;
       text-decoration: none;
       color: $strikeMainColor;
-      padding: 1.1em 0 1.1em 0;
+      background-color: $strikeBackground;
+      padding: .6em 0 .6em 0;
       margin: 0;
       &:hover {
-        background-color: $strikeMainColor;
         color: white;
-      }
-      &:last-of-type {
-        border-width: 0 0 0 3px;
       }
     }
     &__share {
-      width: 100%;
-      padding: .5em 0 0 0;
-      text-align: center;
+      @include span(4.5);
+      @include push(3.75);
+      background-color: $strikeBackground;
+      color: $strikeMainColor;
+      margin-bottom: 1em;
+      padding-top: .25em;
+      padding-bottom: .25em;
       font-size: 1.6em;
-      float: none;
+      // float: none;
       a {
-        text-align: center;
+        text-decoration: none;
         color: $strikeMainColor;
-        border-bottom: 0 !important;
-        &:hover {
-          background-color: transparent !important;
-        }
         i.fa {
           color: $strikeMainColor;
           padding: .4em;
         }
         i.fa:hover, i.fa:focus,  {
-          background-color: $strikeMainColor;
           color: white;
         }
       }
@@ -363,35 +351,30 @@ $article-spacer: 4rem;
 
 .article-end__buy {
   @include display-flex;
-  @include justify-content(space-around);
+
   // display: inline-block;
   a {
-    width: 50%;
-    border-width: 3px !important;
     padding-bottom: 0 !important;
     padding-top: 0 !important;
     display: block;
+    border: none !important;
+    &:hover {
+      background-color: transparent !important;
+    }
   }
 }
 .article-end__buy-cover {
-  // height: 20em;
-  // border-width: 3px;
-  // border-style: solid;
   figure#end-cover {
-    padding: 1em;
-    margin-bottom: 0 !important;
+    width: 12em;
     img {
       display: block;
     }
   }
 }
-.article-end__info {
-  width: 50%;
-  border-width: 3px 3px 3px 0;
-  border-style: solid;
+.article-end__info {s
   p {
     width: 100% !important;
-    padding: 1em !important;
+    padding: 0 1.6em !important;
     margin: 0 !important;
   }
 }
@@ -404,19 +387,21 @@ $article-spacer: 4rem;
   background-color: $strikeBackground;
   &__header {
     @include push(.5);
-    font-family: 'Druk-Wide-Medium', sans-serif;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
+    font-family: 'Graphik-Medium', sans-serif;
+    color: white;
+    padding-top: .75em;
+    padding-bottom: .5em;
   }
   ul {
     @include span(11);
     @include push(.5);
     @include display-flex;
     @include flex-wrap(wrap);
-    @include justify-content(space-around);
+    @include justify-content(space-between);
+    @include align-items(center);
     background-color: $strikeBackground;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
 }

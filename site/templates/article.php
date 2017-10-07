@@ -84,32 +84,14 @@
           <?php endforeach; ?>
         </div>
 
-          <div class="article-end">
-            <p class="article-end__chat">IF YOU LIKED THIS, PLEASE</p>
-            <p class="article-end__support"><a href="" class="button article-end__button">SUBSCRIBE</a>
-            <a href="" class="button article-end__button">DONATE</a></p>
-            <p class="article-end__share">SHARE<br>
-              <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              </a>
-            </p>
-          </div>
-
-          <?php if ($page->printed()->isNotEmpty()) : ?>
-              <div class="article-end__buy" style="border-color: <?= $page->parent()->color() ?>; color: <?= $page->parent()->color() ?>;">
-                <a id="buy" href="<?php echo $page->parent()->buy()->html() ?>" target="_blank" style="border-color: <?= $page->parent()->color() ?> !important;">
-                  <div class="article-end__buy-cover">
-                    <figure id="end-cover">
-                      <?php echo thumb($cover, array('width' => 400)); ?>
-                    </figure>
-                  </div>
-                </a>
+        <?php if ($page->printed()->isNotEmpty()) : ?>
+            <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
+              <div class="article-end__buy">
+                <div class="article-end__buy-cover">
+                  <figure id="end-cover">
+                    <?php echo thumb($cover, array('width' => 300)); ?>
+                  </figure>
+                </div>
                 <div class="article-end__info">
                   <p>Originally published in <?= $issue->title()->html() ?><?php if ($issue->name()->isNotEmpty()) :?>: <?= $issue->name()->html() ?><?php endif ?>, <?= $issue->date('F Y', 'printed') ?>.
                     <br><br>
@@ -117,12 +99,29 @@
                   </p>
                 </div>
               </div>
-          <?php endif; ?>
+            </a>
+        <?php endif; ?>
 
         </div>
       </div>
 
     </article>
+
+    <div class="article-end">
+      <p class="article-end__chat">IF YOU LIKED THIS, PLEASE</p>
+      <p class="article-end__share">SHARE
+        <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p class="article-end__support"><a href="" class="button article-end__button">SUBSCRIBE</a></p>
+    </div>
 
     <?php if($relatedPages->count() > 1): ?>
     <section class="article-related">
@@ -156,9 +155,6 @@
         background: <?= $parent->color() ?> !important;
       }
     <?php endforeach ?>
-    #buy:hover {
-      background-color: <?= $page->parent()->color() ?>;
-    }
   </style>
 
 
