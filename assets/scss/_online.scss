@@ -26,7 +26,7 @@
     color: $strikeMainColor;
     padding: 1em;
     display: inline-block;
-    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-family: 'Graphik-Medium', sans-serif;
     margin-left: 1em;
     height: auto;
     line-height: 1em;
@@ -43,7 +43,7 @@
   input {
     font-family: inherit;
     font-size: 1.1em;
-    border: 3px solid black;
+    border: 3px solid $strikeMainColor;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -111,21 +111,10 @@
   // }
 }
 
-@media screen and (max-width: 550px) {
-  .online-recent {
-    article:nth-of-type(1), article:nth-of-type(2) {
-      width: 100%;
-      .card-large-info {
-        height: 53.2vw;
-        padding: 1em 1.3em 1em 1.3em;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 700px) {
   .online-nav {
     @include flex-wrap(wrap);
+    padding-top: 2.5em;
   }
 
   .online-nav__filter {
@@ -139,6 +128,7 @@
   .online-nav__search {
     @include flex(1 1 auto);
     margin-bottom: 5px;
+    display: none;
   }
 }
 

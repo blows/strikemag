@@ -82,6 +82,14 @@ $article-spacer: 4rem;
       span {
         margin: 0 1rem;
       }
+      @media (max-width: 550px) {
+        @include flex-direction(column);
+        @include span(12);
+        @include push(0);
+        span {
+          @include flex(0 1 50%);
+        }
+      }
     }
   }
 
@@ -306,6 +314,10 @@ $article-spacer: 4rem;
       padding: 1.5em 0 1em 0;
       font-size: 1.6em;
       line-height: 1em;
+      @media all and (max-width: 550px) {
+        @include span(11);
+        @include push(.5);
+      }
     }
     p.article-end__support {
       @include span(4.5);
@@ -313,6 +325,10 @@ $article-spacer: 4rem;
       color: $strikeMainColor;
       background-color: $strikeBackground;
       margin-bottom: 2.5em;
+      @media all and (max-width: 550px) {
+        @include span(11);
+        @include push(.5);
+      }
     }
     a.article-end__button {
       font-size: 1.6em;
@@ -338,6 +354,10 @@ $article-spacer: 4rem;
       padding-bottom: .25em;
       font-size: 1.6em;
       // float: none;
+      @media all and (max-width: 550px) {
+        @include span(11);
+        @include push(.5);
+      }
       a {
         text-decoration: none;
         color: $strikeMainColor;

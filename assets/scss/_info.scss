@@ -123,18 +123,28 @@ ul.stockists {
   .info-section {
     padding-top: 2em;
     padding-bottom: 4em;
+    &__wrap {
+      @include span(11);
+      @include push(.5);
+    }
     h1, h2 {
       @include span(12);
-      // @include push(.5);
     }
     p {
       @include span(12);
-      // @include push(.5);
     }
+  }
+  .info-section:first-of-type {
+    padding-top: 3em;
   }
   .stockists {
     @include span(12);
-    // @include push(.5);
+    div {
+      @include flex-direction(column);
+    }
+    &_location {
+      text-align: left;
+    }
   }
 }
 

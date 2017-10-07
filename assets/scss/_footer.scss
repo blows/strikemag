@@ -74,11 +74,16 @@
 .footer-socials {
   float: right;
   a {
-    margin-left: .7em;
     font-size: 2.5em;
   }
   a:hover {
     color: white;
+  }
+  li {
+    margin-left: .7em;
+  }
+  li:first-of-type {
+    margin-left: 0;
   }
 }
 
@@ -96,6 +101,7 @@
     }
     #mc_embed_signup .button {
       width: 100%;
+      border-width: 3px 3px 3px 3px;
     }
   }
 
