@@ -1,16 +1,15 @@
 .info {
-
+  background-color: $strikeArticleBackground;
 }
 
 .info-nav {
-  @include span(11);
-  @include push(.5);
+  @include span(11.5);
+  @include push(.25);
   padding-top: 2em;
   padding-bottom: 2em;
   float: none;
-  text-align: right;
   a {
-    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-family: 'Graphik-Medium', sans-serif;
     margin-left: 1em;
   }
 }
@@ -26,21 +25,32 @@
 
 .info-section {
   &__wrap {
-    @include span(11);
-    @include push(.5);
+    @include span(9);
+    @include push(1.5);
   }
   padding-top: 4em;
-  padding-bottom: 6em;
+  padding-bottom: 5em;
   h1, h2 {
     padding-bottom: 1em;
-    @include span(4);
-    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-family: 'Graphik-Medium', sans-serif;
     font-size: 1.6em;
   }
   p {
-    @include span(8);
-    float: right;
     padding-bottom: 1em;
+    a {
+      color: black;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: $strikeMainColor;
+      padding-bottom: .1em;
+      padding-top: .1em;
+      text-decoration: none;
+    }
+    a:hover {
+          color: black;
+          text-decoration: none;
+          background-color: $strikeMainColor;
+    }
   }
 }
 
@@ -54,7 +64,6 @@
 // }
 
 .stockists {
-  @include span(8);
   &_stock {
     border-color: white;
     border-style: solid;
