@@ -1,5 +1,5 @@
 .menu {
-  // width: 100%;
+  width: 100%;
   width: 100vw;
   // position: fixed;
   z-index: 20;
@@ -28,13 +28,18 @@ li.menu-item {
     padding-bottom: .25em;
   }
   button {
-    padding-top: .25em;
-    padding-bottom: .25em;
+    padding-top: .45em;
+    padding-bottom: .45em;
   }
   // small screens
   @media (max-width: 550px) {
     width: 50%;
   }
+}
+
+li.menu-head.menu-item {
+  background-color: $strikeMainColor;
+  width: 100%;
 }
 
 .menu-toggle {
@@ -45,12 +50,31 @@ li.menu-item {
   display: block;
 }
 
+#branding {
+  vertical-align: baseline;
+  display: inline-block;
+  font-size: 1.2em;
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+  margin-bottom: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
 @media screen and (max-width: 550px) {
   .menu {
     position: fixed;
   }
   #branding.menu-item {
     font-size: .89em;
+  }
+  #branding {
+    display: none;
+  }
+  li.menu-head.menu-item {
+    width: 50%;
   }
   .menu-toggle {
     display: block;
@@ -69,19 +93,6 @@ li.menu-item {
 
 li.menu-item.is-active {
   background-color: $strikeMainColor;
-}
-
-#branding {
-  vertical-align: baseline;
-  display: inline-block;
-  font-size: 1.2em;
-  background-color: black;
-  position: relative;
-  display: inline-block;
-  line-height: 1em;
-  margin-bottom: 0;
-  white-space: nowrap;
-  text-align: center;
 }
 
 li#branding.menu-item a {
