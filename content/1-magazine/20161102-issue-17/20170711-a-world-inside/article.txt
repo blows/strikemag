@@ -26,7 +26,7 @@ Summary: Clubs are necessary spaces for communities to flourish, celebrate ident
 
 ----
 
-Tags: 
+Tags: issue-17,club,nightlife,dance,community
 
 ----
 
