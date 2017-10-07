@@ -21,6 +21,9 @@ RewriteEngine on
 #
 # RewriteBase /
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)\.(\d+)\.(js|css)$ $1.$3 [L]
+
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ index.php [L]
 
