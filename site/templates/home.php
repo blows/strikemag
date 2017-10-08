@@ -50,10 +50,6 @@
       <?php endif ?>
     </section>
 
-    <section class="home-support">
-      <?php snippet('support') ?>
-    </section>
-
     <!-- Pieces 2 -->
     <section class="online-recent">
       <?php if($articles->count()): ?>
@@ -76,19 +72,10 @@
       <?php endif ?>
     </section>
 
-    <!-- Featured Banner 2 -->
-    <a href="<?php echo $post->url(); ?>">
-      <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
-      <div class="home-featured-text">
-        <h2 class="home-featured-title">
-          <?php echo $post2->title()->upper()->widont(); ?>
-        </h2>
-        <?php foreach ($post2->contributor()->split() as $name): ?>
-              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
-        <?php endforeach; ?>
-      </div>
-      </section>
-    </a>
+    <!-- Support -->
+    <section class="home-support">
+      <?php snippet('support') ?>
+    </section>
 
     <!-- Pieces 3 -->
     <section class="online-recent">
@@ -126,17 +113,19 @@
       <?php endif ?>
     </section>
 
-    <!-- Banner Image -->
-    <?php if ($page->banner1()->isNotEmpty()) : ?>
-      <div class="home-banner">
-        <?php $ci = $page->banner1()->toFile() ?>
-        <a href="<?php echo $page->link1()->html() ?>">
-          <figure>
-            <img src="<?php echo $ci->focusCrop(1000, 450)->url(); ?>" alt="" />
-          </figure>
-        </a>
+    <!-- Featured Banner 2 -->
+    <a href="<?php echo $post->url(); ?>">
+      <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
+      <div class="home-featured-text">
+        <h2 class="home-featured-title">
+          <?php echo $post2->title()->upper()->widont(); ?>
+        </h2>
+        <?php foreach ($post2->contributor()->split() as $name): ?>
+              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+        <?php endforeach; ?>
       </div>
-    <?php endif ?>
+      </section>
+    </a>
 
   </main>
 
