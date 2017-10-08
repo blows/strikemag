@@ -29,6 +29,13 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
+// Cache
+c::set('cache', true);
+
+c::set('cache.ignore', array(
+  'search'
+));
+
 c::set('cachebuster', true);
 
 // c::set('home', 'online');
