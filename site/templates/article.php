@@ -23,7 +23,10 @@
 
           <div class="article-header__meta">
             <span>
-              <?php if ($page->parent()->printed()->isNotEmpty()) : ?><?php echo $issue->title()->upper() ?> <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
+              <?php if ($page->parent()->printed()->isNotEmpty()) : ?>
+                <a href="<?php echo $page->parent()->url() ?>">
+                  <?php echo $issue->title()->upper() ?></a>
+              <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
             </span>
 
             <span>
@@ -43,8 +46,11 @@
         <?php if ($page->printed()->isNotEmpty()) : ?>
           <a href="<?php echo $page->parent()->url() ?>">
             <div class="article-printed">
+              <?php $ci = $issue->coverimage()->toFile() ?>
               <figure>
-                <img class="article-printed__cover" style="background-color: <?= $page->parent()->color() ?>" src="<?= $issue->coverimage()->toFile()->url() ?>" alt="STRIKE! <?= $issue->title()->html() ?>" />
+                <img class="article-printed__cover" src="<?php echo thumb($ci, array('width' => 300, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
+                srcset="<?php echo thumb($ci, array('width' => 256, 'quality' => 70), false) ?> 899w,
+                 <?php echo thumb($ci, array('width' => 320, 'quality' => 70), false) ?> 1200w" />
               </figure>
             </div>
           </a>
@@ -77,6 +83,7 @@
         <div class="article-credit">
 
         <div class="article-credit__contributor">
+          TEXT:
           <?php foreach ($page->contributor()->split() as $name): ?>
             <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
                 <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
@@ -89,7 +96,9 @@
               <div class="article-end__buy">
                 <div class="article-end__buy-cover">
                   <figure id="end-cover">
-                    <?php echo thumb($cover, array('width' => 300)); ?>
+                    <img class="article-printed__cover" src="<?php echo thumb($ci, array('width' => 300, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
+                    srcset="<?php echo thumb($ci, array('width' => 256, 'quality' => 70), false) ?> 899w,
+                     <?php echo thumb($ci, array('width' => 320, 'quality' => 70), false) ?> 1200w" />
                   </figure>
                 </div>
                 <div class="article-end__info">

@@ -110,9 +110,9 @@ $article-spacer: 4rem;
   top: 3.85em;
   right: 0;
 
-  @media (max-width: 550px) {
-      display: none;
-    }
+  @media (max-width: 899px) {
+    display: none;
+  }
 
   figure {
     line-height: 0;
@@ -300,6 +300,10 @@ $article-spacer: 4rem;
         margin-left: 0;
         padding-left: 0;
     }
+    @media all and (max-width: 550px) {
+      @include span(11);
+      @include push(.5);
+    }
   }
 
   .article-end {
@@ -374,8 +378,6 @@ $article-spacer: 4rem;
 
 .article-end__buy {
   @include display-flex;
-
-  // display: inline-block;
   a {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
@@ -388,13 +390,12 @@ $article-spacer: 4rem;
 }
 .article-end__buy-cover {
   figure#end-cover {
-    width: 12em;
     img {
       display: block;
     }
   }
 }
-.article-end__info {s
+.article-end__info {
   p {
     width: 100% !important;
     padding: 0 1.6em !important;
