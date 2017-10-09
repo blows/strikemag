@@ -154,9 +154,8 @@
 $issue-padding: 1.5vw;
 
 .magazine-more {
-  padding-top: $issue-padding*2.5;
+  padding-top: $issue-padding;
   padding-bottom: $issue-padding*4;
-  background-color: black;
   &__explore {
     @include span(12);
     display: block;
@@ -169,46 +168,47 @@ $issue-padding: 1.5vw;
     // @include span(12);
     padding-left: 1.5em;
     padding-right: 1.5em;
+    @include display-flex;
+    @include flex-wrap(wrap);
+    @include align-items(center);
   }
   &__issue-cover {
     display: inline-block;
-    height: auto;
     @include span(3);
+    height: span(4);
     padding-left: $issue-padding;
     padding-right: $issue-padding;
     padding-top: $issue-padding;
     padding-bottom: $issue-padding;
     &:nth-of-type(-n+3) {
-      height: auto;
       @include span(4);
+      height: span(5);
       padding-left: $issue-padding;
       padding-right: $issue-padding;
-    }
-  }
-  &__issue-hover {
-    position: relative;
-    background-color: $strikeMainColor;
-    h5 {
-      display: none;
-      text-align: center;
-      color: white;
-      width: 50%;
-      margin: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      @include transform(translate(-50%,-50%));
+      .magazine-more__issue-hover {
+        height: 24rem;
+      }
     }
     img {
-      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      @include box-shadow(lightgrey 0 0 .5em);
     }
+  }
+  &__issue-details {
+    font-size: .8em;
+    line-height: 1.1em;
+    height: 2.1em;
+    padding-top: 0.4em;
+  }
+  &__issue-hover {
+    height: 20rem;
+    position: relative;
+    background-size: contain;
+    background-repeat: round;
+    background-position: center;
     &:hover {
-      h5 {
-        display: block;
-      }
-      img {
-        opacity: 0;
-      }
+      background-blend-mode: multiply;
     }
   }
 }
