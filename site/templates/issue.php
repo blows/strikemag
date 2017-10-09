@@ -4,10 +4,6 @@
 
     <div class="magazine">
 
-      <div class="magazine-intro">
-        <p>Explore all the back issues of STRIKE! Magazine</p>
-      </div>
-
       <?php $colors = []; ?>
       <?php $box = 'background-' . uniqid(); $colors[$box] = $page; ?>
       <?php $word = 'word-' . uniqid(); $colors[$word] = $page; ?>
@@ -54,19 +50,19 @@
                 <?php if($content->isVisible()): ?>
                   <div class="issue-contents__content <?= $box ?>">
                     <a href="<?= $content->url() ?>">
-                    <h1 class="issue-contents__content-title"><?= $content->title()->upper()->html() ?></h1>
+                    <h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1>
                     <h3 class="issue-contents__content-contributor">
-                      <?php foreach ($content->contributor()->split() as $name): ?>
-                            <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+                      &mdash;<?php foreach ($content->contributor()->split() as $name): ?>
+                            <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
                       <?php endforeach; ?>
                     </h3></a>
                   </div>
                 <?php else: ?>
                   <div class="issue-contents__content <?= $box ?> offline">
-                    <h1 class="issue-contents__content-title"><?= $content->title()->html()->upper() ?></h1>
+                    <h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1>
                     <h3 class="issue-contents__content-contributor">
-                      <?php foreach ($content->contributor()->split() as $name): ?>
-                          <span><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></span>
+                      &mdash;<?php foreach ($content->contributor()->split() as $name): ?>
+                          <span><?php echo $pages->find('contributors/' . $name)->title()->html() ?></span>
                       <?php endforeach; ?>
                     </h3>
                   </div>
@@ -76,10 +72,22 @@
           </div>
         </div>
 
+        <div class="issue-cards">
+          <?php foreach($page->children()->visible()->sortBy('sort', 'desc') as $content): ?>
+
+            <?php snippet('cardPortrait', array(
+            'article' => $content,
+            'contributor' => $pages->find('contributors/' . $content->contributor()),
+            'issue' => $pages->find('magazine/' . $content->printed())
+            )) ?>
+
+          <?php endforeach ?>
+        </div>
+
       </div>
 
       <div class="magazine-more">
-        <p class="magazine-more__explore">MORE ISSUES</p>
+        <p class="magazine-more__explore">More Issues</p>
         <div class="magazine-more__issues group">
           <?php foreach($issues as $issue): ?>
 
@@ -89,17 +97,21 @@
 
             <div class="magazine-more__issue-cover">
               <a href="<?= $issue->url() ?>" alt="<?= $issue->title()->html() ?>: <?= $issue->name()->html() ?>">
-                <div class="magazine-more__issue-hover <?= $box ?>">
-                  <h5><?= $issue->title()->upper()->html() ?><?php if ($issue->name()->isNotEmpty()): ?>: <?= $issue->name()->upper()->html() ?><?php endif ?></h5>
-                  <img src="<?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
-                  srcset="<?php echo thumb($image, array('width' => 504, 'height' => 691, 'quality' => 70, 'crop' => true), false) ?> 600w,
-                   <?php echo thumb($image, array('width' => 460, 'height' => 575, 'quality' => 70, 'crop' => true), false) ?> 800w,
-                   <?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 70, 'crop' => true), false) ?> 1200w,
-                   <?php echo thumb($image, array('width' => 930, 'height' => 1275, 'quality' => 70, 'crop' => true), false) ?> 1600w,
-                   <?php echo thumb($image, array('width' => 1174, 'height' => 1610, 'quality' => 70, 'crop' => true), false) ?> 2000w" />
-                 </div>
+                <img src="<?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
+                srcset="<?php echo thumb($image, array('width' => 504, 'height' => 691, 'quality' => 70), false) ?> 600w,
+                 <?php echo thumb($image, array('width' => 460, 'height' => 575, 'quality' => 70), false) ?> 800w,
+                 <?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 70), false) ?> 1200w,
+                 <?php echo thumb($image, array('width' => 930, 'height' => 1275, 'quality' => 70), false) ?> 1600w,
+                 <?php echo thumb($image, array('width' => 1174, 'height' => 1610, 'quality' => 70), false) ?> 2000w" />
               </a>
+              <div class="magazine-more__issue-details">
+                <p><?= $issue->title()->html() ?>, <?= $issue->date('M Y', 'printed') ?></p>
+                <p>
+                  <?php if ($issue->name()->isNotEmpty()): ?><?= $issue->name()->html() ?><?php endif ?>
+                </p>
+              </div>
             </div>
+
           <?php endforeach ?>
         </div>
       </div>

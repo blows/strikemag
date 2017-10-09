@@ -63,7 +63,9 @@
 }
 
 .issue-contents {
-  @include span(12);
+  @include span(6);
+  @include push(1);
+  display: inline-block;
   padding: 0;
   padding-bottom: 3em;
 
@@ -73,70 +75,57 @@
   }
 
   &__content {
-    @include span(6);
+    @include span(12);
+    display: block;
     // padding: 0;
     border-style: solid;
-    border-width: 0 3px 3px 3px;
+    border-width: 0 0 3px 0;
     line-height: 1.3em;
-    &:nth-of-type(odd) {
-      border-width: 0 0 3px 3px;
-    }
-    &:nth-of-type(even) {
-      border-width: 0 3px 3px 3px;
-    }
     &:first-of-type {
-      border-width: 3px 0 3px 3px;
-    }
-    &:nth-of-type(2) {
-      border-width: 3px 3px 3px 3px;
-    }
-    &:last-of-type {
-      border-width: 0 3px 3px 3px;
+      border-width: 3px 0 3px 0;
     }
     a {
-      @include span(11);
-      @include push(.5);
+      @include span(12);
       display: block;
-      color: black;
+      color: $strikeText;
       text-decoration: none;
     }
   }
   &__content:hover {
-    background-color: black;
+    background-color: $strikeText;
     .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
       color: white;
     }
   }
   &__content.offline {
-    color: lightgrey;
+    color: #616161;
     .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
-      @include span(11);
-      @include push(.5);
+      @include span(12);
     }
     &:hover {
-      color: lightgrey;
+      color: #616161;
     }
   }
   &__content:hover.offline {
     .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
-      color: lightgrey;
+      color: #616161;
     }
   }
   &__content-online {
     font-family: 'Druk-Wide-Medium', sans-serif;
     font-size: .5em;
-    color: grey;
+    color: $strikeText;
     position: absolute;
     padding-top: .5em;
   }
   &__content-title {
-    padding-top: 1.5em;
+    padding-top: .8em;
     // padding-left: 1.5em;
-    padding-right: 1.5em;
+    // padding-right: 1.5em;
   }
   &__content-contributor {
     // font-family: 'Druk-Wide-Medium', sans-serif;
-    padding-bottom: 1.5em;
+    padding-bottom: .8em;
     // padding-left: 1.5em;
     display: inline-block;
     // Commas between multiple authors
@@ -149,6 +138,11 @@
       }
     }
   }
+}
+
+.issue-cards {
+  @include span(4);
+  display: inline-block;
 }
 
 $issue-padding: 1.5vw;
