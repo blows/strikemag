@@ -133,24 +133,42 @@
     </div>
 
     <?php if($relatedPages->count() > 1): ?>
-    <section class="article-related">
-      <h2 class="article-related__header">RELATED</h2>
-      <ul>
-      <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
+      <section class="article-related">
+        <h2 class="article-related__header">RELATED</h2>
+        <ul>
+        <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
 
-        <?php $parent = $related->parent() ?>
-        <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+          <?php $parent = $related->parent() ?>
+          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-        <?php snippet('cardPortrait', array(
-        'article' => $related,
-        'contributor' => $pages->find('contributors/' . $related->contributor()),
-        'issue' => $pages->find('magazine/' . $related->printed()),
-        'box' => $box
-        )) ?>
-      <?php endforeach ?>
-      </ul>
-    </section>
-  <?php endif ?>
+          <?php snippet('cardPortrait', array(
+          'article' => $related,
+          'contributor' => $pages->find('contributors/' . $related->contributor()),
+          'issue' => $pages->find('magazine/' . $related->printed()),
+          'box' => $box
+          )) ?>
+        <?php endforeach ?>
+        </ul>
+      </section>
+    <?php else : ?>
+      <section class="article-related">
+        <h2 class="article-related__header">MORE</h2>
+        <ul>
+        <?php foreach($online->not($page)->shuffle()->limit(3) as $more): ?>
+
+          <?php $parent = $more->parent() ?>
+          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+
+          <?php snippet('cardPortrait', array(
+          'article' => $more,
+          'contributor' => $pages->find('contributors/' . $more->contributor()),
+          'issue' => $pages->find('magazine/' . $more->printed()),
+          'box' => $box
+          )) ?>
+        <?php endforeach ?>
+        </ul>
+      </section>
+    <?php endif ?>
 
   </main>
 

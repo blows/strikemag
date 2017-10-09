@@ -22,6 +22,7 @@ return function($site, $pages, $page) {
   $cover = $issue->coverimage()->toFile();
 
   return [
+    'online' => $online,
     'relatedPages' => $relatedPages,
     'contributor' => $contributor,
     'issue' => $issue,
