@@ -69,7 +69,7 @@
 
 $strikeMainColor: #b433ff;
 $strikeText: #000000;
-$strikeBackground: #000000;
+$strikeBackground: #f0f0f0;
 $strikeArticleBackground: #f0f0f0;
 
 /* -----  1.4 Buttons  --------------------------------------------- */
@@ -236,7 +236,7 @@ figcaption {
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
 
 body {
-  background-color: black;
+  background-color: $strikeBackground;
   font-family: 'Graphik-Medium', sans-serif;
   font-size: 20px;
   line-height: 1.5em;

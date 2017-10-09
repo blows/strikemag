@@ -122,7 +122,6 @@
     }
   }
   &-info {
-    // height: 32vw;
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(space-between);
@@ -189,7 +188,7 @@
 }
 
 .card-portrait__online {
-  background-color: #292829;
+  background-color: $strikeText;
   a {
     color: white;
   }

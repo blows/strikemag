@@ -327,7 +327,7 @@ $article-spacer: 4rem;
       @include span(4.5);
       @include push(3.75);
       color: $strikeMainColor;
-      background-color: $strikeBackground;
+      background-color: $strikeText;
       margin-bottom: 2.5em;
       @media all and (max-width: 550px) {
         @include span(11);
@@ -341,7 +341,7 @@ $article-spacer: 4rem;
       border-width: 0;
       text-decoration: none;
       color: $strikeMainColor;
-      background-color: $strikeBackground;
+      background-color: $strikeText;
       padding: .6em 0 .6em 0;
       margin: 0;
       &:hover {
@@ -351,7 +351,7 @@ $article-spacer: 4rem;
     &__share {
       @include span(4.5);
       @include push(3.75);
-      background-color: $strikeBackground;
+      background-color: $strikeText;
       color: $strikeMainColor;
       margin-bottom: 1em;
       padding-top: .25em;
