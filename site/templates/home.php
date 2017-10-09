@@ -4,11 +4,9 @@
 
     <?php $colors = []; ?>
 
-    <?php $chunks = $articles->limit(12)->chunk(3);
+    <?php $chunks = $articles->limit(12)->chunk(6);
           $chunk1 = $chunks->nth(0);
           $chunk2 = $chunks->nth(1);
-          $chunk3 = $chunks->nth(2);
-          $chunk4 = $chunks->nth(3);
     ?>
 
     <!-- Featured Banner 1 -->
@@ -50,51 +48,15 @@
       <?php endif ?>
     </section>
 
-    <!-- Pieces 2 -->
-    <section class="online-recent">
-      <?php if($articles->count()): ?>
-        <?php foreach($chunk2 as $article): ?>
-
-          <?php $parent = $article->parent() ?>
-          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
-
-          <?php snippet('cardPortrait', array(
-          'article' => $article,
-          'contributor' => $pages->find('contributors/' . $article->contributor()),
-          'issue' => $pages->find('magazine/' . $article->printed()),
-          'box' => $box
-          )) ?>
-
-        <?php endforeach ?>
-
-      <?php else: ?>
-        <p>Where did all of the articles go?</p>
-      <?php endif ?>
-    </section>
-
     <!-- Support -->
     <section class="home-support">
       <?php snippet('support') ?>
     </section>
 
-    <!-- Pieces 3 -->
+    <!-- Pieces 2 -->
     <section class="online-recent">
       <?php if($articles->count()): ?>
-        <?php foreach($chunk3 as $article): ?>
-
-          <?php $parent = $article->parent() ?>
-          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
-
-          <?php snippet('cardPortrait', array(
-          'article' => $article,
-          'contributor' => $pages->find('contributors/' . $article->contributor()),
-          'issue' => $pages->find('magazine/' . $article->printed()),
-          'box' => $box
-          )) ?>
-
-        <?php endforeach ?>
-
-        <?php foreach($chunk4 as $article): ?>
+        <?php foreach($chunk2 as $article): ?>
 
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>

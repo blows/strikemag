@@ -79,36 +79,18 @@
   }
 }
 
+// Also Home
 .online-recent {
   @include span(11);
   @include push(.5);
   @include display-flex;
   @include flex-wrap(wrap);
   // @include justify-content(center);
-  @include justify-content(space-between);
+  @include justify-content(space-around);
   @include align-items(center);
   padding-left: 0;
   padding-right: 0;
   margin-bottom: span(.25);
-  // article:nth-of-type(1), article:nth-of-type(2) {
-  //   width: 43.5vw;
-  //   .card-large-info {
-  //     height: 25.85vw;
-  //     padding: 1em 1.3em 1em 1.3em;
-  //     &__title {
-  //       font-size: 1.6em;
-  //       line-height: 1em;
-  //     }
-  //     &__contributor {
-  //       font-size: 1.6em;
-  //       line-height: 1em;
-  //     }
-  //     &__summary {
-  //       font-size: 1em;
-  //       line-height: 1.5em;
-  //     }
-  //   }
-  // }
 }
 
 @media screen and (max-width: 700px) {
