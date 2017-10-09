@@ -16,7 +16,7 @@
         <?php if ($article->coverimage()->isNotEmpty()) : ?>
           <?php $ci = $article->coverimage()->toFile() ?>
           <figure>
-            <img src="<?php echo thumb($ci, array('width' => 672, 'quality' => 70), false) ?>" alt="<?= html($article->title()) ?>" sizes="(min-width: 550px) 33.3vw, 100vw"
+            <img src="<?php echo thumb($ci, array('width' => 672, 'quality' => 70), false) ?>" alt="<?= html($article->title()) ?>" sizes="(max-width: 550px) 33.3vw, 100vw"
             srcset="<?php echo thumb($ci, array('width' => 504, 'quality' => 70), false) ?> 600w,
              <?php echo thumb($ci, array('width' => 448, 'quality' => 70), false) ?> 800w,
              <?php echo thumb($ci, array('width' => 672, 'quality' => 70), false) ?> 1200w,

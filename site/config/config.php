@@ -38,8 +38,6 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 c::set('cachebuster', true);
 
-// c::set('home', 'online');
-
 c::set('debug',true);
 
 // Omit blog folder from url
