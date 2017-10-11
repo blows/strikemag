@@ -90,6 +90,28 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .card-portrait {
+    width: 20em;
+    &-image {
+      figure img {
+        max-width: 24vw;
+        max-height: 24vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .card-portrait {
+    width: 20em;
+    &-image {
+      figure img {
+        max-width: 22vw;
+        max-height: 23vw;
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .card-portrait {
     width: 20em;

@@ -16,12 +16,12 @@
         <?php if ($article->coverimage()->isNotEmpty()) : ?>
           <?php $ci = $article->coverimage()->toFile() ?>
           <figure>
-            <img src="<?php echo thumb($ci, array('width' => 672, 'quality' => 70), false) ?>" alt="<?= html($article->title()) ?>" sizes="(max-width: 550px) 33.3vw, 100vw"
-            srcset="<?php echo thumb($ci, array('width' => 504, 'quality' => 70), false) ?> 600w,
-             <?php echo thumb($ci, array('width' => 448, 'quality' => 70), false) ?> 800w,
-             <?php echo thumb($ci, array('width' => 672, 'quality' => 70), false) ?> 1200w,
-             <?php echo thumb($ci, array('width' => 896, 'quality' => 70), false) ?> 1600w,
-             <?php echo thumb($ci, array('width' => 1120, 'quality' => 70), false) ?> 2000w" />
+            <img src="<?php echo thumb($ci, array('width' => 300, 'quality' => 100), false) ?>" alt="<?= html($article->title()) ?>"
+            sizes="(max-width: 450px) 54vw, (max-width: 768px) 29vw, (max-width: 960px) 22vw, (max-width: 1200px) 22vw, (max-width: 1440px) 24vw, 25vw"
+            srcset="<?php echo thumb($ci, array('width' => 250, 'quality' => 70), false) ?> 250w,
+                    <?php echo thumb($ci, array('width' => 280, 'quality' => 70), false) ?> 280w,
+                    <?php echo thumb($ci, array('width' => 350, 'quality' => 70), false) ?> 350w,
+                    <?php echo thumb($ci, array('width' => 500, 'quality' => 70), false) ?> 500w" />
           </figure>
         <?php endif; ?>
       </div>
