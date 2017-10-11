@@ -15,11 +15,11 @@ return function($site, $pages, $page) {
   $keys = array('category');
 
   // return all children if nothing is selected
-  $cards = $webPlusMag;
+  $cards = $webPlusMag->flip();
 
   // if there is a post request, filter the projects collection
   if(r::is('POST') && $data = get()) {
-    $cards = $webPlusMag->filter(function($cards) use($keys, $data) {
+    $cards = $webPlusMag->flip()->filter(function($cards) use($keys, $data) {
 
       // loop through the post request
       foreach($data as $key => $value) {

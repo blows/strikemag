@@ -1,6 +1,7 @@
 .card-portrait {
   width: 31%;
   width: 28vw;
+  min-width: 17em;
   height: 100%;
   background-color: white;
   margin: 0 0 2em 0;
@@ -27,7 +28,10 @@
     figure img {
       display: block;
       width: auto;
-      max-width: 100%;
+      height: auto;
+      max-width: 14em;
+      max-height: 14em;
+      max-width: 24vw;
       max-height: 24vw;
       padding-bottom: 1.5rem;
       margin-left: auto;
@@ -86,14 +90,27 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .card-portrait {
+    width: 20em;
+    &-image {
+      figure img {
+        max-width: 29vw;
+        max-height: 29vw;
+      }
+    }
+  }
+}
 @media screen and (max-width: 550px) {
   .card-portrait {
-    width: 100%;
     &-info {
-      padding: 1.6em;
+      padding: 1.4em;
     }
     &-image {
       figure img {
+        width: 100%;
+        height: auto;
+        max-width: none;
         max-height: none;
       }
     }

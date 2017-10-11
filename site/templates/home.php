@@ -77,7 +77,7 @@
 
     <!-- Featured Banner 2 -->
     <a href="<?php echo $post->url(); ?>">
-      <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
+      <section class="home-featured no-margin-bottom" style="background-image: url(<?= $featuredimage2; ?>)">
       <div class="home-featured-text">
         <h2 class="home-featured-title">
           <?php echo $post2->title()->upper()->widont(); ?>
