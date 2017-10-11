@@ -20,5 +20,10 @@
   <!-- <?= js('assets/js/iis.min.js') ?> -->
   <?= js('assets/js/script.js') ?>
 
+  <!-- custom javascript -->
+  <?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
+  <?php echo js($js->url()) ?>
+  <?php endforeach ?>
+
 </body>
 </html>

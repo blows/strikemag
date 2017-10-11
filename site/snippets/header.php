@@ -12,7 +12,7 @@
     <title><?php echo html($site->title() . ' – ' . $page->title()) ?></title>
   <?php endif ?>
 
-  <meta name="description" content="<?= $site->description()->html() ?>">
+  <meta name="description" content="<?= $site->description() ?>">
 
   <!-- OpenGraph Tags -->
   <meta name="DC.Title" content="<?php echo html($page->title()) ?>" />
@@ -42,18 +42,7 @@
   <link rel="apple-touch-icon" sizes="72x72" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-72x72.png') ?>" />
   <link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-114x114.png') ?>" />
 
-  <!-- Adaptive Images -->
-  <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
-
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement( "picture" );
-  </script>
-  <script src="assets/js/picturefill.min.js" async></script>
-
-  <!-- Font Awesome -->
-  <script async src="https://use.fontawesome.com/6a356015ff.js"></script>
-
+  <!-- CSS -->
   <?= css('assets/plugins/embed/css/embed.css') ?>
   <?= css('assets/css/screen.css') ?>
 
@@ -62,10 +51,17 @@
   <?php echo css($css->url()) ?>
   <?php endforeach ?>
 
-  <!-- custom javascript -->
-  <?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
-  <?php echo js($js->url()) ?>
-  <?php endforeach ?>
+  <!-- Adaptive Images -->
+  <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
+
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <?= js('assets/js/picturefill.min.js') ?>
+
+  <!-- Font Awesome -->
+  <script async src="https://use.fontawesome.com/6a356015ff.js"></script>
 
 </head>
 <body>
