@@ -15,8 +15,7 @@
       <div class="online-nav__filter">
         <form id="filters" method="post">
             <?php foreach($category as $item): ?>
-              <?php if(!$item) continue ?>
-              <button class="button" <?php e(isset($data['category']) && $data['category'] == $item, ' selected') ?> value="<?php echo $item ?>" name="category" onclick="this.form.submit()"><?php echo $item->upper()?></button>
+              <?php if(!$item) continue ?><button class="button" <?php e(isset($data['category']) && $data['category'] == $item, ' selected') ?> value="<?php echo $item ?>" name="category" onclick="this.form.submit()"><?php echo $item->upper()?></button>
             <?php endforeach ?>
         </form>
       </div>
