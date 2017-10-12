@@ -15,13 +15,7 @@
   }
 
   &:hover, &:focus {
-    // background-color: black;
-    // a {
-    //   color: white;
-    // }
-    figure img {
-      @include filter(grayscale(100%));
-    }
+    @include box-shadow($strikeMainColor 0 0 1.6em);
   }
 
   &-image {

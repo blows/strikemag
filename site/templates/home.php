@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <main class="main home" role="main">
 
     <?php $colors = []; ?>
 
@@ -16,10 +16,10 @@
       <section class="home-featured" style="background-image: url(<?= $featuredimage; ?>)">
       <div class="home-featured-text">
         <h2 class="home-featured-title">
-          <?php echo $post->title()->upper()->widont(); ?>
+          <?php echo $post->title()->widont(); ?>
         </h2>
         <?php foreach ($post->contributor()->split() as $name): ?>
-              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
+              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->html() ?></h3>
         <?php endforeach; ?>
       </div>
       </section>
@@ -48,10 +48,19 @@
       <?php endif ?>
     </section>
 
-    <!-- Support -->
-    <section class="home-support">
-      <?php snippet('support') ?>
-    </section>
+    <!-- Featured Banner 2 -->
+    <a href="<?php echo $post->url(); ?>">
+      <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
+      <div class="home-featured-text">
+        <h2 class="home-featured-title">
+          <?php echo $post2->title()->widont(); ?>
+        </h2>
+        <?php foreach ($post2->contributor()->split() as $name): ?>
+              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->html() ?></h3>
+        <?php endforeach; ?>
+      </div>
+      </section>
+    </a>
 
     <!-- Pieces 2 -->
     <section class="online-recent">
@@ -75,19 +84,15 @@
       <?php endif ?>
     </section>
 
-    <!-- Featured Banner 2 -->
-    <a href="<?php echo $post->url(); ?>">
-      <section class="home-featured no-margin-bottom" style="background-image: url(<?= $featuredimage2; ?>)">
-      <div class="home-featured-text">
-        <h2 class="home-featured-title">
-          <?php echo $post2->title()->upper()->widont(); ?>
-        </h2>
-        <?php foreach ($post2->contributor()->split() as $name): ?>
-              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?></h3>
-        <?php endforeach; ?>
-      </div>
-      </section>
-    </a>
+    <!-- Support -->
+    <section class="home-support">
+      <?php snippet('support') ?>
+    </section>
+
+    <!-- Explore Issues -->
+    <section class="home-issues">
+      <?php snippet('issues') ?>
+    </section>
 
   </main>
 

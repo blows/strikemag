@@ -193,11 +193,6 @@ $issue-padding: 1.5vw;
     &:nth-of-type(-n+3) {
       @include span(4);
       height: span(5);
-      padding-left: $issue-padding;
-      padding-right: $issue-padding;
-      .magazine-more__issue-hover {
-        height: 24rem;
-      }
     }
     img {
       max-width: 100%;

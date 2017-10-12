@@ -5,7 +5,7 @@
       <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-white.svg')->url() ?>" alt="STRIKE!"></a>
     </li>
     <li class="menu-head menu-item">
-      <a href="<?= url() ?>" rel="home"><?= $site->title() ?></a>
+      <a href="<?= url() ?>" rel="home"><?= $site->author() ?></a>
     </li>
     <li class="menu-toggle menu-item" id="menu-toggle">
       <button>MENU</button>
