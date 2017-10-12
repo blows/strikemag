@@ -19,12 +19,13 @@
 
               <div class="magazine-more__issue-cover">
                 <a href="<?= $issue->url() ?>" alt="<?= $issue->title()->html() ?>: <?= $issue->name()->html() ?>">
-                  <img src="<?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
-                  srcset="<?php echo thumb($image, array('width' => 504, 'height' => 691, 'quality' => 70), false) ?> 600w,
-                   <?php echo thumb($image, array('width' => 460, 'height' => 575, 'quality' => 70), false) ?> 800w,
-                   <?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 70), false) ?> 1200w,
-                   <?php echo thumb($image, array('width' => 930, 'height' => 1275, 'quality' => 70), false) ?> 1600w,
-                   <?php echo thumb($image, array('width' => 1174, 'height' => 1610, 'quality' => 70), false) ?> 2000w" />
+                  <img src="<?php echo thumb($image, array('width' => 600, 'quality' => 70), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>"
+                  sizes="(max-width: 450px) 40vw, 28vw"
+                  srcset="<?php echo thumb($image, array('width' => 270, 'quality' => 70), false) ?> 270w,
+                   <?php echo thumb($image, array('width' => 322, 'quality' => 70), false) ?> 322w,
+                   <?php echo thumb($image, array('width' => 405, 'quality' => 70), false) ?> 405w,
+                   <?php echo thumb($image, array('width' => 510, 'quality' => 70), false) ?> 510w,
+                   <?php echo thumb($image, array('width' => 615, 'quality' => 70), false) ?> 615w" />
                 </a>
                 <div class="magazine-more__issue-details">
                   <p><?= $issue->title()->html() ?>, <?= $issue->date('M Y', 'printed') ?></p>
