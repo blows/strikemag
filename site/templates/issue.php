@@ -11,21 +11,21 @@
       <div class="issue group" id="<?php echo $page->uid() ?>">
 
         <div class="issue-summary text">
-          <div class="issue-summary__image" style="background-color: <?= $page->color() ?>;">
-            <div id="issue-slider" style="background-color: <?= $page->color() ?>;">
+          <div class="issue-summary__image">
+            <div id="issue-slider">
               <?php foreach($page->images()->sortBy('sort', 'asc') as $image) : ?>
                   <img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>" />
               <?php endforeach ?>
             </div>
           </div>
           <div class="issue-summary__detail">
-            <h1 class="issue-summary__detail-title"><?= $page->title()->upper()->html() ?><?php if ($page->name()->isNotEmpty()): ?>: <?= $page->name()->upper()->html() ?><?php endif ?></h1>
-            <h3 class="issue-summary__detail-printed">PRINTED: <?= $page->date('d.m.Y', 'printed') ?></h3>
+            <h1 class="issue-summary__detail-title"><?= $page->title()->html() ?><?php if ($page->name()->isNotEmpty()): ?>: <span class="bold-italic"><?= $page->name()->html() ?></span><?php endif ?></h1>
             <p class="issue-summary__detail-summary"><?= $page->summary()->html() ?></p>
+            <p class="issue-summary__detail-printed">Printed: <?= $page->date('F Y', 'printed') ?></p>
           </div>
           <?php if ($page->buy()->isNotEmpty()): ?>
             <div class="issue-summary__detail-buy">
-              <a class="button <?= $box ?> <?= $word ?>" href="<?= $page->buy()->html() ?>" target="_blank">GET THE ISSUE</a>
+              <a class="button" href="<?= $page->buy()->html() ?>" target="_blank">Get the issue</a>
             </div>
           <?php endif ?>
         </div>
@@ -43,33 +43,36 @@
         slider.start();</script>
 
         <div class="issue-contents">
-          <div class="issue-contents-group">
+          <ul class="issue-contents-group">
+            <li class="issue-contents__title">
+              <p>Contents</p>
+            </li>
             <?php foreach($page->children()->sortBy('sort', 'desc') as $content): ?>
               <?php $contributor = $pages->find('contributors/' . $content->contributor()) ?>
 
                 <?php if($content->isVisible()): ?>
-                  <div class="issue-contents__content <?= $box ?>">
+                  <li class="issue-contents__content">
                     <a href="<?= $content->url() ?>">
-                    <h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1>
-                    <h3 class="issue-contents__content-contributor">
+                    <p class="issue-contents__content-title"><?= $content->title()->html() ?></p>
+                    <p class="issue-contents__content-contributor">
                       &mdash;<?php foreach ($content->contributor()->split() as $name): ?>
                             <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
                       <?php endforeach; ?>
-                    </h3></a>
-                  </div>
+                    </p></a>
+                  </li>
                 <?php else: ?>
-                  <div class="issue-contents__content <?= $box ?> offline">
-                    <h1 class="issue-contents__content-title"><?= $content->title()->html() ?></h1>
-                    <h3 class="issue-contents__content-contributor">
+                  <li class="issue-contents__content offline">
+                    <p class="issue-contents__content-title"><?= $content->title()->html() ?></p>
+                    <p class="issue-contents__content-contributor">
                       &mdash;<?php foreach ($content->contributor()->split() as $name): ?>
                           <span><?php echo $pages->find('contributors/' . $name)->title()->html() ?></span>
                       <?php endforeach; ?>
-                    </h3>
-                  </div>
+                    </p>
+                  </li>
                 <?php endif ?>
 
             <?php endforeach ?>
-          </div>
+          </ul>
         </div>
 
         <div class="issue-cards">
@@ -87,7 +90,7 @@
       </div>
 
       <div class="magazine-more">
-        <p class="magazine-more__explore">More Issues</p>
+        <p class="magazine-more__explore">More issues</p>
         <div class="magazine-more__issues group">
           <?php foreach($issues as $issue): ?>
 
@@ -97,16 +100,17 @@
 
             <div class="magazine-more__issue-cover">
               <a href="<?= $issue->url() ?>" alt="<?= $issue->title()->html() ?>: <?= $issue->name()->html() ?>">
-                <img src="<?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
-                srcset="<?php echo thumb($image, array('width' => 504, 'height' => 691, 'quality' => 70), false) ?> 600w,
-                 <?php echo thumb($image, array('width' => 460, 'height' => 575, 'quality' => 70), false) ?> 800w,
-                 <?php echo thumb($image, array('width' => 690, 'height' => 946, 'quality' => 70), false) ?> 1200w,
-                 <?php echo thumb($image, array('width' => 930, 'height' => 1275, 'quality' => 70), false) ?> 1600w,
-                 <?php echo thumb($image, array('width' => 1174, 'height' => 1610, 'quality' => 70), false) ?> 2000w" />
+                <img src="<?php echo thumb($image, array('width' => 600, 'quality' => 70), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>"
+                sizes="(max-width: 450px) 40vw, 28vw"
+                srcset="<?php echo thumb($image, array('width' => 270, 'quality' => 70), false) ?> 270w,
+                 <?php echo thumb($image, array('width' => 322, 'quality' => 70), false) ?> 322w,
+                 <?php echo thumb($image, array('width' => 405, 'quality' => 70), false) ?> 405w,
+                 <?php echo thumb($image, array('width' => 510, 'quality' => 70), false) ?> 510w,
+                 <?php echo thumb($image, array('width' => 615, 'quality' => 70), false) ?> 615w" />
               </a>
               <div class="magazine-more__issue-details">
                 <p><?= $issue->title()->html() ?>, <?= $issue->date('M Y', 'printed') ?></p>
-                <p>
+                <p class="italic">
                   <?php if ($issue->name()->isNotEmpty()): ?><?= $issue->name()->html() ?><?php endif ?>
                 </p>
               </div>

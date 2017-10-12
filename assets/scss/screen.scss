@@ -69,12 +69,24 @@
   margin-bottom: 0 !important;
 }
 
-/* -----  1.2 Colors  --------------------------------------------- */
+.bold-italic {
+  font-family: 'Graphik-BoldItalic', sans-serif;
+}
+
+.italic {
+  font-family: 'Graphik-MediumItalic', sans-serif;
+}
+
+/* -----  1.2 Colors  ---------------------------------------------- */
 
 $strikeMainColor: #b433ff;
 $strikeText: #000000;
 $strikeBackground: #f0f0f0;
 $strikeArticleBackground: #f0f0f0;
+
+/* -----  1.3 Thickness/Length/Distance  --------------------------- */
+
+$lineThickness: .15em;
 
 /* -----  1.4 Buttons  --------------------------------------------- */
 
@@ -96,7 +108,7 @@ $strikeArticleBackground: #f0f0f0;
 a.button {
   text-decoration: none;
   border-style: solid;
-  border-width: 3px 3px 3px 3px;
+  border-width: $lineThickness;
   border-color: $strikeMainColor;
   color: $strikeMainColor;
   padding: .75em 1em .75em 1em;
@@ -139,7 +151,7 @@ figcaption {
 }
 
 .text h1, .text h2, .text h3 {
-  font-family: 'Graphik-Medium', sans-serif;
+  font-family: 'Graphik-Bold', sans-serif;
 }
 
 .text em {

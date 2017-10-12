@@ -29,7 +29,7 @@
                 </a>
                 <div class="magazine-more__issue-details">
                   <p><?= $issue->title()->html() ?>, <?= $issue->date('M Y', 'printed') ?></p>
-                  <p>
+                  <p class="italic">
                     <?php if ($issue->name()->isNotEmpty()): ?><?= $issue->name()->html() ?><?php endif ?>
                   </p>
                 </div>

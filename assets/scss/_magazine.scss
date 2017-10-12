@@ -39,18 +39,17 @@
     padding-top: 3.5em;
   }
   &__detail-title {
-    font-family: 'Graphik-Medium', sans-serif;
+    font-family: 'Graphik-Bold', sans-serif;
     font-size: 2.5em;
     line-height: 1em;
-    padding-bottom: .4em;
+    padding-bottom: 1.5rem;
   }
   &__detail-printed {
     margin-top: 0;
-    font-size: .7em;
-    padding-bottom: 3em;
+    padding-bottom: 2rem;
   }
   &__detail-summary {
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
   &__detail-buy {
     @include span(6);
@@ -58,6 +57,14 @@
     @media all and (max-width: 550px) {
       @include span(11);
       @include push(.5);
+    }
+    a.button:hover {
+      background-color: $strikeText;
+      color: white;
+    }
+    a.button {
+      border-color: $strikeText;
+      color: $strikeText;
     }
   }
 }
@@ -79,17 +86,21 @@
     display: block;
     // padding: 0;
     border-style: solid;
-    border-width: 0 0 3px 0;
+    border-width: 0 0 $lineThickness 0;
     line-height: 1.3em;
-    &:first-of-type {
-      border-width: 3px 0 3px 0;
-    }
     a {
-      @include span(12);
       display: block;
       color: $strikeText;
       text-decoration: none;
     }
+  }
+  &__title {
+    @include span(12);
+    display: block;
+    // padding: 0;
+    border-style: solid;
+    border-width: 0 0 $lineThickness 0;
+    padding-bottom: .8em;
   }
   &__content:hover {
     background-color: $strikeText;
@@ -99,10 +110,12 @@
   }
   &__content.offline {
     color: #616161;
+    border-color: $strikeText;
     .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
       @include span(12);
     }
     &:hover {
+      background-color: $strikeArticleBackground;
       color: #616161;
     }
   }
@@ -148,14 +161,17 @@
 $issue-padding: 1.5vw;
 
 .magazine-more {
+  background-color: $strikeText;
+  color: white;
   padding-top: $issue-padding;
   padding-bottom: $issue-padding*4;
   &__explore {
     @include span(12);
     display: block;
     color: white;
-    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-family: 'Graphik-Medium', sans-serif;
     padding-left: $issue-padding*3;
+    padding-top: $issue-padding;
     padding-bottom: $issue-padding;
   }
   &__issues {
@@ -173,7 +189,7 @@ $issue-padding: 1.5vw;
     padding-left: $issue-padding;
     padding-right: $issue-padding;
     padding-top: $issue-padding;
-    padding-bottom: $issue-padding;
+    padding-bottom: $issue-padding*2;
     &:nth-of-type(-n+3) {
       @include span(4);
       height: span(5);
@@ -186,7 +202,9 @@ $issue-padding: 1.5vw;
     img {
       max-width: 100%;
       max-height: 100%;
-      @include box-shadow(lightgrey 0 0 .5em);
+    }
+    &:hover img {
+      @include box-shadow($strikeMainColor 0 0 1.5rem);
     }
   }
   &__issue-details {

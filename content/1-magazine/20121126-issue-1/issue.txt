@@ -2,7 +2,7 @@ Title: Issue 1
 
 ----
 
-Name: 
+Name: Fucked
 
 ----
 
@@ -34,4 +34,4 @@ Color3: #000000
 
 ----
 
-Buy: 
+Buy:
