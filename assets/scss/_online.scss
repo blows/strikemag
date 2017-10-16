@@ -109,6 +109,6 @@
   @include display-flex;
   @include flex-wrap(wrap);
   // @include justify-content(center);
-  @include justify-content(space-between);
+  @include justify-content(space-around);
   @include align-items(center);
 }

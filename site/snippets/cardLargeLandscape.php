@@ -1,4 +1,4 @@
-<article class="card-large <?= $box ?>">
+<article class="card-large">
 <a href="<?= $article->url() ?>">
 
   <?php if ($article->hasImages()) : ?>
@@ -27,24 +27,22 @@
     </div>
   <?php endif; ?>
 
-  <header class="card-large-info">
+  <div class="card-large-info">
     <div class="card-large-info__group">
-      <h3 class="card-large-info__issue">
-        <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title()->upper() ?> <?php endif; ?>(<?= $article->category()->upper()->html() ?>)
-      </h3>
-      <h2 class="card-large-info__title">
-        <?= $article->title()->upper()->widont() ?>
-      </h2>
-        <?php foreach ($article->contributor()->split() as $name): ?>
-              <h3 class="card-large-info__contributor">
-                <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
-              </h3>
-        <?php endforeach; ?>
+      <p class="card-large-info__title">
+        <?= $article->title()->widont() ?>
+        <?php if($sub = $article->subtitle()->isNotEmpty()): ?>:<span> <?= $article->subtitle() ?></span><?php endif ?>
+      </p>
+      <?php foreach ($article->contributor()->split() as $name): ?>
+        <p class="card-large-info__contributor">
+          <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
+        </p>
+      <?php endforeach; ?>
     </div>
-    <p class="card-large-info__summary">
-      <?= $article->summary()->html() ?>
+    <p class="card-large-info__issue">
+      <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title() ?> <?php endif; ?>(<?= $article->category()->upper()->html() ?>)
     </p>
-  </header>
+  </div>
 
 </a>
 </article>

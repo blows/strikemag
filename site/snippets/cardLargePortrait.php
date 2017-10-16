@@ -1,35 +1,30 @@
-<article class="card-large card-large-portrait portrait">
+<article class="card-large-portrait">
 <a href="<?= $article->url() ?>" class="">
 
   <?php if ($article->coverimage()->isNotEmpty()) : ?>
-    <div class="card-large-image">
+    <div class="card-large-portrait-image">
       <?php $ci = $article->coverimage()->toFile() ?>
       <figure>
-        <img src="<?php echo $ci->focusCrop(350, 500)->url(); ?>" alt="" />
+        <img src="<?php echo $ci->focusCrop(448, 672)->url(); ?>" alt="" />
       </figure>
     </div>
   <?php endif; ?>
 
-  <header class="card-large-info">
-      <div class="card-large-info__group">
-        <?php if ($article->printed()->isNotEmpty()) : ?>
-          <h3 class="card-large-info__issue">
-            <?= $issue->title()->upper()->html() ?>
-          </h3>
-        <?php endif; ?>
-        <h2 class="card-large-info__title" style="color: <?= $article->parent()->color() ?>">
-          <?= $article->title()->upper()->html() ?>
-        </h2>
-        <h3 class="card-large-info__contributor" style="color: <?= $article->parent()->color() ?>">
-          <?php foreach ($article->contributor()->split() as $name): ?>
-                <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
-          <?php endforeach; ?>
-        </h3>
+  <div class="card-large-portrait-info">
+      <div class="card-large-portrait-info__group">
+        <p class="card-large-portrait-info__title">
+          <?= $article->title()->html() ?>
+        </p>
+        <?php foreach ($article->contributor()->split() as $name): ?>
+          <p class="card-large-portrait-info__contributor">
+            <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
+          </p>
+        <?php endforeach; ?>
       </div>
-      <p class="card-large-info__summary">
-        <?= $article->summary()->html() ?>
+      <p class="card-large-portrait-info__issue">
+        <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title() ?> <?php endif; ?>(<?= $article->category()->upper()->html() ?>)
       </p>
-  </header>
+  </div>
 
 </a>
 </article>

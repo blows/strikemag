@@ -28,25 +28,21 @@
 
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+          <?php $ci = $article->coverimage()->toFile() ?>
 
-          <?php if($article->coverimage()->isNotEmpty()): ?>
-
-            <?php snippet('cardPortrait', array(
+          <?php if($ci->orientation() == 'portrait'): ?>
+            <?php snippet('cardLargePortrait', array(
             'article' => $article,
             'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
+            'issue' => $pages->find('magazine/' . $article->printed())
             )) ?>
-
 
           <?php else: ?>
-            <?php snippet('cardPortrait', array(
+            <?php snippet('cardLargeLandscape', array(
             'article' => $article,
             'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed()),
-            'box' => $box
+            'issue' => $pages->find('magazine/' . $article->printed())
             )) ?>
-
           <?php endif ?>
 
         <?php endforeach ?>

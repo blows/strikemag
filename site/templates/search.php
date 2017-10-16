@@ -25,12 +25,22 @@
           <?php $parent = $result->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php snippet('cardLargeLandscape', array(
-          'article' => $result,
-          'contributor' => $pages->find('contributors/' . $result->contributor()),
-          'issue' => $pages->find('magazine/' . $result->printed()),
-          'box' => $box
-          )) ?>
+          <?php $ci = $result->coverimage()->toFile() ?>
+
+          <?php if($ci->orientation() == 'portrait'): ?>
+            <?php snippet('cardLargePortrait', array(
+            'article' => $result,
+            'contributor' => $pages->find('contributors/' . $result->contributor()),
+            'issue' => $pages->find('magazine/' . $result->printed())
+            )) ?>
+
+          <?php else: ?>
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $result,
+            'contributor' => $pages->find('contributors/' . $result->contributor()),
+            'issue' => $pages->find('magazine/' . $result->printed())
+            )) ?>
+          <?php endif ?>
         <?php endforeach ?>
       <?php else : ?>
         <p>No results found.</p>
