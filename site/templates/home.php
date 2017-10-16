@@ -9,6 +9,13 @@
           $chunk2 = $chunks->nth(1);
     ?>
 
+    <!-- Landing -->
+    <div class="home-land" style="background: rgba(0, 0, 0, 0) url(<?= $latestText; ?>) repeat scroll center top / 150px auto">
+      <div class="home-issue" style="background: url(<?= $latestCover; ?>) top/100%;">
+        
+      </div>
+    </div>
+
     <!-- Featured Banner 1 -->
     <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
 
@@ -34,7 +41,7 @@
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php snippet('cardPortrait', array(
+          <?php snippet('cardLargeLandscape', array(
           'article' => $article,
           'contributor' => $pages->find('contributors/' . $article->contributor()),
           'issue' => $pages->find('magazine/' . $article->printed()),
@@ -70,7 +77,7 @@
           <?php $parent = $article->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
 
-          <?php snippet('cardPortrait', array(
+          <?php snippet('cardLargeLandscape', array(
           'article' => $article,
           'contributor' => $pages->find('contributors/' . $article->contributor()),
           'issue' => $pages->find('magazine/' . $article->printed()),

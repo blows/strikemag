@@ -275,11 +275,7 @@ body {
   body { font-size: 14px; }
 }
 
-/* ----- 3.1  Header  ------------------------------------------------------- */
-
-@import "header";
-
-/* -----  3.2 Menu  --------------------------------------------------------- */
+/* ----- 3.1  Header and Menu  ---------------------------------------------- */
 
 @import "menu";
 
@@ -296,7 +292,7 @@ body {
 .main {
   @include container;
   // padding-top: span(.35);
-  padding-top: span(.7);
+  padding-top: 3.2em;
   // padding-top: 3rem;
   // padding-bottom: 3rem;
 }
@@ -309,6 +305,23 @@ body {
 
 .home {
   background-color: $strikeBackground;
+}
+
+.home-land {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-issue {
+  position: absolute;
+  width: 360px;
+  height: 525px;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%,-50%));
 }
 
 .home-featured {

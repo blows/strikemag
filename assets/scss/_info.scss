@@ -5,6 +5,7 @@
 .info-nav {
   @include span(11.5);
   @include push(.25);
+  text-align: center;
   padding-top: 2em;
   padding-bottom: 2em;
   float: none;

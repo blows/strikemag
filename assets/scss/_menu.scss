@@ -1,3 +1,33 @@
+.header {
+  // position: fixed;
+  z-index: 31;
+  padding-top: 0;
+  // font-size: 0;
+  @include span(12);
+  padding-left: 0;
+  padding-right: 0;
+  background: blue;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  // height:60px;
+  // line-height:60px;
+  height: 0;
+}
+
+.navigation {
+  vertical-align: baseline;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  z-index: 50;
+  @include box-shadow($strikeMainColor 0 0 1em);
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 .menu {
   width: 100%;
   width: 100vw;
@@ -17,15 +47,15 @@ li.menu-item {
   }
   a, button {
     font-family: 'Graphik-Medium-Web', sans-serif;
-    font-size: .89em;
+    font-size: .8em;
     color: white;
     display: block;
     width: 100%;
     height: 100%;
   }
   a {
-    padding-top: .25em;
-    padding-bottom: .25em;
+    padding-top: .08em;
+    padding-bottom: .08em;
   }
   button {
     padding-top: .435em;
@@ -126,14 +156,14 @@ li#branding.menu-item a {
     padding-top: 0;
     padding-bottom: 0;
     border-radius: 50%;
-    @include box-shadow($strikeMainColor 0 0 .5em);
+    @include box-shadow($strikeMainColor 0 0 1em);
     &:hover {
       background-color: $strikeMainColor;
     }
     img {
       height: 1.75em;
-      padding-top: 1.35em;
-      padding-bottom: 1.35em;
+      padding-top: 1.6em;
+      padding-bottom: 1.6em;
       vertical-align: middle;
     }
   }

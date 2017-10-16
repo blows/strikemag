@@ -11,10 +11,14 @@ return function($site, $pages, $page) {
   $online = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 12);
   $archives = $webPlusMag->sortBy('uploaded')->flip()->paginate(($perpage >= 1)? $perpage : 12);
 
+  // Home Cover Land
+  $latestIssue = page('magazine')->children()->sortBy('sort', 'desc')->first();
+  $latestCover = $latestIssue->coverimage()->toFile()->url();
+  $latestText = $site->image('strike-latest.svg')->url();
+
   // Featured articles
   $uid = $page->featuredarticle();
   $post = $pages->index()->findBy('uid', $uid);
-  $featuredfile = $post->coverimage()->toFile();
   $featuredimage = $post->coverimage()->toFile()->url();
   $uid2 = $page->featuredarticle2();
   $post2 = $pages->index()->findBy('uid', $uid2);
@@ -24,9 +28,10 @@ return function($site, $pages, $page) {
     'articles'   => $online,
     'archives'   => $archives,
     'pagination' => $online->pagination(),
+    'latestCover'=> $latestCover,
+    'latestText' => $latestText,
     'uid'        => $uid,
     'post'       => $post,
-    'featuredfile' => $featuredfile,
     'featuredimage' => $featuredimage,
     'uid2'       => $uid2,
     'post2'      => $post2,
