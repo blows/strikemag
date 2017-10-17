@@ -96,7 +96,7 @@
   @include push(.5);
   @include display-flex;
   @include flex-wrap(wrap);
-  @include justify-content(space-around);
+  @include justify-content(center);
   @include align-items(center);
   padding-left: 0;
   padding-right: 0;
@@ -109,6 +109,6 @@
   @include display-flex;
   @include flex-wrap(wrap);
   // @include justify-content(center);
-  @include justify-content(space-around);
+  @include justify-content(center);
   @include align-items(center);
 }

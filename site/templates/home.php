@@ -10,7 +10,7 @@
     ?>
 
     <!-- Landing -->
-    <div class="home-land" style="background: rgba(0, 0, 0, 0) url(<?= $latestText; ?>) repeat scroll center top / 150px auto">
+    <div class="home-land" style="background: rgba(0, 0, 0, 0) url(<?= $latestText; ?>) repeat scroll center top / 250px auto">
       <div class="home-issue" style="background: url(<?= $latestCover; ?>) top/100%;">
 
       </div>
