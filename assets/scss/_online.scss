@@ -97,7 +97,7 @@
   @include display-flex;
   @include flex-wrap(wrap);
   @include justify-content(center);
-  @include align-items(center);
+  @include align-items(flex-end);
   padding-left: 0;
   padding-right: 0;
   margin-bottom: span(.25);
@@ -110,5 +110,5 @@
   @include flex-wrap(wrap);
   // @include justify-content(center);
   @include justify-content(center);
-  @include align-items(center);
+  @include align-items(flex-end);
 }
