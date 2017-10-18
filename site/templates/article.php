@@ -7,6 +7,28 @@
     <article class="article">
 
       <header class="article-info">
+        <div class="article-image">
+          <?php if($page->media()->isNotEmpty()): ?>
+            <figure>
+              <?= $page->media()->embed() ?>
+            </figure>
+          <?php elseif($page->coverimage()->isNotEmpty()) : ?>
+            <figure>
+              <img src="<?= $page->coverimage()->toFile()->url() ?>">
+              <?php if($page->coverimage()->toFile()->credit()->isNotEmpty()) : ?>
+                <figcaption>
+                  Image:
+                  <?php foreach ($page->coverimage()->toFile()->credit()->split() as $name): ?>
+                    <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+                        <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
+                    </a>
+                  <?php endforeach; ?>
+                </figcaption>
+              <?php endif; ?>
+            </figure>
+          <?php endif; ?>
+        </div>
+
         <div class="article-header">
           <h1 class="article-header__title"><?= $page->title()->widont() ?></h1>
           <?php if ($page->subtitle()->isNotEmpty()) : ?>
@@ -15,22 +37,18 @@
 
           <div class="article-header__contributor">
             <?php foreach ($page->contributor()->split() as $name): ?>
-              <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
-                  <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
-              </a>
+                <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
             <?php endforeach; ?>
           </div>
 
           <div class="article-header__meta">
             <span>
               <?php if ($page->parent()->printed()->isNotEmpty()) : ?>
-                <a href="<?php echo $page->parent()->url() ?>">
-                  <?php echo $issue->title()->upper() ?></a>
-              <?php endif; ?>(<?= $page->category()->upper()->html() ?>)
-            </span>
-
-            <span>
-              <?php echo $page->date('d.m.y', 'uploaded') ?>
+                Printed: <a href="<?php echo $page->parent()->url() ?>">
+                  <?php echo $issue->title() ?>, <?= $page->parent()->date('F Y', 'printed') ?></a>
+              <?php else : ?>
+                Uploaded: <?= $page->date('d F Y', 'uploaded') ?>
+              <?php endif ?>
             </span>
 
             <span>
@@ -42,51 +60,19 @@
             </span>
           </div>
         </div>
-
-        <?php if ($page->printed()->isNotEmpty()) : ?>
-          <a href="<?php echo $page->parent()->url() ?>">
-            <div class="article-printed">
-              <?php $ci = $issue->coverimage()->toFile() ?>
-              <figure>
-                <img class="article-printed__cover" src="<?php echo thumb($ci, array('width' => 300, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
-                srcset="<?php echo thumb($ci, array('width' => 256, 'quality' => 70), false) ?> 899w,
-                 <?php echo thumb($ci, array('width' => 320, 'quality' => 70), false) ?> 1200w" />
-              </figure>
-            </div>
-          </a>
-        <?php endif; ?>
-        <!-- <hr /> -->
       </header>
 
       <div class="text">
-        <?php if($page->media()->isNotEmpty()): ?>
-          <figure>
-            <?= $page->media()->embed() ?>
-          </figure>
-        <?php elseif($page->coverimage()->isNotEmpty()) : ?>
-          <figure>
-            <img src="<?= $page->coverimage()->toFile()->url() ?>">
-            <?php if($page->coverimage()->toFile()->credit()->isNotEmpty()) : ?>
-              <figcaption>
-                <?php foreach ($page->coverimage()->toFile()->credit()->split() as $name): ?>
-                  <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
-                      IMAGE: <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
-                  </a>
-                <?php endforeach; ?>
-              </figcaption>
-            <?php endif; ?>
-          </figure>
-        <?php endif; ?>
 
         <?= $page->text()->kirbytext() ?>
 
         <div class="article-credit">
 
         <div class="article-credit__contributor">
-          TEXT:
+          Text:
           <?php foreach ($page->contributor()->split() as $name): ?>
             <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
-                <?php echo $pages->find('contributors/' . $name)->title()->upper()->html() ?>
+                <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
             </a>
           <?php endforeach; ?>
         </div>
@@ -96,9 +82,9 @@
               <div class="article-end__buy">
                 <div class="article-end__buy-cover">
                   <figure id="end-cover">
-                    <img class="article-printed__cover" src="<?php echo thumb($ci, array('width' => 300, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
-                    srcset="<?php echo thumb($ci, array('width' => 256, 'quality' => 70), false) ?> 899w,
-                     <?php echo thumb($ci, array('width' => 320, 'quality' => 70), false) ?> 1200w" />
+                    <img class="article-printed__cover" src="<?php echo thumb($cover, array('width' => 300, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
+                    srcset="<?php echo thumb($cover, array('width' => 256, 'quality' => 70), false) ?> 899w,
+                     <?php echo thumb($cover, array('width' => 320, 'quality' => 70), false) ?> 1200w" />
                   </figure>
                 </div>
                 <div class="article-end__info">
@@ -140,13 +126,22 @@
 
           <?php $parent = $related->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+          <?php $ci = $related->coverimage()->toFile() ?>
 
-          <?php snippet('cardPortrait', array(
-          'article' => $related,
-          'contributor' => $pages->find('contributors/' . $related->contributor()),
-          'issue' => $pages->find('magazine/' . $related->printed()),
-          'box' => $box
-          )) ?>
+          <?php if($ci->orientation() == 'portrait'): ?>
+            <?php snippet('cardLargePortrait', array(
+            'article' => $related,
+            'contributor' => $pages->find('contributors/' . $related->contributor()),
+            'issue' => $pages->find('magazine/' . $related->printed())
+            )) ?>
+
+          <?php else: ?>
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $related,
+            'contributor' => $pages->find('contributors/' . $related->contributor()),
+            'issue' => $pages->find('magazine/' . $related->printed())
+            )) ?>
+          <?php endif ?>
         <?php endforeach ?>
         </ul>
       </section>
@@ -158,13 +153,22 @@
 
           <?php $parent = $more->parent() ?>
           <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
+          <?php $ci = $related->coverimage()->toFile() ?>
 
-          <?php snippet('cardPortrait', array(
-          'article' => $more,
-          'contributor' => $pages->find('contributors/' . $more->contributor()),
-          'issue' => $pages->find('magazine/' . $more->printed()),
-          'box' => $box
-          )) ?>
+          <?php if($ci->orientation() == 'portrait'): ?>
+            <?php snippet('cardLargePortrait', array(
+            'article' => $related,
+            'contributor' => $pages->find('contributors/' . $related->contributor()),
+            'issue' => $pages->find('magazine/' . $related->printed())
+            )) ?>
+
+          <?php else: ?>
+            <?php snippet('cardLargeLandscape', array(
+            'article' => $related,
+            'contributor' => $pages->find('contributors/' . $related->contributor()),
+            'issue' => $pages->find('magazine/' . $related->printed())
+            )) ?>
+          <?php endif ?>
         <?php endforeach ?>
         </ul>
       </section>
