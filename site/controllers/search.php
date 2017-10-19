@@ -8,14 +8,15 @@ return function($site, $pages, $page) {
   $webonly = $pages->find('online')->children()->visible();
   $magazine = $pages->find('magazine')->grandChildren()->visible();
   $webPlusMag = new Pages(array($webonly, $magazine));
+  $searchable = $webPlusMag->sortBy('uploaded', 'desc');
   $online = $webPlusMag->flip()->paginate(($perpage >= 1)? $perpage : 15);
 
   // Search
   $query   = get('q');
-  $results = $webPlusMag->search($query, 'title|text|contributor|artwork|summary')->visible();
+  $results = $searchable->search($query, array('words' => true), 'title|text|contributor|artwork')->visible();
 
   // Filtering
-  $category = $webPlusMag->pluck('category', null, true);
+  $category = $searchable->pluck('category', null, true);
   $keys = array('category');
 
   // return all children if nothing is selected

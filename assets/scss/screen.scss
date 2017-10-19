@@ -3,6 +3,22 @@
 @import "compass/css3/box-shadow";
 @import "grids";
 
+@media screen and (max-width: 1440px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 960px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 450px) {
+
+}
+
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
 /* DRUK */
@@ -322,6 +338,10 @@ body {
   top: 50%;
   left: 50%;
   @include transform(translate(-50%,-50%));
+  @include box-shadow($strikeBackground 0 0 1em);
+  &:hover {
+    @include box-shadow($strikeBackground 0 0 1em);
+  }
 }
 
 .home-featured {

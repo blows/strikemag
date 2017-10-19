@@ -46,12 +46,6 @@ fields:
     label: Summary / Editor's Note
     type: textarea
 
-  color:
-    label: Primary Colour
-    type: color
-    default: 000000
-    width: 1/2
-
   buy:
     label: Link to Product in BigCartel
     type: url

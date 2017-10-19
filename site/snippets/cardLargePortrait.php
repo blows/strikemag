@@ -22,7 +22,7 @@
         <?php endforeach; ?>
       </div>
       <p class="card-large-portrait-info__issue">
-        <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title() ?> <?php endif; ?>(<?= $article->category()->upper()->html() ?>)
+        <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title() ?> <?php else: ?><?php echo $article->date('d F Y', 'uploaded') ?> <?php endif; ?>(<?= $article->category()->upper()->html() ?>)
       </p>
   </div>
 

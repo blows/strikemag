@@ -14,7 +14,7 @@ Contributor: david-graeber
 
 ----
 
-Uploaded: 2013-07-03
+Uploaded: 2013-11-03
 
 ----
 
@@ -26,7 +26,7 @@ Summary: Dass die Welt sich weiter drehen würde, wenn du nicht 8 Stunden deine 
 
 ----
 
-Tags: 
+Tags: issue-3,bullshit jobs,capitalism,work
 
 ----
 

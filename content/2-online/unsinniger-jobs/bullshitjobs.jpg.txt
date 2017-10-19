@@ -1,5 +1,5 @@
-Focus: {"x":0.62,"y":0.4}
+Credit: john-riordan
 
 ----
 
-Credit: john-riordan
+Focus: {"x":0.58,"y":0.37}
