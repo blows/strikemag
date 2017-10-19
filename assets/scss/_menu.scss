@@ -105,6 +105,7 @@ li.menu-head.menu-item {
 @media screen and (max-width: 450px) {
   .menu {
     position: fixed;
+    font-size: 1.5em;
   }
   #branding.menu-item {
     font-size: .89em;
@@ -114,6 +115,10 @@ li.menu-head.menu-item {
   }
   li.menu-head.menu-item {
     width: 50%;
+    line-height: 1.4em;
+  }
+  li.menu-item a {
+    line-height: 1.75em;
   }
   li.menu-toggle {
     display: block;
@@ -150,9 +155,6 @@ li#branding.menu-item a {
 }
 
 @media screen and (min-width: 450px) {
-  li.menu-item {
-    width: 25%;
-  }
   #branding {
     position: fixed;
     bottom: 1.5em;

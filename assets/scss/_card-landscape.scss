@@ -25,7 +25,7 @@
     }
   }
   &-info {
-    height: 16.3vw;
+    height: 266px;
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(space-between);
@@ -208,7 +208,7 @@
   .card-large-portrait {
     width: 100%;
     &-info {
-      height: 53.2vw;
+      // height: 53.2vw;
       // padding: 1em 1.3em 1em 1.3em;
     }
   }

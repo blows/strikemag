@@ -8,10 +8,13 @@
       padding-bottom: .85em;
     }
   }
+  .card-large-portrait {
+    margin: 0 0 2em 0;
+  }
 }
 
 .issue {
-
+  padding-bottom: 2em;
 }
 
 .issue-summary {
@@ -158,6 +161,9 @@
 .issue-cards {
   @include span(5);
   display: inline-block;
+  @include display-flex;
+  @include justify-content(center);
+  @include flex-wrap(wrap);
 }
 
 $issue-padding: 1.5vw;
@@ -196,6 +202,8 @@ $issue-padding: 1.5vw;
     &:nth-of-type(-n+3) {
       @include span(4);
       height: span(5);
+      padding-left: $issue-padding;
+      padding-right: $issue-padding;
     }
     img {
       max-width: 100%;
@@ -234,35 +242,15 @@ $issue-padding: 1.5vw;
 }
 @media screen and (max-width: 768px) {
   .issue-contents {
-    &__content {
-      @include span(12);
-      &:nth-of-type(odd) {
-        border-width: 0 3px 3px 3px;
-      }
-      &:nth-of-type(even) {
-        border-width: 0 3px 3px 3px;
-      }
-      &:first-of-type {
-        border-width: 3px 3px 3px 3px;
-      }
-      &:nth-of-type(2) {
-        border-width: 0 3px 3px 3px;
-      }
-      &:last-of-type {
-        border-width: 0 3px 3px 3px;
-      }
-      a {
-        @include span(12);
-      }
-    }
-    &__content.offline {
-      .issue-contents__content-title, .issue-contents__content-online, .issue-contents__content-contributor {
-        @include span(11);
-        @include push(.5);
-      }
-    }
+    @include span(12);
+    margin: 0;
   }
-
+  .issue-cards {
+    @include span(12);
+  }
+  .magazine .card-large-portrait {
+    margin: 0;
+  }
   .magazine-more {
     padding-top: $issue-padding*4.5;
     padding-bottom: $issue-padding*6;
