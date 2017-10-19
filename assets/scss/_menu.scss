@@ -91,6 +91,15 @@ li.menu-head.menu-item {
   margin-bottom: 0;
   white-space: nowrap;
   text-align: center;
+  @include animation(backandforth 5s infinite linear);
+}
+
+@-webkit-keyframes backandforth {
+0% { -webkit-transform: rotate(0deg);}
+25% { -webkit-transform: rotate(-7deg);}
+50% { -webkit-transform: rotate(0deg);}
+75% { -webkit-transform: rotate(7deg);}
+100% { -webkit-transform: rotate(0deg);}
 }
 
 @media screen and (max-width: 450px) {
@@ -158,7 +167,7 @@ li#branding.menu-item a {
     padding-top: 0;
     padding-bottom: 0;
     border-radius: 50%;
-    @include box-shadow($strikeMainColor 0 0 1em);
+    @include box-shadow($strikeMainColor 0 0 1em, inset 4px 2px 5px rgb(65, 65, 65));
     &:hover {
       background-color: $strikeMainColor;
     }

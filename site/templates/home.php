@@ -2,8 +2,6 @@
 
   <main class="main home" role="main">
 
-    <?php $colors = []; ?>
-
     <?php $chunks = $articles->limit(12)->chunk(6);
           $chunk1 = $chunks->nth(0);
           $chunk2 = $chunks->nth(1);
@@ -17,8 +15,6 @@
     </div>
 
     <!-- Featured Banner 1 -->
-    <?php $back = 'back-' . uniqid(); $colors[$back] = $post->parent()->color(); ?>
-
     <a href="<?php echo $post->url(); ?>">
       <section class="home-featured" style="background-image: url(<?= $featuredimage; ?>)">
       <div class="home-featured-text">
@@ -39,7 +35,6 @@
         <?php foreach($chunk1 as $article): ?>
 
           <?php $parent = $article->parent() ?>
-          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
           <?php $ci = $article->coverimage()->toFile() ?>
 
           <?php if($ci->orientation() == 'portrait'): ?>
@@ -84,7 +79,6 @@
         <?php foreach($chunk2 as $article): ?>
 
           <?php $parent = $article->parent() ?>
-          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
           <?php $ci = $article->coverimage()->toFile() ?>
 
           <?php if($ci->orientation() == 'portrait'): ?>
@@ -120,17 +114,5 @@
     </section>
 
   </main>
-
-  <style>
-    <?php foreach($colors as $box => $parent): ?>
-      .<?= $box ?> {
-        border-color: <?= $parent->color() ?>;
-      }
-
-      .<?= $box ?>:hover, .<?= $box ?>:focus {
-        background: <?= $parent->color() ?> !important;
-      }
-    <?php endforeach ?>
-  </style>
 
 <?php snippet('footer') ?>

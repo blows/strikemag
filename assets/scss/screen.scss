@@ -426,8 +426,9 @@ body {
   }
 }
 #home-cover {
-  @include span(3);
-  height: span(4);
+  @include span(2.85);
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 @media screen and (max-width: 1440px) {

@@ -183,6 +183,7 @@ $issue-padding: 1.5vw;
     @include display-flex;
     @include flex-wrap(wrap);
     @include align-items(center);
+    @include justify-content(center);
   }
   &__issue-cover {
     display: inline-block;

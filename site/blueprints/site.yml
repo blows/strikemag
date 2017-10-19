@@ -36,3 +36,7 @@ fields:
     icon: instagram
     type: url
     width: 1/2
+
+  subscribe:
+    label: Subscription Link
+    type: url
