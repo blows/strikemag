@@ -28,6 +28,7 @@ return function($site, $pages, $page) {
     'articles'   => $online,
     'archives'   => $archives,
     'pagination' => $online->pagination(),
+    'latestIssue'=> $latestIssue,
     'latestCover'=> $latestCover,
     'latestText' => $latestText,
     'uid'        => $uid,
