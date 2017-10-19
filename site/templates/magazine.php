@@ -4,16 +4,11 @@
 
     <div class="magazine">
 
-      <?php $colors = []; ?>
       <?php $issue = $issues->first() ?>
-        <?php $box = 'background-' . uniqid(); $colors[$box] = $issue; ?>
-        <?php $word = 'word-' . uniqid(); $colors[$word] = $issue; ?>
 
         <div class="magazine-more">
           <div class="magazine-more__issues group">
             <?php foreach($issues as $issue): ?>
-
-              <?php $box = 'background-' . uniqid(); $colors[$box] = $issue; ?>
 
               <?php $image = $issue->coverimage()->toFile(); ?>
 
@@ -38,30 +33,6 @@
             <?php endforeach ?>
           </div>
         </div>
-
-      <style>
-        <?php foreach($colors as $box => $issue): ?>
-          .<?= $box ?> {
-            border-color: <?= $issue->color() ?> !important;
-          }
-
-          .<?= $box ?>:hover, .<?= $box ?>:focus {
-            background-color: <?= $issue->color() ?>;
-          }
-
-          .<?= $box ?>:hover.offline, .<?= $box ?>:focus.offline {
-            background: transparent !important;
-          }
-
-          .<?= $word ?> {
-            color: <?= $issue->color() ?> !important;
-          }
-
-          .<?= $word ?>:hover, .<?= $word ?>:focus {
-            color: white !important;
-          }
-        <?php endforeach ?>
-      </style>
 
     </div>
 

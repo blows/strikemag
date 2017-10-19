@@ -3,22 +3,6 @@
 @import "compass/css3/box-shadow";
 @import "grids";
 
-@media screen and (max-width: 1440px) {
-
-}
-@media screen and (max-width: 1200px) {
-
-}
-@media screen and (max-width: 960px) {
-
-}
-@media screen and (max-width: 768px) {
-
-}
-@media screen and (max-width: 450px) {
-
-}
-
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
 /* DRUK */
@@ -313,6 +297,12 @@ body {
   // padding-bottom: 3rem;
 }
 
+@media screen and (max-width: 450px) {
+  .main {
+    padding-top: 1.4em;
+  }
+}
+
 .flex-center {
   @include display-flex;
   @include justify-content(center);
@@ -327,7 +317,7 @@ body {
   position: relative;
   float: left;
   width: 100%;
-  min-height: 100vh;
+  min-height: 92vh;
   overflow: hidden;
 }
 
@@ -335,12 +325,14 @@ body {
   position: absolute;
   width: 360px;
   height: 525px;
+  max-width: 80vw;
+  max-height: 115vw;
   top: 50%;
   left: 50%;
   @include transform(translate(-50%,-50%));
-  @include box-shadow($strikeBackground 0 0 1em);
+  @include box-shadow($strikeText 0 0 2em);
   &:hover {
-    @include box-shadow($strikeBackground 0 0 1em);
+    @include box-shadow($strikeMainColor 0 0 2em);
   }
 }
 
@@ -351,7 +343,7 @@ body {
   z-index: 5;
   @include span(12);
   padding: 0;
-  margin-bottom: span(.5);
+  margin-bottom: span(.25);
   background-position: 50%;
   background-size: cover;
   &-text {
@@ -420,11 +412,16 @@ body {
   padding-top: 1em;
   padding: 1em;
   &__head {
+    padding-top: .5em;
+    padding-bottom: .5em;
     a {
       @include span(12);
       color: white;
       text-decoration: none;
       text-align: center;
+    }
+    a:hover {
+      color: $strikeMainColor;
     }
   }
 }
@@ -452,6 +449,15 @@ body {
   }
 }
 @media screen and (max-width: 450px) {
+  .home-land {
+    min-height: 98vh;
+  }
+  #home-cover {
+    @include span(6);
+    height: span(5);
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 
 /* ----- 0.0 Online  ------------------------------------------------------ */

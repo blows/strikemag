@@ -78,11 +78,22 @@
         <div class="issue-cards">
           <?php foreach($page->children()->visible()->sortBy('sort', 'desc') as $content): ?>
 
-            <?php snippet('cardPortrait', array(
-            'article' => $content,
-            'contributor' => $pages->find('contributors/' . $content->contributor()),
-            'issue' => $pages->find('magazine/' . $content->printed())
-            )) ?>
+            <?php $ci = $content->coverimage()->toFile() ?>
+
+            <?php if($ci->orientation() == 'portrait'): ?>
+              <?php snippet('cardLargePortrait', array(
+              'article' => $content,
+              'contributor' => $pages->find('contributors/' . $content->contributor()),
+              'issue' => $pages->find('magazine/' . $content->printed())
+              )) ?>
+
+            <?php else: ?>
+              <?php snippet('cardLargeLandscape', array(
+              'article' => $content,
+              'contributor' => $pages->find('contributors/' . $content->contributor()),
+              'issue' => $pages->find('magazine/' . $content->printed())
+              )) ?>
+            <?php endif ?>
 
           <?php endforeach ?>
         </div>
