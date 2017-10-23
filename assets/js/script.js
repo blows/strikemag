@@ -1,21 +1,10 @@
-
-
 jQuery(document).ready(function(){
 
 // Menu
-// $( ".cross" ).hide();
-// $( ".menu" ).hide();
 $( "#menu-toggle" ).click(function() {
   $( "#menu-drop" ).toggle( "fast", function() {
   });
 });
-//
-// $( ".cross" ).click(function() {
-// $( ".menu" ).slideToggle( "medium", function() {
-// $( ".cross" ).hide();
-// $( "#hamburger" ).show();
-// });
-// });
 
 // Magazine Contents Show/Hide
 // $( ".issue-contents__title" ).click(function() {
