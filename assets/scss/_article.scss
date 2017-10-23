@@ -26,6 +26,11 @@ $article-spacer: 4rem;
       margin-top: $article-spacer * .5;
       margin-bottom: $article-spacer * .5;
       figure {
+        img {
+          max-height: 85vh;
+          max-width: 100%;
+          width: auto;
+        }
         figcaption {
           color: #828282;
           font-size: .7em;
