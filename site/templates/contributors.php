@@ -3,8 +3,7 @@
   <main class="main" role="main">
 
     <header class="contributors-intro">
-      <h1><?= $page->title() ?></h1>
-      <p>Join our <?php echo $page->children()->count() ?> published writers and artists, send us a pitch!</p>
+      <p>Endless thanks to all our <?php echo $page->children()->count() ?> published contributors.</p>
 
       <div class="contributors-nav">
         <?php foreach($alphabetise as $letter => $items): ?>
@@ -36,7 +35,7 @@
                   <?php endif; ?>
 
                   <div class="contributor-info"><span>
-                    <h1 class="contributor-name"><?php echo $contributor->title()->upper()->html() ?></h1>
+                    <h1 class="contributor-name"><?php echo $contributor->title()->html() ?></h1>
                     <ul class="contributor-role">
                       <?php foreach($contributor->role()->split(',') as $role): ?>
                       <li><?php echo $role ?></li>
@@ -51,7 +50,7 @@
                 <?php endif ?>
               </article>
            	<?php endforeach ?>
-</div>
+          </div>
       <?php endforeach ?>
 
   </div>

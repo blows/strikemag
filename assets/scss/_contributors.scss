@@ -1,6 +1,6 @@
 .alphabet-letter {
   width: 100%;
-  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-family: 'Graphik-Bold', sans-serif;
   margin-left: .5em;
   margin-top: 2em;
 }
@@ -8,17 +8,18 @@
 .contributors-intro {
   @include span(11);
   @include push(.5);
-  margin-top: 1em;
-  p {
+  margin-top: 2em;
+  p, h1 {
     margin-left: .5em;
   }
 }
 
 .contributors-nav {
   text-align: center;
-  font-family: 'Druk-Wide-Medium', sans-serif;
+  font-family: 'Graphik-Bold', sans-serif;
   margin-top: 1em;
   a {
+    font-size: 1.5em;
     text-decoration: none;
     color: inherit;
     padding: .35em;
@@ -82,7 +83,7 @@
   }
 
   &-name {
-    font-family: 'Druk-Wide-Medium', sans-serif;
+    font-family: 'Graphik-Bold', sans-serif;
     line-height: 1.1em;
     font-size: .7em;
   }
