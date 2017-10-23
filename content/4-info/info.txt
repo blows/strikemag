@@ -23,8 +23,8 @@ Distribution: <distribution@strikemag.org>
 
 Or follow and message us on social media:
 
-Facebook: (link: https://www.facebook.com/strikemagyo text: @strikemagyo)
-Twitter: (link: https://twitter.com/strikeyo text: strikeyo)
+Facebook: (link: https://www.facebook.com/strikemagyo text: strikemagyo)
+Twitter: (link: https://twitter.com/strikeyo text: @strikeyo)
 Instagram: (link: https://www.instagram.com/strike_mag text: @strike_mag)
 
 ----
@@ -78,11 +78,9 @@ Prompta menandri eam id. Duo dolor doctus ei, utinam assueverit te sea. Cum id e
 
 Distribution: 
 
-We are self-published and self-distributed, when and how we send post.
+STRIKE! Magazine is a self-published and self-distributed print magazine. The current issue and back issues that are still in stock are available to buy from our online shop. We aim to fulfil postal orders from this shop once a week, shipping via Royal Mail 2nd Class, so we thank you in advance for your patience in receiving your order! 
 
-We do post once a week with 2nd class mail, so patience might be needed! If you have any questions about your order then please email distribution@strike.org.
-
-If you’re interesting in stocking STRIKE! Please email <distribution@strikemag.org>.
+If you have any questions about your order, want to update the address associated with your subscription, or are interesting in stocking or distributing STRIKE! Magazine, please email <distribution@strikemag.org>.
 
 ----
 
@@ -96,10 +94,6 @@ Stockists:
   location: London, UK
   stockist: 56a Infoshop
   link: http://56a.org.uk/
-- 
-  location: London, UK
-  stockist: Dog Section Press
-  link: http://dogsection.bigcartel.com/
 - 
   location: London, UK
   stockist: Housmans

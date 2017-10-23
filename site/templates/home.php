@@ -14,6 +14,12 @@
       </a>
     </div>
 
+    <!-- Chat -->
+    <div class="text-bar">
+      <p>STRIKE! is a collective working co-operatively against structural oppression and towards decolonised, intersectional, post-capitalist futures.</p>
+      <p>Read about our <a href="<?= $latestIssue->url() ?>">latest publication</a>, and explore all <a href="<?= page('online')->url() ?>">online content</a>.</p>
+    </div>
+
     <!-- Featured Banner 1 -->
     <a href="<?php echo $post->url(); ?>">
       <section class="home-featured" style="background-image: url(<?= $featuredimage; ?>)">
@@ -57,6 +63,10 @@
       <?php else: ?>
         <p>Where did all of the articles go?</p>
       <?php endif ?>
+
+      <p class="online-recent__head">
+        <a href="<?= page('online')->url() ?>">View all online content</a>
+      </p>
     </section>
 
     <!-- Featured Banner 2 -->
@@ -101,6 +111,10 @@
       <?php else: ?>
         <p>Where did all of the articles go?</p>
       <?php endif ?>
+
+      <p class="online-recent__head">
+        <a href="<?= page('online')->url() ?>">View all online content</a>
+      </p>
     </section>
 
     <!-- Support -->

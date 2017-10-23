@@ -75,6 +75,7 @@
   .online-nav {
     @include flex-wrap(wrap);
     padding-top: 2.5em;
+    text-align: center;
   }
   .online-nav__filter {
     @include flex(1 1 auto);
@@ -112,4 +113,18 @@
   @include justify-content(center);
   @include align-items(flex-end);
   padding-bottom: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .online-archive, .online-recent {
+    @include span(12);
+    @include push(0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .online-archive {
+    @include span(11);
+    @include push(.5);
+  }
 }

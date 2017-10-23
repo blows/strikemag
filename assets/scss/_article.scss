@@ -31,9 +31,14 @@ $article-spacer: 4rem;
           max-width: 100%;
           width: auto;
         }
+        & > * {
+          margin: 0 auto;
+          display: block;
+        }
         figcaption {
           color: #828282;
           font-size: .7em;
+          text-align: center;
           a {
             text-decoration: none;
           }
@@ -197,30 +202,11 @@ $article-spacer: 4rem;
       }
   }
 
-  .text figure:first-of-type {
+  .text figure {
     @include span(12);
     @include push(0);
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 4em;
-
-    @media (max-width: 550px) {
-        @include span(12);
-        @include push(0);
-      }
-  }
-
-  .text figure {
-    @include span(9);
-    @include push(1.5);
-    padding-left: 0;
-    padding-right: 0;
-
-    @media (max-width: 550px) {
-        @include span(11);
-        @include push(.5);
-      }
-
     margin-bottom: 1em;
     figcaption {
       font-size: .7em;
