@@ -2,15 +2,11 @@
   // position: fixed;
   z-index: 31;
   padding-top: 0;
-  // font-size: 0;
   @include span(12);
   padding-left: 0;
   padding-right: 0;
-  background: blue;
   top: 0;
   transition: top 0.2s ease-in-out;
-  // height:60px;
-  // line-height:60px;
   height: 0;
 }
 
@@ -35,6 +31,9 @@
   z-index: 20;
   top: 0;
   right: 0;
+  @media screen and (max-width: 450px) {
+    @include box-shadow($strikeMainColor 0 0 1em);
+  }
 }
 
 li.menu-item {
@@ -57,10 +56,10 @@ li.menu-item {
     padding-top: .08em;
     padding-bottom: .08em;
   }
-  button {
-    padding-top: .435em;
-    padding-bottom: .435em;
-  }
+  // button {
+  //   padding-top: .435em;
+  //   padding-bottom: .435em;
+  // }
   // small screens
   @media (max-width: 550px) {
     width: 50%;
@@ -118,15 +117,16 @@ li.menu-head.menu-item {
     line-height: 1.4em;
   }
   li.menu-item a {
-    line-height: 1.75em;
+    line-height: 2em;
   }
   li.menu-toggle {
     display: block;
     button {
       background-color: black;
       border-color: transparent;
-      padding-top: .32em;
-      padding-bottom: .32em;
+      // padding-top: .32em;
+      // padding-bottom: .32em;
+      line-height: 1.94em;
     }
   }
   #menu-drop {
