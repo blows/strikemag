@@ -1,8 +1,6 @@
 <?php snippet('header') ?>
 
-  <main style="background-color: <?= $page->parent()->color() ?>" class="main" role="main">
-
-    <?php $colors = []; ?>
+  <main class="main" role="main">
 
     <article class="article">
 
@@ -37,7 +35,7 @@
 
           <div class="article-header__contributor">
             <?php foreach ($page->contributor()->split() as $name): ?>
-                <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
+                <span><?php echo $pages->find('contributors/' . $name)->title()->html() ?></span>
             <?php endforeach; ?>
           </div>
 
@@ -71,9 +69,7 @@
         <div class="article-credit__contributor">
           Text:
           <?php foreach ($page->contributor()->split() as $name): ?>
-            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
-                <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
-            </a>
+            <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>"><?php echo $pages->find('contributors/' . $name)->title()->html() ?></a>
           <?php endforeach; ?>
         </div>
 
@@ -175,19 +171,6 @@
     <?php endif ?>
 
   </main>
-
-  <style>
-    <?php foreach($colors as $box => $parent): ?>
-      .<?= $box ?> {
-        border-color: <?= $parent->color() ?>;
-      }
-
-      .<?= $box ?>:hover, .<?= $box ?>:focus {
-        background: <?= $parent->color() ?> !important;
-      }
-    <?php endforeach ?>
-  </style>
-
 
   <!-- <?php snippet('prevnext', ['flip' => true]) ?> -->
 

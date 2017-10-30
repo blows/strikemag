@@ -147,7 +147,10 @@ figcaption {
 // }
 
 .text {
-
+  @media (max-width: 450px) {
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
 }
 
 .text h1, .text h2, .text h3 {
@@ -251,9 +254,6 @@ figcaption {
 
 .text blockquote {
   padding: .75rem;
-  p {
-    font-size: 1.5em;
-  }
 }
 
 .text blockquote :last-child {

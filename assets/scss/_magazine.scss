@@ -289,30 +289,3 @@ $issue-padding: 1.5vw;
     }
   }
 }
-@media screen and (max-width: 450px) {
-  .magazine-more {
-    padding-top: $issue-padding*4.5;
-    padding-bottom: $issue-padding*6;
-    &__explore {
-      padding-left: $issue-padding*5;
-      padding-bottom: $issue-padding*2.5;
-    }
-    &__issues {
-      padding-left: 0;
-      padding-right: 0;
-    }
-    &__issue-cover {
-      @include span(6);
-      padding-left: $issue-padding*2;
-      padding-right: $issue-padding*2;
-      padding-top: $issue-padding*2;
-      padding-bottom: $issue-padding*2;
-      &:nth-of-type(-n+3) {
-        height: auto;
-        @include span(6);
-        padding-left: $issue-padding*2;
-        padding-right: $issue-padding*2;
-      }
-    }
-  }
-}

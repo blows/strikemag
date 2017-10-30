@@ -17,7 +17,7 @@ $article-spacer: 4rem;
     @include span(9);
     @include push(1.5);
 
-    @media (max-width: 550px) {
+    @media (max-width: 450px) {
       @include span(11);
       @include push(.5);
     }
@@ -25,6 +25,8 @@ $article-spacer: 4rem;
     .article-image {
       margin-top: $article-spacer * .5;
       margin-bottom: $article-spacer * .5;
+      max-width: 100%;
+      @include display-flex;
       figure {
         img {
           max-height: 85vh;
@@ -38,7 +40,7 @@ $article-spacer: 4rem;
         figcaption {
           color: #828282;
           font-size: .7em;
-          text-align: center;
+          text-align: left;
           a {
             text-decoration: none;
           }
@@ -52,20 +54,28 @@ $article-spacer: 4rem;
     @include span(9);
     @include push(1.5);
     margin-top: $article-spacer * .5;
-    @media (max-width: 550px) {
+    @media (max-width: 450px) {
         margin-top: 1.6em;
+        @include span(12);
+        @include push(0);
       }
 
     &__title {
       font-size: 2.75em;
       line-height: 1em;
       font-family: 'Graphik-Bold', sans-serif;
+      @media (max-width: 450px) {
+        font-size: 2em;
+      }
     }
 
     &__subtitle {
       font-size: 2.75em;
       line-height: 1em;
       font-family: 'Graphik-BoldItalic', sans-serif;
+      @media (max-width: 450px) {
+        font-size: 2em;
+      }
     }
 
     &__contributor {
@@ -82,11 +92,14 @@ $article-spacer: 4rem;
           color: black;
         }
       }
-      a:after {
+      a:after, span:after {
         content: ","
       }
-      a:last-of-type:after {
+      a:last-of-type:after, span:last-of-type:after {
         content: ""
+      }
+      @media (max-width: 450px) {
+        font-size: 2em;
       }
     }
 
@@ -161,10 +174,10 @@ $article-spacer: 4rem;
     @include push(1.5);
     margin-bottom: 3em;
 
-    @media (max-width: 550px) {
-        @include span(full inside no-gutters);
-        @include push(0);
-      }
+    @media (max-width: 450px) {
+      @include span(full inside no-gutters);
+      @include push(0);
+    }
   }
 
   .text h1, .text h2, .text h3 {
@@ -174,10 +187,10 @@ $article-spacer: 4rem;
     margin-bottom: 1em;
     text-transform: uppercase;
 
-    @media (max-width: 550px) {
-      @include span(full inside no-gutters);
-      @include push(0);
-      }
+    @media (max-width: 450px) {
+      @include span(11);
+      @include push(.5);
+    }
   }
 
   .text ul, .text ol {
@@ -185,10 +198,10 @@ $article-spacer: 4rem;
     @include push(1.5);
     margin-bottom: 1em;
 
-    @media (max-width: 550px) {
-        @include span(11);
-        @include push(.5);
-      }
+    @media (max-width: 450px) {
+      @include span(11);
+      @include push(.5);
+    }
   }
 
   .text p {
@@ -196,10 +209,10 @@ $article-spacer: 4rem;
     @include push(1.5);
     margin-bottom: 1em;
 
-    @media (max-width: 550px) {
-        @include span(11);
-        @include push(.5);
-      }
+    @media (max-width: 450px) {
+      @include span(11);
+      @include push(.5);
+    }
   }
 
   .text figure {
@@ -217,18 +230,18 @@ $article-spacer: 4rem;
   }
 
   .text hr {
-    @include span(8);
-    @include push(2);
+    @include span(9);
+    @include push(1.5);
     margin-bottom: 1.8em;
     height: 1px;
-    background: black;
+    background: $strikeMainColor;
     border: 0;
   }
 
   .text ul {
     @include span(7);
 
-    @media (max-width: 550px) {
+    @media (max-width: 450px) {
         @include span(11);
         @include push(.5);
       }
@@ -241,32 +254,31 @@ $article-spacer: 4rem;
   .text pre, .text code {
     @include span(7);
 
-    @media (max-width: 550px) {
+    @media (max-width: 450px) {
         @include span(11);
         @include push(.5);
       }
   }
 
   .text blockquote {
-    @include span(12);
-    font-size: 1.75em;
-    line-height: 1.75em;
-    margin-bottom: 0;
+    @include span(9);
+    @include push(1.5);
+    margin-bottom: 1em;
 
-    @media (max-width: 550px) {
-        @include span(11);
-        @include push(.5);
-      }
+    @media (max-width: 450px) {
+      @include span(11);
+      @include push(.5);
+    }
 
     p {
-      @include span(12);
-      font-size: 1.5em;
-      margin-top: .4em;
-      margin-left: 0;
+      margin-bottom: 0;
+      @include span(10.5);
+      @include push(1.5);
 
-      @media (max-width: 550px) {
-          margin-left: 0;
-        }
+      @media (max-width: 450px) {
+        @include span(10.5);
+        @include push(1.5);
+      }
     }
   }
 
@@ -288,6 +300,7 @@ $article-spacer: 4rem;
 }
 
   .article-credit {
+    color: #828282;
     @include span(9);
     @include push(1.5);
     .article-credit__contributor {
@@ -296,6 +309,12 @@ $article-spacer: 4rem;
         margin-bottom: 3em !important;
         margin-left: 0;
         padding-left: 0;
+        a:after {
+          content: ","
+        }
+        a:last-of-type:after {
+          content: ""
+        }
     }
     @media all and (max-width: 550px) {
       @include span(11);
