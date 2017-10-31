@@ -37,6 +37,8 @@
   padding: 0 1.5em;
   display: inline-block;
   margin: 0;
+  @include appearance(none);
+  @include border-radius(0);
 }
 
 #mc_embed_signup .button:hover {
