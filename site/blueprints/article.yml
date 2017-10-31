@@ -110,7 +110,7 @@ fields:
     columns: 4
     options:
       text: Text
-      img: Image
+      image: Image
       video: Video
       audio: Audio
     show:

@@ -42,7 +42,7 @@ Coverimage: 16-sisters-uncut-guide-to-taking-action-01.jpg
 
 ----
 
-Category: img
+Category: image
 
 ----
 
