@@ -74,23 +74,23 @@
         </div>
 
         <?php if ($page->printed()->isNotEmpty()) : ?>
-            <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
-              <div class="article-end__buy">
-                <div class="article-end__buy-cover">
-                  <figure id="end-cover">
-                    <img class="article-printed__cover" src="<?php echo thumb($cover, array('width' => 300, 'quality' => 100), false) ?>" alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
-                    srcset="<?php echo thumb($cover, array('width' => 256, 'quality' => 70), false) ?> 899w,
-                     <?php echo thumb($cover, array('width' => 320, 'quality' => 70), false) ?> 1200w" />
-                  </figure>
-                </div>
-                <div class="article-end__info">
-                  <p>Originally published in <?= $issue->title()->html() ?><?php if ($issue->name()->isNotEmpty()) :?>: <?= $issue->name()->html() ?><?php endif ?>, <?= $issue->date('F Y', 'printed') ?>.
-                    <br><br>
-                    Available from our shop.
-                  </p>
-                </div>
-              </div>
-            </a>
+          <div class="article-end__buy">
+            <figure class="article-end__buy-cover" id="end-cover">
+              <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
+                <img alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
+                src="<?php echo thumb($cover, array('width' => 300, 'quality' => 100), false) ?>"
+                srcset="<?php echo thumb($cover, array('width' => 256, 'quality' => 70), false) ?> 899w,
+                 <?php echo thumb($cover, array('width' => 320, 'quality' => 70), false) ?> 1200w" />
+              </a>
+            </figure>
+            <div class="article-end__info">
+              <p>Originally published in <?= $issue->title()->html() ?><?php if ($issue->name()->isNotEmpty()) :?>: <?= $issue->name()->html() ?><?php endif ?>, <?= $issue->date('F Y', 'printed') ?>.
+                <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
+                  <p>Available from our shop.</p>
+                </a>
+              </p>
+            </div>
+          </div>
         <?php endif; ?>
 
         </div>

@@ -47,7 +47,6 @@ $article-spacer: 4rem;
         }
       }
     }
-
   }
 
   &-header {
@@ -84,6 +83,10 @@ $article-spacer: 4rem;
       line-height: 1em;
       margin-top: $article-spacer;
       margin-bottom: $article-spacer;
+      @media (max-width: 450px) {
+        margin-top: $article-spacer * 3/4;
+        margin-bottom: $article-spacer * 3/4;
+      }
       font-family: 'Graphik-Bold', sans-serif;
       a {
         color: black;
@@ -115,7 +118,8 @@ $article-spacer: 4rem;
       span {
         margin: 0 1.1rem 0 0;
       }
-      @media (max-width: 480px) {
+      @media (max-width: 450px) {
+        margin-bottom: $article-spacer * 3/4;
         span {
           display: block;
         }
@@ -236,6 +240,10 @@ $article-spacer: 4rem;
     height: 1px;
     background: $strikeMainColor;
     border: 0;
+    @media (max-width: 450px) {
+      @include span(11);
+      @include push(.5);
+    }
   }
 
   .text ul {
@@ -315,8 +323,11 @@ $article-spacer: 4rem;
         a:last-of-type:after {
           content: ""
         }
+        @media screen and (max-width: 450px) {
+          margin-top: 1.4em;
+        }
     }
-    @media all and (max-width: 550px) {
+    @media all and (max-width: 450px) {
       @include span(11);
       @include push(.5);
     }
@@ -374,7 +385,7 @@ $article-spacer: 4rem;
       padding-bottom: .25em;
       font-size: 1.6em;
       // float: none;
-      @media all and (max-width: 550px) {
+      @media all and (max-width: 450px) {
         @include span(11);
         @include push(.5);
       }
@@ -394,28 +405,37 @@ $article-spacer: 4rem;
 
 .article-end__buy {
   @include display-flex;
-  a {
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
-    display: block;
-    border: none !important;
-    &:hover {
-      background-color: transparent !important;
-    }
+  @include justify-content(flex-start);
+  @media screen and (max-width: 450px) {
+    @include flex-direction(column);
   }
-}
-.article-end__buy-cover {
-  figure#end-cover {
+  .article-end__buy-cover {
+    @include flex(0 3 auto);
+    margin-right: 2em;
+    a {
+      border: none !important;
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
     img {
       display: block;
+      max-height: none;
+      width: inherit;
+      @media screen and (max-width: 450px) {
+        width: 50%;
+      }
+      &:hover, &:focus {
+        @include box-shadow($strikeMainColor 0 0 1.6em);
+      }
     }
   }
-}
-.article-end__info {
-  p {
-    width: 100% !important;
-    padding: 0 1.6em !important;
-    margin: 0 !important;
+  .article-end__info {
+    @include flex(0 2 auto);
+    p {
+      @include span(12);
+      margin-left: 0 !important;
+    }
   }
 }
 
