@@ -10,7 +10,7 @@ Email:
 
 ----
 
-Website: 
+Website: https://ninapower.net
 
 ----
 
@@ -22,8 +22,8 @@ Title: Nina Power
 
 ----
 
-Profilepic: 
+Profilepic: nina-power-by-guy-smallman.jpg
 
 ----
 
-Role: Cultural Critic,Social Theorist,Writer
+Role: Writer,Lecturer,Activist
