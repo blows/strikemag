@@ -71,3 +71,5 @@ site/config/private.php
 
 /assets/avatars/*
 !/assets/avatars/index.html
+
+.git-ftp-ignore
