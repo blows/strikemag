@@ -1,5 +1,0 @@
-Focus: {"x":0.5,"y":0.24}
-
-----
-
-Credit: samuli-saarinen
