@@ -41,7 +41,7 @@ c::set('ssl', true);
 
 c::set('cachebuster', true);
 
-c::set('debug',true);
+c::set('debug', true);
 
 // Omit blog folder from url
 c::set('routes', array(

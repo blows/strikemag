@@ -121,7 +121,6 @@
         <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
 
           <?php $parent = $related->parent() ?>
-          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
           <?php $ci = $related->coverimage()->toFile() ?>
 
           <?php if($ci->orientation() == 'portrait'): ?>
@@ -148,7 +147,6 @@
         <?php foreach($online->not($page)->shuffle()->limit(3) as $more): ?>
 
           <?php $parent = $more->parent() ?>
-          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
           <?php $ci = $related->coverimage()->toFile() ?>
 
           <?php if($ci->orientation() == 'portrait'): ?>

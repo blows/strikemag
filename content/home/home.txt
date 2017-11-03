@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-Featuredarticle: the-city-and-the-court
+Featuredarticle: radical-listening-a-manifesto
 
 ----
 
@@ -14,4 +14,4 @@ Link1: http://strikemag.bigcartel.com/
 
 ----
 
-Featuredarticle2: on-the-phenomenon-of-bullshit-jobs
+Featuredarticle2: bullshit-jobs
