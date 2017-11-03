@@ -1,0 +1,12 @@
+{
+  "name": "logger",
+  "description": "Kirby Logger",
+  "author": "Sonja Broda <sonja@texniq.de>",
+  "license": "MIT",
+  "version": "1.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/texnixe/kirby-logger"
+  },
+  "type": "kirby-plugin"
+}
