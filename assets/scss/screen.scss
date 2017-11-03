@@ -458,8 +458,7 @@ body {
   padding: 1.5em 0 1.5em 0;
 }
 .issues-home__head, .online-recent__head {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding: .5em 35% .5em 35%;
   a {
     @include span(12);
     color: inherit;
