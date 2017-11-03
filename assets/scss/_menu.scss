@@ -90,7 +90,7 @@ li.menu-head.menu-item {
   margin-bottom: 0;
   white-space: nowrap;
   text-align: center;
-  @include animation(backandforth 5s infinite linear);
+  // @include animation(backandforth 5s infinite linear);
 }
 
 @-webkit-keyframes backandforth {

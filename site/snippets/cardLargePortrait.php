@@ -13,7 +13,10 @@
   <div class="card-large-portrait-info">
       <div class="card-large-portrait-info__group">
         <p class="card-large-portrait-info__title">
-          <?= $article->title()->html() ?>
+          <?= $article->title() ?><br />
+          <?php if($sub = $article->subtitle()->isNotEmpty()): ?>
+            <span><?= $article->subtitle() ?></span>
+          <?php endif ?>
         </p>
         <?php foreach ($article->contributor()->split() as $name): ?>
           <p class="card-large-portrait-info__contributor">

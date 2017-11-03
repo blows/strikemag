@@ -40,9 +40,12 @@
       // font-size: 1.875vw;
       margin-left: 0;
       margin-bottom: .75em;
+      span {
+        font-family: 'Graphik-BoldItalic', sans-serif;
+      }
     }
     &__contributor {
-      font-family: 'Graphik-BoldItalic', sans-serif;
+      font-family: 'Graphik-Bold', sans-serif;
       font-size: 1.35em;
       // font-size: 1.875vw;
       &::after {
@@ -151,17 +154,12 @@
       // font-size: 1.875vw;
       margin-left: 0;
       margin-bottom: .75em;
-      p {
-        span {
-          font-family: 'Graphik-BoldItalic', sans-serif;
-          &::before {
-            content: " :";
-          }
-        }
+      span {
+        font-family: 'Graphik-BoldItalic', sans-serif;
       }
     }
     &__contributor {
-      font-family: 'Graphik-BoldItalic', sans-serif;
+      font-family: 'Graphik-Bold', sans-serif;
       font-size: 1.35em;
       // font-size: 1.875vw;
       &::after {

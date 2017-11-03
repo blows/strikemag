@@ -30,8 +30,10 @@
   <div class="card-large-info">
     <div class="card-large-info__group">
       <p class="card-large-info__title">
-        <?= $article->title()->widont() ?>
-        <?php if($sub = $article->subtitle()->isNotEmpty()): ?>:<span> <?= $article->subtitle() ?></span><?php endif ?>
+        <?= $article->title()->widont() ?><br />
+        <?php if($sub = $article->subtitle()->isNotEmpty()): ?>
+          <span><?= $article->subtitle() ?></span>
+        <?php endif ?>
       </p>
       <?php foreach ($article->contributor()->split() as $name): ?>
         <p class="card-large-info__contributor">
