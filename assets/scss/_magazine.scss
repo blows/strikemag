@@ -192,12 +192,12 @@ $issue-padding: 1.5vw;
   }
   &__issues {
     // @include span(12);
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
     @include display-flex;
     @include flex-wrap(wrap);
     @include align-items(center);
-    @include justify-content(center);
+    @include justify-content(space-evenly);
   }
   &__issue-cover {
     display: inline-block;
