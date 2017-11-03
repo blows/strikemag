@@ -24,7 +24,7 @@
   padding-bottom: 3em;
   &__image {
     height: 30em;
-    background-color: #141414;
+    background-color: #000;
     & #issue-slider {
       @include transform(translateY(6%));
       height: 27em !important;
@@ -87,7 +87,6 @@
   display: inline-block;
   padding: 0;
   padding-bottom: 3em;
-  font-size: 1.2em;
 
   &-group {
     @include span(11);
@@ -101,6 +100,9 @@
     border-style: solid;
     border-width: 0 0 $lineThickness 0;
     line-height: 1.3em;
+    &-title, &-contributor {
+      @include span(12);
+    }
     a {
       display: block;
       color: $strikeText;
@@ -172,6 +174,8 @@
   @include display-flex;
   @include justify-content(center);
   @include flex-wrap(wrap);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 $issue-padding: 1.5vw;
