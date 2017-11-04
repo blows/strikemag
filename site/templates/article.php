@@ -22,8 +22,7 @@
           <div class="article-header__meta">
             <span>
               <?php if ($page->parent()->printed()->isNotEmpty()) : ?>
-                Printed: <a href="<?php echo $page->parent()->url() ?>">
-                  <?php echo $issue->title() ?> <?= $issue->name() ?></a>
+                Printed: <a href="<?php echo $page->parent()->url() ?>"><?php echo $issue->title() ?><?php if ($issue->name()->isNotEmpty()): ?> <?= $issue->name() ?><?php endif ?></a>
               <?php else : ?>
                 Uploaded: <?= $page->date('d F Y', 'uploaded') ?>
               <?php endif ?>
@@ -53,7 +52,6 @@
               <img src="<?= $page->coverimage()->toFile()->url() ?>">
               <?php if($page->coverimage()->toFile()->credit()->isNotEmpty()) : ?>
                 <figcaption>
-                  Image:
                   <?php foreach ($page->coverimage()->toFile()->credit()->split() as $name): ?>
                     <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
                         <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
@@ -73,7 +71,7 @@
         <div class="article-credit">
 
         <div class="article-credit__contributor">
-          Text:
+          By
           <?php foreach ($page->contributor()->split() as $name): ?>
             <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>"><?php echo $pages->find('contributors/' . $name)->title()->html() ?></a>
           <?php endforeach; ?>
@@ -83,19 +81,20 @@
           <div class="article-end__buy">
             <figure class="article-end__buy-cover" id="end-cover">
               <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
-                <img alt="STRIKE! <?= $issue->title()->html() ?>" sizes="100vw"
-                src="<?php echo thumb($cover, array('width' => 300, 'quality' => 100), false) ?>"
-                srcset="<?php echo thumb($cover, array('width' => 256, 'quality' => 70), false) ?> 899w,
-                 <?php echo thumb($cover, array('width' => 320, 'quality' => 70), false) ?> 1200w" />
+                <img alt="STRIKE! <?= $issue->title()->html() ?>"
+                sizes="(max-width: 450px) 57vw, 26vw"
+                src="<?php echo thumb($cover, array('width' => 500, 'quality' => 100), false) ?>"
+                srcset="<?php echo thumb($cover, array('width' => 196.3, 'quality' => 70), false) ?> 196.3w,
+                  <?php echo thumb($cover, array('width' => 254.6, 'quality' => 70), false) ?> 254.6w,
+                  <?php echo thumb($cover, array('width' => 306.7, 'quality' => 70), false) ?> 306.7w,
+                  <?php echo thumb($cover, array('width' => 368.08, 'quality' => 70), false) ?> 368.08w" />
               </a>
+              <figcaption class="article-end__info">
+                Printed in <?= $issue->title()->html() ?><?php if ($issue->name()->isNotEmpty()) :?> <?= $issue->name()->widont() ?><?php endif ?>
+                  <br /><br />
+                  <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">Get it here</a>
+              </figcaption>
             </figure>
-            <div class="article-end__info">
-              <p>Originally published in <?= $issue->title()->html() ?><?php if ($issue->name()->isNotEmpty()) :?>: <?= $issue->name()->html() ?><?php endif ?>, <?= $issue->date('F Y', 'printed') ?>.
-                <a href="<?php echo $page->parent()->buy()->html() ?>" target="_blank">
-                  <p>Available from our shop.</p>
-                </a>
-              </p>
-            </div>
           </div>
         <?php endif; ?>
 
