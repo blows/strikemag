@@ -5,14 +5,6 @@
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
-/* DRUK */
-@font-face {
-  font-family: 'Druk-Wide-Medium';
-  src: url(../fonts/DrukWide-Medium-Web.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* Graphik */
 @font-face {
   font-family: 'Graphik-Medium';
@@ -41,6 +33,8 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
 /* Clear fix */
 .group:after {

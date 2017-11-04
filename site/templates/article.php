@@ -23,10 +23,14 @@
             <span>
               <?php if ($page->parent()->printed()->isNotEmpty()) : ?>
                 Printed: <a href="<?php echo $page->parent()->url() ?>">
-                  <?php echo $issue->title() ?>, <?= $page->parent()->date('F Y', 'printed') ?></a>
+                  <?php echo $issue->title() ?> <?= $issue->name() ?></a>
               <?php else : ?>
                 Uploaded: <?= $page->date('d F Y', 'uploaded') ?>
               <?php endif ?>
+            </span>
+
+            <span>
+              <?= $page->parent()->date('F Y', 'printed') ?>
             </span>
 
             <span>

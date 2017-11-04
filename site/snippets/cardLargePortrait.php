@@ -21,8 +21,7 @@
         </p>
       </div>
       <p class="card-large-portrait-info__issue">
-        <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title() ?> <?php else: ?><?php echo $article->date('d F Y', 'uploaded') ?> <?php endif; ?>(<?= ucfirst($article->category()->html()) ?>)
-      </p>
+        <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title() ?><?php if ($article->parent()->name()->isNotEmpty()): ?> <?= $article->parent()->name()->html() ?><?php endif ?><?php else: ?><?php echo $article->date('d F Y', 'uploaded') ?> <?php endif; ?>
   </div>
 
 </a>
