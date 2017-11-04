@@ -25,7 +25,6 @@
           <?php if(!$article) continue ?>
 
           <?php $parent = $article->parent() ?>
-          <?php $box = 'background-' . uniqid(); $colors[$box] = $parent; ?>
           <?php $ci = $article->coverimage()->toFile() ?>
 
           <?php if($ci->orientation() == 'portrait'): ?>
