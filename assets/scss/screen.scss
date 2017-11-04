@@ -408,13 +408,13 @@ body {
   background-color: $strikeText;
   color: white;
   font-family: 'Graphik-Bold', sans-serif;
-  font-size: 1.6em;
+  font-size: 2.2em;
   text-align: center;
   p {
     line-height: 1.2em;
     padding-bottom: 1em;
-    @include span(8);
-    @include push(2);
+    @include span(10);
+    @include push(1);
     a, a:visited {
       color: inherit;
       border-width: 0 0 1px 0;

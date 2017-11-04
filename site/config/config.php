@@ -30,7 +30,7 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 */
 
 // Redirect all http requests to https
-c::set('ssl', true);
+// c::set('ssl', true);
 
 // Cache
 // c::set('cache', true);

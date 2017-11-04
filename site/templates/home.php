@@ -17,7 +17,6 @@
     <!-- Chat -->
     <div class="text-bar">
       <p>STRIKE! is a collective working co-operatively against structural oppression and towards decolonised, intersectional, post-capitalist futures.</p>
-      <p>Read about our <a href="<?= $latestIssue->url() ?>">latest publication</a>, and explore all <a href="<?= page('online')->url() ?>">online content</a>.</p>
     </div>
 
     <!-- Featured Banner 1 -->

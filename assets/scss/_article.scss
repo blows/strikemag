@@ -320,9 +320,10 @@ $article-spacer: 4rem;
 }
 
   .article-credit {
-    color: #979797;
     @include span(9);
     @include push(1.5);
+    font-family: 'Space Mono', monospace;
+    color: #979797;
     .article-credit__contributor {
         display: inline-block;
         margin-top: 1em;
@@ -419,7 +420,6 @@ $article-spacer: 4rem;
   @include display-flex;
   @include justify-content(center);
   @include flex-direction(column);
-  font-family: 'Space Mono', monospace;
 
   .article-end__buy-cover {
     @include flex(0 3 auto);
