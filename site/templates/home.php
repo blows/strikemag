@@ -70,7 +70,7 @@
     </section>
 
     <!-- Featured Banner 2 -->
-    <a href="<?php echo $post->url(); ?>">
+    <!-- <a href="<?php echo $post->url(); ?>">
       <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
       <div class="home-featured-text">
         <h2 class="home-featured-title">
@@ -81,10 +81,10 @@
         <?php endforeach; ?>
       </div>
       </section>
-    </a>
+    </a> -->
 
     <!-- Pieces 2 -->
-    <section class="online-recent">
+    <!-- <section class="online-recent">
       <?php if($articles->count()): ?>
         <?php foreach($chunk2 as $article): ?>
 
@@ -115,7 +115,7 @@
       <p class="online-recent__head">
         <a href="<?= page('online')->url() ?>">View all online content</a>
       </p>
-    </section>
+    </section> -->
 
     <!-- Support -->
     <section class="home-support">
