@@ -1,8 +1,7 @@
 .online-nav {
   @include display-flex;
   @include justify-content(space-between);
-  @include span(11);
-  @include push(.5);
+  @include span(12);
   padding-top: 1.5em;
   padding-bottom: 2em;
 }
@@ -10,10 +9,10 @@
 .online-nav__filter {
   padding-left: .4vw;
   .button {
-    font-size: 1em;
+    font-size: .8em;
     text-decoration: none;
     border-style: solid;
-    border-width: 3px 3px 3px 3px;
+    border-width: 2px;
     border-color: $strikeMainColor;
     color: $strikeMainColor;
     padding: 1em;
@@ -21,7 +20,7 @@
     font-family: 'Graphik-Medium', sans-serif;
     margin-left: 1em;
     height: auto;
-    line-height: 1em;
+    line-height: .1em;
     background-color: transparent;
     &:hover {
       background-color: $strikeMainColor;
@@ -31,22 +30,21 @@
 }
 
 .online-nav__search {
-  @include flex(4 1 auto);
   input {
     font-family: inherit;
-    font-size: 1.1em;
-    border: 3px solid $strikeMainColor;
+    font-size: .8em;
+    border: 2px solid $strikeMainColor;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
     color: $strikeMainColor;
     background-color: transparent;
     box-sizing: border-box;
-    height: 3em;
-    padding: .75em 1em .75em 1em;
+    height: 2.4em;
+    padding: .4em 1em .4em 1em;
     display: inline-block;
     margin: 0;
-    width: 100%;
+    // width: 100%;
     &:focus {
       outline-style: none !important;
       border-color: $strikeMainColor !important;
@@ -54,6 +52,12 @@
       -moz-box-shadow: none !important;
       box-shadow: none !important;
     }
+  }
+  input#search-input {
+    @include flex(4 1 auto);
+  }
+  input#search-submit {
+    @include flex(1 1 auto);
   }
   &:focus {
     outline-style: none !important;

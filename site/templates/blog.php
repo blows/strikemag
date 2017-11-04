@@ -3,20 +3,18 @@
   <main class="main" role="main">
 
     <section class="online-nav">
-      <div class="online-nav__search">
-        <form class="search" method="post" action="<?= page('online/search')->url() ?>">
-        <input type="search" name="q" placeholder="Search" value="<?php echo (!empty($query)) ? esc($query) : '' ?>">
-        <!-- <input type="submit" value="Search"> -->
-        </form>
-      </div>
+      <form class="online-nav__search" method="post" action="<?= page('online/search')->url() ?>">
+        <input id="search-input"type="search" name="q" placeholder="Search" value="<?php echo (!empty($query)) ? esc($query) : '' ?>">
+        <input id="search-submit" type="submit" value="Search">
+      </form>
 
-      <div class="online-nav__filter">
+      <!-- <div class="online-nav__filter">
         <form id="filters" method="post">
             <?php foreach($category as $item): ?>
               <?php if(!$item) continue ?><button class="button" <?php e(isset($data['category']) && $data['category'] == $item, ' selected') ?> value="<?php echo $item ?>" name="category" onclick="this.form.submit()"><?= ucfirst($item) ?></button>
             <?php endforeach ?>
         </form>
-      </div>
+      </div> -->
     </section>
 
     <section class="online-archive">
