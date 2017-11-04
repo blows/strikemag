@@ -30,16 +30,13 @@
   <div class="card-large-info">
     <div class="card-large-info__group">
       <p class="card-large-info__title">
-        <?= $article->title()->widont() ?><br />
-        <?php if($sub = $article->subtitle()->isNotEmpty()): ?>
-          <span><?= $article->subtitle() ?></span>
+        <?= $article->title()->upper()->widont() ?><?php if($sub = $article->subtitle()->isNotEmpty()): ?>:<br />
+          <span><?= $article->subtitle()->upper() ?></span>
         <?php endif ?>
       </p>
-      <?php foreach ($article->contributor()->split() as $name): ?>
-        <p class="card-large-info__contributor">
-          <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
-        </p>
-      <?php endforeach; ?>
+      <p class="card-large-info__contributors">
+        by <?php foreach ($article->contributor()->split() as $name): ?><span class="card-large-info__contributor"><?php echo $pages->find('contributors/' . $name)->title()->html() ?></span><?php endforeach; ?>
+      </p>
     </div>
     <p class="card-large-info__issue">
       <?php if ($article->parent()->printed()->isNotEmpty()) : ?><?php echo $article->parent()->title() ?> <?php else: ?><?php echo $article->date('d F Y', 'uploaded') ?> <?php endif; ?>(<?= ucfirst($article->category()->html()) ?>)

@@ -14,7 +14,7 @@
           <?php endif ?>
 
           <div class="article-header__contributor">
-            <?php foreach ($page->contributor()->split() as $name): ?>
+            by <?php foreach ($page->contributor()->split() as $name): ?>
                 <span><?php echo $pages->find('contributors/' . $name)->title()->html() ?></span>
             <?php endforeach; ?>
           </div>

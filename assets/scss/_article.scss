@@ -65,7 +65,7 @@ $article-spacer: 4rem;
     &__title {
       font-size: 2.75em;
       line-height: 1em;
-      font-family: 'Graphik-Bold', sans-serif;
+      font-family: 'Graphik-Medium', sans-serif;
       @media (max-width: 450px) {
         font-size: 2em;
       }
@@ -74,7 +74,7 @@ $article-spacer: 4rem;
     &__subtitle {
       font-size: 2.75em;
       line-height: 1em;
-      font-family: 'Graphik-BoldItalic', sans-serif;
+      font-family: 'Graphik-MediumItalic', sans-serif;
       @media (max-width: 450px) {
         font-size: 2em;
       }
@@ -84,13 +84,13 @@ $article-spacer: 4rem;
       // font-size: 1.375em;
       font-size: 2.75em;
       line-height: 1em;
-      margin-top: $article-spacer;
+      margin-top: $article-spacer / 2.666;
       margin-bottom: $article-spacer;
       @media (max-width: 450px) {
         margin-top: $article-spacer * 3/4;
         margin-bottom: $article-spacer * 3/4;
       }
-      font-family: 'Graphik-Bold', sans-serif;
+      font-family: 'Graphik-Medium', sans-serif;
       a {
         color: black;
         text-decoration: none !important;
@@ -114,9 +114,10 @@ $article-spacer: 4rem;
     }
 
     &__meta {
-      color: #828282;
+      color: #b0b0b0;
       font-family: 'Graphik-Medium', sans-serif;
       font-size: .7em;
+      letter-spacing: 0.015em;
       margin-bottom: $article-spacer;
       span {
         margin: 0 1.1rem 0 0;

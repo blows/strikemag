@@ -8,6 +8,7 @@
   padding-left: 0;
   padding-right: 0;
   text-align: left;
+  line-height: 1.2em;
   @include box-shadow(lightgrey 0 0 1em);
 
   a {
@@ -35,30 +36,32 @@
     }
 
     &__title {
-      font-family: 'Graphik-Bold', sans-serif;
-      font-size: 1.35em;
+      font-family: 'Graphik-Medium', sans-serif;
+      font-size: 1.2em;
       // font-size: 1.875vw;
       margin-left: 0;
       margin-bottom: .75em;
       span {
-        font-family: 'Graphik-BoldItalic', sans-serif;
+        font-family: 'Graphik-MediumItalic', sans-serif;
       }
     }
+    &__contributors {
+      font-family: 'Graphik-Medium', sans-serif;
+      font-size: 1.2em;
+    }
     &__contributor {
-      font-family: 'Graphik-Bold', sans-serif;
-      font-size: 1.35em;
-      // font-size: 1.875vw;
+      display: inline-block;
       &::after {
           content: ",";
-          margin-left: -.2em;
       }
       &:last-of-type::after {
           content: "";
       }
     }
     &__issue {
+      color: #b0b0b0;
       font-size: .7em;
-      padding: 0 .8em 1em .8em;
+      padding: 0 .8rem .5rem .8rem;
     }
     &__summary {
       line-height: 1.42em;
@@ -117,6 +120,7 @@
   padding-left: 0;
   padding-right: 0;
   text-align: left;
+  line-height: 1.2em;
   @include box-shadow(lightgrey 0 0 1em);
 
   a {
@@ -149,19 +153,21 @@
     }
 
     &__title {
-      font-family: 'Graphik-Bold', sans-serif;
-      font-size: 1.35em;
+      font-family: 'Graphik-Medium', sans-serif;
+      font-size: 1.2em;
       // font-size: 1.875vw;
       margin-left: 0;
       margin-bottom: .75em;
       span {
-        font-family: 'Graphik-BoldItalic', sans-serif;
+        font-family: 'Graphik-MediumItalic', sans-serif;
       }
     }
+    &__contributors {
+      font-family: 'Graphik-Medium', sans-serif;
+      font-size: 1.2em;
+    }
     &__contributor {
-      font-family: 'Graphik-Bold', sans-serif;
-      font-size: 1.35em;
-      // font-size: 1.875vw;
+      display: inline-block;
       &::after {
           content: ",";
           margin-left: -.2em;
@@ -171,9 +177,10 @@
       }
     }
     &__issue {
+      color: #b0b0b0;
       font-size: .7em;
       // font-size: .9723vw;
-      margin: .5em .8em .8em .8em;
+      margin: 0 .8rem .5rem .8rem;
     }
     &__summary {
       line-height: 1.42em;
