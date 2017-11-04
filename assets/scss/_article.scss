@@ -23,8 +23,9 @@ $article-spacer: 4rem;
     }
 
     .article-image {
+      min-width: 30%;
       margin-top: $article-spacer * .5;
-      margin-bottom: $article-spacer * .5;
+      margin-bottom: $article-spacer;
       max-width: 100%;
       @include display-flex;
       @include justify-content(center);
@@ -53,7 +54,8 @@ $article-spacer: 4rem;
   &-header {
     @include span(9);
     @include push(1.5);
-    margin-top: $article-spacer * .5;
+    margin-top: $article-spacer;
+    text-align: center;
     @media (max-width: 450px) {
         margin-top: 1.6em;
         @include span(12);

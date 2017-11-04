@@ -5,30 +5,10 @@
     <article class="article">
 
       <header class="article-info">
-        <div class="article-image">
-          <?php if($page->media()->isNotEmpty()): ?>
-            <figure>
-              <?= $page->media()->embed() ?>
-            </figure>
-          <?php elseif($page->coverimage()->isNotEmpty()) : ?>
-            <figure>
-              <img src="<?= $page->coverimage()->toFile()->url() ?>">
-              <?php if($page->coverimage()->toFile()->credit()->isNotEmpty()) : ?>
-                <figcaption>
-                  Image:
-                  <?php foreach ($page->coverimage()->toFile()->credit()->split() as $name): ?>
-                    <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
-                        <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
-                    </a>
-                  <?php endforeach; ?>
-                </figcaption>
-              <?php endif; ?>
-            </figure>
-          <?php endif; ?>
-        </div>
+
 
         <div class="article-header">
-          <h1 class="article-header__title"><?= $page->title()->widont() ?></h1>
+          <h1 class="article-header__title"><?= $page->title()->widont() ?><?php if ($page->subtitle()->isNotEmpty()) : ?>:<?php endif ?></h1>
           <?php if ($page->subtitle()->isNotEmpty()) : ?>
             <h2 class="article-header__subtitle"><?= $page->subtitle()->widont() ?></h2>
           <?php endif ?>
@@ -57,6 +37,28 @@
                 )); ?>
             </span>
           </div>
+        </div>
+
+        <div class="article-image">
+          <?php if($page->media()->isNotEmpty()): ?>
+            <figure>
+              <?= $page->media()->embed() ?>
+            </figure>
+          <?php elseif($page->coverimage()->isNotEmpty()) : ?>
+            <figure>
+              <img src="<?= $page->coverimage()->toFile()->url() ?>">
+              <?php if($page->coverimage()->toFile()->credit()->isNotEmpty()) : ?>
+                <figcaption>
+                  Image:
+                  <?php foreach ($page->coverimage()->toFile()->credit()->split() as $name): ?>
+                    <a href="<?php echo $pages->find('contributors')->url() . "#" . $name ?>">
+                        <?php echo $pages->find('contributors/' . $name)->title()->html() ?>
+                    </a>
+                  <?php endforeach; ?>
+                </figcaption>
+              <?php endif; ?>
+            </figure>
+          <?php endif; ?>
         </div>
       </header>
 
