@@ -420,14 +420,11 @@ body {
       border-width: 0 0 1px 0;
       border-style: solid;
       border-color: $strikeMainColor;
-      padding-bottom: .1em;
-      padding-top: .1em;
       text-decoration: none;
     }
     a:hover {
-      color: inherit;
+      color: $strikeMainColor;
       text-decoration: none;
-      background-color: $strikeMainColor;
     }
   }
   p:first-of-type {
