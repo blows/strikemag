@@ -160,8 +160,8 @@ li#branding.menu-item a {
     bottom: 1.5em;
     left: 1.5em;
     border-radius: 50%;
-    width: 4em;
-    height: 4em;
+    width: 6.5em;
+    height: 6.5em;
     @include transform(rotate(-30deg));
   }
   li#branding.menu-item a {
@@ -175,9 +175,9 @@ li#branding.menu-item a {
       @include box-shadow(inset 4px 2px 5px rgb(210, 209, 209));
     }
     img {
-      height: 1.75em;
-      padding-top: 1.6em;
-      padding-bottom: 1.6em;
+      height: 3em;
+      padding-top: 2.5em;
+      padding-bottom: 2.5em;
       vertical-align: middle;
     }
   }
