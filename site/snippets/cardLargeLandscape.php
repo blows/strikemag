@@ -30,8 +30,8 @@
   <div class="card-large-info">
     <div class="card-large-info__group">
       <p class="card-large-info__title">
-        <?= $article->title()->upper()->widont() ?><?php if($sub = $article->subtitle()->isNotEmpty()): ?>:<br />
-          <span><?= $article->subtitle()->upper() ?></span>
+        <?= $article->title()->widont() ?><?php if($sub = $article->subtitle()->isNotEmpty()): ?>:<br />
+          <span><?= $article->subtitle() ?></span>
         <?php endif ?>
       </p>
       <p class="card-large-info__contributors">
