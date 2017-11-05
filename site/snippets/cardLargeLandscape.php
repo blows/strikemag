@@ -1,4 +1,4 @@
-<article class="card-large">
+<article class="card-large <? if ($article->printed()->isEmpty()): ?><?= 'card-online' ?><? endif ?>">
 <a href="<?= $article->url() ?>">
 
   <?php if ($article->hasImages()) : ?>
@@ -19,8 +19,7 @@
   <div class="card-large-info">
     <div class="card-large-info__group">
       <p class="card-large-info__title">
-        <?= $article->title()->widont() ?><?php if($sub = $article->subtitle()->isNotEmpty()): ?>:<br />
-          <span><?= $article->subtitle() ?></span>
+        <?= $article->title()->widont() ?><?php if($sub = $article->subtitle()->isNotEmpty()): ?>: <span><?= $article->subtitle()->widont() ?></span>
         <?php endif ?>
       </p>
       <p class="card-large-info__contributors">

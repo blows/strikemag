@@ -1,4 +1,4 @@
-<article class="card-large-portrait">
+<article class="card-large-portrait <? if ($article->printed()->isEmpty()): ?><?= 'card-online' ?><? endif ?>">
 <a href="<?= $article->url() ?>">
 
   <?php if ($article->coverimage()->isNotEmpty()) : ?>
@@ -19,8 +19,7 @@
   <div class="card-large-portrait-info">
       <div class="card-large-portrait-info__group">
         <p class="card-large-portrait-info__title">
-          <?= $article->title() ?><?php if($sub = $article->subtitle()->isNotEmpty()): ?>:<br />
-            <span><?= $article->subtitle() ?></span><?php endif ?>
+          <?= $article->title() ?><?php if($sub = $article->subtitle()->isNotEmpty()): ?>: <span><?= $article->subtitle()->widont() ?></span><?php endif ?>
         </p>
         <p class="card-large-info__contributors">
           by <?php foreach ($article->contributor()->split() as $name): ?><span class="card-large-info__contributor"><?php echo $pages->find('contributors/' . $name)->title()->html() ?></span><?php endforeach; ?>

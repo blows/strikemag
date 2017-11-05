@@ -53,18 +53,6 @@ $article-spacer: 4rem;
   }
 
   &-header {
-    @include span(9);
-    @include push(1.5);
-    @media screen and (max-width: 1440px) {
-    }
-    @media screen and (max-width: 1200px) {
-    }
-    @media screen and (max-width: 960px) {
-    }
-    @media screen and (max-width: 768px) {
-    }
-    @media screen and (max-width: 450px) {
-    }
     margin-top: $article-spacer;
     text-align: center;
     @media (max-width: 450px) {
@@ -73,35 +61,29 @@ $article-spacer: 4rem;
         @include push(0);
       }
 
-    &__title {
-      font-size: 2.75em;
+    &__title, &__subtitle, &__contributor {
+      font-size: 3.75rem;
       line-height: 1em;
-      font-family: 'Graphik-Medium', sans-serif;
       @media (max-width: 450px) {
-        font-size: 2em;
+        font-size: 2rem;
       }
+    }
+
+    &__title, &__contributor {
+      font-family: 'Graphik-Bold', sans-serif;
     }
 
     &__subtitle {
-      font-size: 2.75em;
-      line-height: 1em;
-      font-family: 'Graphik-MediumItalic', sans-serif;
-      @media (max-width: 450px) {
-        font-size: 2em;
-      }
+      font-family: 'Graphik-BoldItalic', sans-serif;
     }
 
     &__contributor {
-      // font-size: 1.375em;
-      font-size: 2.75em;
-      line-height: 1em;
       margin-top: $article-spacer / 2.666;
       margin-bottom: $article-spacer;
       @media (max-width: 450px) {
         margin-top: $article-spacer * 3/4;
         margin-bottom: $article-spacer * 3/4;
       }
-      font-family: 'Graphik-Medium', sans-serif;
       a {
         color: black;
         text-decoration: none !important;
@@ -114,9 +96,6 @@ $article-spacer: 4rem;
       }
       a:last-of-type:after, span:last-of-type:after {
         content: ""
-      }
-      @media (max-width: 450px) {
-        font-size: 2em;
       }
     }
 
@@ -132,6 +111,7 @@ $article-spacer: 4rem;
       margin-bottom: $article-spacer;
       span {
         margin: 0 1.1rem 0 0;
+        display: inline-block;
       }
       @media (max-width: 450px) {
         margin-bottom: $article-spacer * 3/4;
@@ -287,6 +267,7 @@ $article-spacer: 4rem;
     @include span(9);
     @include push(1.5);
     margin-bottom: 1em;
+    font-family: 'Graphik-MediumItalic', sans-serif;
 
     @media (max-width: 450px) {
       @include span(11);
@@ -487,11 +468,11 @@ $article-spacer: 4rem;
   @include span(12);
   padding-left: 0;
   padding-right: 0;
-  background-color: $strikeBackground;
+  background-color: $strikeText;
   &__header {
     @include push(.5);
     font-family: 'Graphik-Medium', sans-serif;
-    color: $strikeText;
+    color: $strikeBackground;
     padding-top: 1em;
     padding-bottom: .5em;
   }
@@ -502,9 +483,15 @@ $article-spacer: 4rem;
     @include flex-wrap(wrap);
     @include justify-content(center);
     @include align-items(flex-end);
-    background-color: $strikeBackground;
+    background-color: $strikeText;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 1em;
+  }
+  .card-large, .card-large-portrait {
+    @include box-shadow(none);
+    &:hover, &:focus {
+      @include box-shadow($strikeMainColor 0 0 1.6em);
+    }
   }
 }

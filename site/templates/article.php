@@ -8,10 +8,9 @@
 
 
         <div class="article-header">
-          <h1 class="article-header__title"><?= $page->title()->widont() ?><?php if ($page->subtitle()->isNotEmpty()) : ?>:<?php endif ?></h1>
-          <?php if ($page->subtitle()->isNotEmpty()) : ?>
-            <h2 class="article-header__subtitle"><?= $page->subtitle()->widont() ?></h2>
-          <?php endif ?>
+          <h1 class="article-header__title">
+            <?= $page->title()->widont() ?><?php if ($page->subtitle()->isNotEmpty()) : ?>: <span class="article-header__subtitle"><?= $page->subtitle()->widont() ?></span><?php endif ?>
+          </h1>
 
           <div class="article-header__contributor">
             by <?php foreach ($page->contributor()->split() as $name): ?>

@@ -23,10 +23,8 @@
                    <?php echo thumb($image, array('width' => 615, 'quality' => 70), false) ?> 615w" />
                 </a>
                 <div class="magazine-more__issue-details">
-                  <p><?= $issue->title()->html() ?>, <?= $issue->date('M Y', 'printed') ?></p>
-                  <p class="italic">
-                    <?php if ($issue->name()->isNotEmpty()): ?><?= $issue->name()->html() ?><?php endif ?>
-                  </p>
+                  <p><?= $issue->title()->html() ?> <?php if ($issue->name()->isNotEmpty()): ?><?= $issue->name()->html() ?><?php endif ?></p>
+                  <p><?= $issue->date('F Y', 'printed') ?></p>
                 </div>
               </div>
 

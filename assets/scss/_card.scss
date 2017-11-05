@@ -50,6 +50,13 @@
   }
 }
 
+.card-online {
+  background-color: $strikeText;
+  a {
+    color: white;
+  }
+}
+
 .card-large {
   width: 400px;
   height: 100%;
