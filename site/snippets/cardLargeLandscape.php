@@ -3,27 +3,16 @@
 
   <?php if ($article->hasImages()) : ?>
     <div class="card-large-image">
-      <?php if ($article->coverimage()->isNotEmpty()) : ?>
-        <?php $ci = $article->coverimage()->toFile() ?>
+        <?php if ($ci = $article->coverimage()->toFile()): ?>
         <figure>
-          <img src="<?php echo thumb($ci, array('width' => 672, 'height' => 448, 'quality' => 100), false) ?>" alt="<?= html($article->title()) ?>" sizes="100vw"
-          srcset="<?php echo thumb($ci, array('width' => 504, 'height' => 691, 'quality' => 70, 'crop' => true), false) ?> 600w,
-           <?php echo thumb($ci, array('width' => 448, 'height' => 298, 'quality' => 70, 'crop' => true), false) ?> 800w,
-           <?php echo thumb($ci, array('width' => 672, 'height' => 448, 'quality' => 70, 'crop' => true), false) ?> 1200w,
-           <?php echo thumb($ci, array('width' => 896, 'height' => 598, 'quality' => 70, 'crop' => true), false) ?> 1600w,
-           <?php echo thumb($ci, array('width' => 1120, 'height' => 746, 'quality' => 70, 'crop' => true), false) ?> 2000w" />
+          <img alt="<?= html($article->title()) ?>"
+          src="<?php echo thumb($ci, array('width' => 672, 'height' => 448, 'quality' => 100, 'crop' => true), false) ?>"
+          sizes="(max-width: 450px) 90vw, (max-width: 768px) 53vw, (max-width: 1440px) 34vw"
+          srcset="<?php echo thumb($ci, array('width' => 750.266, 'height' => 433.1, 'quality' => 70, 'crop' => true), false) ?> 325.133,
+           <?php echo thumb($ci, array('width' => 812.8, 'height' => 540.5, 'quality' => 70, 'crop' => true), false) ?> 406.4w,
+           <?php echo thumb($ci, array('width' => 970, 'height' => 646.066, 'quality' => 70, 'crop' => true), false) ?> 285w" />
         </figure>
-      <?php else : ?>
-        <?php $ci = $article->images()->first() ?>
-        <figure>
-          <img src="<?php echo thumb($ci, array('width' => 672, 'height' => 448, 'quality' => 100), false) ?>" alt="<?= html($article->title()) ?>" sizes="100vw"
-          srcset="<?php echo thumb($ci, array('width' => 504, 'height' => 691, 'quality' => 70, 'crop' => true), false) ?> 600w,
-           <?php echo thumb($ci, array('width' => 448, 'height' => 298, 'quality' => 70, 'crop' => true), false) ?> 800w,
-           <?php echo thumb($ci, array('width' => 672, 'height' => 448, 'quality' => 70, 'crop' => true), false) ?> 1200w,
-           <?php echo thumb($ci, array('width' => 896, 'height' => 598, 'quality' => 70, 'crop' => true), false) ?> 1600w,
-           <?php echo thumb($ci, array('width' => 1120, 'height' => 746, 'quality' => 70, 'crop' => true), false) ?> 2000w" />
-        </figure>
-      <?php endif; ?>
+      <?php endif ?>
     </div>
   <?php endif; ?>
 

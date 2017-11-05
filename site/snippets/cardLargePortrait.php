@@ -3,10 +3,16 @@
 
   <?php if ($article->coverimage()->isNotEmpty()) : ?>
     <div class="card-large-portrait-image">
-      <?php $ci = $article->coverimage()->toFile() ?>
+      <?php if ($ci = $article->coverimage()->toFile()): ?>
       <figure>
-        <img src="<?php echo $ci->focusCrop(448, 672)->url(); ?>" alt="" />
+        <img alt="<?= html($article->title()) ?>"
+        src="<?php echo thumb($ci, array('width' => 448, 'height' => 672, 'quality' => 100, 'crop' => true), false) ?>"
+        sizes="(max-width: 450px) 90vw, (max-width: 768px) 35vw, (max-width: 1440px) 25vw"
+        srcset="<?php echo thumb($ci, array('width' => 433.1, 'height' => 750.266, 'quality' => 70, 'crop' => true), false) ?> 216.55w,
+         <?php echo thumb($ci, array('width' => 540.5, 'height' => 812.8, 'quality' => 70, 'crop' => true), false) ?> 270.683w,
+         <?php echo thumb($ci, array('width' => 646.066, 'height' => 970, 'quality' => 70, 'crop' => true), false) ?> 323.033w" />
       </figure>
+    <?php endif ?>
     </div>
   <?php endif; ?>
 

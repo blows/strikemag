@@ -1,6 +1,6 @@
 .card-large, .card-large-portrait {
   background-color: white;
-  margin: 1em;
+  margin: 1em 1em 1em 1em;
   @include box-shadow(lightgrey 0 0 1em);
 
   a {
@@ -106,60 +106,97 @@
 }
 @media screen and (max-width: 1200px) {
   .card-large {
-    width: 375px;
+    width: 406.4px;
     &-info {
-      height: 250px;
+      height: 270.25px;
     }
   }
   .card-large-portrait {
-    width: 500px;
+    width: 540.5px;
   }
 }
 @media screen and (max-width: 960px) {
   .card-large, .card-large-portrait {
     &-info {
-      &__title {
-        font-size: 1.1em;
-      }
-      &__contributors {
-        font-size: 1.1em;
+      &__title, &__contributors {
+        font-size: 1.3em;
       }
     }
   }
   .card-large {
-    width: 300px;
+    width: 325.14px;
     &-info {
-      height: 200px;
+      height: 216.2px;
     }
   }
   .card-large-portrait {
-    width: 400px;
+    width: 432.4px;
   }
 }
 @media screen and (max-width: 768px) {
-  .card-large {
-    width: 258.75px;
+  // .card-large, .card-large-portrait {
+  //   &-info {
+  //     &__title, &__contributors {
+  //       font-size: 1.1em;
+  //     }
+  //   }
+  // }
+  // .card-large {
+  //   width: 258.75px;
+  //   &-info {
+  //     height: 172.5px;
+  //   }
+  // }
+  // .card-large-portrait {
+  //   width: 345px;
+  // }
+  .card-large, .card-large-portrait {
     &-info {
-      height: 172.5px;
+      &__title, &__contributors {
+        font-size: 1.75em;
+      }
+    }
+  }
+  .card-large {
+    width: 406.4px;
+    &-info {
+      height: 270.25px;
     }
   }
   .card-large-portrait {
-    width: 345px;
+    width: 540.5px;
   }
 }
 @media screen and (max-width: 450px) {
-  .card-large {
-    width: 258px;
+  .card-large, .card-large-portrait {
+    margin: 0 0 1.3em 0;
     &-info {
-      height: 173px;
+      &__title, &__contributors {
+        font-size: 1.3em;
+        font-size: 6vw;
+      }
+    }
+  }
+  .card-large {
+    width: 100%;
+    &-info {
+      height: 11.9rem;
+      height: 60vw;
       // padding: 1em 1.3em 1em 1.3em;
     }
   }
   .card-large-portrait {
-    width: 346px;
+    width: 100%;
+    a {
+      flex-direction: column;
+    }
+    &-image {
+      width: 100%;
+    }
     &-info {
-      // height: 53.2vw;
-      // padding: 1em 1.3em 1em 1.3em;
+      width: 100%;
+      height: 11.9rem;
+      height: 55.8vw;
     }
   }
 }
