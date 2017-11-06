@@ -11,7 +11,7 @@
       </div>
 
       <div class="online-nav__filter">
-        <a href="<?php echo page('online')->url() ?>" class="button">BACK</a>
+        <a href="<?php echo page('online')->url() ?>" class="button">Back</a>
       </div>
     </section>
 
@@ -40,7 +40,7 @@
       <?php else : ?>
 
         <p>No results found.</p>
-        
+
       <?php endif ?>
 
     </section>

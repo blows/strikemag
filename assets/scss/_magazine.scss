@@ -178,13 +178,11 @@
   padding-right: 0;
 }
 
-$issue-padding: 1.5vw;
-
 .magazine-more {
   background-color: $strikeText;
   color: white;
-  padding-top: $issue-padding;
-  padding-bottom: $issue-padding*4;
+  padding-top: $spacer;
+  padding-bottom: $spacer*2;
   &__explore {
     @include span(12);
     display: block;

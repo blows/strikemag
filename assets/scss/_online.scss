@@ -1,7 +1,8 @@
 .online-nav {
   @include display-flex;
   @include justify-content(space-between);
-  @include span(12);
+  @include span(11);
+  @include push(.5);
   padding-top: 1.5em;
   padding-bottom: 2em;
 }
@@ -30,7 +31,13 @@
 }
 
 .online-nav__search {
+  width: 100%;
+  @include display-flex;
+  form {
+    width: 100%;
+  }
   input {
+    width: 100%;
     font-family: inherit;
     font-size: .8em;
     border: 2px solid $strikeMainColor;
@@ -57,7 +64,8 @@
     @include flex(4 1 auto);
   }
   input#search-submit {
-    @include flex(1 1 auto);
+    @include flex(1 15 auto);
+    margin-left: 1em;
   }
   &:focus {
     outline-style: none !important;
