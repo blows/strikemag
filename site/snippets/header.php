@@ -64,7 +64,7 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <?= js('assets/js/picturefill.min.js') ?>
+  <?= js('assets/js/picturefill.min.js', true) ?>
 
   <!-- Font Awesome -->
   <script async src="https://use.fontawesome.com/6a356015ff.js"></script>
