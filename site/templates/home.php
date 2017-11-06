@@ -68,54 +68,6 @@
       </div>
     </section>
 
-    <!-- Featured Banner 2 -->
-    <!-- <a href="<?php echo $post->url(); ?>">
-      <section class="home-featured" style="background-image: url(<?= $featuredimage2; ?>)">
-      <div class="home-featured-text">
-        <h2 class="home-featured-title">
-          <?php echo $post2->title()->widont(); ?>
-        </h2>
-        <?php foreach ($post2->contributor()->split() as $name): ?>
-              <h3 class="home-featured-contributor"><?php echo $pages->find('contributors/' . $name)->title()->html() ?></h3>
-        <?php endforeach; ?>
-      </div>
-      </section>
-    </a> -->
-
-    <!-- Pieces 2 -->
-    <!-- <section class="online-recent">
-      <?php if($articles->count()): ?>
-        <?php foreach($chunk2 as $article): ?>
-
-          <?php $parent = $article->parent() ?>
-          <?php $ci = $article->coverimage()->toFile() ?>
-
-          <?php if($ci->orientation() == 'portrait'): ?>
-            <?php snippet('cardLargePortrait', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed())
-            )) ?>
-
-          <?php else: ?>
-            <?php snippet('cardLargeLandscape', array(
-            'article' => $article,
-            'contributor' => $pages->find('contributors/' . $article->contributor()),
-            'issue' => $pages->find('magazine/' . $article->printed())
-            )) ?>
-          <?php endif ?>
-
-        <?php endforeach ?>
-
-      <?php else: ?>
-        <p>Where did all of the articles go?</p>
-      <?php endif ?>
-
-      <p class="online-recent__head">
-        <a href="<?= page('online')->url() ?>">View all online content</a>
-      </p>
-    </section> -->
-
     <!-- Support -->
     <section class="home-support">
       <?php snippet('support') ?>

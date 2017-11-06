@@ -5,31 +5,37 @@
   font-family: 'Graphik-Bold', sans-serif;
   font-size: 1.6em;
   text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
   &__plea {
     line-height: 1.2em;
-    padding-top: 1em;
     padding-bottom: .5em;
   }
   &__buttons {
     padding-top: .5em;
-    padding-bottom: 1em;
   }
   &__button {
-    // display: inline-block;
+    text-decoration: none;
+    border-style: solid;
+    border-width: $lineThickness;
+    display: inline-block;
+    height: auto;
+    line-height: .1em;
+    background-color: transparent;
     width: 7em;
     height: 7em;
     line-height: 7em;
     text-align: center;
-    margin-left: .2em !important;
-    margin-right: .2em !important;
-    padding: .1em !important;
-    border-color: $strikeText !important;
+    margin-left: .2em;
+    margin-right: .2em;
+    padding: .1em;
+    border-color: $strikeText;
     border-radius: 50%;
-    color: $strikeText !important;
+    color: $strikeText;
     // min-width: 6em;
     &:hover {
-      background-color: $strikeText !important;
-      color: $strikeMainColor !important;
+      background-color: $strikeText;
+      color: $strikeMainColor;
     }
   }
 }

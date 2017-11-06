@@ -25,7 +25,7 @@
 
     <?php endforeach ?>
   </div>
-  <p class="issues-home__head">
-    <a href="<?= page('magazine')->url() ?>">View all printed issues</a>
-  </p>
+  <div class="issues-home__head">
+    <a class="button" href="<?= page('online')->url() ?>">View more</a>
+  </div>
 </div>
