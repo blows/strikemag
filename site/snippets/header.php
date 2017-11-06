@@ -15,22 +15,28 @@
   <meta name="description" content="<?= $site->description() ?>">
 
   <!-- OpenGraph Tags -->
-  <meta name="DC.Title" content="<?php echo html($page->title()) ?>" />
+  <?php if($page->isHomepage()): ?>
+    <meta name="DC.Title" content="<?php echo html($site->title()) ?>" />
+  <?php else: ?>
+    <meta name="DC.Title" content="<?php echo html($site->title() . ' – ' . $page->title()) ?>" />
+  <?php endif ?>
   <meta name="DC.Creator" content="<?php echo html($site->author()) ?>" />
   <meta name="DC.Rights" content="<?php echo html($site->author()) ?>" />
   <meta name="DC.Publisher" content="<?php echo html($site->author()) ?>" />
   <meta name="DC.Description" content="<?php echo html($page->summary()) ?>" />
   <meta name="DC.Language" content="en_GB" />
-  <meta property="og:title" content="<?php echo html($page->title()) ?>
-  <?php if ($page->subtitle()->isNotEmpty()) : ?>
-    – <?= $page->subtitle()->html() ?>
+  <?php if($page->isHomepage()): ?>
+    <meta property="og:title" content="<?php echo html($site->title()) ?>" />
+  <?php else: ?>
+    <meta property="og:title" content="<?php echo html($site->title() . ' – ' . $page->title()) ?><?php if ($page->subtitle()->isNotEmpty()): ?>: <?= $page->subtitle()->html() ?><?php endif ?>" />
   <?php endif ?>
-  " />
   <meta property="og:site_name" content="<?php echo html($site->title()) ?>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<?php echo html($site->url()) ?>" />
   <?php if ($page->coverimage()->isNotEmpty()): ?>
     <meta property="og:image" content="<?php echo html($page->coverimage()->toFile()->url()) ?>" />
+  <?php else: ?>
+    <meta property="og:image" content="<?php echo html($site->image('strike-logo-black.svg')->url()) ?>" />
   <?php endif; ?>
   <meta property="og:description" content="<?php echo html($page->summary()) ?>" />
   <meta itemprop="name" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>">
@@ -43,8 +49,8 @@
   <link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-114x114.png') ?>" />
 
   <!-- CSS -->
-  <?= css('assets/plugins/embed/css/embed.css') ?>
   <?= css('assets/css/screen.css') ?>
+  <?= css('assets/plugins/embed/css/embed.css') ?>
 
   <!-- custom css -->
   <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
