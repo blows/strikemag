@@ -20,7 +20,7 @@
     </div>
 
     <!-- Featured Banner 1 -->
-    <a href="<?php echo $post->url(); ?>">
+    <!-- <a href="<?php echo $post->url(); ?>">
       <section class="home-featured" style="background-image: url(<?= $featuredimage; ?>)">
       <div class="home-featured-text">
         <h2 class="home-featured-title">
@@ -31,7 +31,7 @@
         <?php endforeach; ?>
       </div>
       </section>
-    </a>
+    </a> -->
 
 
     <!-- Pieces 1 -->
@@ -63,9 +63,9 @@
         <p>Where did all of the articles go?</p>
       <?php endif ?>
 
-      <p class="online-recent__head">
-        <a href="<?= page('online')->url() ?>">View all online content</a>
-      </p>
+      <div class="online-recent__head">
+        <a class="button" href="<?= page('online')->url() ?>">View more</a>
+      </div>
     </section>
 
     <!-- Featured Banner 2 -->
