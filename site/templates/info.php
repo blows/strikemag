@@ -53,8 +53,8 @@
                 <li class="stockists_stock">
                   <a href="<?= $stockist->link()->url() ?>" target="_blank">
                     <div>
-                      <p class="stockists_stockist"><?= $stockist->stockist()->upper()->html() ?></p>
-                      <p class="stockists_location"><?= $stockist->location()->html() ?></p>
+                      <p class="stockists_stockist"><?= $stockist->stockist() ?></p>
+                      <p class="stockists_location"><?= $stockist->location() ?></p>
                     </div>
                   </a>
                 </li>
