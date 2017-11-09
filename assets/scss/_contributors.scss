@@ -18,13 +18,16 @@
 .contributors-nav {
   text-align: center;
   font-family: 'Graphik-Bold', sans-serif;
+  color: $strikeMainColor;
   margin-top: 1em;
   line-height: 1.8em;
   a {
     font-size: 1.5em;
     text-decoration: none;
     color: inherit;
-    padding: .35em;
+    padding: .55em;
+    margin-bottom: .1em;
+    border-width: 0.1em;
   }
 }
 
@@ -51,7 +54,6 @@
 .contributor {
   margin: 1em 1.1%;
   margin-bottom: 1.2em;
-  font-family: 'Space Mono', monospace;
 
   a {
     color: black;

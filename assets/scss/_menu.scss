@@ -84,7 +84,7 @@ li.menu-head.menu-item {
   vertical-align: baseline;
   display: inline-block;
   font-size: 1.2em;
-  background-color: black;
+  background-color: white;
   position: relative;
   display: inline-block;
   line-height: 1em;
@@ -170,7 +170,7 @@ li#branding.menu-item a {
     padding-top: 0;
     padding-bottom: 0;
     border-radius: 50%;
-    @include box-shadow($strikeMainColor 0 0 1em, inset 4px 2px 5px rgb(65, 65, 65));
+    @include box-shadow($strikeMainColor 0 0 1em, inset 4px 2px 5px rgb(210, 209, 209));
     &:hover {
       background-color: $strikeMainColor;
       @include box-shadow(inset 4px 2px 5px rgb(210, 209, 209));

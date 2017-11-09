@@ -4,24 +4,20 @@ Title: Info
 
 Aboutus: 
 
-STRIKE! is a dissident collective led by women. We produce a quarterly magazine and organise events, discussions, parties, workshops, and actions across London. We are into rebellious grass-roots movements and committed to platforming the creative culture of these fights. 
+STRIKE! is a dissident collective led by women. We produce a quarterly magazine, video content and organise events across London. We are committed to platforming grassroots movements and the creative culture of these fights. 
 
-Launched in 2012, STRIKE! is run on a shoestring by a small group of volunteers. As of 2017, we are able to pay our contributors. We believe our artists, writers and illustrators should be paid for their work because working for free sustains privilege. 
-
-STRIKE! is member-supported and advertisement free. We aren’t funded by corporations, we’re funded by you. Help us keep publishing the important work we care about by subscribing.
+STRIKE! is reader-supported and advertisement free. We aren’t funded by corporations, we’re funded by you. Help us keep publishing the important work we care about by (link: http://strikemag.bigcartel.com/product/strike-subscription text: subscribing).
 
 ----
 
 Contact: 
 
-Our main office days are Tuesday and Wednesday, and we are a small, voluntary, part-time team, so please be patient if we are slow to respond.
+We are a small, voluntary, part-time team, so please be patient if we are slow to respond. Our main office days are Tuesday and Wednesday.
 
 You can contact us via email:
 
 Writing: <editor@strikemag.org>
-Art: <design@strikemag.org>
-Events: <sedition@strikemag.org>
-Video: <propaganda@strikemag.org>
+Design: <design@strikemag.org>
 Distribution: <distribution@strikemag.org>
 
 Or follow and message us on social media:
@@ -40,7 +36,7 @@ Submissions:
 
 Each issue of STRIKE! is themed. For each issue we will release a short editorial statement on that theme that you can respond to however you like, be it written, visual, or audio, etc. 
 
-If you would like to contribute then please send us an email with a pitch of 200 words and a proposed first paragraph to editor@strikemag.org. Please familiarise yourself with STRIKE!’s content to make sure this is the right platform for you.
+If you would like to contribute then please send us an email with a pitch of 200 words and a proposed first paragraph to <editor@strikemag.org>. Please familiarise yourself with STRIKE!’s content to make sure this is the right platform for you.
 
 ----
 
@@ -76,7 +72,7 @@ Prompta menandri eam id. Duo dolor doctus ei, utinam assueverit te sea. Cum id e
 
 Distribution: 
 
-STRIKE! Magazine is a self-published and self-distributed print magazine. The current issue and back issues that are still in stock are available to buy from our online shop. We aim to fulfil postal orders from this shop once a week, shipping via Royal Mail 2nd Class, so we thank you in advance for your patience in receiving your order! 
+STRIKE! Magazine is a self-published and self-distributed print magazine. The current issue and back issues that are still in stock are available to buy from our online shop. We aim to fulfil postal orders once a week, shipping via Royal Mail 2nd Class, so we thank you in advance for your patience in receiving your order! 
 
 If you have any questions about your order, want to update the address associated with your subscription, or are interesting in stocking or distributing STRIKE! Magazine, please email <distribution@strikemag.org>.
 
@@ -93,6 +89,10 @@ Stockists:
   stockist: 56a Infoshop
   link: http://56a.org.uk/
 - 
+  stockist: Freedom
+  link: http://freedompress.org.uk
+  location: London, UK
+- 
   location: London, UK
   stockist: Housmans
   link: http://www.housmans.com/
@@ -101,10 +101,9 @@ Stockists:
   stockist: ICA
   link: https://www.ica.art
 - 
+  stockist: South London Gallery
+  link: http://www.southlondongallery.org
   location: London, UK
-  stockist: TATE Modern—Terrace Shop
-  link: >
-    http://www.tate.org.uk/visit/tate-modern/terrace-shop
 - 
   location: London, UK
   stockist: TATE Modern—Turbine Hall

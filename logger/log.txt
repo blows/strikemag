@@ -83,3 +83,24 @@ admin-beast, 2017-11-09, 13:32:01, Uploaded file contributors/haven-distribution
 admin-beast, 2017-11-09, 13:32:05, Updated page contributors/haven-distribution, profilepic
 admin-beast, 2017-11-09, 13:45:09, Updated page contributors/strike, role
 admin-beast, 2017-11-09, 13:45:10, Updated page contributors/strike, 
+admin-beast, 2017-11-09, 16:35:12, Updated page magazine/issue-18/black-and-transgender-the-art-of-body-sovereignty-beyond-eurocentricity, subtitle
+admin-beast, 2017-11-09, 17:46:39, Updated page magazine/issue-18/black-and-transgender-the-art-of-body-sovereignty-beyond-eurocentricity, title
+admin-beast, 2017-11-09, 17:51:50, Updated page magazine/issue-18/black-and-transgender-the-art-of-body-sovereignty-beyond-eurocentricity, title
+admin-beast, 2017-11-09, 17:52:00, Updated page magazine/issue-18/black-and-transgender-the-art-of-body-sovereignty-beyond-eurocentricity, subtitle
+admin-beast, 2017-11-09, 17:52:11, Updated page magazine/issue-18/black-and-transgender-the-art-of-body-sovereignty-beyond-eurocentricity, subtitle
+admin-beast, 2017-11-09, 17:58:05, Updated page info, aboutus
+admin-beast, 2017-11-09, 17:58:06, Updated page info, 
+admin-beast, 2017-11-09, 17:59:54, Updated page info, contact
+admin-beast, 2017-11-09, 18:00:16, Updated page info, distribution
+admin-beast, 2017-11-09, 18:02:45, Updated page info, submissions|stockists
+admin-beast, 2017-11-09, 18:08:37, Updated page info, 
+admin-beast, 2017-11-09, 18:15:56, Updated page info, 
+admin-beast, 2017-11-09, 21:18:31, Updated page info, aboutus
+admin-beast, 2017-11-09, 21:24:38, Updated page info, aboutus
+admin-beast, 2017-11-09, 21:31:05, Updated page magazine/issue-19/radical-listening-a-manifesto, text
+admin-beast, 2017-11-09, 21:32:18, Updated page magazine/issue-19/radical-listening-a-manifesto, text
+admin-beast, 2017-11-09, 21:32:42, Updated page magazine/issue-19/radical-listening-a-manifesto, text
+admin-beast, 2017-11-09, 21:47:44, Updated page magazine/issue-19/radical-listening-a-manifesto, text
+admin-beast, 2017-11-09, 21:57:51, Updated file magazine/issue-19/radical-listening-a-manifesto/radical-listening-online.jpg, credit
+admin-beast, 2017-11-09, 22:13:53, Updated file magazine/issue-15/diversity-is-liberalspeak-why-we-must-build-a-decolonised-left/15-diversity-is-liberalspeak.jpg, credit
+admin-beast, 2017-11-09, 22:14:19, Updated page magazine/issue-15, name

@@ -7,8 +7,8 @@
 }
 
 .footer-newsletter {
-  @include span(10);
-  @include push(1);
+  @include span(9);
+  @include push(1.5);
   padding-bottom: 1em;
   #mc_embed_signup input.email {
     width: 84%;
@@ -35,7 +35,7 @@
     font-family: 'Graphik-Bold', sans-serif;
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1em;
     text-align: center;
   }
@@ -96,12 +96,12 @@
     @include span(11);
     @include push(.5);
     #mc_embed_signup input.email {
-      width: 100%;
-      margin-bottom: 5px;
+      width: 70%;
+      // margin-bottom: 5px;
     }
     #mc_embed_signup .button {
-      width: 100%;
-      border-width: 3px 3px 3px 3px;
+      width: 30%;
+      // border-width: 3px 3px 3px 3px;
     }
   }
 

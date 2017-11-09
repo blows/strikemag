@@ -16,7 +16,7 @@
 
     <!-- Chat -->
     <div class="text-bar">
-      <p>STRIKE! is a collective working co-operatively against structural oppression and towards decolonised, intersectional, post-capitalist futures.</p>
+      <p>STRIKE! is a dissident collective led by women committed to platforming grassroots movements and the creative culture of these fights. </p>
     </div>
 
     <!-- Featured Banner 1 -->

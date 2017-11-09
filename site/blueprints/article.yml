@@ -18,9 +18,6 @@ files:
       query:
         page: contributors
         fetch: children
-    focus:
-      label: Crop focus
-      type: focus
 
 fields:
   tab1:

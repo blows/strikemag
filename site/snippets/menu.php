@@ -2,7 +2,7 @@
 
   <ul class="menu">
     <li id="branding" class="menu-item<?= r(page('home')->isOpen(), ' is-active') ?>">
-      <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-white.svg')->url() ?>" alt="STRIKE!"></a>
+      <a href="<?= url() ?>" rel="home"><img src="<?php echo $site->image('strike-logo-black.svg')->url() ?>" alt="STRIKE!"></a>
     </li>
     <li class="menu-head menu-item">
       <a href="<?= url() ?>" rel="home"><?= $site->author() ?></a>

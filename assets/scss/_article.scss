@@ -18,8 +18,8 @@ $article-spacer: 4rem;
     @include push(1.5);
 
     @media (max-width: 450px) {
-      @include span(11);
-      @include push(.5);
+      @include span(12);
+      @include push(0);
     }
 
     .article-image {
@@ -56,7 +56,7 @@ $article-spacer: 4rem;
     margin-top: $article-spacer;
     text-align: center;
     @media (max-width: 450px) {
-        margin-top: 1.6em;
+        margin-top: $article-spacer * 3/4;
         @include span(12);
         @include push(0);
       }
@@ -81,7 +81,7 @@ $article-spacer: 4rem;
       margin-top: $article-spacer / 2.666;
       margin-bottom: $article-spacer;
       @media (max-width: 450px) {
-        margin-top: $article-spacer * 3/4;
+        margin-top: $article-spacer / 4;
         margin-bottom: $article-spacer * 3/4;
       }
       a {
@@ -114,6 +114,7 @@ $article-spacer: 4rem;
         display: inline-block;
       }
       @media (max-width: 450px) {
+        font-size: .9em;
         margin-bottom: $article-spacer * 3/4;
         span {
           display: block;
@@ -169,8 +170,8 @@ $article-spacer: 4rem;
 
 .article {
   .text {
-    @include span(9);
-    @include push(1.5);
+    @include span(10);
+    @include push(1);
     margin-bottom: 3em;
 
     @media (max-width: 450px) {
@@ -180,37 +181,26 @@ $article-spacer: 4rem;
   }
 
   .text h1, .text h2, .text h3 {
-    @include span(9);
-    @include push(1.5);
+    @include span(10);
+    @include push(1);
     font-family: 'Graphik-Medium', sans-serif;
     margin-bottom: 1em;
     text-transform: uppercase;
 
     @media (max-width: 450px) {
-      @include span(11);
-      @include push(.5);
+      @include span(12);
+      @include push(0);
     }
   }
 
-  .text ul, .text ol {
-    @include span(9);
-    @include push(1.5);
+  .text p, .text ul, .text ol {
+    @include span(10);
+    @include push(1);
     margin-bottom: 1em;
 
     @media (max-width: 450px) {
-      @include span(11);
-      @include push(.5);
-    }
-  }
-
-  .text p {
-    @include span(9);
-    @include push(1.5);
-    margin-bottom: 1em;
-
-    @media (max-width: 450px) {
-      @include span(11);
-      @include push(.5);
+      @include span(12);
+      @include push(0);
     }
   }
 
@@ -229,25 +219,16 @@ $article-spacer: 4rem;
   }
 
   .text hr {
-    @include span(9);
-    @include push(1.5);
+    @include span(10);
+    @include push(1);
     margin-bottom: 1.8em;
     height: 1px;
     background: $strikeMainColor;
     border: 0;
     @media (max-width: 450px) {
-      @include span(11);
-      @include push(.5);
+      @include span(12);
+      @include push(0);
     }
-  }
-
-  .text ul {
-    @include span(7);
-
-    @media (max-width: 450px) {
-        @include span(11);
-        @include push(.5);
-      }
   }
 
   .text ol > li {
@@ -255,23 +236,24 @@ $article-spacer: 4rem;
   }
 
   .text pre, .text code {
-    @include span(7);
+    @include span(10);
+    @include push(1);
 
     @media (max-width: 450px) {
-        @include span(11);
-        @include push(.5);
+        @include span(12);
+        @include push(0);
       }
   }
 
   .text blockquote {
-    @include span(9);
-    @include push(1.5);
+    @include span(10);
+    @include push(1);
     margin-bottom: 1em;
     font-family: 'Graphik-MediumItalic', sans-serif;
 
     @media (max-width: 450px) {
-      @include span(11);
-      @include push(.5);
+      @include span(12);
+      @include push(0);
     }
 
     p {
@@ -297,6 +279,19 @@ $article-spacer: 4rem;
   .text a:hover, .article-header__meta span a:hover, .article-info a:hover {
         color: $strikeMainColor;
         text-decoration: none;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .article {
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+  }
+  .article p {
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
   }
 }
 
@@ -348,6 +343,7 @@ $article-spacer: 4rem;
       @include span(4.5);
       @include push(3.75);
       color: $strikeMainColor;
+      font-family: 'Graphik-Bold', sans-serif;
       background-color: $strikeText;
       margin-bottom: 2.5em;
       @media all and (max-width: 550px) {
@@ -419,15 +415,6 @@ $article-spacer: 4rem;
   }
   figure#end-cover {
     @include span(6);
-    @media screen and (max-width: 1440px) {
-      body { font-size: 20px; }
-    }
-    @media screen and (max-width: 1200px) {
-    }
-    @media screen and (max-width: 960px) {
-    }
-    @media screen and (max-width: 768px) {
-    }
     @media screen and (max-width: 450px) {
       @include span(8);
     }

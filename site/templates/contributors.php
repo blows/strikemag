@@ -7,7 +7,7 @@
 
       <div class="contributors-nav">
         <?php foreach($alphabetise as $letter => $items): ?>
-          <a href="#<? echo $letter ?>"><?php echo strtoupper($letter) ?></a>
+          <a class="button" href="#<? echo $letter ?>"><?php echo strtoupper($letter) ?></a>
         <?php endforeach ?>
       </div>
     </header>

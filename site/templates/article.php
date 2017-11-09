@@ -103,13 +103,13 @@
     </article>
 
     <div class="article-end">
-      <p class="article-end__chat">IF YOU LIKED THIS, PLEASE</p>
+      <p class="article-end__chat">If you liked this, please</p>
       <p class="article-end__share">SHARE
+        <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
         <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->tinyurl()); ?>%20<?php echo ('via @strikeyo')?>" target="blank" title="Tweet this">
           <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
         <a href="mailto:?Subject=<?= $page->title() ?>&body=<?php echo rawurlencode ($page->url()); ?>" target="_top">
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
