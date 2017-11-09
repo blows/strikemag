@@ -22,4 +22,15 @@ Twitter: https://twitter.com/darren_cullen
 
 ----
 
-Role: Artist
+Role: Artist,Illustrator,Writer
+
+----
+
+Links: 
+
+- 
+  url: http://www.spellingmistakescostlives.com
+  icon: fa-link
+- 
+  url: https://twitter.com/darren_cullen
+  icon: fa-twitter

@@ -2,11 +2,11 @@ Title: John McDonnell
 
 ----
 
-Profilepic: 
+Profilepic: john-mcdonnell-mp.jpg
 
 ----
 
-Role: MP
+Role: Labour MP for Hayes and Harlington,Shadow Chancellor of the Exchequer
 
 ----
 
@@ -23,3 +23,14 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: http://www.john-mcdonnell.net/
+  icon: fa-link
+- 
+  url: https://twitter.com/johnmcdonnellMP
+  icon: fa-twitter

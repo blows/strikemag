@@ -30,3 +30,12 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: >
+    http://www.lboro.ac.uk/departments/phir/staff/ruth-kinna/
+  icon: fa-link

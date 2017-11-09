@@ -2,11 +2,11 @@ Title: David Graeber
 
 ----
 
-Profilepic: 
+Profilepic: david-graeber-009.jpg
 
 ----
 
-Role:
+Role: Writer,Anthropologist,Sometime Activist
 
 ----
 
@@ -23,3 +23,11 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: https://twitter.com/davidgraeber
+  icon: fa-twitter

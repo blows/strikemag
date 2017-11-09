@@ -2,11 +2,11 @@ Title: Resist & Renew
 
 ----
 
-Profilepic: 
+Profilepic: r-r.jpg
 
 ----
 
-Role: Collective
+Role: Radical Education Collective
 
 ----
 
@@ -23,3 +23,17 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: https://resist-renew.com/
+  icon: fa-link
+- 
+  url: https://twitter.com/renewresist
+  icon: fa-twitter
+- 
+  url: https://www.facebook.com/ResistRenew
+  icon: fa-facebook

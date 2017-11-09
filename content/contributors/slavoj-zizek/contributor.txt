@@ -1,4 +1,4 @@
-Title: Slavoj Žižek
+Title: Slavoj Žižek
 
 ----
 
@@ -6,7 +6,7 @@ Profilepic:
 
 ----
 
-Role:
+Role: Philosopher,Political Theorist
 
 ----
 
@@ -23,3 +23,7 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 

@@ -2,11 +2,11 @@ Title: STRIKE!
 
 ----
 
-Profilepic: 
+Profilepic: strike-logo-round.jpg
 
 ----
 
-Role: Beasts
+Role: 
 
 ----
 
@@ -23,3 +23,20 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: https://strikemag.org
+  icon: fa-link
+- 
+  url: https://twitter.com/strikeyo
+  icon: fa-twitter
+- 
+  url: https://www.facebook.com/strikemagyo
+  icon: fa-facebook
+- 
+  url: https://www.instagram.com/strike_mag/
+  icon: fa-instagram

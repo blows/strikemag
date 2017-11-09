@@ -2,11 +2,11 @@ Title: London Learning Coop
 
 ----
 
-Profilepic: 
+Profilepic: london-learning-cooperative.png
 
 ----
 
-Role: 
+Role: Educational Platform
 
 ----
 
@@ -23,3 +23,16 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: >
+    http://www.londonlearningcoop.wordpress.com
+  icon: fa-link
+- 
+  url: >
+    https://www.facebook.com/LondonLearningCoop/
+  icon: fa-facebook

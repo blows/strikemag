@@ -25,11 +25,10 @@ fields:
   role:
     label: Role/s
     type: tags
-    # required: true
 
-  bio:
-    label: Bio
-    type: textarea
+  # bio:
+  #   label: Bio
+  #   type: textarea
 
   email:
     label: Email
@@ -46,3 +45,25 @@ fields:
     icon: twitter
     type: url
     width: 1/3
+
+  links:
+    label: Links
+    type:  structure
+    style: table
+    modalsize: medium
+    entry: >
+      {{url}} {{icon}}
+    fields:
+      url:
+        label: URL
+        type: url
+      icon:
+        label: Icon
+        type: select
+        options:
+          fa-link: Link
+          fa-twitter : Twitter
+          fa-facebook: Facebook
+          fa-instagram: Instagram
+          fa-tumblr: Tumblr
+          fa-soundcloud: Soundcloud

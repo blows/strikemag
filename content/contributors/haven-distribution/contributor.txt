@@ -2,7 +2,7 @@ Title: Haven Distribution
 
 ----
 
-Profilepic: 
+Profilepic: haven-distribution.jpg
 
 ----
 
@@ -23,3 +23,14 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: http://www.havendistribution.org.uk/
+  icon: fa-link
+- 
+  url: https://twitter.com/Haven_Distrib
+  icon: fa-twitter

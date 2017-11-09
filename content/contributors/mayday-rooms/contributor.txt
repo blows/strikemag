@@ -2,11 +2,11 @@ Title: MayDay Rooms
 
 ----
 
-Profilepic: 
+Profilepic: mdr-logo-new_s.png
 
 ----
 
-Role: 
+Role: Educational Charity,Radical Archive
 
 ----
 
@@ -23,3 +23,11 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: http://www.maydayrooms.org
+  icon: fa-link

@@ -1,0 +1,85 @@
+admin-beast, 2017-11-09, 10:54:37, Updated page contributors, summary
+admin-beast, 2017-11-09, 11:27:57, Updated page contributors/danny-dorling, bio
+admin-beast, 2017-11-09, 11:30:39, Updated page contributors/danny-dorling, links
+admin-beast, 2017-11-09, 11:31:48, Updated page contributors/danny-dorling, links
+admin-beast, 2017-11-09, 11:43:33, Updated page contributors/darren-cullen, role
+admin-beast, 2017-11-09, 11:44:24, Updated page contributors/darren-cullen, role
+admin-beast, 2017-11-09, 11:51:32, Updated page contributors/corin-faife, bio
+admin-beast, 2017-11-09, 11:56:34, Updated page contributors/docs-not-cops, email
+admin-beast, 2017-11-09, 11:57:00, Updated page contributors/docs-not-cops, role
+admin-beast, 2017-11-09, 11:57:15, Updated page contributors/doug-fraser, role
+admin-beast, 2017-11-09, 11:58:28, Updated page contributors/evening-class, 
+admin-beast, 2017-11-09, 11:58:54, Uploaded file contributors/evening-class/18119410_1392764100808884_6341369269382653182_n.png, 
+admin-beast, 2017-11-09, 11:59:07, Renamed file contributors/evening-class/contributor-evening-class.png, 
+admin-beast, 2017-11-09, 11:59:23, Updated page contributors/evening-class, profilepic
+admin-beast, 2017-11-09, 12:01:28, Updated page contributors/evening-class, role
+admin-beast, 2017-11-09, 12:09:08, Updated page contributors/grace-wilson, 
+admin-beast, 2017-11-09, 12:09:32, Updated page contributors/grace-wilson, links
+admin-beast, 2017-11-09, 12:10:44, Updated page contributors/grace-wilson, role
+admin-beast, 2017-11-09, 12:10:45, Updated page contributors/grace-wilson, 
+admin-beast, 2017-11-09, 12:11:26, Updated page contributors/helena-blackstone, 
+admin-beast, 2017-11-09, 12:14:04, Updated page contributors/john-mcdonnell, role
+admin-beast, 2017-11-09, 12:15:52, Uploaded file contributors/john-mcdonnell/john-mcdonnell-mp.jpg, 
+admin-beast, 2017-11-09, 12:15:59, Updated page contributors/john-mcdonnell, profilepic
+admin-beast, 2017-11-09, 12:18:15, Updated page contributors/beth-perkins, role
+admin-beast, 2017-11-09, 12:18:53, Uploaded file contributors/danny-dorling/danny-dorling.jpg, 
+admin-beast, 2017-11-09, 12:19:07, Updated page contributors/danny-dorling, 
+admin-beast, 2017-11-09, 12:22:24, Updated page contributors/krishna-istha, 
+admin-beast, 2017-11-09, 12:23:18, Updated page contributors/laura-oldfield-ford, 
+admin-beast, 2017-11-09, 12:23:30, Uploaded file contributors/laura-oldfield-ford/laura-oldfield-ford.jpg, 
+admin-beast, 2017-11-09, 12:23:35, Updated page contributors/laura-oldfield-ford, profilepic
+admin-beast, 2017-11-09, 12:25:17, Uploaded file contributors/mark-fisher/mark-fisher-copy2.jpg, 
+admin-beast, 2017-11-09, 12:25:23, Updated page contributors/mark-fisher, role
+admin-beast, 2017-11-09, 12:26:04, Updated page contributors/mark-fisher, role|links
+admin-beast, 2017-11-09, 12:26:29, Uploaded file contributors/krishna-istha/krishna-istha-credits_-holly-revell.png, 
+admin-beast, 2017-11-09, 12:28:45, Uploaded file contributors/krishna-istha/krishna-istha-credits_-holly-revell.png, 
+admin-beast, 2017-11-09, 12:28:50, Updated page contributors/krishna-istha, profilepic
+admin-beast, 2017-11-09, 12:29:22, Updated page contributors/mark-fisher, profilepic
+admin-beast, 2017-11-09, 12:30:56, Updated page contributors/morgan-potts, 
+admin-beast, 2017-11-09, 12:31:41, Updated page contributors/nina-power, 
+admin-beast, 2017-11-09, 12:32:59, Updated page contributors/ray-filar, 
+admin-beast, 2017-11-09, 12:34:04, Updated page contributors/rebecca-hendin, role
+admin-beast, 2017-11-09, 12:35:28, Updated page contributors/resist-renew, role
+admin-beast, 2017-11-09, 12:36:03, Updated page contributors/resist-renew, links
+admin-beast, 2017-11-09, 12:36:23, Uploaded file contributors/resist-renew/r-r.jpg, 
+admin-beast, 2017-11-09, 12:36:29, Updated page contributors/resist-renew, profilepic
+admin-beast, 2017-11-09, 12:37:32, Updated page contributors/ruth-kinna, 
+admin-beast, 2017-11-09, 12:38:27, Updated page contributors/samuli-saarinen, 
+admin-beast, 2017-11-09, 12:38:44, Updated page contributors/samuli-saarinen, role
+admin-beast, 2017-11-09, 12:39:06, Uploaded file contributors/sara-ahmed/sara-ahmed.jpg, 
+admin-beast, 2017-11-09, 12:39:10, Updated page contributors/sara-ahmed, profilepic
+admin-beast, 2017-11-09, 12:41:32, Updated page contributors/selina-thompson, 
+admin-beast, 2017-11-09, 12:42:04, Uploaded file contributors/silvia-federici/silvia-federici.jpg, 
+admin-beast, 2017-11-09, 12:42:10, Updated page contributors/silvia-federici, profilepic
+admin-beast, 2017-11-09, 12:43:10, Updated page contributors/spike-gascoigne, role
+admin-beast, 2017-11-09, 12:44:07, Deleted page contributors/spike, 
+admin-beast, 2017-11-09, 12:45:48, Updated page contributors/david-graeber, role
+admin-beast, 2017-11-09, 12:46:10, Uploaded file contributors/david-graeber/david-graeber-009.jpg, 
+admin-beast, 2017-11-09, 12:46:14, Updated page contributors/david-graeber, profilepic
+admin-beast, 2017-11-09, 12:51:38, Uploaded file contributors/strike/strike-logo-round.jpg, 
+admin-beast, 2017-11-09, 12:51:43, Updated page contributors/strike, profilepic
+admin-beast, 2017-11-09, 12:54:22, Updated page contributors/strike, links
+admin-beast, 2017-11-09, 13:00:36, Updated page contributors/strike, links
+admin-beast, 2017-11-09, 13:01:15, Updated page contributors/strike, 
+admin-beast, 2017-11-09, 13:02:12, Uploaded file contributors/jacob-v-joyce/jacob-v-joyce.jpg, 
+admin-beast, 2017-11-09, 13:02:35, Updated page contributors/jacob-v-joyce, profilepic
+admin-beast, 2017-11-09, 13:05:38, Updated page contributors/jacob-v-joyce, role
+admin-beast, 2017-11-09, 13:09:59, Updated page contributors/jacob-v-joyce, 
+admin-beast, 2017-11-09, 13:11:14, Updated page contributors/london-learning-coop, 
+admin-beast, 2017-11-09, 13:11:30, Updated page contributors/london-learning-coop, 
+admin-beast, 2017-11-09, 13:12:01, Uploaded file contributors/london-learning-coop/14064267_1789423301280837_2131496050569548486_n.png, 
+admin-beast, 2017-11-09, 13:12:10, Renamed file contributors/london-learning-coop/london-learning-cooperative.png, 
+admin-beast, 2017-11-09, 13:12:16, Updated page contributors/london-learning-coop, profilepic|role
+admin-beast, 2017-11-09, 13:13:19, Updated page contributors/mayday-rooms, 
+admin-beast, 2017-11-09, 13:15:05, Uploaded file contributors/mayday-rooms/mdr-logo-new_s.png, 
+admin-beast, 2017-11-09, 13:15:09, Updated page contributors/mayday-rooms, role
+admin-beast, 2017-11-09, 13:15:25, Updated page contributors/mayday-rooms, profilepic
+admin-beast, 2017-11-09, 13:17:13, Updated page contributors/slavoj-zizek, title
+admin-beast, 2017-11-09, 13:18:12, Updated page contributors/slavoj-zizek, role
+admin-beast, 2017-11-09, 13:19:59, Updated page contributors/clifford-harper, role
+admin-beast, 2017-11-09, 13:22:36, Updated page contributors/experimental-jetset, role
+admin-beast, 2017-11-09, 13:28:35, Updated page contributors/haven-distribution, 
+admin-beast, 2017-11-09, 13:32:01, Uploaded file contributors/haven-distribution/haven-distribution.jpg, 
+admin-beast, 2017-11-09, 13:32:05, Updated page contributors/haven-distribution, profilepic
+admin-beast, 2017-11-09, 13:45:09, Updated page contributors/strike, role
+admin-beast, 2017-11-09, 13:45:10, Updated page contributors/strike, 

@@ -6,7 +6,7 @@ Profilepic:
 
 ----
 
-Role:
+Role: Worker,Illustrator,Militant Anarchist
 
 ----
 
@@ -23,3 +23,7 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 

@@ -23,3 +23,18 @@ Website: http://www.facebook.com/selinanthompson
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: http://www.facebook.com/selinanthompson
+  icon: fa-facebook
+- 
+  url: https://twitter.com/selinanthompson
+  icon: fa-twitter
+- 
+  url: >
+    https://www.instagram.com/selinanthompson
+  icon: fa-instagram

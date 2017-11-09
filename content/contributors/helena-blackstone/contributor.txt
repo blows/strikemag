@@ -23,3 +23,11 @@ Website:
 ----
 
 Twitter: https://twitter.com/heli_blackstone
+
+----
+
+Links: 
+
+- 
+  url: https://twitter.com/heli_blackstone
+  icon: fa-twitter

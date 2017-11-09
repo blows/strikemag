@@ -6,7 +6,7 @@ Profilepic:
 
 ----
 
-Role: Illustrator, Issue 8
+Role: Illustrator
 
 ----
 
@@ -23,3 +23,7 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 

@@ -20,10 +20,6 @@ fields:
     label: Title
     type:  text
 
-  text:
-    label: Text
-    type:  textarea
-
   summary:
     label: Page Description
     type: textarea

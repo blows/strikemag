@@ -10,4 +10,4 @@ Colors: #ffccff, #ff99ff, #ff66ff, #ccffcc, #99ff99, #66ff66, #ccffff, #66ccff, 
 
 ----
 
-Summary: Join all our published writers and artists, send us a pitch!
+Summary: Join all our published writers and artists; send us a pitch!

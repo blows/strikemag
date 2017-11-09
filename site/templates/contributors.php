@@ -15,10 +15,11 @@
 <div class="contributors-flex-center">
 
       <?php foreach($alphabetise as $letter => $items): ?>
-        <h4 class="alphabet-letter" id="<? echo $letter ?>"><?php echo strtoupper($letter) ?></h4>
+        <p class="alphabet-letter" id="<? echo $letter ?>"><?php echo strtoupper($letter) ?></p>
 
           <div class="contributors">
             <?php foreach($items as $contributor): ?>
+              <?php $profile = $contributor->profilepic()->toFile(); ?>
               <article class="contributor" id="<?php echo $contributor->uid() ?>">
                 <?php if ($contributor->isVisible()): ?>
                   <a href="<?php echo $contributor->url() ?>">
@@ -28,21 +29,29 @@
 
                   <?php if ($contributor->profilepic()->isNotEmpty()): ?>
                     <figure class="contributor-profilepic">
-                      <span><img src="<?php echo $contributor->profilepic()->toFile()->focusCrop(150, 150)->url() ?>" alt="<?php echo $contributor->title()->html() ?>"></span>
+                      <span><img src="<?= thumb($profile, array('width' => 300, 'crop' => true))->url() ?>" alt="<?php echo $contributor->title()->html() ?>"></span>
                     </figure>
                   <?php else: ?>
                     <div class="contributor-profilepic" style="background-color: <?php $colors = $page->colors()->split(','); $shuffle = a::shuffle($colors); echo $color = a::first($shuffle); ?>"></div>
                   <?php endif; ?>
 
-                  <div class="contributor-info"><span>
-                    <h1 class="contributor-name"><?php echo $contributor->title()->html() ?></h1>
-                    <ul class="contributor-role">
-                      <?php foreach($contributor->role()->split(',') as $role): ?>
-                      <li><?php echo $role ?></li>
-                      <?php endforeach ?>
-                    </ul></span>
+                  <div class="contributor-info">
+                    <div>
+                      <h2 class="contributor-name"><?php echo $contributor->title()->html() ?></h2>
+                      <ul class="contributor-role">
+                        <?php foreach($contributor->role()->split(',') as $role): ?>
+                        <li><?php echo $role ?></li>
+                        <?php endforeach ?>
+                      </ul>
+                    </div>
+                    <ul class="contributor-links">
+                      <li>
+                        <?php foreach($contributor->links()->toStructure() as $link): ?>
+                          <a href='<?= $link->url()->html() ?>'><i class='fa <?= $link->icon()->html() ?>'></i></a>
+                        <?php endforeach; ?>
+                      </li>
+                    </ul>
                   </div>
-
                 </div>
 
                 <?php if ($contributor->isVisible()): ?>

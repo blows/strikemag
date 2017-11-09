@@ -32,13 +32,13 @@
   @include display-flex;
   @include justify-content(center);
   @include flex-direction(column);
+  padding-bottom: 2em;
 }
 
 .contributors {
   @include display-flex;
   @include flex-wrap(wrap);
   @include justify-content(space-between);
-  margin-bottom: span(.5);
 
   &:after {
     content: "";
@@ -49,6 +49,7 @@
 .contributor {
   margin: .5em;
   margin-bottom: 1.2em;
+  font-family: 'Space Mono', monospace;
 
   a {
     color: black;
@@ -78,17 +79,18 @@
   }
 
   &-profilepic {
-    background-color: yellow;
+    background-color: black;
     vertical-align: bottom;
   }
 
   &-name {
-    font-family: 'Graphik-Bold', sans-serif;
+    // font-family: 'Graphik-Bold', sans-serif;
     line-height: 1.1em;
     font-size: .7em;
   }
 
   &-role {
+    // font-family: 'Space-Mono', monospace;
     font-size: .7em;
     line-height: 1.1em;
     li {
@@ -102,12 +104,16 @@
     }
   }
 
-  &-bio {
-
+  &-name, &-role {
+    padding: .7em .7em .5em .7em;
   }
 
-  h1, ul {
-    padding: 12px;
+  &-links {
+    padding: 0 .7em .2em .7em;
+    font-size: .8em;
+    i {
+      padding-right: .2em;
+    }
   }
 }
 

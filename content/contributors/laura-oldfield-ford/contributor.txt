@@ -2,7 +2,7 @@ Title: Laura Oldfield-Ford
 
 ----
 
-Profilepic: 
+Profilepic: laura-oldfield-ford.jpg
 
 ----
 
@@ -23,3 +23,15 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: https://lauraoldfieldford.blogspot.co.uk
+  icon: fa-link
+- 
+  url: >
+    https://soundcloud.com/laura-oldfield-ford
+  icon: fa-soundcloud

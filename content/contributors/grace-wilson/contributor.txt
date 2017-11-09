@@ -6,7 +6,7 @@ Profilepic:
 
 ----
 
-Role: Illustrator
+Role: Illustrator,Artist
 
 ----
 
@@ -23,3 +23,11 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: http://gracewilson.co.uk/
+  icon: fa-tumblr

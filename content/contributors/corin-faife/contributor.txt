@@ -6,7 +6,7 @@ Profilepic: contributor-corin-faife.png
 
 ----
 
-Bio: A dude
+Bio: 
 
 ----
 
@@ -23,3 +23,7 @@ Twitter:
 ----
 
 Role: Journalist
+
+----
+
+Links: 

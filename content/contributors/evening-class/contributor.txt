@@ -2,7 +2,7 @@ Title: Evening Class
 
 ----
 
-Profilepic: 
+Profilepic: contributor-evening-class.png
 
 ----
 
@@ -22,4 +22,19 @@ Twitter: https://twitter.com/evening_class
 
 ----
 
-Role: Group
+Role: Self-organised design education experiment
+
+----
+
+Links: 
+
+- 
+  url: http://www.evening-class.org
+  icon: fa-link
+- 
+  url: >
+    https://www.facebook.com/eveningclasslondon/
+  icon: fa-facebook
+- 
+  url: https://twitter.com/evening_class
+  icon: fa-twitter

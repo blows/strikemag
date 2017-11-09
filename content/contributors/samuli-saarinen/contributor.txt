@@ -22,4 +22,12 @@ Twitter:
 
 ----
 
-Role: Graphic Designer,Illustrator
+Role: Graphic Designer,Illustrator,#design4hope
+
+----
+
+Links: 
+
+- 
+  url: http://samuliottohenrik.tumblr.com
+  icon: fa-link

@@ -23,3 +23,14 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: https://twitter.com/rayfilar
+  icon: fa-twitter
+- 
+  url: https://www.instagram.com/rayfilar/
+  icon: fa-instagram

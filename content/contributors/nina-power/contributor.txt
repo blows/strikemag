@@ -27,3 +27,11 @@ Profilepic: nina-power-by-guy-smallman.jpg
 ----
 
 Role: Writer,Lecturer,Activist
+
+----
+
+Links: 
+
+- 
+  url: https://ninapower.net/
+  icon: fa-link

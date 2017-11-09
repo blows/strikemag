@@ -2,11 +2,11 @@ Title: Jacob V Joyce
 
 ----
 
-Profilepic: 
+Profilepic: jacob-v-joyce.jpg
 
 ----
 
-Role:
+Role: Militant,Queer,Anti-colonial,Interdisciplinary Artist,Activist
 
 ----
 
@@ -23,3 +23,11 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: http://jacobvjoyce.com/
+  icon: fa-link

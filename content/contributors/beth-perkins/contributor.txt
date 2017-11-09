@@ -6,7 +6,7 @@ Profilepic: contributor-b-perk.png
 
 ----
 
-Role: Writer
+Role: Writer,Activist
 
 ----
 
@@ -23,3 +23,7 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 

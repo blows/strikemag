@@ -12,10 +12,6 @@ Role: Academic,Writer,Dad,Not Centrist
 
 Bio: 
 
-Social media is @dannydorling
-
-Website is dannydorling.org
-
 ----
 
 Email: 
@@ -27,3 +23,15 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 
+
+- 
+  url: http://www.dannydorling.org/
+  icon: fa-link
+- 
+  text: ""
+  url: https://twitter.com/dannydorling
+  icon: fa-twitter

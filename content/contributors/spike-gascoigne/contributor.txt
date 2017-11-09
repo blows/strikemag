@@ -6,7 +6,7 @@ Profilepic:
 
 ----
 
-Role: Illustrator / Front Cover
+Role: Illustrator
 
 ----
 
@@ -23,3 +23,7 @@ Website:
 ----
 
 Twitter: 
+
+----
+
+Links: 

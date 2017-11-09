@@ -23,3 +23,14 @@ Website: http://morganpotts.com
 ----
 
 Twitter: https://twitter.com/mrgnptts
+
+----
+
+Links: 
+
+- 
+  url: http://morganpotts.com/
+  icon: fa-link
+- 
+  url: https://twitter.com/mrgnptts
+  icon: fa-twitter
