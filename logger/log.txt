@@ -174,3 +174,11 @@ admin-beast, 2017-11-17, 20:03:09, Hid page online/violent-borders-mass-deportat
 admin-beast, 2017-11-17, 20:05:15, Sorted page online/unsinniger-jobs, 
 admin-beast, 2017-11-17, 20:05:26, Updated page online/unsinniger-jobs, uploaded|printed
 admin-beast, 2017-11-17, 20:15:15, Updated page contributors/sex-worker-open-university, role
+admin-beast, 2017-11-17, 20:54:37, Uploaded file magazine/issue-8/over-the-rainbow-queer-assimilation-queer-citizenship-state-violence/08-over-the-rainbow.jpg, 
+admin-beast, 2017-11-17, 20:55:04, Updated page magazine/issue-8/over-the-rainbow-queer-assimilation-queer-citizenship-state-violence, coverimage|artwork|printed|tags
+admin-beast, 2017-11-17, 20:55:14, Sorted page magazine/issue-8/over-the-rainbow-queer-assimilation-queer-citizenship-state-violence, 
+admin-beast, 2017-11-17, 20:56:08, Updated page magazine/issue-8/over-the-rainbow-queer-assimilation-queer-citizenship-state-violence, text
+admin-beast, 2017-11-17, 20:56:20, Updated page magazine/issue-8/over-the-rainbow-queer-assimilation-queer-citizenship-state-violence, 
+admin-beast, 2017-11-17, 20:56:54, Updated page magazine/issue-8/over-the-rainbow-queer-assimilation-queer-citizenship-state-violence, text
+admin-beast, 2017-11-17, 20:57:21, Updated page magazine/issue-8/over-the-rainbow-queer-assimilation-queer-citizenship-state-violence, text
+admin-beast, 2017-11-17, 20:58:02, Updated file magazine/issue-8/over-the-rainbow-queer-assimilation-queer-citizenship-state-violence/08-over-the-rainbow.jpg, credit
