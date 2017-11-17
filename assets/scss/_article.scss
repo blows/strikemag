@@ -296,8 +296,8 @@ $article-spacer: 4rem;
 }
 
   .article-credit {
-    @include span(9);
-    @include push(1.5);
+    @include span(10);
+    @include push(1);
     font-family: 'Space Mono', monospace;
     color: #979797;
     .article-credit__contributor {
@@ -317,8 +317,8 @@ $article-spacer: 4rem;
         }
     }
     @media all and (max-width: 450px) {
-      @include span(11);
-      @include push(.5);
+      @include span(12);
+      @include push(0);
     }
   }
 

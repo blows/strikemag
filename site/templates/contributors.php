@@ -3,7 +3,7 @@
   <main class="main" role="main">
 
     <header class="contributors-intro">
-      <p>Endless thanks to all our <?php echo $page->children()->count() ?> published contributors.</p>
+      <p>Thank you to all <?php echo $page->children()->count() ?> published contributors.</p>
 
       <div class="contributors-nav">
         <?php foreach($alphabetise as $letter => $items): ?>

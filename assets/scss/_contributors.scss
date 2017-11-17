@@ -25,15 +25,15 @@
     font-size: 1.5em;
     text-decoration: none;
     color: inherit;
-    padding: .55em;
+    padding: .8em .55em;
     margin-bottom: .1em;
     border-width: 0.1em;
   }
 }
 
 .contributors-flex-center {
-  @include span(11);
-  @include push(.5);
+  @include span(12);
+  @include push(0);
   @include display-flex;
   @include justify-content(center);
   @include flex-direction(column);
@@ -126,8 +126,8 @@
     &-info, &-profilepic {
       height: 9em;
       width: 9em;
-      height: 40vw;
-      width: 40vw;
+      height: 47vw;
+      width: 47vw;
     }
   }
 }
