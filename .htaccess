@@ -21,8 +21,6 @@ RewriteEngine on
 #
 # RewriteBase /
 
-Redirect 301 /capitalist-realism-by-mark-fisher/ https://strikemag.org/capitalist-realism-is-there-still-no-alternative
-
 # Cachebusting? -----------------------------------------------------------------------------------
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.+)\.(\d+)\.(js|css)$ $1.$3 [L]
