@@ -492,8 +492,8 @@ body {
   }
   .text-bar {
     p {
-      @include span(12);
-      @include push(0);
+      @include span(11);
+      @include push(.5);
     }
   }
 }

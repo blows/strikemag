@@ -8,7 +8,7 @@
       <a href="<?= url() ?>" rel="home"><?= $site->author() ?></a>
     </li>
     <li class="menu-toggle menu-item" id="menu-toggle">
-      <button>MENU</button>
+      <a>MENU</a>
     </li>
     <ul id="menu-drop">
       <?php foreach($pages->visible() as $item): ?>

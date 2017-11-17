@@ -85,21 +85,21 @@ fields:
     label: Media
     type: tabs
 
+  coverimage:
+    label: Cover Image
+    type: image
+    width: 1/2
+
   artwork:
-    label: Artwork By
+    label: Media By
     type: multiselect
     search: true
+    width: 1/2
     options: query
     query:
       page: contributors
       fetch: children
     help: Contributor must be added before the article. Check whether they are by searching their name in this field; if they're not, head to the Contributors page and add them.
-
-  coverimage:
-    label: Cover Image
-    type: image
-    width: 1/2
-    required: true
 
   category:
     label: Category

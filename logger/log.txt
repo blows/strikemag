@@ -109,3 +109,68 @@ admin-beast, 2017-11-14, 20:36:57, Updated page online/violent-borders-mass-depo
 admin-beast, 2017-11-15, 12:38:01, Updated page online/violent-borders-mass-deportation-charter-flights-trailer, text
 admin-beast, 2017-11-15, 12:44:20, Updated page online/violent-borders-mass-deportation-charter-flights-trailer, text
 admin-beast, 2017-11-15, 13:14:07, Updated page online/violent-borders-mass-deportation-charter-flights-trailer, media
+admin-beast, 2017-11-15, 14:43:06, Created page online/issue-19-out-now, 
+admin-beast, 2017-11-15, 14:48:32, Updated page online/issue-19-out-now, contributor|uploaded|tags|category|media
+admin-beast, 2017-11-15, 14:48:51, Sorted page online/issue-19-out-now, 
+admin-beast, 2017-11-15, 14:51:09, Updated page online/issue-19-out-now, tags
+admin-beast, 2017-11-15, 14:57:02, Deleted page online/issue-19-out-now, 
+admin-beast, 2017-11-15, 15:01:36, Updated page online/violent-borders-mass-deportation-charter-flights-trailer, media
+admin-beast, 2017-11-15, 15:37:59, Updated page online/violent-borders-mass-deportation-charter-flights-trailer, media
+admin-beast, 2017-11-15, 15:46:41, Updated page online/violent-borders-mass-deportation-charter-flights-trailer, media
+admin-beast, 2017-11-17, 18:36:26, Updated page error, title|intro|text
+admin-beast, 2017-11-17, 18:39:27, Updated page error, text
+admin-beast, 2017-11-17, 18:41:13, Updated page error, text
+admin-beast, 2017-11-17, 18:43:34, Updated page error, text
+admin-beast, 2017-11-17, 18:43:35, Updated page error, 
+admin-beast, 2017-11-17, 18:43:50, Updated page error, text
+admin-beast, 2017-11-17, 18:48:04, Updated page error, text
+admin-beast, 2017-11-17, 18:48:35, Updated page error, text
+admin-beast, 2017-11-17, 18:49:10, Updated page error, text
+admin-beast, 2017-11-17, 19:07:52, Uploaded file error/strike-magazine-error-404.jpg, 
+admin-beast, 2017-11-17, 19:08:02, Updated page error, text
+admin-beast, 2017-11-17, 19:08:29, Updated page error, text
+admin-beast, 2017-11-17, 19:30:51, Sorted file magazine/issue-14/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:33:34, Sorted file magazine/issue-14/14-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:34:25, Deleted file magazine/issue-13/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:34:34, Uploaded file magazine/issue-13/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:34:38, Sorted file magazine/issue-13/13-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:34:53, Deleted file magazine/issue-12/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:34:57, Uploaded file magazine/issue-12/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:35:00, Sorted file magazine/issue-12/12-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:35:09, Uploaded file magazine/issue-11/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:35:13, Sorted file magazine/issue-11/11-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:35:16, Deleted file magazine/issue-11/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:35:26, Deleted file magazine/issue-10/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:35:29, Uploaded file magazine/issue-10/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:35:32, Sorted file magazine/issue-10/10-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:35:41, Uploaded file magazine/issue-9/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:35:44, Sorted file magazine/issue-9/09-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:35:45, Deleted file magazine/issue-9/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:35:57, Uploaded file magazine/issue-8/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:36:00, Sorted file magazine/issue-8/08-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:36:02, Deleted file magazine/issue-8/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:36:10, Uploaded file magazine/issue-7/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:36:13, Sorted file magazine/issue-7/07-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:36:15, Deleted file magazine/issue-7/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:36:24, Uploaded file magazine/issue-6/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:36:27, Sorted file magazine/issue-6/06-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:36:29, Deleted file magazine/issue-6/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:36:38, Uploaded file magazine/issue-5/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:36:41, Sorted file magazine/issue-5/05-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:36:42, Deleted file magazine/issue-5/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:36:55, Uploaded file magazine/issue-4/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:36:58, Sorted file magazine/issue-4/04-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:37:01, Deleted file magazine/issue-4/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:37:09, Uploaded file magazine/issue-3/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:37:12, Sorted file magazine/issue-3/03-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:37:14, Deleted file magazine/issue-3/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:37:23, Uploaded file magazine/issue-2/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:37:26, Sorted file magazine/issue-2/02-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:37:28, Deleted file magazine/issue-2/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:37:37, Deleted file magazine/issue-1/15-spread-01.jpg, 
+admin-beast, 2017-11-17, 19:37:40, Uploaded file magazine/issue-1/00-more-spreads-coming-soon.jpg, 
+admin-beast, 2017-11-17, 19:37:42, Sorted file magazine/issue-1/01-spread-01.jpg, 
+admin-beast, 2017-11-17, 20:03:09, Hid page online/violent-borders-mass-deportation-charter-flights-trailer, 
+admin-beast, 2017-11-17, 20:05:15, Sorted page online/unsinniger-jobs, 
+admin-beast, 2017-11-17, 20:05:26, Updated page online/unsinniger-jobs, uploaded|printed
+admin-beast, 2017-11-17, 20:15:15, Updated page contributors/sex-worker-open-university, role

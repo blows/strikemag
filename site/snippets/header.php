@@ -36,7 +36,7 @@
   <?php if ($page->coverimage()->isNotEmpty()): ?>
     <meta property="og:image" content="<?php echo html($page->coverimage()->toFile()->url()) ?>" />
   <?php else: ?>
-    <meta property="og:image" content="<?php echo html($site->image('strike-logo-black.svg')->url()) ?>" />
+    <meta property="og:image" content="<?php echo html($site->image('strike-logo-square.svg')->url()) ?>?auto=format&fit=max&h=1000&w=1000" />
   <?php endif; ?>
   <meta property="og:description" content="<?php echo html($page->summary()) ?>" />
   <meta itemprop="name" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>">
