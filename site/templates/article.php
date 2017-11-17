@@ -1,3 +1,4 @@
+<?php if(!$page->isVisible()) go('error') ?>
 <?php snippet('header') ?>
 
   <main class="main" role="main">
@@ -43,9 +44,7 @@
 
         <div class="article-image">
           <?php if($page->media()->isNotEmpty()): ?>
-            <figure>
-              <?= $page->media()->embed() ?>
-            </figure>
+            <?= $page->media()->embed() ?>
           <?php elseif($page->coverimage()->isNotEmpty()) : ?>
             <figure>
               <img src="<?= $page->coverimage()->toFile()->url() ?>">

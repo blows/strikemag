@@ -1,9 +1,17 @@
-Title: Error
+Title: Error 404
 
 ----
 
-Intro: The page has not been found.
+Intro: The page has not been found
 
 ----
 
-Text: Well, stuff can go wrong sometimes and maybe you mistyped a URL, tapped/clicked on a broken link or your computer just wants to drive you nuts. Anyway … keep calm and take a look at our beautiful (link: / text: homepage) instead.
+Text: 
+
+(image: strike-magazine-error-404.jpg)
+
+Returning readers will notice that we're doing a complete overhaul of our website. During this process some old pages may have moved, and some articles may not be uploaded yet. 
+
+If your favourite article is missing, or you've been directed here from another site, (email: design@strikemag.org text: email us) which article you were trying to read and we'll make sure it's high in the upload schedule.
+
+In the mean time you can still read everything that *is* (link: /online text: online), see all (link: /magazine text: printed issues), and find out more (link: /info text: about us).
