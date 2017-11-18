@@ -25,6 +25,9 @@
   <meta name="DC.Publisher" content="<?php echo html($site->author()) ?>" />
   <meta name="DC.Description" content="<?php echo html($page->summary()) ?>" />
   <meta name="DC.Language" content="en_GB" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@strikeyo" />
+  <meta name="twitter:creator" content="@strikeyo" />
   <?php if($page->isHomepage()): ?>
     <meta property="og:title" content="<?php echo html($site->title()) ?>" />
   <?php else: ?>
@@ -38,7 +41,11 @@
   <?php else: ?>
     <meta property="og:image" content="<?php echo html($site->image('strike-logo-square.png')->url()) ?>" />
   <?php endif; ?>
-  <meta property="og:description" content="<?php echo html($page->summary()) ?>" />
+  <?php if ($page->summary()->isNotEmpty()): ?>
+    <meta property="og:description" content="<?php echo html($page->summary()) ?>" />
+  <?php else: ?>
+    <meta property="og:description" content="<?php echo html(page('info')->summary()) ?>" />
+  <?php endif; ?>
   <meta itemprop="name" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>">
   <meta itemprop="description" content="<?php echo html($page->summary()) ?>">
 
