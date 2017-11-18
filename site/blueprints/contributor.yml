@@ -30,22 +30,6 @@ fields:
   #   label: Bio
   #   type: textarea
 
-  email:
-    label: Email
-    type: email
-    width: 1/3
-
-  website:
-    label: Website
-    type: url
-    width: 1/3
-
-  twitter:
-    label: Twitter
-    icon: twitter
-    type: url
-    width: 1/3
-
   links:
     label: Links
     type:  structure
