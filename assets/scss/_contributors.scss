@@ -32,8 +32,8 @@
 }
 
 .contributors-flex-center {
-  @include span(12);
-  @include push(0);
+  @include span(11);
+  @include push(.5);
   @include display-flex;
   @include justify-content(center);
   @include flex-direction(column);
@@ -132,6 +132,10 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .contributors-flex-center {
+    @include span(11);
+    @include push(.5);
+  }
   .contributors {
     @include justify-content(center);
     font-size: 1.4em;
