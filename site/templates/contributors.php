@@ -47,7 +47,7 @@
                     <ul class="contributor-links">
                       <li>
                         <?php foreach($contributor->links()->toStructure() as $link): ?>
-                          <a href='<?= $link->url()->html() ?>'><i class='fa <?= $link->icon()->html() ?>'></i></a>
+                          <a href='<?= $link->url()->html() ?>' target="_blank"><i class='fa <?= $link->icon()->html() ?>'></i></a>
                         <?php endforeach; ?>
                       </li>
                     </ul>
