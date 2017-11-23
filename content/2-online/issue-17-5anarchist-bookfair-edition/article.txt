@@ -10,11 +10,11 @@ Subtitle:
 
 ----
 
-Contributor: 
+Contributor: strike
 
 ----
 
-Uploaded: today
+Uploaded: 2017-11-23
 
 ----
 
@@ -42,7 +42,7 @@ Coverimage:
 
 ----
 
-Category: 
+Category: text
 
 ----
 
@@ -55,3 +55,7 @@ Tab3:
 ----
 
 Text: 
+
+----
+
+Vis: true

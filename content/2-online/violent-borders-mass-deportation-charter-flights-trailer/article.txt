@@ -56,3 +56,7 @@ Media: https://vimeo.com/strikemag/violent-borders-mass-deportation-charter-flig
 ----
 
 Subtitle: Mass Deportation Charter Flights (TRAILER)
+
+----
+
+Vis: true
