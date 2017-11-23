@@ -5,7 +5,9 @@ return function($site, $pages, $page) {
   $perpage  = $page->perpage()->int();
 
   // Merge all Online-Only articles with uploaded articles within Issues
-  $webonly = $pages->find('online')->children()->visible();
+  $webonly = $pages->find('online')->children()->visible()->filter(function ($webs) {
+    return $webs->vis()->bool();
+  });
   $magazine = $pages->find('magazine')->grandChildren()->visible();
   $webPlusMag = new Pages(array($webonly, $magazine));
   $online = $webPlusMag->flip()->paginate(($perpage >= 1)? $perpage : 15);

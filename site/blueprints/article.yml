@@ -69,17 +69,22 @@ fields:
       flip: true
     help: Issue the piece was originally published in. Leave blank for Online pieces.
 
-  summary:
-    label: Summary
-    type: textarea
-    validate:
-      maxLength: 140
+  vis:
+    label: Visible in Feeds?
+    type: toggle
+    text: yes/no
 
   tags:
     label: Tags
     type: tags
     lower: true
     index: all
+
+  summary:
+    label: Summary
+    type: textarea
+    validate:
+      maxLength: 140
 
   tab2:
     label: Media
